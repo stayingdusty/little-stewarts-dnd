@@ -27,7 +27,8 @@
     "relatedIds": [],
     "source": {
       "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html"
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html",
+      "anchor": "calvin-nameloc"
     }
   },
   {
@@ -62,7 +63,8 @@
     ],
     "source": {
       "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html",
+      "anchor": "fiona"
     }
   },
   {
@@ -97,7 +99,8 @@
     ],
     "source": {
       "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html",
+      "anchor": "golo"
     }
   },
   {
@@ -132,7 +135,8 @@
     ],
     "source": {
       "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
+      "anchor": "queen-flower-of-veylathar"
     }
   },
   {
@@ -164,7 +168,8 @@
     ],
     "source": {
       "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html",
+      "anchor": "sertraline"
     }
   }
 ]

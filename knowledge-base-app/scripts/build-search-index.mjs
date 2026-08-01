@@ -1,6 +1,7 @@
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { addAnchorsToHtml } from './source-doc-utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -22,6 +23,30 @@ const readJson = async (relativePath) => {
   const fullPath = path.join(root, relativePath);
   const content = await readFile(fullPath, 'utf-8');
   return JSON.parse(content);
+};
+
+const copyAnchoredSourceDocs = async () => {
+  const sourceRoot = path.resolve(root, '../DND-Source-Docs/the-dark-arcs');
+  const outputRoot = path.join(root, 'site/source-docs/the-dark-arcs');
+  await mkdir(outputRoot, { recursive: true });
+
+  const walk = async (dirPath) => {
+    const entries = await readdir(dirPath, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dirPath, entry.name);
+      if (entry.isDirectory()) {
+        await walk(fullPath);
+      } else if (entry.isFile() && entry.name.endsWith('.html')) {
+        const relativePath = path.relative(sourceRoot, fullPath);
+        const outputPath = path.join(outputRoot, relativePath);
+        await mkdir(path.dirname(outputPath), { recursive: true });
+        const html = await readFile(fullPath, 'utf-8');
+        await writeFile(outputPath, addAnchorsToHtml(html));
+      }
+    }
+  };
+
+  await walk(sourceRoot);
 };
 
 const normalizeText = (value) => String(value ?? '').toLowerCase();
@@ -52,6 +77,7 @@ const build = async () => {
       summary: item.summary,
       tags: item.tags || [],
       sourcePath: item.source?.path || '',
+      sourceAnchor: item.source?.anchor || '',
       timelineValue: Number(item.source?.chapter || item.chapter || item.source?.arc || 0),
       searchableText: normalizeText(extraText.join(' '))
     };
@@ -69,6 +95,8 @@ const build = async () => {
       chapter: event.source?.chapter || 0
     }, 'canon'))
   ];
+
+  await copyAnchoredSourceDocs();
 
   const outputDir = path.join(root, 'site/data');
   await mkdir(outputDir, { recursive: true });

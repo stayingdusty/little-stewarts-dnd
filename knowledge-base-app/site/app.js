@@ -28,6 +28,18 @@ const titleCase = (value) => {
 
 const normalizeQuery = (value) => value.trim().toLowerCase();
 
+const buildSourceHref = (record) => {
+  const sourcePath = record.sourcePath || '';
+  if (!sourcePath) return '#';
+
+  const normalized = sourcePath
+    .replace(/^DND-Source-Docs\//i, 'source-docs/')
+    .replace(/^\.\//, '')
+    .replace(/\\/g, '/');
+  const anchor = record.sourceAnchor ? `#${record.sourceAnchor}` : '';
+  return `./${normalized}${anchor}`;
+};
+
 const matchesQuery = (record, query) => {
   if (!query) return true;
 
@@ -68,7 +80,11 @@ const render = () => {
     fragment.querySelector('.pill').textContent = titleCase(record.kind);
     fragment.querySelector('.card-summary').textContent = record.summary || 'No summary available.';
     fragment.querySelector('.card-tags').textContent = `Tags: ${(record.tags || []).join(', ') || 'none'}`;
-    fragment.querySelector('.card-source').textContent = `Source: ${record.sourcePath || 'n/a'}`;
+
+    const sourceLink = fragment.querySelector('.card-source');
+    const sourceHref = buildSourceHref(record);
+    sourceLink.innerHTML = `<a href="${sourceHref}" target="_blank" rel="noopener noreferrer">Source: ${record.sourcePath || 'n/a'}</a>`;
+
     elements.results.append(fragment);
   }
 };

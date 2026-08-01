@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fiona (Lily) - Printable Character Sheet Draft</title>
+<style>
+:root{--ink:#1d1d1f;--muted:#5f6368;--line:#d8d8d8;--panel:#f8f8f5;--accent:#283747;--soft:#eef1f4;--gold:#fff8d8}
+*{box-sizing:border-box}
+body{margin:0;padding:18px;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#eeeeea;line-height:1.24;font-size:13px}
+.sheet{max-width:900px;margin:0 auto}.page{background:#fff;padding:24px;border:2px solid var(--accent);border-radius:18px;box-shadow:0 8px 30px rgba(0,0,0,.12);margin-bottom:20px;min-height:980px}
+header{text-align:center;border-bottom:3px double var(--accent);padding-bottom:10px;margin-bottom:12px}h1{margin:0;font-size:31px;letter-spacing:1px}.subtitle{font-size:14px;color:var(--muted);margin-top:3px}
+.identity{display:grid;grid-template-columns:2fr 1.2fr 1fr;gap:8px;margin-bottom:10px}.identity.second{grid-template-columns:repeat(4,1fr)}
+.field,.card,.ability,.stat,.choice-box,.attack-row,.inventory-row{border:1px solid var(--line);border-radius:10px}.field{background:var(--panel);padding:7px 9px;min-height:45px}.label{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;font-weight:bold}.blank{border-bottom:1.7px solid #777;min-height:18px}
+.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:11px;align-items:start}.card{padding:10px;margin-bottom:9px;background:#fff}.card.soft{background:var(--soft)}h2{margin:0 0 6px;font-size:17px;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:4px}h3{margin:0 0 3px;font-size:13px}p{margin:5px 0}ul{margin:5px 0 0 18px;padding:0}li{margin:3px 0}
+.stat-list{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.stat{background:var(--panel);padding:7px;text-align:center}.stat .score{font-size:20px;font-weight:bold;min-height:23px}.stat .modifier{font-size:11px;color:var(--muted);border-top:1px solid var(--line);margin-top:3px;padding-top:3px}
+.combat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.combat-box{border:2px solid var(--accent);border-radius:10px;padding:7px;text-align:center;background:#fff}.combat-box .value{font-size:20px;font-weight:bold;min-height:29px}.combat-box .label{margin:0}.ability{border-left:5px solid var(--accent);padding:7px 9px;background:var(--panel);margin:6px 0;min-height:62px}.ability-lines{display:grid;grid-template-columns:1.25fr .75fr;gap:6px;margin-top:5px}.mini{border-bottom:1px solid #777;min-height:17px}
+.attack-table{display:grid;gap:5px}.attack-header,.attack-row{display:grid;grid-template-columns:1.4fr .65fr .8fr 1fr;gap:5px;align-items:center}.attack-header{font-size:9px;text-transform:uppercase;color:var(--muted);font-weight:bold;padding:0 5px}.attack-row{padding:5px;background:var(--panel);min-height:42px}.cell{border-bottom:1px solid #777;min-height:20px}.damage-note{font-size:10px;color:var(--muted);margin-top:4px}.mod-table{display:grid;grid-template-columns:1.25fr .45fr 1.3fr;gap:4px}.mod-head{font-size:9px;text-transform:uppercase;color:var(--muted);font-weight:bold}.mod-cell{border:1px solid var(--line);border-radius:7px;padding:5px;min-height:27px;background:var(--panel)}
+.inventory{display:grid;gap:4px}.inventory-head,.inventory-row{display:grid;grid-template-columns:1.7fr .45fr .9fr;gap:5px;align-items:center}.inventory-head{font-size:9px;text-transform:uppercase;color:var(--muted);font-weight:bold;padding:0 5px}.inventory-row{padding:4px 5px;min-height:31px;background:#fff}.choice-box{border-style:dashed;padding:7px;margin-top:6px;background:#fff;min-height:46px}.large{min-height:92px}.medium{min-height:67px}.coins{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}.coin{border:1px solid var(--line);border-radius:8px;padding:6px;text-align:center;background:var(--panel)}
+.footer{text-align:center;color:var(--muted);border-top:1px solid var(--line);padding-top:7px;margin-top:6px;font-size:10px}.print-note{max-width:900px;margin:0 auto 12px;padding:9px 11px;background:var(--gold);border:1px solid #c6a800;border-radius:10px;font-size:13px}[contenteditable="true"]{outline:none}[contenteditable="true"]:focus{background:#fffbe6}
+@page{size:letter portrait;margin:.35in}@media print{body{background:#fff;padding:0;font-size:11px;line-height:1.18}.print-note{display:none}.sheet{max-width:none;margin:0}.page{width:100%;min-height:0;box-shadow:none;border:none;border-radius:0;padding:0;margin:0;page-break-after:always;break-after:page}.page:last-child{page-break-after:auto;break-after:auto}header{margin-bottom:8px;padding-bottom:7px}h1{font-size:25px}.subtitle{font-size:11px}.identity{gap:5px;margin-bottom:7px}.field{min-height:37px;padding:5px 7px}.label{font-size:8px}.blank{min-height:14px}.grid{gap:8px}.card{padding:7px;margin-bottom:6px;break-inside:avoid;page-break-inside:avoid}h2{font-size:14px;margin-bottom:4px}h3{font-size:11px}.stat{padding:5px}.stat .score{font-size:17px}.combat-box{padding:5px}.combat-box .value{font-size:17px}.ability{padding:5px 7px;margin:4px 0;min-height:50px}.attack-row{min-height:35px}.choice-box{min-height:36px}.large{min-height:73px}.medium{min-height:52px}.inventory-row{min-height:26px}.footer{font-size:9px}}
+@media(max-width:720px){.identity,.identity.second,.grid,.stat-list,.combat-grid{grid-template-columns:1fr}.attack-header,.attack-row{grid-template-columns:1fr}.sheet{max-width:none}body{padding:8px}.page{min-height:0}}
+</style>
+</head>
+<body>
+<div class="print-note">Draft fields remain editable. Values marked <strong>&nbsp;</strong> were not established by the photos or campaign notes and can be filled in later.</div>
+<main class="sheet">
+<section class="page">
+<header><h1  contenteditable="true" id="fiona">FIONA</h1><div class="subtitle" contenteditable="true">Knight &amp; Paladin of Aureth</div></header>
+<section class="identity">
+<div class="field"><div class="label">Player</div><strong contenteditable="true">Lily</strong></div>
+<div class="field"><div class="label">Species / Ancestry</div><div contenteditable="true">&nbsp;</div></div>
+<div class="field"><div class="label">Level / Rank</div><div contenteditable="true">&nbsp;</div></div>
+</section>
+<section class="identity second">
+<div class="field"><div class="label">Role</div><div contenteditable="true">Protective holy knight</div></div>
+<div class="field"><div class="label">Divine Bond</div><div contenteditable="true">Aureth, Goddess of Magic</div></div>
+<div class="field"><div class="label">Movement</div><div contenteditable="true">Walking; brass-wing gliding</div></div>
+<div class="field"><div class="label">Initiative</div><div contenteditable="true">&nbsp;</div></div>
+</section>
+<div class="grid"><section>
+<div class="card soft"><h2 id="character-overview">Character Overview</h2><div class="choice-box large" contenteditable="true">Fiona is a brave and protective knight who serves Aureth. Her holy abilities center on battlefield healing, radiant swordsmanship, and instinctively shielding others. Her golden paladin armor responds most strongly when she acts out of protectiveness.</div></div>
+<div class="card"><h2 id="ability-scores-modifiers">Ability Scores &amp; Modifiers</h2><div class="stat-list">
+<div class="stat"><div class="label">Strength</div><div class="score" contenteditable="true">&nbsp;</div><div class="modifier">Modifier: <span contenteditable="true">&nbsp;</span></div></div>
+<div class="stat"><div class="label">Dexterity</div><div class="score" contenteditable="true">&nbsp;</div><div class="modifier">Modifier: <span contenteditable="true">&nbsp;</span></div></div>
+<div class="stat"><div class="label">Constitution</div><div class="score" contenteditable="true">&nbsp;</div><div class="modifier">Modifier: <span contenteditable="true">&nbsp;</span></div></div>
+<div class="stat"><div class="label">Intelligence</div><div class="score" contenteditable="true">&nbsp;</div><div class="modifier">Modifier: <span contenteditable="true">&nbsp;</span></div></div>
+<div class="stat"><div class="label">Wisdom</div><div class="score" contenteditable="true">&nbsp;</div><div class="modifier">Modifier: <span contenteditable="true">&nbsp;</span></div></div>
+<div class="stat"><div class="label">Charisma</div><div class="score" contenteditable="true">&nbsp;</div><div class="modifier">Modifier: <span contenteditable="true">&nbsp;</span></div></div>
+</div></div>
+<div class="card"><h2 id="powers-abilities">Powers &amp; Abilities</h2>
+<div class="ability"><h3 id="battlefield-healing">Battlefield Healing</h3><div contenteditable="true">Fiona can channel holy magic to heal or stabilize allies during battle. Exact healing dice and number of uses remain to be established.</div><div class="ability-lines"><div><b>Healing Dice / Check:</b><div class="mini" contenteditable="true">&nbsp;</div></div><div><b>Uses:</b><div class="mini" contenteditable="true">&nbsp;</div></div></div></div>
+<div class="ability"><h3 id="brass-wings-of-protection">Brass Wings of Protection</h3><div contenteditable="true">The brass wings connected to Fiona’s golden paladin armor awaken in moments of protection or protectiveness. They can wrap around Fiona or shield up to two other people.</div><div class="ability-lines"><div><b>Protection Effect:</b><div class="mini" contenteditable="true">TBD: AC bonus, damage reduction, or automatic block</div></div><div><b>Uses:</b><div class="mini" contenteditable="true">&nbsp;</div></div></div></div>
+<div class="ability"><h3 id="wind-harnessed-glide">Wind-Harnessed Glide</h3><div contenteditable="true">Fiona can use the wings to glide from high places or ride strong updrafts. She cannot take off from level ground, hover, or maintain powered flight.</div><div class="ability-lines"><div><b>Movement / Check:</b><div class="mini" contenteditable="true">&nbsp;</div></div><div><b>Uses:</b><div class="mini" contenteditable="true">As terrain allows</div></div></div></div>
+</div></section>
+<aside>
+<div class="card"><h2 id="combat-statistics">Combat Statistics</h2><div class="combat-grid">
+<div class="combat-box"><div class="label">Current HP</div><div class="value" contenteditable="true">&nbsp;</div></div><div class="combat-box"><div class="label">Maximum HP</div><div class="value" contenteditable="true">&nbsp;</div></div><div class="combat-box"><div class="label">Armor Class</div><div class="value" contenteditable="true">&nbsp;</div></div><div class="combat-box"><div class="label">Temporary HP</div><div class="value" contenteditable="true">&nbsp;</div></div>
+</div><div class="choice-box"><b>Conditions / Damage Notes:</b><div contenteditable="true"><br></div></div></div>
+<div class="card"><h2 id="modifier-boosts">Modifier Boosts</h2><div class="mod-table"><div class="mod-head">Source / Ability</div><div class="mod-head">Bonus</div><div class="mod-head">Applies To / Duration</div>
+<div class="mod-cell" contenteditable="true">Paladin armor</div><div class="mod-cell" contenteditable="true">&nbsp;</div><div class="mod-cell" contenteditable="true">Armor Class / while equipped</div>
+<div class="mod-cell" contenteditable="true">Protective wing response</div><div class="mod-cell" contenteditable="true">&nbsp;</div><div class="mod-cell" contenteditable="true">Protecting Fiona or up to 2 allies</div>
+<div class="mod-cell" contenteditable="true">Undead warding</div><div class="mod-cell" contenteditable="true">&nbsp;</div><div class="mod-cell" contenteditable="true">Against undead</div>
+<div class="mod-cell" contenteditable="true"></div><div class="mod-cell" contenteditable="true"></div><div class="mod-cell" contenteditable="true"></div></div></div>
+<div class="card soft"><h2 id="defenses-resistances">Defenses &amp; Resistances</h2><div class="choice-box medium" contenteditable="true"><b>Golden Paladin Armor:</b> protective holy armor.<br><b>Brass Wings:</b> wrap around Fiona or up to two others as a shield.<br><b>Undead Warding:</b> Fiona’s sword can repel or ward off undead. Exact mechanical bonuses are TBD.</div></div>
+<div class="card"><h2 id="external-bonds-relationships">External Bonds &amp; Relationships</h2><div class="choice-box large" contenteditable="true"><b>Aureth:</b> Fiona is bonded in holy service to Aureth, Goddess of Magic.<br><br><b>Dwarves:</b> Recognized through the Feast of Ancestors honor and carries a ceremonial ticket granting entry or favor.</div></div>
+</aside></div><div class="footer">Page 1 — Fiona’s identity, statistics, defenses, abilities, and bonds</div>
+</section>
+<section class="page">
+<header><h1  contenteditable="true" id="fiona-2">FIONA</h1><div class="subtitle">Attacks, Equipment, Inventory &amp; Campaign Notes</div></header>
+<div class="grid"><section>
+<div class="card"><h2 id="attacks-combat-actions">Attacks &amp; Combat Actions</h2><div class="attack-table"><div class="attack-header"><div>Attack / Action</div><div>To Hit</div><div>Range</div><div>Damage / HP Dice</div></div>
+<div class="attack-row"><div class="cell" contenteditable="true">Radiant Sword Strike</div><div class="cell" contenteditable="true">&nbsp;</div><div class="cell" contenteditable="true">Melee</div><div class="cell" contenteditable="true">TBD radiant + holy</div></div>
+<div class="attack-row"><div class="cell" contenteditable="true">Demon-Banishing Strike</div><div class="cell" contenteditable="true">&nbsp;</div><div class="cell" contenteditable="true">Melee</div><div class="cell" contenteditable="true">TBD + banishment effect</div></div>
+<div class="attack-row"><div class="cell" contenteditable="true">Undead-Warding Sweep</div><div class="cell" contenteditable="true">&nbsp;</div><div class="cell" contenteditable="true">Melee / nearby</div><div class="cell" contenteditable="true">TBD radiant; ward effect</div></div>
+<div class="attack-row"><div class="cell" contenteditable="true">Wing Shield Interpose</div><div class="cell" contenteditable="true">Reaction / TBD</div><div class="cell" contenteditable="true">Self or 2 allies</div><div class="cell" contenteditable="true">No damage; protection TBD</div></div>
+<div class="attack-row"><div class="cell" contenteditable="true">Unarmed / Backup Attack</div><div class="cell" contenteditable="true">&nbsp;</div><div class="cell" contenteditable="true">Melee</div><div class="cell" contenteditable="true">&nbsp;</div></div></div><div class="damage-note">All attack dice are intentionally marked TBD until Fiona’s combat numbers are formally established.</div></div>
+<div class="card"><h2 id="special-attack-rules">Special Attack Rules</h2><div class="choice-box large" contenteditable="true"><b>Demon Banishment:</b> Fiona’s sword deals radiant and holy damage and can banish demons back to the Nine Hells. The required hit, saving throw, damage threshold, and usage limit are TBD.<br><br><b>Undead Warding:</b> The sword can ward off undead. The exact radius, duration, and save are TBD.</div></div>
+<div class="card soft"><h2 id="active-powers-limited-uses">Active Powers / Limited Uses</h2>
+<div class="ability"><h3 id="protective-wing-activation">Protective Wing Activation</h3><div contenteditable="true">Activated in a moment of protection or protectiveness. The wings wrap around Fiona or up to two other people.</div><div class="ability-lines"><div><b>Dice / Effect:</b><div class="mini" contenteditable="true">TBD protection</div></div><div><b>Uses:</b><div class="mini" contenteditable="true">&nbsp;</div></div></div></div>
+<div class="ability"><h3 id="holy-healing">Holy Healing</h3><div contenteditable="true">Channels Aureth’s magic to restore hit points or stabilize an ally.</div><div class="ability-lines"><div><b>Healing Dice:</b><div class="mini" contenteditable="true">&nbsp;</div></div><div><b>Uses:</b><div class="mini" contenteditable="true">&nbsp;</div></div></div></div>
+</div>
+<div class="card"><h2 id="campaign-notes-growth">Campaign Notes / Growth</h2><div class="choice-box large" contenteditable="true">The brass wings now function both as protective shields and as gliding wings. Fiona can harness wind and updrafts, but cannot take off or sustain ordinary flight. Her sword’s holy/radiant nature has been established as especially effective against demons and undead.<br><br>The photographed sheet also appears to include a handwritten jewelry addition. Other handwritten markings are not clear enough to convert into confirmed mechanics without clarification.</div></div>
+</section><aside>
+<div class="card"><h2 id="equipped-items">Equipped Items</h2><div class="inventory"><div class="inventory-head"><div>Item</div><div>Qty</div><div>Equipped?</div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true">Radiant Sword of Aureth</div><div class="cell" contenteditable="true">1</div><div class="cell" contenteditable="true">Yes</div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true">Golden Paladin Armor</div><div class="cell" contenteditable="true">1</div><div class="cell" contenteditable="true">Yes</div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true">Brass Wings</div><div class="cell" contenteditable="true">1 pair</div><div class="cell" contenteditable="true">Armor-linked</div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true">Rocky Talkie</div><div class="cell" contenteditable="true">1</div><div class="cell" contenteditable="true">Carried</div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true">Jewelry — details TBD</div><div class="cell" contenteditable="true">&nbsp;</div><div class="cell" contenteditable="true">&nbsp;</div></div></div></div>
+<div class="card"><h2 id="inventory">Inventory</h2><div class="inventory"><div class="inventory-head"><div>Item / Treasure</div><div>Qty</div><div>Uses / Notes</div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true">Feast of Ancestors Ticket</div><div class="cell" contenteditable="true">1</div><div class="cell" contenteditable="true">Dwarven honor / ceremonial access</div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true">Jewelry</div><div class="cell" contenteditable="true">&nbsp;</div><div class="cell" contenteditable="true">Handwritten addition; details TBD</div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div></div>
+<div class="inventory-row"><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div></div></div></div>
+<div class="card soft"><h2 id="currency-resources">Currency &amp; Resources</h2><div class="coins"><div class="coin"><div class="label">Gold</div><div contenteditable="true"><strong>125</strong></div></div><div class="coin"><div class="label">Silver</div><div contenteditable="true">&nbsp;</div></div><div class="coin"><div class="label">Copper</div><div contenteditable="true">&nbsp;</div></div><div class="coin"><div class="label">Other</div><div contenteditable="true">—</div></div></div><div class="choice-box"><b>Special Resource:</b><div contenteditable="true">Feast of Ancestors ceremonial favor</div></div></div>
+<div class="card"><h2 id="artifact-signature-item">Artifact / Signature Item</h2><div class="choice-box large" contenteditable="true"><b>Radiant Sword of Aureth</b><br>Holy sword bonded to Fiona’s paladin role. Deals radiant/holy damage, can banish demons to the Nine Hells, and wards off undead. Attack bonus, damage dice, recharge, and banishment limits remain TBD.</div></div>
+<div class="card"><h2 id="consumables-charges">Consumables &amp; Charges</h2><div class="choice-box medium" contenteditable="true"><b>Feast of Ancestors Ticket:</b> 1 ceremonial invitation.<br><b>Healing uses:</b> TBD.<br><b>Wing protection uses:</b> TBD.</div></div>
+</aside></div><div class="footer">Page 2 — Fiona’s attacks, damage fields, equipment, inventory, currency, and growth notes</div>
+</section></main></body></html>

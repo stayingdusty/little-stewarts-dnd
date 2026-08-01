@@ -2,6 +2,7 @@ import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { extractInventoryItems } from './inventory-utils.mjs';
+import { createSlug } from './source-doc-utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -146,6 +147,9 @@ const extractCharacterRecords = async () => {
     ].filter((part) => part && part !== headerName));
     const summary = overviewText || subtitle || 'Character extracted from source sheet.';
 
+    const sourcePath = `DND-Source-Docs/the-dark-arcs/characters/${name}`;
+    const anchor = createSlug(headerName);
+
     return {
       id,
       domain: 'character',
@@ -157,7 +161,8 @@ const extractCharacterRecords = async () => {
       relatedIds: inventoryItems.map((item) => item.id),
       source: {
         type: 'character_sheet',
-        path: `DND-Source-Docs/the-dark-arcs/characters/${name}`
+        path: sourcePath,
+        anchor
       }
     };
   });
@@ -382,7 +387,8 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
       source: {
         path: sourcePath,
         arc,
-        chapter
+        chapter,
+        anchor: createSlug(chapterTitle)
       }
     });
   }
