@@ -12,7 +12,8 @@ const domainFiles = [
   'data/normalized/locations/locations.json',
   'data/normalized/encounters/encounters.json',
   'data/normalized/lore/lore.json',
-  'data/normalized/secrets/secrets.json'
+  'data/normalized/secrets/secrets.json',
+  'data/normalized/inventory/inventory-items.json'
 ];
 
 const canonFile = 'data/normalized/canon/canon_events.json';
@@ -30,37 +31,43 @@ const build = async () => {
   const entities = entitiesByDomain.flat();
   const canonEvents = await readJson(canonFile);
 
-  const searchIndex = [
-    ...entities.map((item) => ({
+  const buildSearchRecord = (item, kindOverride) => {
+    const kind = kindOverride || item.domain;
+    const extraText = [
+      item.name,
+      item.summary,
+      item.details,
+      item.description,
+      item.inventory,
+      item.equipment,
+      item.notes,
+      item.aliases || [],
+      item.tags || []
+    ].flat().filter(Boolean);
+
+    return {
       id: item.id,
-      kind: item.domain,
+      kind,
       name: item.name,
       summary: item.summary,
       tags: item.tags || [],
       sourcePath: item.source?.path || '',
-      searchableText: normalizeText([
-        item.name,
-        item.summary,
-        item.details,
-        (item.aliases || []).join(' '),
-        (item.tags || []).join(' ')
-      ].join(' '))
-    })),
-    ...canonEvents.map((event) => ({
+      timelineValue: Number(item.source?.chapter || item.chapter || item.source?.arc || 0),
+      searchableText: normalizeText(extraText.join(' '))
+    };
+  };
+
+  const searchIndex = [
+    ...entities.map((item) => buildSearchRecord(item)),
+    ...canonEvents.map((event) => buildSearchRecord({
       id: event.id,
-      kind: 'canon',
       name: event.title,
       summary: event.summary,
+      details: [event.participants, event.locations, event.secretsRevealed].flat().join(' '),
       tags: ['canon', `arc-${event.source?.arc || 'unknown'}`, `chapter-${event.source?.chapter || 'unknown'}`],
-      sourcePath: event.source?.path || '',
-      searchableText: normalizeText([
-        event.title,
-        event.summary,
-        (event.participants || []).join(' '),
-        (event.locations || []).join(' '),
-        (event.secretsRevealed || []).join(' ')
-      ].join(' '))
-    }))
+      source: event.source,
+      chapter: event.source?.chapter || 0
+    }, 'canon'))
   ];
 
   const outputDir = path.join(root, 'site/data');

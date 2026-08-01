@@ -51,7 +51,15 @@
       "external-bonds-relationships",
       "attacks-combat-actions"
     ],
-    "relatedIds": [],
+    "relatedIds": [
+      "inventory-item-fiona-radiant-sword-of-aureth-1",
+      "inventory-item-fiona-golden-paladin-armor-2",
+      "inventory-item-fiona-brass-wings-3",
+      "inventory-item-fiona-rocky-talkie-4",
+      "inventory-item-fiona-jewelry-details-tbd-5",
+      "inventory-item-fiona-feast-of-ancestors-ticket-6",
+      "inventory-item-fiona-jewelry-7"
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
@@ -78,7 +86,15 @@
       "special-rules-notes",
       "attacks-damage-healing-dice"
     ],
-    "relatedIds": [],
+    "relatedIds": [
+      "inventory-item-golo-bow-and-arrows-1",
+      "inventory-item-golo-dwarven-hammer-of-earthshatter-2",
+      "inventory-item-golo-the-artifact-3",
+      "inventory-item-golo-saddle-4",
+      "inventory-item-golo-flight-shoes-5",
+      "inventory-item-golo-rocky-talkie-6",
+      "inventory-item-golo-10-snap-matches-7"
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
@@ -107,7 +123,13 @@
       "special-rules-notes",
       "attacks-damage-healing-dice"
     ],
-    "relatedIds": [],
+    "relatedIds": [
+      "inventory-item-queen-flower-of-veylathar-ancestral-pendant-of-veylathar-1",
+      "inventory-item-queen-flower-of-veylathar-royal-regalia-2",
+      "inventory-item-queen-flower-of-veylathar-rocky-talkie-3",
+      "inventory-item-queen-flower-of-veylathar-map-4",
+      "inventory-item-queen-flower-of-veylathar-10-map-matches-5"
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
@@ -134,7 +156,12 @@
       "special-rules-notes",
       "attacks-damage-healing-dice"
     ],
-    "relatedIds": [],
+    "relatedIds": [
+      "inventory-item-sertraline-wisp-cloak-1",
+      "inventory-item-sertraline-dwarven-bracers-of-mage-hands-2",
+      "inventory-item-sertraline-rocky-talkie-3",
+      "inventory-item-sertraline-10-snap-matches-4"
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"

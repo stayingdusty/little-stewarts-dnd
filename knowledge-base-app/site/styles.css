@@ -20,10 +20,12 @@ body {
     radial-gradient(circle at 10% 0%, #efe5d0 0 15%, transparent 45%),
     linear-gradient(180deg, #f8f4ea 0%, #efe7d6 100%);
   min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.5;
 }
 
 .hero {
-  padding: 2.5rem 1.2rem 1.4rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem) clamp(0.9rem, 3vw, 1.2rem) 1.4rem;
   border-bottom: 1px solid var(--line);
   background: linear-gradient(120deg, #f1dfbe 0%, #f6ecdb 70%);
 }
@@ -42,9 +44,9 @@ body {
 .layout {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1.4rem 1.2rem 2rem;
+  padding: clamp(1rem, 3vw, 1.4rem) clamp(0.8rem, 3vw, 1.2rem) 2rem;
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
   gap: 1.2rem;
 }
 
@@ -54,6 +56,7 @@ body {
   border-radius: 12px;
   padding: 1rem;
   height: fit-content;
+  min-width: 0;
 }
 
 label {
@@ -81,6 +84,7 @@ select {
 .results {
   display: grid;
   gap: 0.8rem;
+  min-width: 0;
 }
 
 .card {
@@ -93,13 +97,15 @@ select {
 .card-head {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
 .card-title {
   margin: 0;
   font-size: 1.1rem;
+  overflow-wrap: anywhere;
 }
 
 .pill {
@@ -110,12 +116,15 @@ select {
   padding: 0.22rem 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  flex-shrink: 0;
 }
 
 .card-summary,
 .card-tags,
 .card-source {
   margin: 0.55rem 0 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .card-tags,
@@ -125,7 +134,54 @@ select {
 }
 
 @media (max-width: 860px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 1.3rem 0.9rem 1rem;
+  }
+
   .layout {
     grid-template-columns: 1fr;
+    padding: 1rem 0.75rem 1.5rem;
+  }
+
+  .controls {
+    padding: 0.9rem;
+  }
+
+  .card {
+    padding: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .controls,
+  .card {
+    border-radius: 10px;
+  }
+
+  input,
+  select {
+    font-size: 16px;
+    padding: 0.7rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-tags,
+  .card-source {
+    font-size: 0.9rem;
   }
 }

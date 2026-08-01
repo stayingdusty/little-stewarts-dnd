@@ -1,3 +1,5 @@
+import { sortRecords } from './search-utils.js';
+
 const state = {
   records: [],
   query: '',
@@ -12,16 +14,45 @@ const elements = {
   template: document.querySelector('#resultCardTemplate')
 };
 
-const titleCase = (value) => value.replace(/\b\w/g, (char) => char.toUpperCase());
+const LABEL_OVERRIDES = {
+  canon: 'Canon',
+  'inventory-item': 'Inventory Item'
+};
+
+const titleCase = (value) => {
+  const normalized = String(value || '').replace(/-/g, ' ');
+  return LABEL_OVERRIDES[value] || normalized.replace(/\b\w/g, (char) => char.toUpperCase());
+};
+
+const normalizeQuery = (value) => value.trim().toLowerCase();
+
+const matchesQuery = (record, query) => {
+  if (!query) return true;
+
+  const haystacks = [
+    record.name,
+    record.summary,
+    record.searchableText,
+    record.tags || [],
+    record.aliases || [],
+    record.sourcePath || ''
+  ];
+
+  const flattened = haystacks.flat().filter(Boolean).join(' ').toLowerCase();
+
+  return flattened.includes(query);
+};
 
 const filterRecords = () => {
-  const query = state.query.trim().toLowerCase();
+  const query = normalizeQuery(state.query);
 
-  return state.records.filter((record) => {
+  const matches = state.records.filter((record) => {
     const matchesDomain = state.domain === 'all' || record.kind === state.domain;
-    const matchesQuery = !query || record.searchableText.includes(query);
-    return matchesDomain && matchesQuery;
+    const matchesQueryText = matchesQuery(record, query);
+    return matchesDomain && matchesQueryText;
   });
+
+  return sortRecords(matches);
 };
 
 const render = () => {

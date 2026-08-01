@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { extractInventoryItems } from './inventory-utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -112,6 +113,7 @@ const extractCharacterRecords = async () => {
   return characterFiles.map(({ name, html }) => {
     const headerName = stripTags((html.match(/<header[^>]*>[\s\S]*?<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || 'Unknown');
     const subtitle = stripTags((html.match(/<div class="subtitle"[^>]*>([\s\S]*?)<\/div>/i) || [])[1] || '');
+    const inventoryItems = extractInventoryItems(html, headerName, `DND-Source-Docs/the-dark-arcs/characters/${name}`);
 
     const overviewBlock = (html.match(/<h2>Character Overview<\/h2>([\s\S]*?)<\/div>/i) || [])[1] || '';
     const overviewParts = extractTagMatches(overviewBlock, /<p[^>]*>([\s\S]*?)<\/p>/gi);
@@ -152,7 +154,7 @@ const extractCharacterRecords = async () => {
       details: unique([subtitle, ...traitItems]).join(' | '),
       aliases,
       tags,
-      relatedIds: [],
+      relatedIds: inventoryItems.map((item) => item.id),
       source: {
         type: 'character_sheet',
         path: `DND-Source-Docs/the-dark-arcs/characters/${name}`
@@ -437,11 +439,20 @@ const main = async () => {
   const { lore, secrets: loreSecrets } = await extractLoreAndSecrets();
   const { canonEvents, locations, npcs } = await extractCanonAndLocationsAndNpcs(characters);
 
+  const inventoryItems = [];
+  for (const character of characters) {
+    const sourcePath = character.source?.path || '';
+    const htmlPath = path.join(repoRoot, sourcePath);
+    const html = await readFile(htmlPath, 'utf8').catch(() => '');
+    inventoryItems.push(...extractInventoryItems(html, character.name, sourcePath));
+  }
+
   const secrets = sortByName(loreSecrets);
 
   await writeJson('data/normalized/characters/characters.json', sortByName(characters));
   await writeJson('data/normalized/npcs/npcs.json', sortByName(npcs));
   await writeJson('data/normalized/locations/locations.json', sortByName(locations));
+  await writeJson('data/normalized/inventory/inventory-items.json', sortByName(inventoryItems));
   await writeJson('data/normalized/encounters/encounters.json', sortByName(encounters));
   await writeJson('data/normalized/lore/lore.json', sortByName(lore));
   await writeJson('data/normalized/secrets/secrets.json', secrets);
