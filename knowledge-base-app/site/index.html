@@ -17,6 +17,18 @@
         <label for="searchInput">Search everything</label>
         <input id="searchInput" type="search" placeholder="Type a name, tag, detail, or chapter..." />
 
+        <div class="nav-card" aria-label="Source document navigation">
+          <div class="nav-card__heading">
+            <div class="nav-card__title">Source docs</div>
+            <button id="navToggle" class="nav-card__toggle" type="button" aria-expanded="false" aria-controls="sourceDocNav">
+              <span class="nav-card__toggle-icon">☰</span>
+              <span class="nav-card__toggle-text">Browse source docs</span>
+            </button>
+          </div>
+          <p class="nav-card__hint">Character sheets and playthrough summaries are shown by default. Spoiler-heavy documents appear when spoilers are enabled.</p>
+          <div id="sourceDocNav" class="source-doc-nav" hidden></div>
+        </div>
+
         <label for="domainFilter">Filter domain</label>
         <select id="domainFilter">
           <option value="all">All</option>

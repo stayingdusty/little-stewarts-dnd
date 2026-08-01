@@ -1,10 +1,12 @@
 import { filterSpoilers, sortRecords } from './search-utils.js';
+import { getSourceDocNavGroups } from './source-docs-nav.js';
 
 const state = {
   records: [],
   query: '',
   domain: 'all',
-  includeSpoilers: false
+  includeSpoilers: false,
+  sourceNavOpen: false
 };
 
 const elements = {
@@ -13,7 +15,9 @@ const elements = {
   spoilerToggle: document.querySelector('#spoilerToggle'),
   resultCount: document.querySelector('#resultCount'),
   results: document.querySelector('#results'),
-  template: document.querySelector('#resultCardTemplate')
+  template: document.querySelector('#resultCardTemplate'),
+  sourceDocNav: document.querySelector('#sourceDocNav'),
+  navToggle: document.querySelector('#navToggle')
 };
 
 const LABEL_OVERRIDES = {
@@ -72,8 +76,41 @@ const filterRecords = () => {
   return sortRecords(filterSpoilers(matches, state.includeSpoilers));
 };
 
+const renderSourceDocNav = () => {
+  const groups = getSourceDocNavGroups(state.includeSpoilers);
+  elements.sourceDocNav.innerHTML = '';
+  elements.sourceDocNav.hidden = !state.sourceNavOpen;
+  elements.navToggle.setAttribute('aria-expanded', String(state.sourceNavOpen));
+  elements.navToggle.querySelector('.nav-card__toggle-text').textContent = state.sourceNavOpen ? 'Hide source docs' : 'Browse source docs';
+
+  if (!state.sourceNavOpen) {
+    return;
+  }
+
+  if (!groups.length) {
+    elements.sourceDocNav.innerHTML = '<p class="nav-card__hint">No spoiler docs are visible yet.</p>';
+    return;
+  }
+
+  for (const group of groups) {
+    const section = document.createElement('section');
+    section.className = 'source-doc-nav__group';
+    const icon = group.title === 'Character sheets' ? '🧙' : group.title === 'Playthrough summaries' ? '📖' : '🌍';
+    const branchesMarkup = group.branches
+      .map((branch) => `
+        <div class="source-doc-nav__branch">
+          <div class="source-doc-nav__branch-title">${branch.title}</div>
+          <ul>${branch.items.map((item) => `<li><a href="${item.href}"><span class="source-doc-nav__item-icon">${item.icon || '📄'}</span>${item.label}</a></li>`).join('')}</ul>
+        </div>`)
+      .join('');
+    section.innerHTML = `<h3><span class="source-doc-nav__icon">${icon}</span>${group.title}</h3>${branchesMarkup}`;
+    elements.sourceDocNav.append(section);
+  }
+};
+
 const render = () => {
   const matches = filterRecords();
+  renderSourceDocNav();
   elements.resultCount.textContent = `${matches.length} record(s) found`;
   elements.results.innerHTML = '';
 
@@ -106,6 +143,11 @@ const bindEvents = () => {
   elements.spoilerToggle.addEventListener('change', (event) => {
     state.includeSpoilers = event.target.checked;
     render();
+  });
+
+  elements.navToggle.addEventListener('click', () => {
+    state.sourceNavOpen = !state.sourceNavOpen;
+    renderSourceDocNav();
   });
 };
 
