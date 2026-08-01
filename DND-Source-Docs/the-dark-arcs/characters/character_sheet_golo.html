@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Character Sheet - Golo</title><style>
+:root{--ink:#1d1d1f;--muted:#5f6368;--line:#d8d8d8;--panel:#f8f8f5;--accent:#283747;--soft:#eef1f4;--gold:#fff8d8}
+*{box-sizing:border-box}
+body{margin:0;padding:18px;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#eeeeea;line-height:1.24;font-size:13px}
+.sheet{max-width:900px;margin:0 auto}
+.page{background:#fff;padding:24px;border:2px solid var(--accent);border-radius:18px;box-shadow:0 8px 30px rgba(0,0,0,.12);margin-bottom:20px;min-height:980px}
+header{text-align:center;border-bottom:3px double var(--accent);padding-bottom:10px;margin-bottom:12px}
+h1{margin:0;font-size:31px;letter-spacing:1px}.subtitle{font-size:14px;color:var(--muted);margin-top:3px}
+.identity{display:grid;grid-template-columns:2fr 1.2fr 1fr;gap:8px;margin-bottom:10px}.identity.second{grid-template-columns:repeat(4,1fr)}
+.field,.card,.ability,.stat,.choice-box,.attack-row,.inventory-row{border:1px solid var(--line);border-radius:10px}
+.field{background:var(--panel);padding:7px 9px;min-height:45px}.label{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;font-weight:bold}.blank{border-bottom:1.7px solid #777;min-height:18px}
+.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:11px;align-items:start}.card{padding:10px;margin-bottom:9px;background:#fff}.card.soft{background:var(--soft)}
+h2{margin:0 0 6px;font-size:17px;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:4px}h3{margin:0 0 3px;font-size:13px}p{margin:5px 0}ul{margin:5px 0 0 18px;padding:0}li{margin:3px 0}
+.stat-list{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.stat{background:var(--panel);padding:7px;text-align:center}.stat .score{font-size:20px;font-weight:bold;min-height:23px}.stat .modifier{font-size:11px;color:var(--muted);border-top:1px solid var(--line);margin-top:3px;padding-top:3px}
+.combat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.combat-box{border:2px solid var(--accent);border-radius:10px;padding:7px;text-align:center;background:#fff}.combat-box .value{font-size:24px;font-weight:bold;min-height:29px}.combat-box .label{margin:0}
+.ability{border-left:5px solid var(--accent);padding:7px 9px;background:var(--panel);margin:6px 0;min-height:58px}.ability-lines{display:grid;grid-template-columns:1.25fr .75fr;gap:6px;margin-top:5px}.mini{border-bottom:1px solid #777;min-height:17px}
+.attack-table{display:grid;gap:5px}.attack-header,.attack-row{display:grid;grid-template-columns:1.35fr .55fr .75fr 1.25fr;gap:5px;align-items:center}.attack-header{font-size:9px;text-transform:uppercase;color:var(--muted);font-weight:bold;padding:0 5px}.attack-row{padding:5px;background:var(--panel);min-height:42px}.cell{border-bottom:1px solid #777;min-height:20px}.damage-note{font-size:10px;color:var(--muted);margin-top:4px}
+.mod-table{display:grid;grid-template-columns:1.25fr .45fr 1.3fr;gap:4px}.mod-head{font-size:9px;text-transform:uppercase;color:var(--muted);font-weight:bold}.mod-cell{border:1px solid var(--line);border-radius:7px;padding:5px;min-height:27px;background:var(--panel)}
+.inventory{display:grid;gap:4px}.inventory-head,.inventory-row{display:grid;grid-template-columns:1.7fr .45fr .6fr;gap:5px;align-items:center}.inventory-head{font-size:9px;text-transform:uppercase;color:var(--muted);font-weight:bold;padding:0 5px}.inventory-row{padding:4px 5px;min-height:31px;background:#fff}
+.choice-box{border-style:dashed;padding:7px;margin-top:6px;background:#fff;min-height:46px}.large{min-height:90px}.medium{min-height:64px}.coins{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}.coin{border:1px solid var(--line);border-radius:8px;padding:6px;text-align:center;background:var(--panel)}
+.footer{text-align:center;color:var(--muted);border-top:1px solid var(--line);padding-top:7px;margin-top:6px;font-size:10px}.print-note{max-width:900px;margin:0 auto 12px;padding:9px 11px;background:var(--gold);border:1px solid #c6a800;border-radius:10px;font-size:13px}
+[contenteditable="true"]{outline:none}[contenteditable="true"]:focus{background:#fffbe6}
+@page{size:letter portrait;margin:.35in}
+@media print{
+ body{background:#fff;padding:0;font-size:11px;line-height:1.18}.print-note{display:none}.sheet{max-width:none;margin:0}
+ .page{width:100%;height:10.3in;min-height:0;max-height:10.3in;overflow:hidden;box-shadow:none;border:none;border-radius:0;padding:0;margin:0;page-break-after:always;break-after:page}
+ .page:last-child{page-break-after:auto;break-after:auto}
+ header{margin-bottom:8px;padding-bottom:7px}h1{font-size:25px}.subtitle{font-size:11px}.identity{gap:5px;margin-bottom:7px}.field{min-height:37px;padding:5px 7px}.label{font-size:8px}.blank{min-height:14px}.grid{gap:8px}.card{padding:7px;margin-bottom:6px;break-inside:avoid;page-break-inside:avoid}h2{font-size:14px;margin-bottom:4px}h3{font-size:11px}.stat{padding:5px}.stat .score{font-size:17px}.combat-box{padding:5px}.combat-box .value{font-size:19px}.ability{padding:5px 7px;margin:4px 0;min-height:47px}.attack-row{min-height:35px}.choice-box{min-height:36px}.large{min-height:70px}.medium{min-height:50px}.inventory-row{min-height:26px}.footer{font-size:9px}
+}
+@media(max-width:720px){.identity,.identity.second,.grid,.stat-list,.combat-grid{grid-template-columns:1fr}.attack-header,.attack-row{grid-template-columns:1fr}.sheet{max-width:none}body{padding:8px}.page{min-height:0}}
+</style></head><body>
+<div class="print-note">This file contains exactly two printable pages. Print double-sided at 100% scale so the complete character sheet stays on one physical sheet.</div>
+<main class="sheet">
+<section class="page">
+<header><h1>GOLO</h1><div class="subtitle">Half-Giant / Half-Centaur Archer</div></header>
+<section class="identity">
+<div class="field"><div class="label">Player</div><div contenteditable="true"><strong>Elijah</strong></div></div>
+<div class="field"><div class="label">Character</div><strong>Golo</strong></div>
+<div class="field"><div class="label">Title / Role</div><strong>Archer, Hunter &amp; Artifact Bearer</strong></div>
+</section>
+<section class="identity second">
+<div class="field"><div class="label">Species / Ancestry</div><div contenteditable="true">Half-Giant / Half-Centaur</div></div>
+<div class="field"><div class="label">Movement</div><div class="blank" contenteditable="true"></div></div>
+<div class="field"><div class="label">Initiative</div><div class="blank" contenteditable="true"></div></div>
+<div class="field"><div class="label">Level / Rank</div><div class="blank" contenteditable="true"></div></div>
+</section>
+<div class="grid">
+<section>
+<div class="card soft"><h2>Character Overview</h2><p>A powerful centaur archer and hunter whose dwarven alliances grant him rune magic, the magically lightweight Hammer of Earthshatter, and responsibility for a major artifact.</p></div>
+<div class="card"><h2>Ability Scores &amp; Modifiers</h2><div class="stat-list"><div class="stat"><div class="label">Strength</div><div class="score" contenteditable="true"></div><div class="modifier">Modifier: <span contenteditable="true"></span></div></div><div class="stat"><div class="label">Dexterity</div><div class="score" contenteditable="true"></div><div class="modifier">Modifier: <span contenteditable="true"></span></div></div><div class="stat"><div class="label">Constitution</div><div class="score" contenteditable="true"></div><div class="modifier">Modifier: <span contenteditable="true"></span></div></div><div class="stat"><div class="label">Intelligence</div><div class="score" contenteditable="true"></div><div class="modifier">Modifier: <span contenteditable="true"></span></div></div><div class="stat"><div class="label">Wisdom</div><div class="score" contenteditable="true"></div><div class="modifier">Modifier: <span contenteditable="true"></span></div></div><div class="stat"><div class="label">Charisma</div><div class="score" contenteditable="true"></div><div class="modifier">Modifier: <span contenteditable="true"></span></div></div></div></div>
+<div class="card"><h2>Powers &amp; Abilities</h2><div class="ability"><h3>Master Archer</h3><p>Uses strength, range, and practiced accuracy to strike targets with bows and magical arrows.</p><div class="ability-lines"><div><b>Roll / Check:</b><div class="mini" contenteditable="true"></div></div><div><b>Uses / Range:</b><div class="mini" contenteditable="true"></div></div></div></div><div class="ability"><h3>Ice Arrows</h3><p>Fires magically empowered ice arrows that can damage, freeze, slow, or counter heat and fire.</p><div class="ability-lines"><div><b>Roll / Check:</b><div class="mini" contenteditable="true"></div></div><div><b>Uses / Range:</b><div class="mini" contenteditable="true"></div></div></div></div><div class="ability"><h3>Licensed Fire Rune</h3><p>Uses dwarven-licensed fire rune power under the terms of his employment contract.</p><div class="ability-lines"><div><b>Roll / Check:</b><div class="mini" contenteditable="true"></div></div><div><b>Uses / Range:</b><div class="mini" contenteditable="true"></div></div></div></div><div class="ability"><h3>Hammer of Earthshatter</h3><p>Instantly explodes or powders a 10-foot radius of non-living stone, including non-living spirit-conjured rock.</p><div class="ability-lines"><div><b>Roll / Check:</b><div class="mini" contenteditable="true"></div></div><div><b>Uses / Range:</b><div class="mini" contenteditable="true"></div></div></div></div><div class="ability"><h3>Magically Lightweight Hammer</h3><p>The hammer is easy to wield regardless of normal weight and can be lent to other characters for use.</p><div class="ability-lines"><div><b>Roll / Check:</b><div class="mini" contenteditable="true"></div></div><div><b>Uses / Range:</b><div class="mini" contenteditable="true"></div></div></div></div></div>
+</section>
+<aside>
+<div class="card"><h2>Combat</h2><div class="combat-grid">
+<div class="combat-box"><div class="label">Current HP</div><div class="value" contenteditable="true"></div></div>
+<div class="combat-box"><div class="label">Maximum HP</div><div class="value" contenteditable="true"></div></div>
+<div class="combat-box"><div class="label">Temporary HP</div><div class="value" contenteditable="true"></div></div>
+<div class="combat-box"><div class="label">Armor Class</div><div class="value" contenteditable="true"></div></div>
+</div></div>
+<div class="card"><h2>Modifier Boosts</h2><div class="mod-table">
+<div class="mod-head">Source / Condition</div><div class="mod-head">Boost</div><div class="mod-head">Applies To</div><div class="mod-cell" contenteditable="true">Attack modifier</div><div class="mod-cell" contenteditable="true">+3</div><div class="mod-cell" contenteditable="true">Against Armor Class</div><div class="mod-cell" contenteditable="true"></div><div class="mod-cell" contenteditable="true"></div><div class="mod-cell" contenteditable="true"></div><div class="mod-cell" contenteditable="true"></div><div class="mod-cell" contenteditable="true"></div><div class="mod-cell" contenteditable="true"></div><div class="mod-cell" contenteditable="true"></div><div class="mod-cell" contenteditable="true"></div><div class="mod-cell" contenteditable="true"></div>
+</div></div>
+<div class="card"><h2>External Bonds &amp; Relationships</h2><div class="choice-box medium" contenteditable="true">Trusted by the dwarves as artifact bearer and rune licensee. Butcher&#x27;s Guild bond established through the Iceman connection.</div></div>
+<div class="card"><h2>Special Rules &amp; Notes</h2><div class="choice-box large" contenteditable="true">Earthshatter affects non-living stone and rock conjurations, but does not directly destroy living creatures. The hammer is magically lightweight and may be wielded by anyone Golo lends it to.</div></div>
+</aside>
+</div>
+<div class="footer">Page 1 — Identity, statistics, combat values, modifiers, powers, and relationships</div>
+</section>
+
+<section class="page">
+<header><h1>GOLO</h1><div class="subtitle">Attacks, Equipment, Inventory &amp; Session Notes</div></header>
+<div class="grid">
+<section>
+<div class="card"><h2>Attacks &amp; Damage / Healing Dice</h2><div class="attack-table"><div class="attack-header"><div>Attack / Action</div><div>To Hit</div><div>Range</div><div>Damage / HP Dice Combination</div></div><div class="attack-row"><div contenteditable="true"><b>Bow Shot</b></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true">Ranged</div><div class="cell" contenteditable="true"></div></div><div class="attack-row"><div contenteditable="true"><b>Ice Arrow</b></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true">Ranged</div><div class="cell" contenteditable="true"></div></div><div class="attack-row"><div contenteditable="true"><b>Fire Rune Attack</b></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true"></div></div><div class="attack-row"><div contenteditable="true"><b>Hammer Strike</b></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true">Melee</div><div class="cell" contenteditable="true"></div></div><div class="attack-row"><div contenteditable="true"><b>Earthshatter</b></div><div class="cell" contenteditable="true"></div><div class="cell" contenteditable="true">10-foot radius</div><div class="cell" contenteditable="true">Stone destruction / terrain effect</div></div></div><div class="damage-note">Write the complete combination, such as 2d8 + modifier, and note the damage, healing, or effect type.</div></div>
+<div class="card soft"><h2>Attack &amp; Power Rules</h2><div class="choice-box large" contenteditable="true">Record special conditions, saving throws, damage types, cooldowns, targeting rules, or non-damage effects here.</div></div>
+<div class="card"><h2>Campaign Growth / Future Upgrades</h2><div class="choice-box large" contenteditable="true"></div></div>
+</section>
+<aside>
+<div class="card"><h2>Equipped Items &amp; Inventory</h2><div class="inventory">
+<div class="inventory-head"><div>Item / Treasure</div><div>Qty.</div><div>Charges</div></div><div class="inventory-row"><div contenteditable="true">Bow and Arrows</div><div contenteditable="true"></div><div contenteditable="true"></div></div><div class="inventory-row"><div contenteditable="true">Dwarven Hammer of Earthshatter</div><div contenteditable="true"></div><div contenteditable="true"></div></div><div class="inventory-row"><div contenteditable="true">The Artifact</div><div contenteditable="true"></div><div contenteditable="true"></div></div><div class="inventory-row"><div contenteditable="true">Saddle</div><div contenteditable="true"></div><div contenteditable="true"></div></div><div class="inventory-row"><div contenteditable="true">Flight Shoes</div><div contenteditable="true"></div><div contenteditable="true"></div></div><div class="inventory-row"><div contenteditable="true">Rocky Talkie</div><div contenteditable="true"></div><div contenteditable="true"></div></div><div class="inventory-row"><div contenteditable="true">10 Snap Matches</div><div contenteditable="true"></div><div contenteditable="true"></div></div><div class="inventory-row"><div contenteditable="true"></div><div contenteditable="true"></div><div contenteditable="true"></div></div>
+</div></div>
+<div class="card"><h2>Currency &amp; Resources</h2><div class="coins">
+<div class="coin"><div class="label">Gold</div><div contenteditable="true">125</div></div>
+<div class="coin"><div class="label">Silver</div><div contenteditable="true"></div></div>
+<div class="coin"><div class="label">Copper</div><div contenteditable="true"></div></div>
+<div class="coin"><div class="label">Other</div><div contenteditable="true"></div></div>
+</div><div class="choice-box"><b>Special Resources / Uses:</b><div contenteditable="true"></div></div></div>
+<div class="card"><h2>Session Notes</h2><div class="choice-box large" contenteditable="true"></div></div>
+</aside>
+</div>
+<div class="footer">Page 2 — Attacks, dice combinations, equipment, inventory, resources, and campaign notes</div>
+</section>
+</main></body></html>

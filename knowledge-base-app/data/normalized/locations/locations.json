@@ -1,0 +1,172 @@
+[
+  {
+    "id": "location-crucible-district",
+    "domain": "location",
+    "name": "Crucible District",
+    "summary": "Location referenced in Arc 1 source material: Crucible District.",
+    "details": "Extracted from playthrough summaries and world references.",
+    "aliases": [],
+    "tags": [
+      "location",
+      "arc-1"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "playthrough_summary",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+    }
+  },
+  {
+    "id": "location-emberhold",
+    "domain": "location",
+    "name": "Emberhold",
+    "summary": "Location referenced in Arc 1 source material: Emberhold.",
+    "details": "Extracted from playthrough summaries and world references.",
+    "aliases": [],
+    "tags": [
+      "location",
+      "arc-1"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "playthrough_summary",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+    }
+  },
+  {
+    "id": "location-ethereal-realm",
+    "domain": "location",
+    "name": "Ethereal Realm",
+    "summary": "Location referenced in Arc 1 source material: Ethereal Realm.",
+    "details": "Extracted from playthrough summaries and world references.",
+    "aliases": [],
+    "tags": [
+      "location",
+      "arc-1"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "playthrough_summary",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+    }
+  },
+  {
+    "id": "location-ethereum-academy",
+    "domain": "location",
+    "name": "Ethereum Academy",
+    "summary": "Location referenced in Arc 1 source material: Ethereum Academy.",
+    "details": "Extracted from playthrough summaries and world references.",
+    "aliases": [],
+    "tags": [
+      "location",
+      "arc-1"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "playthrough_summary",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+    }
+  },
+  {
+    "id": "location-great-tree",
+    "domain": "location",
+    "name": "Great Tree",
+    "summary": "Location referenced in Arc 1 source material: Great Tree.",
+    "details": "Extracted from playthrough summaries and world references.",
+    "aliases": [],
+    "tags": [
+      "location",
+      "arc-1"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "playthrough_summary",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+    }
+  },
+  {
+    "id": "location-luminary-dome",
+    "domain": "location",
+    "name": "Luminary Dome",
+    "summary": "Location referenced in Arc 1 source material: Luminary Dome.",
+    "details": "Extracted from playthrough summaries and world references.",
+    "aliases": [],
+    "tags": [
+      "location",
+      "arc-1"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "playthrough_summary",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+    }
+  },
+  {
+    "id": "location-material-realm",
+    "domain": "location",
+    "name": "Material Realm",
+    "summary": "Location referenced in Arc 1 source material: Material Realm.",
+    "details": "Extracted from playthrough summaries and world references.",
+    "aliases": [],
+    "tags": [
+      "location",
+      "arc-1"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "playthrough_summary",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+    }
+  },
+  {
+    "id": "location-petaltown",
+    "domain": "location",
+    "name": "Petaltown",
+    "summary": "Location referenced in Arc 1 source material: Petaltown.",
+    "details": "Extracted from playthrough summaries and world references.",
+    "aliases": [],
+    "tags": [
+      "location",
+      "arc-1"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "playthrough_summary",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+    }
+  },
+  {
+    "id": "location-veylathar",
+    "domain": "location",
+    "name": "Veylathar",
+    "summary": "Location referenced in Arc 1 source material: Veylathar.",
+    "details": "Extracted from playthrough summaries and world references.",
+    "aliases": [],
+    "tags": [
+      "location",
+      "arc-1"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "playthrough_summary",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+    }
+  },
+  {
+    "id": "location-wayward-flame",
+    "domain": "location",
+    "name": "Wayward Flame",
+    "summary": "Location referenced in Arc 1 source material: Wayward Flame.",
+    "details": "Extracted from playthrough summaries and world references.",
+    "aliases": [],
+    "tags": [
+      "location",
+      "arc-1"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "playthrough_summary",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+    }
+  }
+]

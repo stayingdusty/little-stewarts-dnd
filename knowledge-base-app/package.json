@@ -1,0 +1,12 @@
+{
+  "name": "little-stewarts-knowledge-base",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "extract:data": "node scripts/extract-source-data.mjs",
+    "build:data": "node scripts/build-search-index.mjs",
+    "build:all": "npm run extract:data && npm run build:data",
+    "serve": "npx serve site"
+  }
+}

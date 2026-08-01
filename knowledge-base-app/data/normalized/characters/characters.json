@@ -1,0 +1,143 @@
+[
+  {
+    "id": "character-calvin-nameloc",
+    "domain": "character",
+    "name": "CALVIN / NAMELOC",
+    "summary": "Calvin is bonded to an ancient and powerful Dog Spirit. In moments of danger, loyalty, or protection, he can unleash the spirit as Nameloc —a massive glowing guardian hound. The spirit chose him for his courage, instinct, and willingness to stand between danger and his friends.",
+    "details": "Spiritbound Guardian of the Great Hound | Loyal: protects friends above all. | Brave: faces danger without abandoning the pack. | Instinctive: senses threats and disturbances others miss.",
+    "aliases": [
+      "CALVIN",
+      "NAMELOC",
+      "Calvin",
+      "Nameloc",
+      "Calvin Nameloc"
+    ],
+    "tags": [
+      "character",
+      "arc-1",
+      "character-overview",
+      "ability-scores-modifiers",
+      "passive-powers",
+      "combat",
+      "modifier-boosts",
+      "core-traits",
+      "base-form-notes",
+      "external-bonds-relationships"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "character_sheet",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html"
+    }
+  },
+  {
+    "id": "character-fiona",
+    "domain": "character",
+    "name": "FIONA",
+    "summary": "Knight & Paladin of Aureth",
+    "details": "Knight & Paladin of Aureth",
+    "aliases": [
+      "Fiona"
+    ],
+    "tags": [
+      "character",
+      "arc-1",
+      "character-overview",
+      "ability-scores-modifiers",
+      "powers-abilities",
+      "combat-statistics",
+      "modifier-boosts",
+      "defenses-resistances",
+      "external-bonds-relationships",
+      "attacks-combat-actions"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "character_sheet",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+    }
+  },
+  {
+    "id": "character-golo",
+    "domain": "character",
+    "name": "GOLO",
+    "summary": "A powerful centaur archer and hunter whose dwarven alliances grant him rune magic, the magically lightweight Hammer of Earthshatter, and responsibility for a major artifact.",
+    "details": "Half-Giant / Half-Centaur Archer",
+    "aliases": [
+      "Golo"
+    ],
+    "tags": [
+      "character",
+      "arc-1",
+      "character-overview",
+      "ability-scores-modifiers",
+      "powers-abilities",
+      "combat",
+      "modifier-boosts",
+      "external-bonds-relationships",
+      "special-rules-notes",
+      "attacks-damage-healing-dice"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "character_sheet",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+    }
+  },
+  {
+    "id": "character-queen-flower",
+    "domain": "character",
+    "name": "QUEEN FLOWER OF VEYLATHAR",
+    "summary": "Queen Flower rules Veylathar as Queen Regent, balancing personal authority, public sentiment, taxation, and council oversight. Her astral projection is conducted through the two halves of her ancestral pendant and her enchanted chalkboard map in the Castle Tower.",
+    "details": "Queen Regent of Veylathar",
+    "aliases": [
+      "Queen",
+      "Flower",
+      "Queen Flower"
+    ],
+    "tags": [
+      "character",
+      "arc-1",
+      "character-overview",
+      "ability-scores-modifiers",
+      "powers-abilities",
+      "combat",
+      "modifier-boosts",
+      "external-bonds-relationships",
+      "special-rules-notes",
+      "attacks-damage-healing-dice"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "character_sheet",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+    }
+  },
+  {
+    "id": "character-sertraline",
+    "domain": "character",
+    "name": "SERTRALINE",
+    "summary": "A telepathic jungle panther whose practiced druidic control and tactical instincts allow her to disrupt psychic domination and command nearby vegetation with precision.",
+    "details": "Jungle Panther / Druidic Advisor",
+    "aliases": [
+      "Sertraline"
+    ],
+    "tags": [
+      "character",
+      "arc-1",
+      "character-overview",
+      "ability-scores-modifiers",
+      "powers-abilities",
+      "combat",
+      "modifier-boosts",
+      "external-bonds-relationships",
+      "special-rules-notes",
+      "attacks-damage-healing-dice"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "character_sheet",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+    }
+  }
+]

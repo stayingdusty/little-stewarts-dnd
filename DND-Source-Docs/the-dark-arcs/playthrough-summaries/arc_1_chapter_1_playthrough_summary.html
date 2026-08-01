@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Stewards D&D - Arc 1, Chapter 1 Playthrough Summary</title>
+  <style>
+    :root {
+      --ink: #1d1d1b;
+      --muted: #565656;
+      --line: #cfcac1;
+      --soft: #f5f1e8;
+      --paper: #fffdf8;
+      --accent: #2f3b2f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e9e3d8;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.42;
+    }
+
+    .page {
+      width: min(100%, 920px);
+      margin: 24px auto;
+      background: var(--paper);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .16);
+      padding: 34px 42px 42px;
+    }
+
+    .toolbar {
+      width: min(100%, 920px);
+      margin: 18px auto 0;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      border: 1px solid #222;
+      background: #fff;
+      color: #111;
+      border-radius: 6px;
+      padding: 9px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    h1, h2, h3 { line-height: 1.1; margin: 0; }
+    h1 { font-size: 34px; letter-spacing: .01em; }
+    h2 {
+      font-size: 21px;
+      margin-top: 28px;
+      padding-top: 14px;
+      border-top: 2px solid var(--ink);
+    }
+    h3 {
+      font-size: 16px;
+      margin-top: 18px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      font-family: Arial, sans-serif;
+    }
+
+    p { margin: 9px 0; }
+    ul, ol { margin: 8px 0 0 22px; padding: 0; }
+    li { margin: 4px 0; }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 12px 0 16px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px 9px;
+      vertical-align: top;
+    }
+    th {
+      background: var(--soft);
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+    }
+
+    .meta {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .meta div, .callout, .rule, .outstanding {
+      border: 1px solid var(--line);
+      background: #fffaf0;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .meta strong {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .callout h3, .rule h3, .outstanding h3 { margin-top: 0; }
+
+    .story-beat {
+      border-left: 4px solid var(--ink);
+      padding-left: 13px;
+      margin: 16px 0;
+    }
+
+    .small {
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .page-break { break-before: page; page-break-before: always; }
+
+    @media print {
+      @page { size: letter; margin: .45in; }
+      body { background: white; }
+      .toolbar { display: none; }
+      .page { width: 100%; margin: 0; box-shadow: none; padding: 0; background: white; }
+      h2, h3 { break-after: avoid; }
+      table, .callout, .rule, .outstanding, .story-beat { break-inside: avoid; }
+    }
+
+    @media (max-width: 760px) {
+      .page { margin: 0; padding: 24px 18px 32px; }
+      .meta, .summary-grid, .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="page">
+    <header>
+      <h1>Arc 1, Chapter 1: Petaltown to the Wayward Flame</h1>
+      <div class="subtitle">Little Stewards D&amp;D playthrough summary and canon record</div>
+      <section class="meta" aria-label="Session metadata">
+        <div><strong>Campaign</strong>Little Stewards D&amp;D</div>
+        <div><strong>Arc</strong>Arc 1: The Dark Arc</div>
+        <div><strong>Chapter</strong>Chapter 1</div>
+        <div><strong>Core Shift</strong>Village life to first adventure</div>
+      </section>
+    </header>
+
+    <section class="summary-grid">
+      <div class="callout">
+        <h3>Chapter Snapshot</h3>
+        <p>The party formed in Petaltown after strange animal aggression and enormous dark arcs appeared in the sky. Their first journey carried them through a starving outpost, onto a magical riverboat, into possession of a rune-covered artifact, and finally to the outskirts of Veylathar.</p>
+      </div>
+      <div class="callout">
+        <h3>Major Outcome</h3>
+        <p>The party ended the chapter with a new magical power, one remaining Snap Match, a dangerous connection to the mysterious man in the white suit, and a new home base at the Wayward Flame.</p>
+      </div>
+    </section>
+
+    <h2>The Disturbance In Petaltown</h2>
+    <p>The campaign opened in <strong>Petaltown</strong>, the jungle village ruled by Queen Flower. The village was known for its flowers, vines, natural beauty, and close relationship with the surrounding jungle.</p>
+    <p>That peace was being disturbed. Animals in the jungle had begun behaving with unusual aggression, and enormous dark arcs had appeared across the sky. The arcs seemed to converge somewhere far away, creating the sense that the disturbances around Petaltown were part of something much larger.</p>
+
+    <h2>The Party Forms</h2>
+    <p><strong>Golo</strong>, a giant Clydesdale-sized centaur, arrived in Petaltown with his parents. Golo's parents appeared level-headed, strong, capable, and temperamentally suited to protecting the village.</p>
+    <p>When Queen Flower decided to leave Petaltown to investigate the disturbances, she placed Golo's parents in charge. Their size and strength made them formidable defenders, while their calm judgment made them trustworthy temporary leaders.</p>
+
+    <table>
+      <thead>
+        <tr><th>Character</th><th>Role At The Beginning</th><th>Reason For Joining</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Queen Flower</td><td>Ruler of Petaltown</td><td>Leaves her village to investigate the threat to her people and the dark arcs in the sky.</td></tr>
+        <tr><td>Sertraline</td><td>Fast jungle panther with druidic and telepathic abilities</td><td>Joins the effort to investigate the unnatural changes affecting the jungle.</td></tr>
+        <tr><td>Fiona</td><td>Warrior and magical companion</td><td>Travels with the group as part of the newly formed adventuring party.</td></tr>
+        <tr><td>Golo</td><td>Giant centaur archer</td><td>Sets out with the party while his parents remain behind to protect Petaltown.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="story-beat">
+      <p><strong>Permanent political change:</strong> Queen Flower did not simply leave the village unattended. She deliberately established temporary leadership before departing, making the journey an act of responsible leadership rather than abandonment.</p>
+    </div>
+
+    <h2>The Road And The Ravaged Outpost</h2>
+    <p>The party began following the river and road in the direction of the converging dark arcs. Before reaching the riverboat, they came across a small outpost village that had been ravaged by animals.</p>
+    <p>The settlement had very little food remaining. Rather than pass through, the party shared some of their rations and money with the people who remained. This became the party's first major act of generosity beyond Petaltown.</p>
+    <p>The village possessed only a few objects that seemed useful. One was a mysterious matchbox that had originally come from a wandering traveler. The villagers did not know how the matches had been created, but they understood what the matches could do.</p>
+
+    <div class="rule">
+      <h3>Snap Matches</h3>
+      <ul>
+        <li>The box originally contained two matches.</li>
+        <li>Striking a match allows the user to teleport to any place they can currently see.</li>
+        <li>The teleport is one-way.</li>
+        <li>Each match is consumed when used.</li>
+        <li>Sertraline purchased the box and became its owner.</li>
+      </ul>
+    </div>
+
+    <h2>The Magical Riverboat</h2>
+    <p>The next morning, the party saw a magical river cruise boat moving along the water. The vessel carried wealthy passengers and contained a mysterious, heavily protected vault.</p>
+    <p>Queen Flower used magical binoculars to inspect the boat and identify the presence of magic. The group eventually became involved with the vessel and its passengers, and the situation escalated into chaos.</p>
+    <p>During the encounter, Fiona transformed into a kraken. The transformation became the central disruption that allowed the party to escape from the ship with the vault.</p>
+
+    <h3>The Man In The White Suit</h3>
+    <p>A mysterious man in a white suit was introduced among the riverboat passengers. He stood out from the other travelers and is intended to return later in the campaign.</p>
+    <p>His full identity, motives, and relationship to the vault were not revealed during Chapter 1. His appearance should be treated as deliberate foreshadowing rather than a disposable background detail.</p>
+
+    <div class="outstanding">
+      <h3>Recurring Thread</h3>
+      <p>The man in the white suit has not been resolved. He should remain connected to the riverboat, the stolen vault, the artifact, or the broader forces operating behind the Dark Arcs.</p>
+    </div>
+
+    <h2 class="page-break">The Vault In The Woods</h2>
+    <p>After escaping the riverboat, the group secluded themselves in the woods with the stolen vault. They knew the boat was moving slowly but would eventually catch up to them.</p>
+    <p>The vault itself created a serious risk. If the boat's owners were searching for it, finding the vault with the party would immediately reveal where the thieves had gone. The party needed to remove whatever was valuable inside and get rid of the evidence.</p>
+    <p>The vault was magically protected from the outside, and the group could not determine how to open it. Sertraline solved the problem by using one of her Snap Matches.</p>
+
+    <div class="story-beat">
+      <p>Sertraline struck a Snap Match and teleported directly into the vault because she could see the interior through an opening or line of sight. Once inside, she found a rune-covered artifact floating in midair.</p>
+    </div>
+
+    <p>The artifact resembled a twenty-sided die, approximately the size of a golf ball. Instead of numbers, each face carried a different rune. Sertraline placed it in a pouch around her neck.</p>
+    <p>She did not need to use the second Snap Match to leave. From inside the vault, she could simply open the door using the interior handle.</p>
+
+    <div class="rule">
+      <h3>Snap Match Inventory After The Vault</h3>
+      <p><strong>Owner:</strong> Sertraline</p>
+      <p><strong>Original matches:</strong> 2</p>
+      <p><strong>Used:</strong> 1, to enter the vault</p>
+      <p><strong>Remaining:</strong> 1</p>
+    </div>
+
+    <h2>Hiding The Evidence</h2>
+    <p>After removing the artifact, the party shoved the empty vault into the river. They understood that this would not hide it permanently. Someone could eventually locate it, dredge it up, and investigate what had happened.</p>
+    <p>The goal was not to erase the theft forever. It was to buy time and prevent the riverboat's owners from immediately finding the vault in the party's possession.</p>
+
+    <h2>The Frost Fox And The First Rune</h2>
+    <p>The party continued along the road and camped for the night. In the early, dewy hours of the next morning, Golo was awakened by an ethereal frost fox.</p>
+    <p>The rune artifact reacted to the fox, and one of its runes became connected to Golo. This awakened Golo's first rune power: the <strong>Frost Rune</strong>.</p>
+
+    <div class="rule">
+      <h3>Golo's Frost Rune</h3>
+      <ul>
+        <li>Golo can activate the Frost Rune three times per day.</li>
+        <li>The limit applies regardless of how he uses it.</li>
+        <li>He may draw or place the rune on the ground, an object, or an arrow.</li>
+        <li>Using the rune on an arrow creates a frost-enhanced attack.</li>
+        <li>The frost symbol visibly appears on affected arrows.</li>
+        <li>The DM currently tracks the three daily uses for Elijah.</li>
+      </ul>
+    </div>
+
+    <p>The frost fox encounter established that the artifact was not simply treasure. It could awaken rune powers in specific characters, suggesting that the other symbols on the artifact may also hold dormant abilities.</p>
+
+    <h2>The Bandit Encounter</h2>
+    <p>Shortly after the Frost Rune awakened, the party encountered bandits. The fight was not a major plot event, but it gave Golo a safe, immediate opportunity to practice using the new power.</p>
+    <p>Golo used the Frost Rune with his arrows and experienced how the ability worked in combat. The party defeated the bandits and continued traveling.</p>
+
+    <div class="story-beat">
+      <p><strong>Purpose of the encounter:</strong> The bandit fight functioned as a mechanical teaching encounter. It allowed Elijah to learn the Frost Rune through play rather than through explanation alone.</p>
+    </div>
+
+    <h2>Racing The Riverboat</h2>
+    <p>As the party returned to the road, they could see the magical cruise ship in the distance. It moved slowly, but it was gradually catching up.</p>
+    <p>The group decided to increase their speed. Queen Flower and Fiona climbed onto Golo's back. Golo, being a giant centaur, could carry two riders while galloping.</p>
+    <p>Sertraline did not need to ride. In her panther form, she could run on all fours and keep pace with Golo.</p>
+    <p>The party raced down the road until a large cityscape appeared on the horizon. Signs identified the city as <strong>Veylathar</strong>.</p>
+
+    <h2 class="page-break">First Sight Of Veylathar</h2>
+    <p>As the party approached, they began to understand that Veylathar was far larger and more advanced than Petaltown. The city used magical train lines powered by the Academy of Sparks, hinting at a complex network of districts, institutions, technology, and political power.</p>
+    <p>Before entering the city gates, the party noticed a small inn in the woods outside the city. Evening was approaching, and the group decided to rest before entering Veylathar proper.</p>
+
+    <h2>The Butcher And The Name "Iceman"</h2>
+    <p>Near the city outskirts, the party encountered a local butcher. Golo used or demonstrated his frost ability in a way that helped the butcher, creating the first local reputation attached to the party.</p>
+    <p>The butcher began calling Golo <strong>"Iceman."</strong> The nickname marked the first time Golo's new magical ability became part of how the outside world recognized him.</p>
+    <p>The butcher warmed to the group, led them to the Wayward Flame, and vouched for them to the inn's proprietor.</p>
+
+    <h2>The Wayward Flame</h2>
+    <p>The Wayward Flame was a cozy, warm, and quaint inn outside Veylathar's city gate. Its lower floor included a tavern and gathering space. The inn immediately became more than a place to sleep; it became the party's first true home away from Petaltown.</p>
+    <p>The butcher introduced the group and vouched for them to <strong>Kara Emberfall</strong>, the proprietor of the Wayward Flame. Kara became one of the party's first stable allies in the Veylathar area.</p>
+    <p>The party was also introduced to <strong>Anja Willowbark</strong>, the inn's cook. Anja prepared the food and drink that would become a recurring part of the campaign's rest and recovery routine.</p>
+
+    <h3>The First Meal Together</h3>
+    <p>The party shared its first meal at the Wayward Flame. Two menu items possessed magical qualities and became recurring campaign resources.</p>
+
+    <table>
+      <thead>
+        <tr><th>Menu Item</th><th>Mechanical Effect</th><th>Campaign Role</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Firebrew Ale</td><td>Grants one advantage point that can be used to reroll a bad roll after a proper night at the Wayward Flame.</td><td>Creates a recurring preparation ritual before future adventures.</td></tr>
+        <tr><td>Venison Stew</td><td>Provides a buffer of extra recovery hit points that can protect a character after normal hit points are depleted.</td><td>Provides comfort, healing, and a mechanical reason to return to the inn.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>The Community Board</h2>
+    <p>The Wayward Flame contained a community notes wall where people could post jobs, requests for help, services, notices, and other information.</p>
+    <p>This wall became an important campaign mechanic. It gave the party a natural way to discover local problems, side quests, rumors, people in need, and opportunities throughout Veylathar.</p>
+
+    <div class="rule">
+      <h3>Wayward Flame Home-Base Functions</h3>
+      <ul>
+        <li>Safe place to sleep and recover.</li>
+        <li>Recurring access to Firebrew Ale and Venison Stew.</li>
+        <li>Social hub for meeting residents and recurring NPCs.</li>
+        <li>Community board for discovering jobs, rumors, requests, and local events.</li>
+        <li>Emotional home base for the Veylathar portion of Arc 1.</li>
+      </ul>
+    </div>
+
+    <h2>Important NPCs Introduced</h2>
+    <table>
+      <thead>
+        <tr><th>NPC</th><th>Role In Chapter 1</th><th>Future Importance</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Golo's Parents</td><td>Trusted by Queen Flower to govern and defend Petaltown while the party is away.</td><td>Maintain the party's connection to home and provide continuity in Petaltown.</td></tr>
+        <tr><td>Outpost Survivors</td><td>Recipients of the party's first major act of aid; source of the Snap Matches.</td><td>Establish the party as generous travelers rather than simple treasure hunters.</td></tr>
+        <tr><td>Man in the White Suit</td><td>Mysterious riverboat passenger associated with the vault encounter.</td><td>Recurring unresolved figure connected to later plot developments.</td></tr>
+        <tr><td>The Butcher</td><td>First friendly Veylathar-area contact; gives Golo the nickname Iceman and vouches for the group.</td><td>Provides the bridge between the road and the Wayward Flame community.</td></tr>
+        <tr><td>Kara Emberfall</td><td>Proprietor of the Wayward Flame and host to the arriving party.</td><td>Key home-base NPC and recurring ally.</td></tr>
+        <tr><td>Anja Willowbark</td><td>Cook at the Wayward Flame; prepares the magical food and drink.</td><td>Supports the recurring rest, recovery, and meal mechanics.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Items And Artifacts Introduced</h2>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>Current Status</th><th>Known Rules</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Snap Matches</td><td>Owned by Sertraline; one match remains.</td><td>One-way teleport to any visible location; one match consumed per use.</td></tr>
+        <tr><td>Rune Artifact</td><td>Recovered from the vault and carried by the party.</td><td>Golf-ball-sized twenty-sided object with a different rune on each face; Frost Rune has awakened.</td></tr>
+        <tr><td>Riverboat Vault</td><td>Thrown into the river after the artifact was removed.</td><td>Magically sealed from outside but manually opened from within.</td></tr>
+        <tr><td>Magical Binoculars</td><td>Used by Queen Flower during the riverboat encounter.</td><td>Help identify or inspect magical activity at a distance.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Character Development</h2>
+    <h3>Queen Flower</h3>
+    <ul>
+      <li>Moves from village ruler to active adventuring leader.</li>
+      <li>Demonstrates responsible leadership by appointing capable protectors before leaving.</li>
+      <li>Uses magical binoculars to investigate the riverboat.</li>
+      <li>Begins confronting problems far larger than Petaltown.</li>
+    </ul>
+
+    <h3>Sertraline</h3>
+    <ul>
+      <li>Purchases and takes responsibility for the Snap Matches.</li>
+      <li>Uses an unconventional magical solution to bypass the vault's protections.</li>
+      <li>Successfully retrieves the artifact and preserves the second match.</li>
+      <li>Establishes herself as the party's bold and resourceful problem-solver.</li>
+    </ul>
+
+    <h3>Fiona</h3>
+    <ul>
+      <li>Transforms into a kraken during the riverboat encounter.</li>
+      <li>Creates the chaos that allows the party to escape with the vault.</li>
+      <li>Reveals that her abilities can have enormous and unpredictable consequences.</li>
+    </ul>
+
+    <h3>Golo</h3>
+    <ul>
+      <li>Leaves his parents behind as trusted protectors of Petaltown.</li>
+      <li>Is chosen by or connected to the Frost Rune through the ethereal frost fox.</li>
+      <li>Practices the Frost Rune during the bandit encounter.</li>
+      <li>Uses his size and speed to carry Queen Flower and Fiona toward Veylathar.</li>
+      <li>Earns the nickname Iceman from the butcher.</li>
+    </ul>
+
+    <h2 class="page-break">Canon Timeline</h2>
+    <ol>
+      <li>Animal aggression and Dark Arcs disturb Petaltown.</li>
+      <li>Golo arrives with his parents.</li>
+      <li>Queen Flower places Golo's parents in charge of Petaltown.</li>
+      <li>Queen Flower, Sertraline, Fiona, and Golo form the party and depart.</li>
+      <li>The party reaches a ravaged outpost and gives the villagers food and money.</li>
+      <li>Sertraline purchases a box containing two Snap Matches.</li>
+      <li>The party encounters the magical river cruise boat.</li>
+      <li>The man in the white suit is introduced.</li>
+      <li>Fiona transforms into a kraken during the riverboat chaos.</li>
+      <li>The party escapes with the magically protected vault.</li>
+      <li>Sertraline uses one Snap Match to enter the vault.</li>
+      <li>Sertraline retrieves the twenty-sided rune artifact and opens the vault from inside.</li>
+      <li>The party pushes the empty vault into the river.</li>
+      <li>The party camps along the road.</li>
+      <li>The ethereal frost fox appears to Golo.</li>
+      <li>Golo gains the Frost Rune, usable three times per day.</li>
+      <li>The party fights bandits, allowing Golo to practice the Frost Rune.</li>
+      <li>The riverboat begins catching up from behind.</li>
+      <li>Queen Flower and Fiona ride on Golo while Sertraline runs beside them.</li>
+      <li>The party reaches the outskirts of Veylathar.</li>
+      <li>Golo helps a butcher and earns the nickname Iceman.</li>
+      <li>The butcher leads the group to the Wayward Flame and vouches for them.</li>
+      <li>The party meets Kara Emberfall and Anja Willowbark.</li>
+      <li>The party shares its first Firebrew Ale and Venison Stew.</li>
+      <li>The community board is introduced as a recurring quest and information mechanic.</li>
+    </ol>
+
+    <h2>Permanent Canon Developments</h2>
+    <ul>
+      <li>Queen Flower has left Petaltown to investigate the Dark Arcs.</li>
+      <li>Golo's parents are responsible for Petaltown's defense and leadership during the journey.</li>
+      <li>Sertraline owns one remaining Snap Match.</li>
+      <li>The party possesses the rune-covered twenty-sided artifact.</li>
+      <li>Golo can use the Frost Rune three times per day.</li>
+      <li>Golo is known locally as Iceman.</li>
+      <li>The riverboat vault remains somewhere beneath the river.</li>
+      <li>The man in the white suit remains an unresolved recurring figure.</li>
+      <li>The Wayward Flame is established as the party's Veylathar home base.</li>
+      <li>Firebrew Ale, Venison Stew, and the community board are recurring campaign mechanics.</li>
+    </ul>
+
+    <h2>Outstanding Mysteries And Threads</h2>
+    <ul>
+      <li>What are the Dark Arcs, and where do they converge?</li>
+      <li>Why have animals become aggressive?</li>
+      <li>Who created the rune artifact?</li>
+      <li>Why did the Frost Rune connect with Golo?</li>
+      <li>What powers are hidden in the artifact's other runes?</li>
+      <li>Who is the man in the white suit?</li>
+      <li>Was the man in the white suit guarding, transporting, stealing, or studying the artifact?</li>
+      <li>Who will eventually recover the discarded vault?</li>
+      <li>Will the riverboat's owners trace the theft to the party?</li>
+      <li>What opportunities and dangers will the community board reveal?</li>
+    </ul>
+
+    <h2>DM Notes And Design Intent</h2>
+    <ul>
+      <li>The ravaged outpost establishes the party's compassion and introduces the Snap Matches before they are needed.</li>
+      <li>The vault rewards creative use of a limited consumable rather than requiring a conventional lockpicking solution.</li>
+      <li>Sertraline's decision to teleport into the vault preserves one Snap Match for a future emergency.</li>
+      <li>The bandit fight exists primarily to teach the Frost Rune mechanic through play.</li>
+      <li>The riverboat continuing to follow creates urgency and prevents the party from lingering.</li>
+      <li>The butcher gives the party a friendly social bridge into the unfamiliar Veylathar region.</li>
+      <li>The Iceman nickname makes Golo's mechanical upgrade part of his identity in the world.</li>
+      <li>The Wayward Flame is intended to be the emotional and mechanical headquarters for the city portion of Arc 1.</li>
+      <li>The man in the white suit should remain memorable but unexplained until his later return.</li>
+    </ul>
+
+    <h2>Tone Of The Chapter</h2>
+    <p>This chapter should be remembered as the campaign's true beginning: the moment a group of characters left the safety of Petaltown and became an adventuring party.</p>
+    <p>The story moved quickly from responsibility and generosity into magical chaos, theft, discovery, pursuit, and finally belonging. By the end, the characters had not solved the mystery of the Dark Arcs, but they had gained the tools, relationships, reputation, and home base needed to begin the larger campaign.</p>
+    <p>The chapter ends warmly at the Wayward Flame, but the unresolved riverboat theft, the discarded vault, the rune artifact, and the man in the white suit ensure that the danger of the opening journey remains alive beneath the surface.</p>
+  </main>
+</body>
+</html>

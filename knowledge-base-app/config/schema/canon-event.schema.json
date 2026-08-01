@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://little-stewarts.local/canon-event.schema.json",
+  "title": "Canon Event",
+  "type": "object",
+  "required": ["id", "title", "summary", "participants", "locations", "source"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "participants": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "locations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "secretsRevealed": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source": {
+      "type": "object",
+      "required": ["path"],
+      "properties": {
+        "path": { "type": "string" },
+        "arc": { "type": "string" },
+        "chapter": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "id": "canon-arc1-chapter1",
+    "title": "Arc 1, Chapter 1: Petaltown to the Wayward Flame",
+    "summary": "The party formed in Petaltown after strange animal aggression and enormous dark arcs appeared in the sky. Their first journey carried them through a starving outpost, onto a magical riverboat, into possession of a rune-covered artifact, and finally to the outskirts of Veylathar. The party ended the chapter with a new magical power, one remaining Snap Match, a dangerous connection to the mysterious man in the white suit, and a new home base at the Wayward Flame.",
+    "participants": [
+      "character-fiona",
+      "character-golo",
+      "character-queen-flower",
+      "character-sertraline"
+    ],
+    "locations": [
+      "Petaltown",
+      "Veylathar",
+      "Wayward Flame"
+    ],
+    "secretsRevealed": [
+      "Recurring Thread The man in the white suit has not been resolved. He should remain connected to the riverboat, the stolen vault, the artifact, or the broader fo"
+    ],
+    "source": {
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html",
+      "arc": "1",
+      "chapter": "1"
+    }
+  },
+  {
+    "id": "canon-arc1-chapter2",
+    "title": "Arc 1, Chapter 2: The City of Sparks",
+    "summary": "The party establishes itself in Veylathar, explores the city's magical infrastructure, uncovers the first hints of political unrest, and Fiona undergoes a life-changing transformation. The Wayward Flame becomes the party's home, Frederick becomes a friend, Queen Flower's pendant reacts to the Luminary Dome, and Fiona becomes a Paladin of Aureth.",
+    "participants": [
+      "character-fiona",
+      "character-golo",
+      "character-queen-flower",
+      "character-sertraline"
+    ],
+    "locations": [
+      "Veylathar",
+      "Luminary Dome",
+      "Ethereum Academy",
+      "Crucible District",
+      "Wayward Flame"
+    ],
+    "secretsRevealed": [],
+    "source": {
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html",
+      "arc": "1",
+      "chapter": "2"
+    }
+  },
+  {
+    "id": "canon-arc1-chapter3",
+    "title": "Arc 1, Chapter 3: Contracts, Campaigns & Conspiracies",
+    "summary": "After two weeks of living in Veylathar, the party stops feeling like temporary visitors. They take jobs, build goodwill, unlock new magical abilities, begin Queen Flower's political campaign, gain permanent lodging, and uncover several mysteries connected to the man in the white suit, the stolen Great Tree sap, and the Academy of Sparks. The party ends the chapter financially stable, politically active, and equipped for infiltration. Golo gains licensed Hellfire magic and flight, Sertraline awakens her druidic power, Fiona becomes a trusted healer, and Queen Flower gains a path toward securing district votes in the election for Queen Regent.",
+    "participants": [
+      "character-fiona",
+      "character-golo",
+      "character-queen-flower",
+      "character-sertraline"
+    ],
+    "locations": [
+      "Veylathar",
+      "Great Tree",
+      "Crucible District",
+      "Wayward Flame"
+    ],
+    "secretsRevealed": [],
+    "source": {
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_3_playthrough_summary.html",
+      "arc": "1",
+      "chapter": "3"
+    }
+  },
+  {
+    "id": "canon-arc1-chapter4",
+    "title": "Arc 1, Chapter 4: The Academy of Sparks Heist",
+    "summary": "Chapter 4 delivers the payoff to the infiltration prepared at the end of Chapter 3. Sertraline and Fiona enter the nine-floor Academy of Sparks, move through specialized magical floors, trigger a full security response, and battle Gareth, the Academy's formidable head of security. The fight crashes into the Chronomancy floor, where time magic permanently transforms Fiona's armor and temporarily reshapes Sertraline. With Golo's arrival, the party combines flight, ice arrows, fire breath, berserker strength, and Dwarven Fire Runes to break open the Academy vault and recover the stolen Great Tree sap. The party confirms that the black goop is authentic Great Tree sap through Golo's ancestral vision. They escape to the Crucible District, where the dwarven boss offers protection, promises the agreed reward, and announces custom dwarven-forged gifts for the party. The Academy of Sparks mini-arc is complete, Fiona's divine armor has awakened, Gareth survives as a possible future mentor or rival, and Chapter 5 is positioned to begin with the dwarven reward ceremony.",
+    "participants": [
+      "character-fiona",
+      "character-golo",
+      "character-queen-flower",
+      "character-sertraline"
+    ],
+    "locations": [
+      "Great Tree",
+      "Crucible District",
+      "Ethereum Academy",
+      "Veylathar"
+    ],
+    "secretsRevealed": [],
+    "source": {
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html",
+      "arc": "1",
+      "chapter": "4"
+    }
+  },
+  {
+    "id": "canon-arc1-chapter5",
+    "title": "Arc 1, Chapter 5: The Academy of Antiquities",
+    "summary": "Chapter 5 begins the morning after the Academy of Sparks heist. The dwarven boss formally rewards the party for recovering the stolen Great Tree sap, confirms the Crucible District's support for Queen Flower, and presents each hero with a personalized gift or promise. A concealed security escort returns the party to the Ethereum Academy, where Sertraline discovers that Dr. Fizzlebig is secretly connected to the robed guard and is herself promoted to command a six-person unit. The party then pieces together the matching vaults from the river cruise and the Academy of Sparks, chooses an election instead of a trial, and splits its efforts between the people of the marketplace and the Academy of Antiquities. Queen Flower's inherited pendant is revealed to be only half of an ancient artifact. Beneath the Great Tree, Tindily Migrot reunites it with its missing half. The completed pendant projects a living map of every place it has previously traveled and hides untouched lands beneath fog. By tracing the map, Queen Flower gains limited astral projection and the ability to observe and interact with distant places connected to the pendant's history. Tindily allows her to keep the artifact and makes the Academy of Antiquities' council vote contingent on Queen Flower researching and reporting on its nature and use.",
+    "participants": [
+      "character-fiona",
+      "character-golo",
+      "character-queen-flower",
+      "character-sertraline"
+    ],
+    "locations": [
+      "Great Tree",
+      "Crucible District",
+      "Ethereum Academy",
+      "Wayward Flame",
+      "Veylathar"
+    ],
+    "secretsRevealed": [],
+    "source": {
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html",
+      "arc": "1",
+      "chapter": "5"
+    }
+  },
+  {
+    "id": "canon-arc1-chapter6",
+    "title": "Arc 1, Chapter 6: The Falling Arena",
+    "summary": "Chapter 6 culminates in an arena battle fought on a platform suspended high above Veylathar. As the contest ends, the man in the white suit—known publicly in the city as Jerry Mander—uses snap matches to teleport from the spectator stands to the arena platform and disables the charms keeping it aloft. The entire arena begins falling toward the city. Jerry then attempts to reach and capture Queen Flower, but she surprises him, steals the snap matches from his hand, and snaps down to the falling platform. Fiona calls upon Arith for guidance and, after one match proves insufficient, uses roughly one hundred snap matches together to pull the arena and everyone within the resulting dark arc blip into the Ethereal Realm. Arith then returns the survivors to the Wayward Flame. Veylathar is saved from catastrophic destruction, but Jerry Mander escapes with his cronies using a separate supply of snap matches. The party convenes the city council and begins a formal investigation. Gareth reports that Jerry sometimes enters the Material Realm first as a rounded, indistinct shape before taking the form of a man. Dr. Fizzlebig explains that dark arcs are tears in reality: temporary blips may heal, but repeated damage can make them permanent. Every known dark arc bends toward the same central location. The party ends the chapter seeking Jerry, questioning his true nature, and investigating whether the wounds in reality can be healed.",
+    "participants": [
+      "character-fiona",
+      "character-golo",
+      "character-queen-flower",
+      "character-sertraline"
+    ],
+    "locations": [
+      "Veylathar",
+      "Ethereal Realm",
+      "Wayward Flame",
+      "Material Realm"
+    ],
+    "secretsRevealed": [],
+    "source": {
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_6_playthrough_summary.html",
+      "arc": "1",
+      "chapter": "6"
+    }
+  },
+  {
+    "id": "canon-arc1-chapter7",
+    "title": "Arc 1, Chapter 7: The Day After the Council",
+    "summary": "Chapter 7 takes place the day after the emergency city council meeting. With Jerry Mander missing and Veylathar still unsettled, the heroes do not travel as a single party. Each follows a personal responsibility: Fiona inspects the city's military, Golo returns to the Crucible, Sertraline tests her connection to nature and investigates the Luminary Dome, and Queen Flower begins working through the responsibilities of rulership. The chapter establishes four new campaign threads. Fiona discovers serious neglect and possible theft within the southern garrison. Golo learns that Earthshatter now carries a heartbeat. Sertraline discovers a lens beneath the Luminary Dome aimed toward an Ethereal platform. Queen Flower is shown a full map of the wider world, opening the campaign beyond Veylathar.",
+    "participants": [
+      "character-fiona",
+      "character-golo",
+      "character-queen-flower",
+      "character-sertraline"
+    ],
+    "locations": [
+      "Veylathar",
+      "Luminary Dome",
+      "Wayward Flame",
+      "Crucible District",
+      "Ethereal Realm"
+    ],
+    "secretsRevealed": [],
+    "source": {
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_7_playthrough_summary.html",
+      "arc": "1",
+      "chapter": "7"
+    }
+  },
+  {
+    "id": "canon-arc1-chapter8",
+    "title": "Arc 1, Chapter 8: The Burgled Treasury & Nameloc",
+    "summary": "Chapter 8 begins with the garrison in worsening condition because gold reserved for food, equipment, and repairs keeps vanishing from its locked treasury. The party investigates the theft while also responding to reports of a massive beast hunting deer in the surrounding woods. The supposed monster is revealed to be Nameloc, the gigantic blue Dog Spirit form of a misunderstood wandering boy named Calvin. After an initial fight, the misunderstanding is resolved, and his powerful senses become the key to tracking the true thief. The party discovers that the treasury gold has been taken by Burgle, a harmless amphibious fish-person who lives in an underwater hovel in the riverbed and hoards anything shiny. The missing gold is recovered peacefully, the garrison's repairs and supplies can resume, Fiona earns greater respect as a leader, Burgle becomes a recurring local ally, and Calvin joins the party as a powerful tracker who can transform into Nameloc.",
+    "participants": [
+      "character-calvin-nameloc",
+      "character-fiona",
+      "character-queen-flower"
+    ],
+    "locations": [
+      "Veylathar"
+    ],
+    "secretsRevealed": [],
+    "source": {
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html",
+      "arc": "1",
+      "chapter": "8"
+    }
+  },
+  {
+    "id": "canon-arc1-chapter9",
+    "title": "Arc 1, Chapter 9: The Expedition Leaves Veylathar",
+    "summary": "The party left Veylathar for the first time on an expedition to investigate the Dark Arcs beyond the city. Their first major choice took them through the woods toward Emberhold, where the mortal world overlapped with Fey territory. The party survived the Sacred Hunt of the White Stag and gained a binding Fey pact: in Fey territory, the Fey cannot harm them or prevent them from leaving.",
+    "participants": [
+      "character-calvin-nameloc",
+      "character-fiona",
+      "character-golo",
+      "character-queen-flower",
+      "character-sertraline"
+    ],
+    "locations": [
+      "Veylathar",
+      "Emberhold"
+    ],
+    "secretsRevealed": [
+      "Outstanding Item A lieutenant approached Fiona and asked her to name the squadron so they would not have to keep calling themselves simply \"the Squadron.\" Fiona"
+    ],
+    "source": {
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_9_playthrough_summary.html",
+      "arc": "1",
+      "chapter": "9"
+    }
+  }
+]

@@ -1,0 +1,389 @@
+[
+  {
+    "id": "lore-aureth-daughter-of-fate-and-author-of-magic",
+    "domain": "lore",
+    "name": "Aureth — Daughter of Fate and Author of Magic",
+    "summary": "Aureth emerged from the first doubt as the embodiment of possibility. She is the Old God's daughter in a metaphysical sense: formed from his own uncertainty, but possessing an identity and purpose of her own.",
+    "details": "Aureth emerged from the first doubt as the embodiment of possibility. She is the Old God's daughter in a metaphysical sense: formed from his own uncertainty, but possessing an identity and purpose of her own. What Aureth Represents Possibility rather than certainty. The unexplored path. The meaningful risk of choosing without knowing the result. The idea that a future can be shaped rather than merely received. The creative space between what must happen and what might happen. Aureth's Relationship to Fate She is not simply rebellion made divine. She proves that doubt was always latent within F",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "aureth",
+      "daughter",
+      "fate",
+      "author",
+      "magic"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-before-the-first-doubt",
+    "domain": "lore",
+    "name": "Before the First Doubt",
+    "summary": "In the oldest version of creation, the Old God of Fate existed alone. Fate was not merely a being who predicted events. Fate was the principle that events could happen only one way.",
+    "details": "In the oldest version of creation, the Old God of Fate existed alone. Fate was not merely a being who predicted events. Fate was the principle that events could happen only one way. There was no uncertainty because nothing had ever departed from the intended pattern. Choice may have appeared to exist, but every choice had only one final answer. Possibility had not yet become an independent force. The Old God understood reality as a complete design rather than an unfolding story. Before doubt, the future was not unknown. It was simply waiting to arrive.",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "before",
+      "first",
+      "doubt"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-calvin-and-nameloc-the-great-spirit-hound",
+    "domain": "lore",
+    "name": "Calvin and Nameloc — The Great Spirit Hound",
+    "summary": "Calvin is the boy who joins the party in later chapters. Nameloc is his enormous blue Great Spirit Hound form. The transformation can be connected directly to dreaming without reducing either form to an illusion: Calvin and Nameloc are two real expressions of the same person.",
+    "details": "Calvin is the boy who joins the party in later chapters. Nameloc is his enormous blue Great Spirit Hound form. The transformation can be connected directly to dreaming without reducing either form to an illusion: Calvin and Nameloc are two real expressions of the same person. Working Mythological Role Calvin represents imagination, instinct, and the courage to enter the unknown without controlling it. Nameloc is the form best suited to the Dream Plane, where identity follows meaning more readily than physical shape. His spirit-hound senses allow him to track the emotional and magical trails le",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "calvin",
+      "nameloc",
+      "great",
+      "spirit",
+      "hound"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-cosmology-at-a-glance",
+    "domain": "lore",
+    "name": "Cosmology at a Glance",
+    "summary": "Lore section: Cosmology at a Glance",
+    "details": "Concept Hidden Truth Future Story Function The Old God of Fate The oldest known divine intelligence, once defined by perfect certainty. The ancient power behind the restoration of the permanent Dark Arcs. The First Doubt The first moment in which Fate questioned its own certainty. The event that fractured absolute destiny and made true possibility possible. Aureth Born from the crack created by Fate's first doubt; embodiment of possibility and author of magic. Provides the philosophical and magical counterweight to rigid fate. Magic The practice of bending fate through spaces of uncertainty ra",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "cosmology",
+      "glance"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-dark-arcs",
+    "domain": "lore",
+    "name": "Dark Arcs",
+    "summary": "Dark Arcs are tears, bridges, or scars between the Material and Ethereal Realms. They can be temporary or permanent.",
+    "details": "Dark Arcs are tears, bridges, or scars between the Material and Ethereal Realms. They can be temporary or permanent. Temporary Dark Arcs May be created through unstable magic, artifacts, experiments, or catastrophic events. Can close naturally if the forces sustaining them are removed. Often produce localized distortions, creatures, visions, or magical side effects. Permanent Dark Arcs Have become anchored to both realms. Do not heal simply because an immediate threat is defeated. Act as roads or channels through which the Old God's influence can return. Appear across distant regions and colle",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "dark",
+      "arcs"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-future-implications-for-existing-campaign-elements",
+    "domain": "lore",
+    "name": "Future Implications for Existing Campaign Elements",
+    "summary": "Lore section: Future Implications for Existing Campaign Elements",
+    "details": "Existing Element Possible Future Meaning Earthshatter's heartbeat The hammer may be becoming a living witness to Golo's choices, or awakening as an older artifact tied to the construction or destruction of Dark Arc anchors. Queen Flower's pendant map Its limited astral projection may trace places the pendant has previously touched, gradually exposing a hidden network of routes, memories, and Dark Arc sites. The Luminary Dome lens The Academy may have observed the Ethereal Realm for generations, perhaps knowingly or unknowingly following the development of the permanent arcs. The Great Tree Its",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "future",
+      "implications",
+      "existing",
+      "campaign",
+      "elements"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-intended-endgame-integration-rather-than-defeat",
+    "domain": "lore",
+    "name": "Intended Endgame — Integration Rather Than Defeat",
+    "summary": "The preferred ending is not the destruction of the Old God of Fate. Destroying Fate entirely could leave reality unable to hold consequence, continuity, or meaning. Likewise, eliminating doubt would remove genuine choice.",
+    "details": "The preferred ending is not the destruction of the Old God of Fate. Destroying Fate entirely could leave reality unable to hold consequence, continuity, or meaning. Likewise, eliminating doubt would remove genuine choice. The Necessary Resolution Fate must recognize doubt as part of itself rather than an external corruption. Aureth must accept that possibility needs continuity and consequence in order to matter. The permanent Dark Arcs must be transformed from wounds of control into stable relationships between realms. The heroes must choose a new stewardship model that preserves both structur",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "intended",
+      "endgame",
+      "integration",
+      "rather",
+      "than",
+      "defeat"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-jerry-mander-working-mythological-role",
+    "domain": "lore",
+    "name": "Jerry Mander — Working Mythological Role",
+    "summary": "Jerry Mander, the Man in the White Suit, serves as the recurring human-scale antagonist who connects Veylathar's immediate conflicts to the deeper restoration of Fate.",
+    "details": "Jerry Mander, the Man in the White Suit, serves as the recurring human-scale antagonist who connects Veylathar's immediate conflicts to the deeper restoration of Fate. Likely Functions Creates, discovers, strengthens, or exploits Dark Arcs. Uses artifacts such as Snap Matches to move through unstable boundaries. Tests cities and institutions for weaknesses that can be converted into permanent points of control. Recruites or coordinates agents who embody different methods of certainty. Understands more about the Ethereal Realm than he initially reveals. What Should Remain Flexible Whether Jerry",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "jerry",
+      "mander",
+      "working",
+      "mythological",
+      "role"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-open-questions-to-resolve-later",
+    "domain": "lore",
+    "name": "Open Questions to Resolve Later",
+    "summary": "Lore section: Open Questions to Resolve Later",
+    "details": "What event caused the Old God to experience the first doubt? Did Aureth leave Fate willingly, or was she rejected? Who first built the Ethereal platforms and the Luminary Dome lens? How much does Jerry Mander truly know? What exactly transforms a temporary Dark Arc into a permanent one? What role did the Great Tree play in earlier planar history? Why is Earthshatter awakening now? What first awakened Calvin's ability to Moon-Walk? Is Nameloc Calvin's dream-self, an inherited guardian spirit, or both? Who or what first created the Moon Roads through the Dream Plane? Can Jerry Mander Moon-Walk, ",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "open",
+      "questions",
+      "resolve",
+      "later"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-permanent-dm-canon",
+    "domain": "lore",
+    "name": "Permanent DM Canon",
+    "summary": "Lore section: Permanent DM Canon",
+    "details": "The Old God of Fate originally represented absolute certainty. The Old God's first doubt created a crack within his own nature. Aureth was born from that crack as the embodiment of possibility. Aureth is the author or discoverer of magic. Magic bends fate by making alternate outcomes temporarily possible. Dark Arcs are wounds or forced connections between the Material and Ethereal Realms. Permanent Dark Arcs contribute to the Old God's restoration and point toward the Convergence. Regional servants can embody different methods of enforcing certainty. Calvin is the boy form and Nameloc is his G",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "permanent",
+      "canon"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-recommended-reveal-progression",
+    "domain": "lore",
+    "name": "Recommended Reveal Progression",
+    "summary": "Lore section: Recommended Reveal Progression",
+    "details": "Stage What the Players May Learn Good Delivery Methods Early Arc Dark Arcs connect the Material and Ethereal Realms and can be worsened by powerful magic or artifacts. Academy research, visual phenomena, Dr. Fizzlebig, the Luminary lens. Regional Adventures Different enemies are imposing different kinds of certainty and appear connected to the same larger pattern. Mini-boss confessions, symbols, shared language, maps of curved arc-lines. Mid-Arc Revelation Aureth is linked to possibility and magic; Fate is older and more complicated than a simple villain. Calvin learns that his vivid dreams ar",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "recommended",
+      "reveal",
+      "progression"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-regional-agents-and-mini-boss-archetypes",
+    "domain": "lore",
+    "name": "Regional Agents and Mini-Boss Archetypes",
+    "summary": "Different Dark Arc servants can embody distinct methods of imposing certainty. These figures should feel thematically related without repeating the same powers or motivations.",
+    "details": "Different Dark Arc servants can embody distinct methods of imposing certainty. These figures should feel thematically related without repeating the same powers or motivations. Method of Control Possible Expression Story Question Mind Control Citizens are compelled to follow a single plan or ruler. Is peace meaningful when nobody can refuse it? Illusion A region lives inside a false but comforting reality. Is a painless lie preferable to an uncertain truth? Possession Important leaders become vessels for a single directing intelligence. Who is responsible when a person's will is replaced? Enfor",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "regional",
+      "agents",
+      "mini",
+      "boss",
+      "archetypes"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-the-convergence",
+    "domain": "lore",
+    "name": "The Convergence",
+    "summary": "The Convergence is the ultimate meeting point of the permanent Dark Arcs. It may be a location, a planar structure, a ritual, or all three simultaneously.",
+    "details": "The Convergence is the ultimate meeting point of the permanent Dark Arcs. It may be a location, a planar structure, a ritual, or all three simultaneously. Possible Physical Form A place where the Material and Ethereal Realms overlap without a stable boundary. A landscape made from several possible versions of the same world. A central chamber or ancient mechanism to which every permanent arc is anchored. A path that can only be reached after the party has visited enough arc sites to understand the pattern. Possible Final Trials Queen Flower must choose whether to accept responsibility for futu",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "convergence"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-the-dream-plane-and-moon-walking",
+    "domain": "lore",
+    "name": "The Dream Plane and Moon-Walking",
+    "summary": "The Dream Plane is a shifting borderland connected to the Ethereal Realm. It is made from sleeping minds, remembered places, fears, hopes, and futures that have not yet become real. Unlike ordinary prophecy, the Dream Plane does not show what will happen. It shows what may happen, what once almost happened, and what a person believes might happen.",
+    "details": "The Dream Plane is a shifting borderland connected to the Ethereal Realm. It is made from sleeping minds, remembered places, fears, hopes, and futures that have not yet become real. Unlike ordinary prophecy, the Dream Plane does not show what will happen. It shows what may happen, what once almost happened, and what a person believes might happen. Why Dreams Matter to the Fate Mythology Dreams are among the places where fate is least settled and possibility is most active. Aureth's influence can be felt strongly there because sleeping minds create paths that certainty has not yet closed. The O",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "dream",
+      "plane",
+      "moon",
+      "walking"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-the-first-doubt",
+    "domain": "lore",
+    "name": "The First Doubt",
+    "summary": "At some unknowable moment, the Old God of Fate experienced the first doubt. This was not a minor hesitation. It was the first event that Fate had not fully contained within certainty.",
+    "details": "At some unknowable moment, the Old God of Fate experienced the first doubt. This was not a minor hesitation. It was the first event that Fate had not fully contained within certainty. The doubt created a crack within Fate's own mind or divine nature. That crack was the first space in which more than one future could exist. The existence of doubt did not destroy Fate, but it made Fate incomplete. From that internal fracture, possibility became capable of taking form. Core mythological principle: Aureth was not created as an enemy of Fate. She was born from something Fate discovered within itsel",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "first",
+      "doubt"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-the-material-and-ethereal-realms",
+    "domain": "lore",
+    "name": "The Material and Ethereal Realms",
+    "summary": "The realms are not meant to be entirely separate. Healthy points of connection may exist naturally. Dark Arcs are dangerous because they create forced, wounded, or unstable connections.",
+    "details": "Material Realm Ethereal Realm Stable matter, embodied life, visible institutions, and consequences that persist. Memory, possibility, unrealized paths, spiritual impressions, and structures that may not obey ordinary physical rules. Certainty has greater weight. Possibility has greater freedom. Actions become history. History, intention, and potential can overlap. The realms are not meant to be entirely separate. Healthy points of connection may exist naturally. Dark Arcs are dangerous because they create forced, wounded, or unstable connections. Ethereal Platforms Ethereal platforms may serve",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "material",
+      "ethereal",
+      "realms"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-the-old-god-s-restoration",
+    "domain": "lore",
+    "name": "The Old God's Restoration",
+    "summary": "The Old God of Fate is not necessarily seeking simple conquest. The restoration effort is driven by a belief that reality has become dangerously fragmented by uncertainty.",
+    "details": "The Old God of Fate is not necessarily seeking simple conquest. The restoration effort is driven by a belief that reality has become dangerously fragmented by uncertainty. Permanent Dark Arcs reconnect reality through fixed points. Agents create certainty by removing, narrowing, or controlling choice. The Old God's servants may believe they are healing the world. Their methods become oppressive because they treat uncertainty as a wound rather than a necessary part of existence. Why the Servants May Not See Themselves as Evil They may have witnessed suffering caused by chaos and uncontrolled ma",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "restoration"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-the-origin-and-nature-of-magic",
+    "domain": "lore",
+    "name": "The Origin and Nature of Magic",
+    "summary": "Magic exists because Aureth discovered the spaces where fate could bend. A spell does not need to shatter destiny. It creates a temporary path through which another outcome can become real.",
+    "details": "Magic exists because Aureth discovered the spaces where fate could bend. A spell does not need to shatter destiny. It creates a temporary path through which another outcome can become real. Magic as Fate-Bending A healing spell bends a destined injury toward recovery. An illusion gives temporary form to something that is not materially present. Divination explores futures that have not yet hardened into certainty. Transformation allows a creature to occupy a different possible form. Teleportation forces distance to accept an alternate relationship between two places. Chronomancy bends the expe",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "origin",
+      "nature",
+      "magic"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  },
+  {
+    "id": "lore-the-party-as-mythological-pillars",
+    "domain": "lore",
+    "name": "The Party as Mythological Pillars",
+    "summary": "The party should not merely discover the cosmology. Their existing character arcs naturally embody the forces needed to resolve it.",
+    "details": "The party should not merely discover the cosmology. Their existing character arcs naturally embody the forces needed to resolve it. Queen Flower — Stewardship Represents the responsibility to make choices that affect others. Must learn the difference between ruling, protecting, and controlling. Can become the person capable of holding fate without turning it into tyranny. Potential end-state: Steward of Fate rather than a conventional goddess or absolute monarch. Fiona — Chosen Action Aureth's paladin and protector of possibility. Her strength should grow most when the right action is uncertai",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "arc-1",
+      "party",
+      "mythological",
+      "pillars"
+    ],
+    "relatedIds": [],
+    "source": {
+      "type": "dm_lore_reference",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  }
+]

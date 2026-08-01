@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Stewarts D&D - Arc 1, Chapter 9 Playthrough Summary</title>
+  <style>
+    :root {
+      --ink: #1d1d1b;
+      --muted: #565656;
+      --line: #cfcac1;
+      --soft: #f5f1e8;
+      --paper: #fffdf8;
+      --accent: #2f3b2f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #e9e3d8;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.42;
+    }
+
+    .page {
+      width: min(100%, 920px);
+      margin: 24px auto;
+      background: var(--paper);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .16);
+      padding: 34px 42px 42px;
+    }
+
+    .toolbar {
+      width: min(100%, 920px);
+      margin: 18px auto 0;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      border: 1px solid #222;
+      background: #fff;
+      color: #111;
+      border-radius: 6px;
+      padding: 9px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 34px;
+      letter-spacing: .01em;
+    }
+
+    h2 {
+      font-size: 21px;
+      margin-top: 28px;
+      padding-top: 14px;
+      border-top: 2px solid var(--ink);
+    }
+
+    h3 {
+      font-size: 16px;
+      margin-top: 18px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      font-family: Arial, sans-serif;
+    }
+
+    p {
+      margin: 9px 0;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 12px 0 16px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px 9px;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--soft);
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+    }
+
+    .meta {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .meta div,
+    .callout,
+    .rule,
+    .outstanding {
+      border: 1px solid var(--line);
+      background: #fffaf0;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    .meta strong {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .callout h3,
+    .rule h3,
+    .outstanding h3 {
+      margin-top: 0;
+    }
+
+    .story-beat {
+      border-left: 4px solid var(--ink);
+      padding-left: 13px;
+      margin: 16px 0;
+    }
+
+    .small {
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .page-break {
+      break-before: page;
+      page-break-before: always;
+    }
+
+    @media print {
+      @page {
+        size: letter;
+        margin: .45in;
+      }
+
+      body {
+        background: white;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      .page {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+        background: white;
+      }
+
+      h2 {
+        break-after: avoid;
+      }
+
+      table, .callout, .rule, .outstanding, .story-beat {
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        margin: 0;
+        padding: 24px 18px 32px;
+      }
+
+      .meta,
+      .summary-grid,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="page">
+    <header>
+      <h1>Arc 1, Chapter 9: The Expedition Leaves Veylathar</h1>
+      <div class="subtitle">Little Stewarts D&amp;D playthrough summary and canon record</div>
+      <section class="meta" aria-label="Session metadata">
+        <div><strong>Campaign</strong>Little Stewards D&amp;D</div>
+        <div><strong>Arc</strong>Arc 1</div>
+        <div><strong>Chapter</strong>Chapter 9</div>
+        <div><strong>Core Shift</strong>City story to world expedition</div>
+      </section>
+    </header>
+
+    <section class="summary-grid">
+      <div class="callout">
+        <h3>Chapter Snapshot</h3>
+        <p>The party left Veylathar for the first time on an expedition to investigate the Dark Arcs beyond the city. Their first major choice took them through the woods toward Emberhold, where the mortal world overlapped with Fey territory.</p>
+      </div>
+      <div class="callout">
+        <h3>Major Outcome</h3>
+        <p>The party survived the Sacred Hunt of the White Stag and gained a binding Fey pact: in Fey territory, the Fey cannot harm them or prevent them from leaving.</p>
+      </div>
+    </section>
+
+    <h2>Opening Preparations</h2>
+    <p>The chapter began with the party preparing to leave <strong>Veylathar</strong>. Before departure, each player described what their character had been working on. Those preparations became new mechanical bonuses, power upgrades, and story hooks for the expedition.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Character</th>
+          <th>Player</th>
+          <th>Chapter 9 Update</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fiona</td>
+          <td>Lily</td>
+          <td>As Captain of the Armies of Veylathar, Fiona selected a Garrison squadron to accompany the expedition.</td>
+        </tr>
+        <tr>
+          <td>Golo</td>
+          <td>Elijah</td>
+          <td>Improved archery skills. He now has a <strong>+3 bonus against AC when using archery</strong>.</td>
+        </tr>
+        <tr>
+          <td>Sertraline</td>
+          <td>Lynette</td>
+          <td>Improved dexterity through practice multitasking attacks with the Bracers of Mage Hand. She now has <strong>+4 Dexterity</strong>.</td>
+        </tr>
+        <tr>
+          <td>Queen Flower</td>
+          <td>Amelia</td>
+          <td>Stayed in Veylathar to rule, but improved her astral projection powers and gave her amulet to Sertraline.</td>
+        </tr>
+        <tr>
+          <td>Calvin / Namalock</td>
+          <td>Coleman</td>
+          <td>Continues as a recurring character. Calvin can transform into Namalock, a giant werewolf-bulldog creature, and is haunted by dark dreams.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="two-col">
+      <div class="rule">
+        <h3>Fiona's Squadron</h3>
+        <p>Fiona could select up to 50 units from the Garrison, with each cavalry unit counting as three.</p>
+        <table>
+          <thead>
+            <tr><th>Unit Type</th><th>Selected</th><th>Unit Cost</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Cavalry</td><td>10</td><td>30</td></tr>
+            <tr><td>Swordsmen</td><td>10</td><td>10</td></tr>
+            <tr><td>Archers</td><td>10</td><td>10</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Total:</strong> 30 soldiers, using all 50 available unit points.</p>
+      </div>
+
+      <div class="outstanding">
+        <h3>Outstanding Item</h3>
+        <p>A lieutenant approached Fiona and asked her to name the squadron so they would not have to keep calling themselves simply "the Squadron." Fiona said she would think about it.</p>
+        <p><strong>Open thread:</strong> Fiona still needs to name the Garrison squadron.</p>
+      </div>
+    </div>
+
+    <h2>Queen Flower's Remote Link</h2>
+    <p>Queen Flower remained behind in Veylathar, but her role continued through her growing astral projection ability. She can project herself to wherever her amulet has traveled.</p>
+    <p>Previously, Queen Flower could choose only one astral projection trait: being seen, being heard, or being felt. As of this chapter, she can choose <strong>two of the three</strong> each time she projects.</p>
+    <p>In her castle tower, the back of a chalkboard now holds an enchanted map. A small glowing dot marks the location of her amulet. Queen Flower gave the amulet to Sertraline to wear around her neck, allowing Queen Flower to track the group and project to them when needed.</p>
+
+    <h2>Departure And First Camp</h2>
+    <p>The party left Veylathar and traveled with Fiona's squadron. The first night gave the players a chance to see what it looked like for the group and the Garrison force to set up camp outside the city.</p>
+    <p>The next morning, they headed toward the nearest city, <strong>Emberhold</strong>. On the way, they chose the shorter path through the woods rather than the longer, safer ridge route around the forest. The players knew the shorter path would likely lead to a more intense encounter.</p>
+
+    <h2 class="page-break">Entering Fey Territory</h2>
+    <p>The forest path became the setting for the <strong>Thorn Court Hunt</strong>, loosely based on the prepared encounter but heavily shaped through play and improvisation.</p>
+    <p>The key worldbuilding reveal was that the planes of existence can overlap in certain places. In this forest, the Fey realm overlaps with the party's realm. By taking the forest path, the party unknowingly stepped into Fey territory and trespassed upon the <strong>Sacred Hunt of the White Stag</strong>, a ceremony they would only begin to understand later.</p>
+
+    <h3>The Fey</h3>
+    <p>The Fey appeared as thin, humanoid-sized beings with insect-like eyes and wings that fold against their backs. Their wings differ by type. Their skin is pale, iridescent, and somewhat translucent, like the inside of a seashell, with veins and muscles visible beneath. When wounded, they bleed a milky white blood.</p>
+
+    <h2>Capture And Judgment</h2>
+    <p>A magical thorn wall rose around the group. The wall opened and closed as Fey poured from the forest in hundreds, then thousands. The party and soldiers were no match for them.</p>
+    <p>One by one, party members seemed to disappear. From the group's perspective, they simply vanished. In truth, the Fey were shrinking them down and carrying them into a hollowed-out log inside the Fey realm forest.</p>
+    <p>Because that place did not exist fully on the same plane, Queen Flower's enchanted chalkboard map lost the amulet's signal. The glowing tracking dot vanished, leaving Queen Flower unable to locate the party and worried back in Veylathar.</p>
+
+    <div class="story-beat">
+      <p><strong>The trial was not a normal trial.</strong> There was no prosecutor, no defense, and no argument. It was simply judgment being passed.</p>
+      <p>The party was given two options: be executed immediately, or join the Hunt. Without a full explanation from the Fey, they chose the Hunt.</p>
+    </div>
+
+    <p>The party later learned the cruel rule of the ritual: everyone who joins the Hunt must die except for the single survivor who wins the Hunt of the White Stag.</p>
+
+    <h2>The Hunt Arena</h2>
+    <p>The group was transported into a magically sealed arena roughly the size of a football field. The arena sat inside the dark Fey wood. Hardened canopy sealed the sky above, ancient roots bound the soil below so no one could dig out, and a wall of thorns surrounded the entire space.</p>
+    <p>At first, the space seemed lonely and still. Nothing obvious moved. The only light came from fireflies drifting throughout the forest near strange red donut-capped mushrooms.</p>
+
+    <h2>The First Fey Warrior</h2>
+    <p>A thin male Fey warrior began attacking at blinding speed. He flew from the dark wood in a blur, struck with a club, and vanished again before the group could react.</p>
+    <p>On his first pass, he knocked Fiona and two soldiers unconscious. He repeated the attack two more times, eventually leaving <strong>Fiona and six soldiers</strong> unconscious. The party could see the results of the attacks more clearly than the attacker himself.</p>
+
+    <p>Golo and Calvin flew up to the top of the canopy to search for a way through, but discovered it was impenetrable. From above, they saw the fireflies and the red mushrooms scattered throughout the arena.</p>
+
+    <h2 class="page-break">Sertraline And The Speed Mushrooms</h2>
+    <p>Sertraline tried to use her druidic magic on the Thorn Wall, hoping to influence the vines and thorns to open a way out. The magic did not respond. She did not yet fully understand that this was Fey nature, governed by a different order than the nature of her own world.</p>
+    <p>Then she noticed the fireflies. They moved slowly as they settled on the red donut-capped mushrooms, but launched away at high speed after leaving them.</p>
+
+    <div class="story-beat">
+      <p>Sertraline licked one of the mushrooms. For about ten seconds, everything slowed down. The fireflies became visible in motion, and the blurring Fey warrior moved at something closer to normal speed.</p>
+      <p>She took a bite, extending the effect to several minutes. Then she ate the whole mushroom, collected more, and began bringing the rest of the group up to speed.</p>
+    </div>
+
+    <p>At first, Sertraline tried to communicate telepathically, but she was thinking too fast. Her teammates' replies sounded slow and stretched out. Rather than explain, she ran through the arena and stuffed mushrooms into everyone's mouths so they could perceive the Hunt at the same speed.</p>
+    <p>Once speed was equalized, Sertraline could outrun the thin Fey warrior at her normal panther pace. The Fey warrior's strength had mostly come from his speed. Sertraline took him down.</p>
+
+    <h3>Threats Revealed At Fey Speed</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Threat</th>
+          <th>Description</th>
+          <th>Role In The Hunt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thin Fey Warrior</td>
+          <td>A fast hit-and-run attacker with a club.</td>
+          <td>Opening terror of the Hunt; defeated after the speed advantage was neutralized.</td>
+        </tr>
+        <tr>
+          <td>Fey Sprites</td>
+          <td>Small flying Fey, about the size of flying cats, armed with fiery arrows and bows.</td>
+          <td>Hidden ranged threats that fired when approached or when the battle escalated.</td>
+        </tr>
+        <tr>
+          <td>Hulking Fey Warrior</td>
+          <td>A massive warrior with briars around one fist and a giant club in the other hand.</td>
+          <td>A powerful hunter who seemed to move normally even in bullet-time speed.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>The White Stag</h2>
+    <p>After the group reached Fey speed, they noticed the arena was in a strange stalemate. The hulking warrior was not attacking unless provoked, and the sprites were not immediately attacking everyone either.</p>
+    <p>The party searched for the White Stag and found it near the edge of the map by the Briar Wall. It was already dead. Its carcass looked like it had been lying there for weeks, surrounded by swarming fireflies.</p>
+    <p>The hulking warrior sat on a stump and shouted that he was not leaving without his wish. This was the first clue to the real purpose of the Hunt.</p>
+
+    <div class="rule">
+      <h3>Rule Of The Sacred Hunt</h3>
+      <p>To end the Hunt, only one hunter can remain alive. The survivor leaves with the carcass of the White Stag and earns a wish.</p>
+    </div>
+
+    <p>The party fought the hulking warrior and took hits from both his club and the sprites' fiery arrows. Eventually, they defeated him. But the arena still did not open, because more than one hunter remained alive.</p>
+
+    <h2>Golo's Wish</h2>
+    <p>Golo realized the wish itself might be the way out. At first, he considered wishing away the entire Fey realm. After discussing it with the group, he made a more careful wish: that the party could leave the arena, that the Fey could not prevent them from leaving, and that the Fey could never harm them.</p>
+    <p>The magic accepted the wish through the sacred tradition of the White Stag.</p>
+
+    <div class="rule">
+      <h3>Fey Pact</h3>
+      <p>The party now has a binding pact with the Fey. In Fey territory, the Fey cannot harm them and cannot prevent them from leaving.</p>
+      <p class="small">Limitation: Fey wishes and Fey pacts apply to the Fey within the Fey realm or Fey territory. They do not automatically rewrite the normal mortal world.</p>
+    </div>
+
+    <p>When the wish completed, the Thorn Wall opened. The party left through a hallway of furious-looking Fey who could not touch them. Behind them, the White Stag's carcass was resurrected, revived, and reborn as a fresh White Stag, ready for the next ceremony.</p>
+
+    <h2 class="page-break">Huntcap Mushroom Rules</h2>
+    <p>The red donut-capped mushrooms are now canonically known as <strong>Huntcaps</strong>. They grow where the Fey realm overlaps the mortal world, especially near places used for the Sacred Hunt of the White Stag.</p>
+    <p>Because of Golo's wish, the party can return to Fey territory without being directly harmed by the Fey. That means they may be able to collect Huntcaps, but the mushrooms should remain useful for emergencies rather than becoming permanent super-speed potions.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Time Away From Fey Territory</th>
+          <th>Effect</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First hour</td>
+          <td>Full speed effect.</td>
+        </tr>
+        <tr>
+          <td>After 1 hour</td>
+          <td>Half strength and shorter duration.</td>
+        </tr>
+        <tr>
+          <td>After sunset or sunrise</td>
+          <td>Barely works; only brief flashes of speed.</td>
+        </tr>
+        <tr>
+          <td>After 24 hours</td>
+          <td>Completely inert.</td>
+        </tr>
+        <tr>
+          <td>Preserved, dried, cooked, bottled, or salted</td>
+          <td>The magic is destroyed immediately.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Amount Used</th>
+          <th>Suggested Effect</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lick</td>
+          <td>A few seconds of Fey-speed perception.</td>
+        </tr>
+        <tr>
+          <td>Bite</td>
+          <td>A short burst lasting longer than a lick.</td>
+        </tr>
+        <tr>
+          <td>Whole mushroom</td>
+          <td>Several minutes of movement, thought, and perception at Fey hunt-speed.</td>
+        </tr>
+        <tr>
+          <td>More than two whole mushrooms in one day</td>
+          <td>Risk of Fey-speed sickness or exhaustion when the effect ends.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Canon Developments</h2>
+    <ul>
+      <li>The party officially left Veylathar and began the expedition to investigate the Dark Arcs.</li>
+      <li>Fiona selected an expedition squadron from the Garrison: 10 cavalry, 10 swordsmen, and 10 archers.</li>
+      <li>The squadron still needs a name.</li>
+      <li>Golo gained a +3 archery bonus against AC.</li>
+      <li>Sertraline gained +4 Dexterity and became the first to understand the Fey speed rules.</li>
+      <li>Queen Flower can now choose two astral projection traits: seen, heard, or felt.</li>
+      <li>Sertraline carries Queen Flower's amulet, which is tracked by the enchanted chalkboard map in the castle tower.</li>
+      <li>Calvin / Namalock became a continuing party character, with dark dreams as a personal mystery.</li>
+      <li>The party learned that the Fey realm overlaps with the mortal world in certain places.</li>
+      <li>The Sacred Hunt of the White Stag is an ancient Fey ritual where the final survivor earns a wish.</li>
+      <li>Golo used the White Stag wish to secure safe passage and protection from the Fey in Fey territory.</li>
+      <li>The White Stag can be killed, decay, and be reborn for the next round of the ceremony.</li>
+      <li>Huntcap mushrooms grant Fey-speed but lose their magic quickly outside Fey territory.</li>
+    </ul>
+
+    <h2>Unresolved Threads For Chapter 10</h2>
+    <ul>
+      <li>What will Fiona name her Garrison squadron?</li>
+      <li>How worried is Queen Flower after losing the amulet signal during the Fey realm overlap?</li>
+      <li>Will the party use the Fey pact to return for Huntcaps?</li>
+      <li>What do Calvin's dark dreams mean, and are they connected to the expedition or something older?</li>
+      <li>How will the party continue toward Emberhold after surviving the Thorn Court Hunt?</li>
+      <li>Will the angry Fey find indirect ways to complicate the party's return to Fey territory?</li>
+    </ul>
+
+    <h2>Tone Of The Chapter</h2>
+    <p>This chapter should be remembered as the moment the campaign opened up. Veylathar is still home, but it is no longer the whole stage. The party crossed a threshold into a wider, older world where ancient powers have their own laws and ceremonies.</p>
+    <p>The Thorn Court Hunt worked because it was not just a fight. It was a place with rules. The party survived by observing those rules, experimenting, adapting, and finally using the Fey ritual's own magic to escape.</p>
+  </main>
+</body>
+</html>
