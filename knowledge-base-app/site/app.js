@@ -1,14 +1,16 @@
-import { sortRecords } from './search-utils.js';
+import { filterSpoilers, sortRecords } from './search-utils.js';
 
 const state = {
   records: [],
   query: '',
-  domain: 'all'
+  domain: 'all',
+  includeSpoilers: false
 };
 
 const elements = {
   searchInput: document.querySelector('#searchInput'),
   domainFilter: document.querySelector('#domainFilter'),
+  spoilerToggle: document.querySelector('#spoilerToggle'),
   resultCount: document.querySelector('#resultCount'),
   results: document.querySelector('#results'),
   template: document.querySelector('#resultCardTemplate')
@@ -52,7 +54,7 @@ const filterRecords = () => {
     return matchesDomain && matchesQueryText;
   });
 
-  return sortRecords(matches);
+  return sortRecords(filterSpoilers(matches, state.includeSpoilers));
 };
 
 const render = () => {
@@ -79,6 +81,11 @@ const bindEvents = () => {
 
   elements.domainFilter.addEventListener('change', (event) => {
     state.domain = event.target.value;
+    render();
+  });
+
+  elements.spoilerToggle.addEventListener('change', (event) => {
+    state.includeSpoilers = event.target.checked;
     render();
   });
 };

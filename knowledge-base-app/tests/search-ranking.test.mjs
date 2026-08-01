@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { sortRecords } from '../site/search-utils.js';
+import { filterSpoilers, sortRecords } from '../site/search-utils.js';
 
 test('sortRecords puts canon events first and newest first', () => {
   const records = [
@@ -25,4 +25,17 @@ test('sortRecords keeps inventory items after character records', () => {
   const sorted = sortRecords(records);
 
   assert.deepEqual(sorted.map((record) => record.id), ['char-1', 'loc-1', 'item-1']);
+});
+
+test('filterSpoilers hides lore and secret content by default', () => {
+  const records = [
+    { id: 'char-1', kind: 'character', name: 'Ada' },
+    { id: 'lore-1', kind: 'lore', name: 'Secret Lore' },
+    { id: 'secret-1', kind: 'secret', name: 'DM Secret' },
+    { id: 'canon-1', kind: 'canon', name: 'Chapter 1' }
+  ];
+
+  const filtered = filterSpoilers(records);
+
+  assert.deepEqual(filtered.map((record) => record.id), ['char-1', 'canon-1']);
 });

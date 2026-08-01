@@ -9,8 +9,18 @@ const GROUP_ORDER = {
   'inventory-item': 7
 };
 
+const SPOILER_KINDS = new Set(['lore', 'secret']);
+
 const getKindPriority = (record) => GROUP_ORDER[record.kind] ?? 99;
 const getTimelineValue = (record) => Number(record.timelineValue ?? record.chapter ?? record.chapterNumber ?? 0);
+
+export const filterSpoilers = (records, includeSpoilers = false) => {
+  if (includeSpoilers) {
+    return records;
+  }
+
+  return records.filter((record) => !SPOILER_KINDS.has(record.kind));
+};
 
 export const sortRecords = (records) => {
   return [...records].sort((left, right) => {
