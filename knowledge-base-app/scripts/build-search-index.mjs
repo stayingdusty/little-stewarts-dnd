@@ -25,6 +25,32 @@ const readJson = async (relativePath) => {
   return JSON.parse(content);
 };
 
+const writeDirectoryIndex = async (dirPath, title) => {
+  const entries = await readdir(dirPath, { withFileTypes: true });
+  const htmlFiles = entries
+    .filter((entry) => entry.isFile() && entry.name.endsWith('.html'))
+    .map((entry) => entry.name)
+    .sort();
+
+  const links = htmlFiles.map((name) => `<li><a href="./${name}">${name}</a></li>`).join('');
+  const html = `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${title}</title>
+    <style>body{font-family:system-ui,sans-serif;max-width:48rem;margin:2rem auto;padding:0 1rem;line-height:1.5;}a{color:#2563eb;}</style>
+  </head>
+  <body>
+    <h1>${title}</h1>
+    <p>Source documents for this section.</p>
+    <ul>${links}</ul>
+  </body>
+</html>`;
+
+  await writeFile(path.join(dirPath, 'index.html'), html);
+};
+
 const copyAnchoredSourceDocs = async () => {
   const sourceRoot = path.resolve(root, '../DND-Source-Docs/the-dark-arcs');
   const outputRoot = path.join(root, 'site/source-docs/the-dark-arcs');
@@ -47,6 +73,21 @@ const copyAnchoredSourceDocs = async () => {
   };
 
   await walk(sourceRoot);
+  await writeDirectoryIndex(outputRoot, 'The Dark Arcs source documents');
+
+  const makeSubdirIndexes = async (dirPath) => {
+    const entries = await readdir(dirPath, { withFileTypes: true });
+    for (const entry of entries) {
+      if (entry.isDirectory()) {
+        const childPath = path.join(dirPath, entry.name);
+        const outputChildPath = path.join(outputRoot, path.relative(sourceRoot, childPath));
+        await writeDirectoryIndex(outputChildPath, entry.name);
+        await makeSubdirIndexes(childPath);
+      }
+    }
+  };
+
+  await makeSubdirIndexes(sourceRoot);
 };
 
 const normalizeText = (value) => String(value ?? '').toLowerCase();

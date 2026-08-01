@@ -37,7 +37,10 @@ const buildSourceHref = (record) => {
     .replace(/^\.\//, '')
     .replace(/\\/g, '/');
   const anchor = record.sourceAnchor ? `#${record.sourceAnchor}` : '';
-  return `./${normalized}${anchor}`;
+  const hasHtmlExtension = normalized.toLowerCase().endsWith('.html');
+  const targetPath = hasHtmlExtension ? normalized : `${normalized.replace(/\/+$/, '')}/index.html`;
+
+  return `./${targetPath}${anchor}`;
 };
 
 const matchesQuery = (record, query) => {
