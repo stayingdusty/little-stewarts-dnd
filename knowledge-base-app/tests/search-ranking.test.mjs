@@ -27,12 +27,13 @@ test('sortRecords keeps inventory items after character records', () => {
   assert.deepEqual(sorted.map((record) => record.id), ['char-1', 'loc-1', 'item-1']);
 });
 
-test('filterSpoilers hides lore and secret content by default', () => {
+test('filterSpoilers hides lore, secret, and encounter content by default', () => {
   const records = [
-    { id: 'char-1', kind: 'character', name: 'Ada' },
-    { id: 'lore-1', kind: 'lore', name: 'Secret Lore' },
-    { id: 'secret-1', kind: 'secret', name: 'DM Secret' },
-    { id: 'canon-1', kind: 'canon', name: 'Chapter 1' }
+    { id: 'char-1', kind: 'character', name: 'Ada', sourceType: 'character_sheet' },
+    { id: 'canon-1', kind: 'canon', name: 'Chapter 1', sourceType: 'playthrough_summary' },
+    { id: 'lore-1', kind: 'lore', name: 'Secret Lore', sourceType: 'dm_lore_reference' },
+    { id: 'secret-1', kind: 'secret', name: 'DM Secret', sourceType: 'dm_lore_reference' },
+    { id: 'encounter-1', kind: 'encounter', name: 'Encounter', sourceType: 'world_tracker' }
   ];
 
   const filtered = filterSpoilers(records);
