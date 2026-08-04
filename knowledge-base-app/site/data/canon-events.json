@@ -24,10 +24,10 @@
     ],
     "source": {
       "path": "playthrough-summaries/index.html",
-      "type": "generated_playthrough_summary",
       "arc": "1",
       "chapter": "1",
-      "anchor": "arc-01-chapter-01"
+      "anchor": "arc-01-chapter-01",
+      "type": "generated_playthrough_summary"
     }
   },
   {
@@ -57,10 +57,10 @@
     ],
     "source": {
       "path": "playthrough-summaries/index.html",
-      "type": "generated_playthrough_summary",
       "arc": "1",
       "chapter": "2",
-      "anchor": "arc-01-chapter-02"
+      "anchor": "arc-01-chapter-02",
+      "type": "generated_playthrough_summary"
     }
   },
   {
@@ -89,10 +89,10 @@
     ],
     "source": {
       "path": "playthrough-summaries/index.html",
-      "type": "generated_playthrough_summary",
       "arc": "1",
       "chapter": "3",
-      "anchor": "arc-01-chapter-03"
+      "anchor": "arc-01-chapter-03",
+      "type": "generated_playthrough_summary"
     }
   },
   {
@@ -121,10 +121,10 @@
     ],
     "source": {
       "path": "playthrough-summaries/index.html",
-      "type": "generated_playthrough_summary",
       "arc": "1",
       "chapter": "4",
-      "anchor": "arc-01-chapter-04"
+      "anchor": "arc-01-chapter-04",
+      "type": "generated_playthrough_summary"
     }
   },
   {
@@ -155,10 +155,10 @@
     ],
     "source": {
       "path": "playthrough-summaries/index.html",
-      "type": "generated_playthrough_summary",
       "arc": "1",
       "chapter": "5",
-      "anchor": "arc-01-chapter-05"
+      "anchor": "arc-01-chapter-05",
+      "type": "generated_playthrough_summary"
     }
   },
   {
@@ -187,10 +187,10 @@
     ],
     "source": {
       "path": "playthrough-summaries/index.html",
-      "type": "generated_playthrough_summary",
       "arc": "1",
       "chapter": "6",
-      "anchor": "arc-01-chapter-06"
+      "anchor": "arc-01-chapter-06",
+      "type": "generated_playthrough_summary"
     }
   },
   {
@@ -220,10 +220,10 @@
     ],
     "source": {
       "path": "playthrough-summaries/index.html",
-      "type": "generated_playthrough_summary",
       "arc": "1",
       "chapter": "7",
-      "anchor": "arc-01-chapter-07"
+      "anchor": "arc-01-chapter-07",
+      "type": "generated_playthrough_summary"
     }
   },
   {
@@ -248,10 +248,10 @@
     ],
     "source": {
       "path": "playthrough-summaries/index.html",
-      "type": "generated_playthrough_summary",
       "arc": "1",
       "chapter": "8",
-      "anchor": "arc-01-chapter-08"
+      "anchor": "arc-01-chapter-08",
+      "type": "generated_playthrough_summary"
     }
   },
   {
@@ -279,10 +279,10 @@
     ],
     "source": {
       "path": "playthrough-summaries/index.html",
-      "type": "generated_playthrough_summary",
       "arc": "1",
       "chapter": "9",
-      "anchor": "arc-01-chapter-09"
+      "anchor": "arc-01-chapter-09",
+      "type": "generated_playthrough_summary"
     }
   }
 ]

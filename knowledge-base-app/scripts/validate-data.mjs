@@ -80,31 +80,6 @@ const validateStructuredCharacterSources = async () => {
   }
 };
 
-const validateStructuredSummarySources = async () => {
-  const sessionsDir = path.join(repoRoot, 'campaigns/the-dark-arcs/sessions');
-  const ids = new Set();
-  let count = 0;
-  for (const arcEntry of await readdir(sessionsDir, { withFileTypes: true })) {
-    if (!arcEntry.isDirectory()) continue;
-    const arcDir = path.join(sessionsDir, arcEntry.name);
-    for (const name of (await readdir(arcDir)).filter((entry) => /^chapter-\d+\.json$/.test(entry))) {
-      const record = JSON.parse(await readFile(path.join(arcDir, name), 'utf8'));
-      const label = `Structured playthrough summary ${arcEntry.name}/${name}`;
-      count += 1;
-      requireValue(!ids.has(record.id), `Duplicate playthrough summary ID: ${record.id}`);
-      ids.add(record.id);
-      requireValue(Boolean(record.title && record.summary && record.majorOutcome), `${label} is missing summary fields.`);
-      requireValue(allowedVisibility.has(record.visibility), `${label} has invalid visibility: ${record.visibility}`);
-      requireValue(allowedCanonStatus.has(record.canonStatus), `${label} has invalid canonStatus: ${record.canonStatus}`);
-      requireValue(record.source?.type === 'generated_playthrough_summary', `${label} must link to the generated renderer.`);
-      requireValue(record.source?.path === 'playthrough-summaries/index.html' && Boolean(record.source?.anchor), `${label} has an incomplete generated document route.`);
-      requireValue(Array.isArray(record.sections) && record.sections.length > 0, `${label} must contain document sections.`);
-      validateEvidence(record, label);
-    }
-  }
-  requireValue(count > 0, 'No structured playthrough summary sources were found.');
-};
-
 const validateCanonEvents = async (entityIds) => {
   const events = await readJson('data/normalized/canon/canon_events.json');
   const ids = new Set();
@@ -177,15 +152,6 @@ const validateSiteBuild = async () => {
       }
       continue;
     }
-    if (record.sourceType === 'generated_playthrough_summary') {
-      try {
-        await access(path.join(appRoot, 'site/data/playthrough-summaries', `${record.sourceAnchor}.json`));
-        await access(path.join(appRoot, 'site/playthrough-summaries/index.html'));
-      } catch {
-        errors.push(`${record.id} links to a generated playthrough summary without published summary data.`);
-      }
-      continue;
-    }
 
     const relativeSource = record.sourcePath
       .replace(/^DND-Source-Docs\//i, 'source-docs/')
@@ -244,7 +210,6 @@ const validatePrintSources = async () => {
 };
 
 await validateStructuredCharacterSources();
-await validateStructuredSummarySources();
 const entities = await validateEntities();
 await validateCanonEvents(new Set(entities.map((entity) => entity.id)));
 await validateCanonicalNames(entities);

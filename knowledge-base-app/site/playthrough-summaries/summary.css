@@ -1,5 +1,6 @@
 :root { --ink:#1d1d1b; --muted:#565656; --line:#cfcac1; --soft:#f5f1e8; --paper:#fffdf8; --accent:#2f3b2f; }
 * { box-sizing: border-box; }
+.route-anchors { display:none; }
 body { margin:0; background:#e9e3d8; color:var(--ink); font-family:Georgia,"Times New Roman",serif; line-height:1.42; }
 .toolbar { width:min(100%,920px); margin:18px auto 0; display:flex; justify-content:flex-end; align-items:center; gap:12px; font-family:Arial,sans-serif; }
 .toolbar a { margin-right:auto; color:#243d75; }

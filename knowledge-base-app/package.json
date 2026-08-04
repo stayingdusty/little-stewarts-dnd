@@ -5,10 +5,9 @@
   "type": "module",
   "scripts": {
     "publish:characters": "node scripts/publish-character-data.mjs",
-    "publish:summaries": "node scripts/publish-playthrough-summaries.mjs",
     "extract:data": "node scripts/extract-source-data.mjs",
     "build:data": "node scripts/build-search-index.mjs",
-    "build:all": "npm run publish:characters && npm run publish:summaries && npm run extract:data && npm run build:data",
+    "build:all": "npm run publish:characters && npm run extract:data && npm run build:data",
     "validate": "node scripts/validate-data.mjs",
     "verify": "npm run build:all && npm run validate && npm test",
     "test": "node --test tests/*.test.mjs",

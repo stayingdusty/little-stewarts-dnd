@@ -20,7 +20,7 @@ const readRecords = async () => {
   return records.sort((a, b) => a.arc - b.arc || a.chapter - b.chapter);
 };
 
-const publish = async () => {
+export const publishPlaythroughSummaries = async () => {
   const records = await readRecords();
   await rm(outputDir, { recursive: true, force: true });
   await mkdir(outputDir, { recursive: true });
@@ -41,8 +41,3 @@ const publish = async () => {
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
   console.log(`Published ${records.length} structured playthrough summary record(s) for app rendering.`);
 };
-
-publish().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
