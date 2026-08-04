@@ -2,11 +2,11 @@
   "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
   "id": "character-fiona",
   "domain": "character",
-  "name": "Fiona",
+  "name": "Fiona Blossom Flare",
   "title": "Protective holy knight",
   "subtitle": "Knight & Paladin of Aureth",
   "player": "Lily",
-  "species": "",
+  "species": "Human",
   "levelRank": "",
   "movement": "Walking; brass-wing gliding",
   "initiative": "",
@@ -15,6 +15,7 @@
   "summary": "Fiona is a brave and protective knight who serves Aureth. Her holy abilities center on battlefield healing, radiant swordsmanship, and instinctively shielding others. Her golden paladin armor responds most strongly when she acts out of protectiveness.",
   "details": "Knight and paladin of Aureth, Goddess of Magic.",
   "aliases": [
+    "Fiona",
     "Lily"
   ],
   "tags": [
@@ -32,10 +33,15 @@
     "inventory-item-fiona-jewelry",
     "inventory-item-fiona-feast-of-ancestors-ticket"
   ],
+  "inventoryIdPrefix": "fiona",
   "evidence": [
     {
       "type": "source-document",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+    },
+    {
+      "type": "character-update",
+      "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
     }
   ],
   "source": {
@@ -43,20 +49,20 @@
     "path": "characters/index.html",
     "anchor": "fiona"
   },
-  "abilityPointTotal": "",
+  "abilityPointTotal": "30",
   "abilityScores": {
-    "strength": "",
-    "dexterity": "",
-    "constitution": "",
-    "intelligence": "",
-    "wisdom": "",
-    "charisma": ""
+    "strength": "5",
+    "dexterity": "5",
+    "constitution": "3",
+    "intelligence": "10",
+    "wisdom": "5",
+    "charisma": "2"
   },
   "combat": {
-    "currentHp": "",
+    "currentHp": "10",
     "maximumHp": "",
     "temporaryHp": "",
-    "armorClass": ""
+    "armorClass": "10"
   },
   "powers": [
     {
@@ -144,6 +150,21 @@
       "name": "Feast of Ancestors Ticket",
       "quantity": "1",
       "charges": "Ceremonial access"
+    },
+    {
+      "name": "Cavalry",
+      "quantity": "10",
+      "charges": ""
+    },
+    {
+      "name": "Swordsmen",
+      "quantity": "10",
+      "charges": ""
+    },
+    {
+      "name": "Archers",
+      "quantity": "10",
+      "charges": ""
     }
   ],
   "currency": {
@@ -153,6 +174,6 @@
     "other": ""
   },
   "specialResources": "",
-  "sessionNotes": "The source notes a handwritten jewelry addition, but its details are not clear enough to confirm. Other unclear handwritten markings remain unresolved.",
+  "sessionNotes": "The source notes a handwritten jewelry addition, but its details are not clear enough to confirm.",
   "sheetRoute": "characters/index.html#fiona"
 }

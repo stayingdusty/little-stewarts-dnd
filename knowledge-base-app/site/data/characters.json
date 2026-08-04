@@ -9,7 +9,7 @@
   },
   {
     "id": "character-fiona",
-    "name": "Fiona",
+    "name": "Fiona Blossom Flare",
     "visibility": "player",
     "sourceAnchor": "fiona",
     "path": "data/characters/fiona.json",

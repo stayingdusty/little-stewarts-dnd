@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/character-update.schema.json",
+  "sessionId": "2026-08-04-fiona-sheet-update",
+  "status": "applied",
+  "visibility": "dm-only",
+  "updates": [
+    {
+      "characterId": "character-fiona",
+      "field": "name",
+      "previousValue": "Fiona",
+      "proposedValue": "Fiona Blossom Flare",
+      "evidence": ["uploaded photo page 1, handwritten character name"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-fiona",
+      "field": "species",
+      "previousValue": "",
+      "proposedValue": "Human",
+      "evidence": ["uploaded photo page 1, handwritten species box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-fiona",
+      "field": "abilityPointTotal",
+      "previousValue": "",
+      "proposedValue": "30",
+      "evidence": ["uploaded photo page 1, handwritten note above ability scores"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-fiona",
+      "field": "abilityScores",
+      "previousValue": {
+        "strength": "",
+        "dexterity": "",
+        "constitution": "",
+        "intelligence": "",
+        "wisdom": "",
+        "charisma": ""
+      },
+      "proposedValue": {
+        "strength": "5",
+        "dexterity": "5",
+        "constitution": "3",
+        "intelligence": "10",
+        "wisdom": "5",
+        "charisma": "2"
+      },
+      "evidence": ["uploaded photo page 1, handwritten ability score boxes; superseded values are crossed out"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-fiona",
+      "field": "combat.currentHp",
+      "previousValue": "",
+      "proposedValue": "10",
+      "evidence": ["uploaded photo page 1, handwritten current HP box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-fiona",
+      "field": "combat.armorClass",
+      "previousValue": "",
+      "proposedValue": "10",
+      "evidence": ["uploaded photo page 1, handwritten armor class box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-fiona",
+      "field": "inventory",
+      "previousValue": "No troop entries",
+      "proposedValue": [
+        { "name": "Cavalry", "quantity": "10" },
+        { "name": "Swordsmen", "quantity": "10" },
+        { "name": "Archers", "quantity": "10" }
+      ],
+      "evidence": ["uploaded photo page 2, handwritten inventory rows"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    }
+  ]
+}

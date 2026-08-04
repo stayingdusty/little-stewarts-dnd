@@ -26,7 +26,7 @@
   {
     "id": "character-fiona",
     "kind": "character",
-    "name": "Fiona",
+    "name": "Fiona Blossom Flare",
     "summary": "Fiona is a brave and protective knight who serves Aureth. Her holy abilities center on battlefield healing, radiant swordsmanship, and instinctively shielding others. Her golden paladin armor responds most strongly when she acts out of protectiveness.",
     "tags": [
       "character",
@@ -36,6 +36,7 @@
       "aureth"
     ],
     "aliases": [
+      "Fiona",
       "Lily"
     ],
     "visibility": "player",
@@ -43,7 +44,7 @@
     "sourcePath": "characters/index.html",
     "sourceAnchor": "fiona",
     "timelineValue": 0,
-    "searchableText": "fiona fiona is a brave and protective knight who serves aureth. her holy abilities center on battlefield healing, radiant swordsmanship, and instinctively shielding others. her golden paladin armor responds most strongly when she acts out of protectiveness. knight and paladin of aureth, goddess of magic. [object object] [object object] [object object] [object object] [object object] [object object] lily character arc-1 character-sheet paladin aureth"
+    "searchableText": "fiona blossom flare fiona is a brave and protective knight who serves aureth. her holy abilities center on battlefield healing, radiant swordsmanship, and instinctively shielding others. her golden paladin armor responds most strongly when she acts out of protectiveness. knight and paladin of aureth, goddess of magic. [object object] [object object] [object object] [object object] [object object] [object object] [object object] [object object] [object object] fiona lily character arc-1 character-sheet paladin aureth"
   },
   {
     "id": "character-golo",
@@ -1223,6 +1224,26 @@
     "searchableText": "ancestral pendant of veylathar inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
   },
   {
+    "id": "inventory-item-fiona-archers",
+    "kind": "inventory-item",
+    "name": "Archers",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "aliases": [
+      "Fiona Blossom Flare"
+    ],
+    "visibility": "player",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "fiona",
+    "timelineValue": 0,
+    "searchableText": "archers inventory entry for fiona blossom flare. qty: 10 fiona blossom flare inventory-item arc-1 inventory"
+  },
+  {
     "id": "inventory-item-golo-bow-and-arrows",
     "kind": "inventory-item",
     "name": "Bow and Arrows",
@@ -1246,21 +1267,41 @@
     "id": "inventory-item-fiona-brass-wings",
     "kind": "inventory-item",
     "name": "Brass Wings",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "visibility": "player",
     "sourceType": "generated_character_sheet",
     "sourcePath": "characters/index.html",
     "sourceAnchor": "fiona",
     "timelineValue": 0,
-    "searchableText": "brass wings inventory entry for fiona. qty: 1 pair | charges: armor-linked fiona inventory-item arc-1 inventory"
+    "searchableText": "brass wings inventory entry for fiona blossom flare. qty: 1 pair | charges: armor-linked fiona blossom flare inventory-item arc-1 inventory"
+  },
+  {
+    "id": "inventory-item-fiona-cavalry",
+    "kind": "inventory-item",
+    "name": "Cavalry",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "aliases": [
+      "Fiona Blossom Flare"
+    ],
+    "visibility": "player",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "fiona",
+    "timelineValue": 0,
+    "searchableText": "cavalry inventory entry for fiona blossom flare. qty: 10 fiona blossom flare inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-sertraline-dwarven-bracers-of-mage-hands",
@@ -1326,21 +1367,21 @@
     "id": "inventory-item-fiona-feast-of-ancestors-ticket",
     "kind": "inventory-item",
     "name": "Feast of Ancestors Ticket",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "visibility": "player",
     "sourceType": "generated_character_sheet",
     "sourcePath": "characters/index.html",
     "sourceAnchor": "fiona",
     "timelineValue": 0,
-    "searchableText": "feast of ancestors ticket inventory entry for fiona. qty: 1 | charges: ceremonial access fiona inventory-item arc-1 inventory"
+    "searchableText": "feast of ancestors ticket inventory entry for fiona blossom flare. qty: 1 | charges: ceremonial access fiona blossom flare inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-golo-flight-shoes",
@@ -1386,41 +1427,41 @@
     "id": "inventory-item-fiona-golden-paladin-armor",
     "kind": "inventory-item",
     "name": "Golden Paladin Armor",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "visibility": "player",
     "sourceType": "generated_character_sheet",
     "sourcePath": "characters/index.html",
     "sourceAnchor": "fiona",
     "timelineValue": 0,
-    "searchableText": "golden paladin armor inventory entry for fiona. qty: 1 | charges: equipped fiona inventory-item arc-1 inventory"
+    "searchableText": "golden paladin armor inventory entry for fiona blossom flare. qty: 1 | charges: equipped fiona blossom flare inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-fiona-jewelry",
     "kind": "inventory-item",
     "name": "Jewelry",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "visibility": "player",
     "sourceType": "generated_character_sheet",
     "sourcePath": "characters/index.html",
     "sourceAnchor": "fiona",
     "timelineValue": 0,
-    "searchableText": "jewelry inventory entry for fiona. charges: details unresolved fiona inventory-item arc-1 inventory"
+    "searchableText": "jewelry inventory entry for fiona blossom flare. charges: details unresolved fiona blossom flare inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-queen-flower-of-veylathar-map",
@@ -1446,41 +1487,41 @@
     "id": "inventory-item-fiona-radiant-sword-of-aureth",
     "kind": "inventory-item",
     "name": "Radiant Sword of Aureth",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "visibility": "player",
     "sourceType": "generated_character_sheet",
     "sourcePath": "characters/index.html",
     "sourceAnchor": "fiona",
     "timelineValue": 0,
-    "searchableText": "radiant sword of aureth inventory entry for fiona. qty: 1 | charges: equipped fiona inventory-item arc-1 inventory"
+    "searchableText": "radiant sword of aureth inventory entry for fiona blossom flare. qty: 1 | charges: equipped fiona blossom flare inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-fiona-rocky-talkie",
     "kind": "inventory-item",
     "name": "Rocky Talkie",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "visibility": "player",
     "sourceType": "generated_character_sheet",
     "sourcePath": "characters/index.html",
     "sourceAnchor": "fiona",
     "timelineValue": 0,
-    "searchableText": "rocky talkie inventory entry for fiona. qty: 1 | charges: carried fiona inventory-item arc-1 inventory"
+    "searchableText": "rocky talkie inventory entry for fiona blossom flare. qty: 1 | charges: carried fiona blossom flare inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-golo-rocky-talkie",
@@ -1581,6 +1622,26 @@
     "sourceAnchor": "golo",
     "timelineValue": 0,
     "searchableText": "saddle inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
+  },
+  {
+    "id": "inventory-item-fiona-swordsmen",
+    "kind": "inventory-item",
+    "name": "Swordsmen",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "aliases": [
+      "Fiona Blossom Flare"
+    ],
+    "visibility": "player",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "fiona",
+    "timelineValue": 0,
+    "searchableText": "swordsmen inventory entry for fiona blossom flare. qty: 10 fiona blossom flare inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-golo-the-artifact",
