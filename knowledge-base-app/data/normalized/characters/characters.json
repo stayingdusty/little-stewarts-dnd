@@ -6,10 +6,10 @@
     "name": "Calvin / Nameloc",
     "title": "Guardian / Protector",
     "subtitle": "Spiritbound Guardian of the Great Hound",
-    "player": "",
+    "player": "Coleman",
     "species": "Human / Spiritbound",
-    "levelRank": "",
-    "movement": "",
+    "levelRank": "2",
+    "movement": "60",
     "initiative": "",
     "visibility": "player",
     "canonStatus": "confirmed",
@@ -27,11 +27,21 @@
       "guardian",
       "great-hound"
     ],
-    "relatedIds": [],
+    "relatedIds": [
+      "inventory-item-calvin-nameloc-extending-pole-hammer"
+    ],
     "evidence": [
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "chat-upload://2026-08-04/calvin-nameloc-page-1"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "chat-upload://2026-08-04/calvin-nameloc-page-2"
       }
     ],
     "source": {
@@ -39,20 +49,20 @@
       "path": "characters/index.html",
       "anchor": "calvin-nameloc"
     },
-    "abilityPointTotal": "",
+    "abilityPointTotal": "30 pts.",
     "abilityScores": {
-      "strength": "",
-      "dexterity": "",
-      "constitution": "",
-      "intelligence": "",
-      "wisdom": "",
-      "charisma": ""
+      "strength": "10",
+      "dexterity": "2",
+      "constitution": "3",
+      "intelligence": "2",
+      "wisdom": "5",
+      "charisma": "8"
     },
     "combat": {
-      "currentHp": "",
+      "currentHp": "10",
       "maximumHp": "",
       "temporaryHp": "",
-      "armorClass": ""
+      "armorClass": "10"
     },
     "powers": [
       {
@@ -103,15 +113,15 @@
     "attacks": [
       {
         "name": "Spirit Bite",
-        "toHit": "",
+        "toHit": "Enemy AC",
         "range": "Melee",
-        "effect": ""
+        "effect": "2d4"
       },
       {
         "name": "Titan Leap Slam",
-        "toHit": "",
+        "toHit": "Enemy AC",
         "range": "",
-        "effect": ""
+        "effect": "1d8"
       },
       {
         "name": "Howl — Fear",
@@ -121,14 +131,20 @@
       },
       {
         "name": "Howl — Empower",
-        "toHit": "",
+        "toHit": "12",
         "range": "",
         "effect": "Advantage effect"
       }
     ],
     "attackRules": "",
     "futureUpgrades": "",
-    "inventory": [],
+    "inventory": [
+      {
+        "name": "Extending pole hammer",
+        "quantity": "1",
+        "charges": "Equipped; extends from a 5-foot walking stick to a 10-foot war hammer on a pole"
+      }
+    ],
     "currency": {
       "gold": "",
       "silver": "",
@@ -136,7 +152,7 @@
       "other": ""
     },
     "specialResources": "",
-    "sessionNotes": "Base-form equipment, ordinary attacks, special training, Great Hound appearance, personality, favorite move, and awakening catchphrase remain unrecorded."
+    "sessionNotes": "Great Hound appearance / glow: Blue glow. Plot mystery: What's up with these strange dreams I have been having? Great Hound personality, favorite move, and awakening catchphrase remain unrecorded."
   },
   {
     "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",

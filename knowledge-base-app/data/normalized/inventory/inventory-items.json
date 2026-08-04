@@ -272,6 +272,46 @@
     "ownerName": "Golo"
   },
   {
+    "id": "inventory-item-calvin-nameloc-extending-pole-hammer",
+    "domain": "inventory-item",
+    "name": "Extending pole hammer",
+    "summary": "Inventory entry for Calvin / Nameloc.",
+    "details": "Qty: 1 | Charges: Equipped; extends from a 5-foot walking stick to a 10-foot war hammer on a pole",
+    "aliases": [
+      "Calvin / Nameloc"
+    ],
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "relatedIds": [
+      "character-calvin-nameloc"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "chat-upload://2026-08-04/calvin-nameloc-page-1"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "chat-upload://2026-08-04/calvin-nameloc-page-2"
+      }
+    ],
+    "source": {
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "calvin-nameloc"
+    },
+    "ownerName": "Calvin / Nameloc"
+  },
+  {
     "id": "inventory-item-fiona-feast-of-ancestors-ticket",
     "domain": "inventory-item",
     "name": "Feast of Ancestors Ticket",

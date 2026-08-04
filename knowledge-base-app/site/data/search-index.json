@@ -21,7 +21,7 @@
     "sourcePath": "characters/index.html",
     "sourceAnchor": "calvin-nameloc",
     "timelineValue": 0,
-    "searchableText": "calvin / nameloc calvin is bonded to an ancient and powerful dog spirit. in moments of danger, loyalty, or protection, he can unleash the spirit as nameloc—a massive glowing guardian hound. the spirit chose him for his courage, instinct, and willingness to stand between danger and his friends. calvin is the boy form; nameloc is the bonded great hound spirit form. calvin nameloc character arc-1 character-sheet spiritbound guardian great-hound"
+    "searchableText": "calvin / nameloc calvin is bonded to an ancient and powerful dog spirit. in moments of danger, loyalty, or protection, he can unleash the spirit as nameloc—a massive glowing guardian hound. the spirit chose him for his courage, instinct, and willingness to stand between danger and his friends. calvin is the boy form; nameloc is the bonded great hound spirit form. [object object] calvin nameloc character arc-1 character-sheet spiritbound guardian great-hound"
   },
   {
     "id": "character-fiona",
@@ -1301,6 +1301,26 @@
     "sourceAnchor": "golo",
     "timelineValue": 0,
     "searchableText": "dwarven hammer of earthshatter inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
+  },
+  {
+    "id": "inventory-item-calvin-nameloc-extending-pole-hammer",
+    "kind": "inventory-item",
+    "name": "Extending pole hammer",
+    "summary": "Inventory entry for Calvin / Nameloc.",
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "aliases": [
+      "Calvin / Nameloc"
+    ],
+    "visibility": "player",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "calvin-nameloc",
+    "timelineValue": 0,
+    "searchableText": "extending pole hammer inventory entry for calvin / nameloc. qty: 1 | charges: equipped; extends from a 5-foot walking stick to a 10-foot war hammer on a pole calvin / nameloc inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-fiona-feast-of-ancestors-ticket",
