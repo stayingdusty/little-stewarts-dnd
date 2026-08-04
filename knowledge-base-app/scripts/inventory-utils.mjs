@@ -20,7 +20,9 @@ export const extractInventoryItemsFromRecord = (character) => {
       item.charges ? `Charges: ${item.charges}` : '',
       item.details || ''
     ].filter(Boolean);
-    const slug = toSlug(`${ownerName}-${itemName}`);
+    // Keep inventory IDs stable when a character's displayed name changes.
+    const ownerIdPrefix = character.inventoryIdPrefix || ownerName;
+    const slug = toSlug(`${ownerIdPrefix}-${itemName}`);
     const id = `inventory-item-${slug}`;
 
     records.set(id, {

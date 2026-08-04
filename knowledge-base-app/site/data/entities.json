@@ -142,11 +142,11 @@
     "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
     "id": "character-fiona",
     "domain": "character",
-    "name": "Fiona",
+    "name": "Fiona Blossom Flare",
     "title": "Protective holy knight",
     "subtitle": "Knight & Paladin of Aureth",
     "player": "Lily",
-    "species": "",
+    "species": "Human",
     "levelRank": "",
     "movement": "Walking; brass-wing gliding",
     "initiative": "",
@@ -155,6 +155,7 @@
     "summary": "Fiona is a brave and protective knight who serves Aureth. Her holy abilities center on battlefield healing, radiant swordsmanship, and instinctively shielding others. Her golden paladin armor responds most strongly when she acts out of protectiveness.",
     "details": "Knight and paladin of Aureth, Goddess of Magic.",
     "aliases": [
+      "Fiona",
       "Lily"
     ],
     "tags": [
@@ -172,10 +173,15 @@
       "inventory-item-fiona-jewelry",
       "inventory-item-fiona-feast-of-ancestors-ticket"
     ],
+    "inventoryIdPrefix": "fiona",
     "evidence": [
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      },
+      {
+        "type": "character-update",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
       }
     ],
     "source": {
@@ -183,20 +189,20 @@
       "path": "characters/index.html",
       "anchor": "fiona"
     },
-    "abilityPointTotal": "",
+    "abilityPointTotal": "30",
     "abilityScores": {
-      "strength": "",
-      "dexterity": "",
-      "constitution": "",
-      "intelligence": "",
-      "wisdom": "",
-      "charisma": ""
+      "strength": "5",
+      "dexterity": "5",
+      "constitution": "3",
+      "intelligence": "10",
+      "wisdom": "5",
+      "charisma": "2"
     },
     "combat": {
-      "currentHp": "",
+      "currentHp": "10",
       "maximumHp": "",
       "temporaryHp": "",
-      "armorClass": ""
+      "armorClass": "10"
     },
     "powers": [
       {
@@ -284,6 +290,21 @@
         "name": "Feast of Ancestors Ticket",
         "quantity": "1",
         "charges": "Ceremonial access"
+      },
+      {
+        "name": "Cavalry",
+        "quantity": "10",
+        "charges": ""
+      },
+      {
+        "name": "Swordsmen",
+        "quantity": "10",
+        "charges": ""
+      },
+      {
+        "name": "Archers",
+        "quantity": "10",
+        "charges": ""
       }
     ],
     "currency": {
@@ -293,7 +314,7 @@
       "other": ""
     },
     "specialResources": "",
-    "sessionNotes": "The source notes a handwritten jewelry addition, but its details are not clear enough to confirm. Other unclear handwritten markings remain unresolved."
+    "sessionNotes": "The source notes a handwritten jewelry addition, but its details are not clear enough to confirm."
   },
   {
     "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
@@ -2367,6 +2388,42 @@
     "ownerName": "Queen Flower of Veylathar"
   },
   {
+    "id": "inventory-item-fiona-archers",
+    "domain": "inventory-item",
+    "name": "Archers",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
+    "details": "Qty: 10",
+    "aliases": [
+      "Fiona Blossom Flare"
+    ],
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "relatedIds": [
+      "character-fiona"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      },
+      {
+        "type": "character-update",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
+      }
+    ],
+    "source": {
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "fiona"
+    },
+    "ownerName": "Fiona Blossom Flare"
+  },
+  {
     "id": "inventory-item-golo-bow-and-arrows",
     "domain": "inventory-item",
     "name": "Bow and Arrows",
@@ -2402,10 +2459,10 @@
     "id": "inventory-item-fiona-brass-wings",
     "domain": "inventory-item",
     "name": "Brass Wings",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "details": "Qty: 1 pair | Charges: Armor-linked",
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "tags": [
       "inventory-item",
@@ -2421,6 +2478,10 @@
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      },
+      {
+        "type": "character-update",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
       }
     ],
     "source": {
@@ -2428,7 +2489,43 @@
       "path": "characters/index.html",
       "anchor": "fiona"
     },
-    "ownerName": "Fiona"
+    "ownerName": "Fiona Blossom Flare"
+  },
+  {
+    "id": "inventory-item-fiona-cavalry",
+    "domain": "inventory-item",
+    "name": "Cavalry",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
+    "details": "Qty: 10",
+    "aliases": [
+      "Fiona Blossom Flare"
+    ],
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "relatedIds": [
+      "character-fiona"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      },
+      {
+        "type": "character-update",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
+      }
+    ],
+    "source": {
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "fiona"
+    },
+    "ownerName": "Fiona Blossom Flare"
   },
   {
     "id": "inventory-item-sertraline-dwarven-bracers-of-mage-hands",
@@ -2498,10 +2595,10 @@
     "id": "inventory-item-fiona-feast-of-ancestors-ticket",
     "domain": "inventory-item",
     "name": "Feast of Ancestors Ticket",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "details": "Qty: 1 | Charges: Ceremonial access",
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "tags": [
       "inventory-item",
@@ -2517,6 +2614,10 @@
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      },
+      {
+        "type": "character-update",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
       }
     ],
     "source": {
@@ -2524,7 +2625,7 @@
       "path": "characters/index.html",
       "anchor": "fiona"
     },
-    "ownerName": "Fiona"
+    "ownerName": "Fiona Blossom Flare"
   },
   {
     "id": "inventory-item-golo-flight-shoes",
@@ -2562,10 +2663,10 @@
     "id": "inventory-item-fiona-golden-paladin-armor",
     "domain": "inventory-item",
     "name": "Golden Paladin Armor",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "details": "Qty: 1 | Charges: Equipped",
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "tags": [
       "inventory-item",
@@ -2581,6 +2682,10 @@
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      },
+      {
+        "type": "character-update",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
       }
     ],
     "source": {
@@ -2588,16 +2693,16 @@
       "path": "characters/index.html",
       "anchor": "fiona"
     },
-    "ownerName": "Fiona"
+    "ownerName": "Fiona Blossom Flare"
   },
   {
     "id": "inventory-item-fiona-jewelry",
     "domain": "inventory-item",
     "name": "Jewelry",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "details": "Charges: Details unresolved",
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "tags": [
       "inventory-item",
@@ -2613,6 +2718,10 @@
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      },
+      {
+        "type": "character-update",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
       }
     ],
     "source": {
@@ -2620,7 +2729,7 @@
       "path": "characters/index.html",
       "anchor": "fiona"
     },
-    "ownerName": "Fiona"
+    "ownerName": "Fiona Blossom Flare"
   },
   {
     "id": "inventory-item-queen-flower-of-veylathar-map",
@@ -2666,10 +2775,10 @@
     "id": "inventory-item-fiona-radiant-sword-of-aureth",
     "domain": "inventory-item",
     "name": "Radiant Sword of Aureth",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "details": "Qty: 1 | Charges: Equipped",
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "tags": [
       "inventory-item",
@@ -2685,6 +2794,10 @@
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      },
+      {
+        "type": "character-update",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
       }
     ],
     "source": {
@@ -2692,16 +2805,16 @@
       "path": "characters/index.html",
       "anchor": "fiona"
     },
-    "ownerName": "Fiona"
+    "ownerName": "Fiona Blossom Flare"
   },
   {
     "id": "inventory-item-fiona-rocky-talkie",
     "domain": "inventory-item",
     "name": "Rocky Talkie",
-    "summary": "Inventory entry for Fiona.",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
     "details": "Qty: 1 | Charges: Carried",
     "aliases": [
-      "Fiona"
+      "Fiona Blossom Flare"
     ],
     "tags": [
       "inventory-item",
@@ -2717,6 +2830,10 @@
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      },
+      {
+        "type": "character-update",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
       }
     ],
     "source": {
@@ -2724,7 +2841,7 @@
       "path": "characters/index.html",
       "anchor": "fiona"
     },
-    "ownerName": "Fiona"
+    "ownerName": "Fiona Blossom Flare"
   },
   {
     "id": "inventory-item-golo-rocky-talkie",
@@ -2901,6 +3018,42 @@
       "anchor": "golo"
     },
     "ownerName": "Golo"
+  },
+  {
+    "id": "inventory-item-fiona-swordsmen",
+    "domain": "inventory-item",
+    "name": "Swordsmen",
+    "summary": "Inventory entry for Fiona Blossom Flare.",
+    "details": "Qty: 10",
+    "aliases": [
+      "Fiona Blossom Flare"
+    ],
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "relatedIds": [
+      "character-fiona"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      },
+      {
+        "type": "character-update",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-08-04-fiona-sheet-update.json"
+      }
+    ],
+    "source": {
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "fiona"
+    },
+    "ownerName": "Fiona Blossom Flare"
   },
   {
     "id": "inventory-item-golo-the-artifact",
