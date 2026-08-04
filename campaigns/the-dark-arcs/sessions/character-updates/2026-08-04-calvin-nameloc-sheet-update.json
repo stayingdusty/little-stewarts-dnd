@@ -1,0 +1,107 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/character-update.schema.json",
+  "sessionId": "2026-08-04-calvin-nameloc-sheet-update",
+  "status": "applied",
+  "visibility": "dm-only",
+  "updates": [
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "player",
+      "previousValue": "",
+      "proposedValue": "Coleman",
+      "evidence": ["uploaded photo page 1, player box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "levelRank",
+      "previousValue": "",
+      "proposedValue": "2",
+      "evidence": ["uploaded photo page 1, handwritten level note"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "movement",
+      "previousValue": "",
+      "proposedValue": "60",
+      "evidence": ["uploaded photo page 1, movement box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "abilityPointTotal",
+      "previousValue": "",
+      "proposedValue": "30 pts.",
+      "evidence": ["uploaded photo page 1, handwritten ability point total"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "abilityScores",
+      "previousValue": {"strength": "", "dexterity": "", "constitution": "", "intelligence": "", "wisdom": "", "charisma": ""},
+      "proposedValue": {"strength": "10", "dexterity": "2", "constitution": "3", "intelligence": "2", "wisdom": "5", "charisma": "8"},
+      "evidence": ["uploaded photo page 1, ability score boxes"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "combat.currentHp",
+      "previousValue": "",
+      "proposedValue": "10",
+      "evidence": ["uploaded photo page 1, current HP box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "combat.armorClass",
+      "previousValue": "",
+      "proposedValue": "10",
+      "evidence": ["uploaded photo page 1, armor class box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "attacks",
+      "previousValue": "Blank to-hit and damage fields for Spirit Bite and Titan Leap Slam; blank Howl — Empower to-hit",
+      "proposedValue": "Spirit Bite: Enemy AC, Melee, 2d4; Titan Leap Slam: Enemy AC, 1d8; Howl — Empower: 12 to hit, advantage effect",
+      "evidence": ["uploaded photo page 2, attacks and damage table"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "inventory",
+      "previousValue": [],
+      "proposedValue": [{"name": "Extending pole hammer", "quantity": "1", "charges": "Equipped; extends from a 5-foot walking stick to a 10-foot war hammer on a pole"}],
+      "evidence": ["uploaded photo page 2, equipped items box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "relatedIds",
+      "previousValue": [],
+      "proposedValue": ["inventory-item-calvin-nameloc-extending-pole-hammer"],
+      "evidence": ["uploaded photo page 2, equipped items box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "sessionNotes",
+      "previousValue": "Base-form equipment, ordinary attacks, special training, Great Hound appearance, personality, favorite move, and awakening catchphrase remain unrecorded.",
+      "proposedValue": "Great Hound appearance / glow: Blue glow. Plot mystery: What's up with these strange dreams I have been having? Great Hound personality, favorite move, and awakening catchphrase remain unrecorded.",
+      "evidence": ["uploaded photo page 1, handwritten plot mystery note", "uploaded photo page 2, Great Hound appearance / glow field"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    }
+  ]
+}
