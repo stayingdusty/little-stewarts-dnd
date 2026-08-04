@@ -11,6 +11,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -28,6 +36,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -45,6 +61,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -62,6 +86,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -79,6 +111,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -96,6 +136,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -113,6 +161,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -124,12 +180,24 @@
     "name": "Petaltown",
     "summary": "Location referenced in Arc 1 source material: Petaltown.",
     "details": "Extracted from playthrough summaries and world references.",
-    "aliases": [],
+    "aliases": [
+      "Peddletown",
+      "Peddle Town",
+      "Pedle Town"
+    ],
     "tags": [
       "location",
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -141,12 +209,24 @@
     "name": "Veylathar",
     "summary": "Location referenced in Arc 1 source material: Veylathar.",
     "details": "Extracted from playthrough summaries and world references.",
-    "aliases": [],
+    "aliases": [
+      "Vlaar",
+      "Valethar",
+      "Velithar"
+    ],
     "tags": [
       "location",
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -164,6 +244,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"

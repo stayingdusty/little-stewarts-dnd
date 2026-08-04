@@ -16,6 +16,15 @@
       "base-form-notes",
       "external-bonds-relationships"
     ],
+    "aliases": [
+      "CALVIN",
+      "NAMELOC",
+      "Calvin",
+      "Nameloc",
+      "Calvin Nameloc"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html",
     "sourceAnchor": "calvin-nameloc",
     "timelineValue": 0,
@@ -38,6 +47,11 @@
       "external-bonds-relationships",
       "attacks-combat-actions"
     ],
+    "aliases": [
+      "Fiona"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html",
     "sourceAnchor": "fiona",
     "timelineValue": 0,
@@ -60,6 +74,11 @@
       "special-rules-notes",
       "attacks-damage-healing-dice"
     ],
+    "aliases": [
+      "Golo"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html",
     "sourceAnchor": "golo",
     "timelineValue": 0,
@@ -82,6 +101,13 @@
       "special-rules-notes",
       "attacks-damage-healing-dice"
     ],
+    "aliases": [
+      "Queen",
+      "Flower",
+      "Queen Flower"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
     "sourceAnchor": "queen-flower-of-veylathar",
     "timelineValue": 0,
@@ -104,6 +130,11 @@
       "special-rules-notes",
       "attacks-damage-healing-dice"
     ],
+    "aliases": [
+      "Sertraline"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html",
     "sourceAnchor": "sertraline",
     "timelineValue": 0,
@@ -118,6 +149,9 @@
       "npc",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -132,6 +166,9 @@
       "npc",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -146,52 +183,52 @@
       "npc",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "frederick a trusted local ally connected to the party's city life in veylathar. a trusted local ally connected to the party's city life in veylathar. npc arc-1"
   },
   {
-    "id": "npc-gareth",
+    "id": "npc-garoth",
     "kind": "npc",
-    "name": "Gareth",
+    "name": "Garoth",
     "summary": "A major security figure with key intelligence about dark arc anomalies.",
     "tags": [
       "npc",
       "arc-1"
     ],
+    "aliases": [
+      "Gareth"
+    ],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html",
     "sourceAnchor": "",
     "timelineValue": 0,
-    "searchableText": "gareth a major security figure with key intelligence about dark arc anomalies. a major security figure with key intelligence about dark arc anomalies. npc arc-1"
+    "searchableText": "garoth a major security figure with key intelligence about dark arc anomalies. a major security figure with key intelligence about dark arc anomalies. gareth npc arc-1"
   },
   {
     "id": "npc-jerry-mander",
     "kind": "npc",
     "name": "Jerry Mander",
-    "summary": "A recurring figure tied to Dark Arc routes and deceptive trails.",
+    "summary": "The recurring antagonist publicly known as the Man in the White Suit.",
     "tags": [
       "npc",
       "arc-1"
     ],
-    "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_6_playthrough_summary.html",
-    "sourceAnchor": "",
-    "timelineValue": 0,
-    "searchableText": "jerry mander a recurring figure tied to dark arc routes and deceptive trails. a recurring figure tied to dark arc routes and deceptive trails. npc arc-1"
-  },
-  {
-    "id": "npc-man-in-the-white-suit",
-    "kind": "npc",
-    "name": "Man in the White Suit",
-    "summary": "A recurring mysterious figure connected to the riverboat and vault events.",
-    "tags": [
-      "npc",
-      "arc-1"
+    "aliases": [
+      "Man in the White Suit",
+      "the man in the white suit"
     ],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html",
     "sourceAnchor": "",
     "timelineValue": 0,
-    "searchableText": "man in the white suit a recurring mysterious figure connected to the riverboat and vault events. a recurring mysterious figure connected to the riverboat and vault events. npc arc-1"
+    "searchableText": "jerry mander the recurring antagonist publicly known as the man in the white suit. the recurring antagonist publicly known as the man in the white suit. man in the white suit the man in the white suit npc arc-1"
   },
   {
     "id": "npc-tindily-migrot",
@@ -202,10 +239,15 @@
       "npc",
       "arc-1"
     ],
+    "aliases": [
+      "Tindly Migrot"
+    ],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html",
     "sourceAnchor": "",
     "timelineValue": 0,
-    "searchableText": "tindily migrot a figure tied to the ancient pendant and academy of antiquities council dynamics. a figure tied to the ancient pendant and academy of antiquities council dynamics. npc arc-1"
+    "searchableText": "tindily migrot a figure tied to the ancient pendant and academy of antiquities council dynamics. a figure tied to the ancient pendant and academy of antiquities council dynamics. tindly migrot npc arc-1"
   },
   {
     "id": "location-crucible-district",
@@ -216,6 +258,9 @@
       "location",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -230,6 +275,9 @@
       "location",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -244,6 +292,9 @@
       "location",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -258,6 +309,9 @@
       "location",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -272,6 +326,9 @@
       "location",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -286,6 +343,9 @@
       "location",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -300,6 +360,9 @@
       "location",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -314,10 +377,17 @@
       "location",
       "arc-1"
     ],
+    "aliases": [
+      "Peddletown",
+      "Peddle Town",
+      "Pedle Town"
+    ],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/",
     "sourceAnchor": "",
     "timelineValue": 0,
-    "searchableText": "petaltown location referenced in arc 1 source material: petaltown. extracted from playthrough summaries and world references. location arc-1"
+    "searchableText": "petaltown location referenced in arc 1 source material: petaltown. extracted from playthrough summaries and world references. peddletown peddle town pedle town location arc-1"
   },
   {
     "id": "location-veylathar",
@@ -328,10 +398,17 @@
       "location",
       "arc-1"
     ],
+    "aliases": [
+      "Vlaar",
+      "Valethar",
+      "Velithar"
+    ],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/",
     "sourceAnchor": "",
     "timelineValue": 0,
-    "searchableText": "veylathar location referenced in arc 1 source material: veylathar. extracted from playthrough summaries and world references. location arc-1"
+    "searchableText": "veylathar location referenced in arc 1 source material: veylathar. extracted from playthrough summaries and world references. vlaar valethar velithar location arc-1"
   },
   {
     "id": "location-wayward-flame",
@@ -342,6 +419,9 @@
       "location",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "playthrough_summary",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -360,6 +440,9 @@
       "hells",
       "wildlife"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -380,6 +463,9 @@
       "pirate",
       "thieves"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -398,6 +484,9 @@
       "pass",
       "mountain"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -416,6 +505,9 @@
       "veylathar",
       "buried"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -425,21 +517,24 @@
     "id": "encounter-arc1-map-11",
     "kind": "encounter",
     "name": "Dead King’s Watch",
-    "summary": "Western old battlefield near Pedle Town • Honorable undead",
+    "summary": "Western old battlefield near Petaltown • Honorable undead",
     "tags": [
       "encounter",
       "arc-1",
       "western",
       "battlefield",
       "near",
-      "pedle",
-      "town",
-      "honorable"
+      "petaltown",
+      "honorable",
+      "undead"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
-    "searchableText": "dead king’s watch western old battlefield near pedle town • honorable undead encounter marker 11 from old world tracker. encounter arc-1 western battlefield near pedle town honorable"
+    "searchableText": "dead king’s watch western old battlefield near petaltown • honorable undead encounter marker 11 from old world tracker. encounter arc-1 western battlefield near petaltown honorable undead"
   },
   {
     "id": "encounter-arc1-map-12",
@@ -455,6 +550,9 @@
       "rival",
       "cavalry"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -475,6 +573,9 @@
       "rival",
       "kingdom"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -484,21 +585,23 @@
     "id": "encounter-arc1-map-2",
     "kind": "encounter",
     "name": "Moss Titan Boundary",
-    "summary": "Pedle Town wildwood edge • Old forest ruin",
+    "summary": "Petaltown wildwood edge • Old forest ruin",
     "tags": [
       "encounter",
       "arc-1",
-      "pedle",
-      "town",
+      "petaltown",
       "wildwood",
       "edge",
       "forest",
       "ruin"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
-    "searchableText": "moss titan boundary pedle town wildwood edge • old forest ruin encounter marker 2 from old world tracker. encounter arc-1 pedle town wildwood edge forest ruin"
+    "searchableText": "moss titan boundary petaltown wildwood edge • old forest ruin encounter marker 2 from old world tracker. encounter arc-1 petaltown wildwood edge forest ruin"
   },
   {
     "id": "encounter-arc1-map-5",
@@ -515,6 +618,9 @@
       "giant",
       "beast"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -535,6 +641,9 @@
       "canyon",
       "elemental"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -555,6 +664,9 @@
       "airship",
       "pirates"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -574,6 +686,9 @@
       "forest",
       "road"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "world_tracker",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -593,6 +708,9 @@
       "author",
       "magic"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -610,6 +728,9 @@
       "first",
       "doubt"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -629,6 +750,9 @@
       "spirit",
       "hound"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -645,6 +769,9 @@
       "cosmology",
       "glance"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -661,6 +788,9 @@
       "dark",
       "arcs"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -680,6 +810,9 @@
       "campaign",
       "elements"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -700,6 +833,9 @@
       "than",
       "defeat"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -719,6 +855,9 @@
       "mythological",
       "role"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -737,6 +876,9 @@
       "resolve",
       "later"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -753,6 +895,9 @@
       "permanent",
       "canon"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -770,6 +915,9 @@
       "reveal",
       "progression"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -789,6 +937,9 @@
       "boss",
       "archetypes"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -804,6 +955,9 @@
       "arc-1",
       "convergence"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -822,6 +976,9 @@
       "moon",
       "walking"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -838,6 +995,9 @@
       "first",
       "doubt"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -855,6 +1015,9 @@
       "ethereal",
       "realms"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -870,6 +1033,9 @@
       "arc-1",
       "restoration"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -887,6 +1053,9 @@
       "nature",
       "magic"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -904,6 +1073,9 @@
       "mythological",
       "pillars"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -919,6 +1091,9 @@
       "gm-only",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -934,6 +1109,9 @@
       "gm-only",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -949,6 +1127,9 @@
       "gm-only",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -964,6 +1145,9 @@
       "gm-only",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -979,28 +1163,16 @@
       "gm-only",
       "arc-1"
     ],
+    "aliases": [],
+    "visibility": "dm-only",
+    "sourceType": "dm_lore_reference",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "dm secret 5 final dm note: the mythology should remain flexible enough to respond to the children's choices. the cosmology provides a destination and thematic structure, but the party's actions should determine w final dm note: the mythology should remain flexible enough to respond to the children's choices. the cosmology provides a destination and thematic structure, but the party's actions should determine what reconciliation actually looks like and who ultimately accepts responsibility for the future. secret gm-only arc-1"
   },
   {
-    "id": "inventory-item-queen-flower-of-veylathar-10-map-matches-5",
-    "kind": "inventory-item",
-    "name": "10 Map Matches",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
-    "tags": [
-      "inventory-item",
-      "arc-1",
-      "inventory"
-    ],
-    "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
-    "sourceAnchor": "",
-    "timelineValue": 0,
-    "searchableText": "10 map matches inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
-  },
-  {
-    "id": "inventory-item-golo-10-snap-matches-7",
+    "id": "inventory-item-golo-10-snap-matches",
     "kind": "inventory-item",
     "name": "10 Snap Matches",
     "summary": "Inventory entry for GOLO.",
@@ -1009,13 +1181,38 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "GOLO"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "10 snap matches inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-sertraline-10-snap-matches-4",
+    "id": "inventory-item-queen-flower-of-veylathar-10-snap-matches",
+    "kind": "inventory-item",
+    "name": "10 Snap Matches",
+    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "aliases": [
+      "QUEEN FLOWER OF VEYLATHAR"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
+    "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
+    "sourceAnchor": "",
+    "timelineValue": 0,
+    "searchableText": "10 snap matches inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
+  },
+  {
+    "id": "inventory-item-sertraline-10-snap-matches",
     "kind": "inventory-item",
     "name": "10 Snap Matches",
     "summary": "Inventory entry for SERTRALINE.",
@@ -1024,13 +1221,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "SERTRALINE"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "10 snap matches inventory entry for sertraline. tracked in sertraline's inventory. sertraline inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-queen-flower-of-veylathar-ancestral-pendant-of-veylathar-1",
+    "id": "inventory-item-queen-flower-of-veylathar-ancestral-pendant-of-veylathar",
     "kind": "inventory-item",
     "name": "Ancestral Pendant of Veylathar",
     "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
@@ -1039,13 +1241,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "QUEEN FLOWER OF VEYLATHAR"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "ancestral pendant of veylathar inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-golo-bow-and-arrows-1",
+    "id": "inventory-item-golo-bow-and-arrows",
     "kind": "inventory-item",
     "name": "Bow and Arrows",
     "summary": "Inventory entry for GOLO.",
@@ -1054,13 +1261,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "GOLO"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "bow and arrows inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-fiona-brass-wings-3",
+    "id": "inventory-item-fiona-brass-wings",
     "kind": "inventory-item",
     "name": "Brass Wings",
     "summary": "Inventory entry for FIONA.",
@@ -1069,13 +1281,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "FIONA"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "brass wings inventory entry for fiona. tracked in fiona's inventory. fiona inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-sertraline-dwarven-bracers-of-mage-hands-2",
+    "id": "inventory-item-sertraline-dwarven-bracers-of-mage-hands",
     "kind": "inventory-item",
     "name": "Dwarven Bracers of Mage Hands",
     "summary": "Inventory entry for SERTRALINE.",
@@ -1084,13 +1301,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "SERTRALINE"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "dwarven bracers of mage hands inventory entry for sertraline. tracked in sertraline's inventory. sertraline inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-golo-dwarven-hammer-of-earthshatter-2",
+    "id": "inventory-item-golo-dwarven-hammer-of-earthshatter",
     "kind": "inventory-item",
     "name": "Dwarven Hammer of Earthshatter",
     "summary": "Inventory entry for GOLO.",
@@ -1099,13 +1321,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "GOLO"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "dwarven hammer of earthshatter inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-fiona-feast-of-ancestors-ticket-6",
+    "id": "inventory-item-fiona-feast-of-ancestors-ticket",
     "kind": "inventory-item",
     "name": "Feast of Ancestors Ticket",
     "summary": "Inventory entry for FIONA.",
@@ -1114,13 +1341,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "FIONA"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "feast of ancestors ticket inventory entry for fiona. tracked in fiona's inventory. fiona inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-golo-flight-shoes-5",
+    "id": "inventory-item-golo-flight-shoes",
     "kind": "inventory-item",
     "name": "Flight Shoes",
     "summary": "Inventory entry for GOLO.",
@@ -1129,13 +1361,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "GOLO"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "flight shoes inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-fiona-golden-paladin-armor-2",
+    "id": "inventory-item-fiona-golden-paladin-armor",
     "kind": "inventory-item",
     "name": "Golden Paladin Armor",
     "summary": "Inventory entry for FIONA.",
@@ -1144,13 +1381,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "FIONA"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "golden paladin armor inventory entry for fiona. tracked in fiona's inventory. fiona inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-fiona-jewelry-7",
+    "id": "inventory-item-fiona-jewelry",
     "kind": "inventory-item",
     "name": "Jewelry",
     "summary": "Inventory entry for FIONA.",
@@ -1159,28 +1401,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "FIONA"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "jewelry inventory entry for fiona. tracked in fiona's inventory. fiona inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-fiona-jewelry-details-tbd-5",
-    "kind": "inventory-item",
-    "name": "Jewelry — details TBD",
-    "summary": "Inventory entry for FIONA.",
-    "tags": [
-      "inventory-item",
-      "arc-1",
-      "inventory"
-    ],
-    "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html",
-    "sourceAnchor": "",
-    "timelineValue": 0,
-    "searchableText": "jewelry — details tbd inventory entry for fiona. tracked in fiona's inventory. fiona inventory-item arc-1 inventory"
-  },
-  {
-    "id": "inventory-item-queen-flower-of-veylathar-map-4",
+    "id": "inventory-item-queen-flower-of-veylathar-map",
     "kind": "inventory-item",
     "name": "Map",
     "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
@@ -1189,13 +1421,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "QUEEN FLOWER OF VEYLATHAR"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "map inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-fiona-radiant-sword-of-aureth-1",
+    "id": "inventory-item-fiona-radiant-sword-of-aureth",
     "kind": "inventory-item",
     "name": "Radiant Sword of Aureth",
     "summary": "Inventory entry for FIONA.",
@@ -1204,13 +1441,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "FIONA"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "radiant sword of aureth inventory entry for fiona. tracked in fiona's inventory. fiona inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-fiona-rocky-talkie-4",
+    "id": "inventory-item-fiona-rocky-talkie",
     "kind": "inventory-item",
     "name": "Rocky Talkie",
     "summary": "Inventory entry for FIONA.",
@@ -1219,13 +1461,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "FIONA"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "rocky talkie inventory entry for fiona. tracked in fiona's inventory. fiona inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-golo-rocky-talkie-6",
+    "id": "inventory-item-golo-rocky-talkie",
     "kind": "inventory-item",
     "name": "Rocky Talkie",
     "summary": "Inventory entry for GOLO.",
@@ -1234,13 +1481,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "GOLO"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "rocky talkie inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-queen-flower-of-veylathar-rocky-talkie-3",
+    "id": "inventory-item-queen-flower-of-veylathar-rocky-talkie",
     "kind": "inventory-item",
     "name": "Rocky Talkie",
     "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
@@ -1249,13 +1501,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "QUEEN FLOWER OF VEYLATHAR"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "rocky talkie inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-sertraline-rocky-talkie-3",
+    "id": "inventory-item-sertraline-rocky-talkie",
     "kind": "inventory-item",
     "name": "Rocky Talkie",
     "summary": "Inventory entry for SERTRALINE.",
@@ -1264,13 +1521,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "SERTRALINE"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "rocky talkie inventory entry for sertraline. tracked in sertraline's inventory. sertraline inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-queen-flower-of-veylathar-royal-regalia-2",
+    "id": "inventory-item-queen-flower-of-veylathar-royal-regalia",
     "kind": "inventory-item",
     "name": "Royal Regalia",
     "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
@@ -1279,13 +1541,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "QUEEN FLOWER OF VEYLATHAR"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "royal regalia inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-golo-saddle-4",
+    "id": "inventory-item-golo-saddle",
     "kind": "inventory-item",
     "name": "Saddle",
     "summary": "Inventory entry for GOLO.",
@@ -1294,13 +1561,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "GOLO"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "saddle inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-golo-the-artifact-3",
+    "id": "inventory-item-golo-the-artifact",
     "kind": "inventory-item",
     "name": "The Artifact",
     "summary": "Inventory entry for GOLO.",
@@ -1309,13 +1581,18 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "GOLO"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html",
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "the artifact inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-sertraline-wisp-cloak-1",
+    "id": "inventory-item-sertraline-wisp-cloak",
     "kind": "inventory-item",
     "name": "Wisp Cloak",
     "summary": "Inventory entry for SERTRALINE.",
@@ -1324,6 +1601,11 @@
       "arc-1",
       "inventory"
     ],
+    "aliases": [
+      "SERTRALINE"
+    ],
+    "visibility": "player",
+    "sourceType": "character_sheet",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html",
     "sourceAnchor": "",
     "timelineValue": 0,
@@ -1339,10 +1621,13 @@
       "arc-1",
       "chapter-1"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-1-petaltown-to-the-wayward-flame",
     "timelineValue": 1,
-    "searchableText": "arc 1, chapter 1: petaltown to the wayward flame the party formed in petaltown after strange animal aggression and enormous dark arcs appeared in the sky. their first journey carried them through a starving outpost, onto a magical riverboat, into possession of a rune-covered artifact, and finally to the outskirts of veylathar. the party ended the chapter with a new magical power, one remaining snap match, a dangerous connection to the mysterious man in the white suit, and a new home base at the wayward flame. character-fiona character-golo character-queen-flower character-sertraline petaltown veylathar wayward flame recurring thread the man in the white suit has not been resolved. he should remain connected to the riverboat, the stolen vault, the artifact, or the broader fo canon arc-1 chapter-1"
+    "searchableText": "arc 1, chapter 1: petaltown to the wayward flame the party formed in petaltown after strange animal aggression and enormous dark arcs appeared in the sky. their first journey carried them through a starving outpost, onto a magical riverboat, into possession of a rune-covered artifact, and finally to the outskirts of veylathar. the party ended the chapter with a new magical power, one remaining snap match, a dangerous connection to the mysterious man in the white suit, and a new home base at the wayward flame. character-fiona character-golo character-queen-flower character-sertraline petaltown veylathar wayward flame  canon arc-1 chapter-1"
   },
   {
     "id": "canon-arc1-chapter2",
@@ -1354,10 +1639,13 @@
       "arc-1",
       "chapter-2"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-2-the-city-of-sparks",
     "timelineValue": 2,
-    "searchableText": "arc 1, chapter 2: the city of sparks the party establishes itself in veylathar, explores the city's magical infrastructure, uncovers the first hints of political unrest, and fiona undergoes a life-changing transformation. the wayward flame becomes the party's home, frederick becomes a friend, queen flower's pendant reacts to the luminary dome, and fiona becomes a paladin of aureth. character-fiona character-golo character-queen-flower character-sertraline veylathar luminary dome ethereum academy crucible district wayward flame canon arc-1 chapter-2"
+    "searchableText": "arc 1, chapter 2: the city of sparks the party establishes itself in veylathar, explores the city's magical infrastructure, uncovers the first hints of political unrest, and fiona undergoes a life-changing transformation. the wayward flame becomes the party's home, frederick becomes a friend, queen flower's pendant reacts to the luminary dome, and fiona becomes a paladin of aureth. character-fiona character-golo character-queen-flower character-sertraline veylathar luminary dome ethereum academy crucible district wayward flame  canon arc-1 chapter-2"
   },
   {
     "id": "canon-arc1-chapter3",
@@ -1369,25 +1657,31 @@
       "arc-1",
       "chapter-3"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_3_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-3-contracts-campaigns-conspiracies",
     "timelineValue": 3,
-    "searchableText": "arc 1, chapter 3: contracts, campaigns & conspiracies after two weeks of living in veylathar, the party stops feeling like temporary visitors. they take jobs, build goodwill, unlock new magical abilities, begin queen flower's political campaign, gain permanent lodging, and uncover several mysteries connected to the man in the white suit, the stolen great tree sap, and the academy of sparks. the party ends the chapter financially stable, politically active, and equipped for infiltration. golo gains licensed hellfire magic and flight, sertraline awakens her druidic power, fiona becomes a trusted healer, and queen flower gains a path toward securing district votes in the election for queen regent. character-fiona character-golo character-queen-flower character-sertraline veylathar great tree crucible district wayward flame canon arc-1 chapter-3"
+    "searchableText": "arc 1, chapter 3: contracts, campaigns & conspiracies after two weeks of living in veylathar, the party stops feeling like temporary visitors. they take jobs, build goodwill, unlock new magical abilities, begin queen flower's political campaign, gain permanent lodging, and uncover several mysteries connected to the man in the white suit, the stolen great tree sap, and the academy of sparks. the party ends the chapter financially stable, politically active, and equipped for infiltration. golo gains licensed hellfire magic and flight, sertraline awakens her druidic power, fiona becomes a trusted healer, and queen flower gains a path toward securing district votes in the election for queen regent. character-fiona character-golo character-queen-flower character-sertraline veylathar great tree crucible district wayward flame  canon arc-1 chapter-3"
   },
   {
     "id": "canon-arc1-chapter4",
     "kind": "canon",
     "name": "Arc 1, Chapter 4: The Academy of Sparks Heist",
-    "summary": "Chapter 4 delivers the payoff to the infiltration prepared at the end of Chapter 3. Sertraline and Fiona enter the nine-floor Academy of Sparks, move through specialized magical floors, trigger a full security response, and battle Gareth, the Academy's formidable head of security. The fight crashes into the Chronomancy floor, where time magic permanently transforms Fiona's armor and temporarily reshapes Sertraline. With Golo's arrival, the party combines flight, ice arrows, fire breath, berserker strength, and Dwarven Fire Runes to break open the Academy vault and recover the stolen Great Tree sap. The party confirms that the black goop is authentic Great Tree sap through Golo's ancestral vision. They escape to the Crucible District, where the dwarven boss offers protection, promises the agreed reward, and announces custom dwarven-forged gifts for the party. The Academy of Sparks mini-arc is complete, Fiona's divine armor has awakened, Gareth survives as a possible future mentor or rival, and Chapter 5 is positioned to begin with the dwarven reward ceremony.",
+    "summary": "Chapter 4 delivers the payoff to the infiltration prepared at the end of Chapter 3. Sertraline and Fiona enter the nine-floor Academy of Sparks, move through specialized magical floors, trigger a full security response, and battle Garoth, the Academy's formidable head of security. The fight crashes into the Chronomancy floor, where time magic permanently transforms Fiona's armor and temporarily reshapes Sertraline. With Golo's arrival, the party combines flight, ice arrows, fire breath, berserker strength, and Dwarven Fire Runes to break open the Academy vault and recover the stolen Great Tree sap. The party confirms that the black goop is authentic Great Tree sap through Golo's ancestral vision. They escape to the Crucible District, where the dwarven boss offers protection, promises the agreed reward, and announces custom dwarven-forged gifts for the party. The Academy of Sparks mini-arc is complete, Fiona's divine armor has awakened, Garoth survives as a possible future mentor or rival, and Chapter 5 is positioned to begin with the dwarven reward ceremony.",
     "tags": [
       "canon",
       "arc-1",
       "chapter-4"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-4-the-academy-of-sparks-heist",
     "timelineValue": 4,
-    "searchableText": "arc 1, chapter 4: the academy of sparks heist chapter 4 delivers the payoff to the infiltration prepared at the end of chapter 3. sertraline and fiona enter the nine-floor academy of sparks, move through specialized magical floors, trigger a full security response, and battle gareth, the academy's formidable head of security. the fight crashes into the chronomancy floor, where time magic permanently transforms fiona's armor and temporarily reshapes sertraline. with golo's arrival, the party combines flight, ice arrows, fire breath, berserker strength, and dwarven fire runes to break open the academy vault and recover the stolen great tree sap. the party confirms that the black goop is authentic great tree sap through golo's ancestral vision. they escape to the crucible district, where the dwarven boss offers protection, promises the agreed reward, and announces custom dwarven-forged gifts for the party. the academy of sparks mini-arc is complete, fiona's divine armor has awakened, gareth survives as a possible future mentor or rival, and chapter 5 is positioned to begin with the dwarven reward ceremony. character-fiona character-golo character-queen-flower character-sertraline great tree crucible district ethereum academy veylathar canon arc-1 chapter-4"
+    "searchableText": "arc 1, chapter 4: the academy of sparks heist chapter 4 delivers the payoff to the infiltration prepared at the end of chapter 3. sertraline and fiona enter the nine-floor academy of sparks, move through specialized magical floors, trigger a full security response, and battle garoth, the academy's formidable head of security. the fight crashes into the chronomancy floor, where time magic permanently transforms fiona's armor and temporarily reshapes sertraline. with golo's arrival, the party combines flight, ice arrows, fire breath, berserker strength, and dwarven fire runes to break open the academy vault and recover the stolen great tree sap. the party confirms that the black goop is authentic great tree sap through golo's ancestral vision. they escape to the crucible district, where the dwarven boss offers protection, promises the agreed reward, and announces custom dwarven-forged gifts for the party. the academy of sparks mini-arc is complete, fiona's divine armor has awakened, garoth survives as a possible future mentor or rival, and chapter 5 is positioned to begin with the dwarven reward ceremony. character-fiona character-golo character-queen-flower character-sertraline great tree crucible district ethereum academy veylathar  canon arc-1 chapter-4"
   },
   {
     "id": "canon-arc1-chapter5",
@@ -1399,25 +1693,31 @@
       "arc-1",
       "chapter-5"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-5-the-academy-of-antiquities",
     "timelineValue": 5,
-    "searchableText": "arc 1, chapter 5: the academy of antiquities chapter 5 begins the morning after the academy of sparks heist. the dwarven boss formally rewards the party for recovering the stolen great tree sap, confirms the crucible district's support for queen flower, and presents each hero with a personalized gift or promise. a concealed security escort returns the party to the ethereum academy, where sertraline discovers that dr. fizzlebig is secretly connected to the robed guard and is herself promoted to command a six-person unit. the party then pieces together the matching vaults from the river cruise and the academy of sparks, chooses an election instead of a trial, and splits its efforts between the people of the marketplace and the academy of antiquities. queen flower's inherited pendant is revealed to be only half of an ancient artifact. beneath the great tree, tindily migrot reunites it with its missing half. the completed pendant projects a living map of every place it has previously traveled and hides untouched lands beneath fog. by tracing the map, queen flower gains limited astral projection and the ability to observe and interact with distant places connected to the pendant's history. tindily allows her to keep the artifact and makes the academy of antiquities' council vote contingent on queen flower researching and reporting on its nature and use. character-fiona character-golo character-queen-flower character-sertraline great tree crucible district ethereum academy wayward flame veylathar canon arc-1 chapter-5"
+    "searchableText": "arc 1, chapter 5: the academy of antiquities chapter 5 begins the morning after the academy of sparks heist. the dwarven boss formally rewards the party for recovering the stolen great tree sap, confirms the crucible district's support for queen flower, and presents each hero with a personalized gift or promise. a concealed security escort returns the party to the ethereum academy, where sertraline discovers that dr. fizzlebig is secretly connected to the robed guard and is herself promoted to command a six-person unit. the party then pieces together the matching vaults from the river cruise and the academy of sparks, chooses an election instead of a trial, and splits its efforts between the people of the marketplace and the academy of antiquities. queen flower's inherited pendant is revealed to be only half of an ancient artifact. beneath the great tree, tindily migrot reunites it with its missing half. the completed pendant projects a living map of every place it has previously traveled and hides untouched lands beneath fog. by tracing the map, queen flower gains limited astral projection and the ability to observe and interact with distant places connected to the pendant's history. tindily allows her to keep the artifact and makes the academy of antiquities' council vote contingent on queen flower researching and reporting on its nature and use. character-fiona character-golo character-queen-flower character-sertraline great tree crucible district ethereum academy wayward flame veylathar petaltown  canon arc-1 chapter-5"
   },
   {
     "id": "canon-arc1-chapter6",
     "kind": "canon",
     "name": "Arc 1, Chapter 6: The Falling Arena",
-    "summary": "Chapter 6 culminates in an arena battle fought on a platform suspended high above Veylathar. As the contest ends, the man in the white suit—known publicly in the city as Jerry Mander—uses snap matches to teleport from the spectator stands to the arena platform and disables the charms keeping it aloft. The entire arena begins falling toward the city. Jerry then attempts to reach and capture Queen Flower, but she surprises him, steals the snap matches from his hand, and snaps down to the falling platform. Fiona calls upon Arith for guidance and, after one match proves insufficient, uses roughly one hundred snap matches together to pull the arena and everyone within the resulting dark arc blip into the Ethereal Realm. Arith then returns the survivors to the Wayward Flame. Veylathar is saved from catastrophic destruction, but Jerry Mander escapes with his cronies using a separate supply of snap matches. The party convenes the city council and begins a formal investigation. Gareth reports that Jerry sometimes enters the Material Realm first as a rounded, indistinct shape before taking the form of a man. Dr. Fizzlebig explains that dark arcs are tears in reality: temporary blips may heal, but repeated damage can make them permanent. Every known dark arc bends toward the same central location. The party ends the chapter seeking Jerry, questioning his true nature, and investigating whether the wounds in reality can be healed.",
+    "summary": "Chapter 6 culminates in an arena battle fought on a platform suspended high above Veylathar. As the contest ends, the man in the white suit—known publicly in the city as Jerry Mander—uses snap matches to teleport from the spectator stands to the arena platform and disables the charms keeping it aloft. The entire arena begins falling toward the city. Jerry then attempts to reach and capture Queen Flower, but she surprises him, steals the snap matches from his hand, and snaps down to the falling platform. Fiona calls upon Aureth for guidance and, after one match proves insufficient, uses roughly one hundred snap matches together to pull the arena and everyone within the resulting dark arc blip into the Ethereal Realm. Aureth then returns the survivors to the Wayward Flame. Veylathar is saved from catastrophic destruction, but Jerry Mander escapes with his cronies using a separate supply of snap matches. The party convenes the city council and begins a formal investigation. Garoth reports that Jerry sometimes enters the Material Realm first as a rounded, indistinct shape before taking the form of a man. Dr. Fizzlebig explains that dark arcs are tears in reality: temporary blips may heal, but repeated damage can make them permanent. Every known dark arc bends toward the same central location. The party ends the chapter seeking Jerry, questioning his true nature, and investigating whether the wounds in reality can be healed.",
     "tags": [
       "canon",
       "arc-1",
       "chapter-6"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_6_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-6-the-falling-arena",
     "timelineValue": 6,
-    "searchableText": "arc 1, chapter 6: the falling arena chapter 6 culminates in an arena battle fought on a platform suspended high above veylathar. as the contest ends, the man in the white suit—known publicly in the city as jerry mander—uses snap matches to teleport from the spectator stands to the arena platform and disables the charms keeping it aloft. the entire arena begins falling toward the city. jerry then attempts to reach and capture queen flower, but she surprises him, steals the snap matches from his hand, and snaps down to the falling platform. fiona calls upon arith for guidance and, after one match proves insufficient, uses roughly one hundred snap matches together to pull the arena and everyone within the resulting dark arc blip into the ethereal realm. arith then returns the survivors to the wayward flame. veylathar is saved from catastrophic destruction, but jerry mander escapes with his cronies using a separate supply of snap matches. the party convenes the city council and begins a formal investigation. gareth reports that jerry sometimes enters the material realm first as a rounded, indistinct shape before taking the form of a man. dr. fizzlebig explains that dark arcs are tears in reality: temporary blips may heal, but repeated damage can make them permanent. every known dark arc bends toward the same central location. the party ends the chapter seeking jerry, questioning his true nature, and investigating whether the wounds in reality can be healed. character-fiona character-golo character-queen-flower character-sertraline veylathar ethereal realm wayward flame material realm canon arc-1 chapter-6"
+    "searchableText": "arc 1, chapter 6: the falling arena chapter 6 culminates in an arena battle fought on a platform suspended high above veylathar. as the contest ends, the man in the white suit—known publicly in the city as jerry mander—uses snap matches to teleport from the spectator stands to the arena platform and disables the charms keeping it aloft. the entire arena begins falling toward the city. jerry then attempts to reach and capture queen flower, but she surprises him, steals the snap matches from his hand, and snaps down to the falling platform. fiona calls upon aureth for guidance and, after one match proves insufficient, uses roughly one hundred snap matches together to pull the arena and everyone within the resulting dark arc blip into the ethereal realm. aureth then returns the survivors to the wayward flame. veylathar is saved from catastrophic destruction, but jerry mander escapes with his cronies using a separate supply of snap matches. the party convenes the city council and begins a formal investigation. garoth reports that jerry sometimes enters the material realm first as a rounded, indistinct shape before taking the form of a man. dr. fizzlebig explains that dark arcs are tears in reality: temporary blips may heal, but repeated damage can make them permanent. every known dark arc bends toward the same central location. the party ends the chapter seeking jerry, questioning his true nature, and investigating whether the wounds in reality can be healed. character-fiona character-golo character-queen-flower character-sertraline veylathar ethereal realm wayward flame material realm  canon arc-1 chapter-6"
   },
   {
     "id": "canon-arc1-chapter7",
@@ -1429,10 +1729,13 @@
       "arc-1",
       "chapter-7"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_7_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-7-the-day-after-the-council",
     "timelineValue": 7,
-    "searchableText": "arc 1, chapter 7: the day after the council chapter 7 takes place the day after the emergency city council meeting. with jerry mander missing and veylathar still unsettled, the heroes do not travel as a single party. each follows a personal responsibility: fiona inspects the city's military, golo returns to the crucible, sertraline tests her connection to nature and investigates the luminary dome, and queen flower begins working through the responsibilities of rulership. the chapter establishes four new campaign threads. fiona discovers serious neglect and possible theft within the southern garrison. golo learns that earthshatter now carries a heartbeat. sertraline discovers a lens beneath the luminary dome aimed toward an ethereal platform. queen flower is shown a full map of the wider world, opening the campaign beyond veylathar. character-fiona character-golo character-queen-flower character-sertraline veylathar luminary dome wayward flame crucible district ethereal realm canon arc-1 chapter-7"
+    "searchableText": "arc 1, chapter 7: the day after the council chapter 7 takes place the day after the emergency city council meeting. with jerry mander missing and veylathar still unsettled, the heroes do not travel as a single party. each follows a personal responsibility: fiona inspects the city's military, golo returns to the crucible, sertraline tests her connection to nature and investigates the luminary dome, and queen flower begins working through the responsibilities of rulership. the chapter establishes four new campaign threads. fiona discovers serious neglect and possible theft within the southern garrison. golo learns that earthshatter now carries a heartbeat. sertraline discovers a lens beneath the luminary dome aimed toward an ethereal platform. queen flower is shown a full map of the wider world, opening the campaign beyond veylathar. character-fiona character-golo character-queen-flower character-sertraline veylathar luminary dome wayward flame crucible district ethereal realm  canon arc-1 chapter-7"
   },
   {
     "id": "canon-arc1-chapter8",
@@ -1444,10 +1747,13 @@
       "arc-1",
       "chapter-8"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-8-the-burgled-treasury-nameloc",
     "timelineValue": 8,
-    "searchableText": "arc 1, chapter 8: the burgled treasury & nameloc chapter 8 begins with the garrison in worsening condition because gold reserved for food, equipment, and repairs keeps vanishing from its locked treasury. the party investigates the theft while also responding to reports of a massive beast hunting deer in the surrounding woods. the supposed monster is revealed to be nameloc, the gigantic blue dog spirit form of a misunderstood wandering boy named calvin. after an initial fight, the misunderstanding is resolved, and his powerful senses become the key to tracking the true thief. the party discovers that the treasury gold has been taken by burgle, a harmless amphibious fish-person who lives in an underwater hovel in the riverbed and hoards anything shiny. the missing gold is recovered peacefully, the garrison's repairs and supplies can resume, fiona earns greater respect as a leader, burgle becomes a recurring local ally, and calvin joins the party as a powerful tracker who can transform into nameloc. character-calvin-nameloc character-fiona character-queen-flower veylathar canon arc-1 chapter-8"
+    "searchableText": "arc 1, chapter 8: the burgled treasury & nameloc chapter 8 begins with the garrison in worsening condition because gold reserved for food, equipment, and repairs keeps vanishing from its locked treasury. the party investigates the theft while also responding to reports of a massive beast hunting deer in the surrounding woods. the supposed monster is revealed to be nameloc, the gigantic blue dog spirit form of a misunderstood wandering boy named calvin. after an initial fight, the misunderstanding is resolved, and his powerful senses become the key to tracking the true thief. the party discovers that the treasury gold has been taken by burgle, a harmless amphibious fish-person who lives in an underwater hovel in the riverbed and hoards anything shiny. the missing gold is recovered peacefully, the garrison's repairs and supplies can resume, fiona earns greater respect as a leader, burgle becomes a recurring local ally, and calvin joins the party as a powerful tracker who can transform into nameloc. character-calvin-nameloc character-fiona character-queen-flower veylathar  canon arc-1 chapter-8"
   },
   {
     "id": "canon-arc1-chapter9",
@@ -1459,9 +1765,12 @@
       "arc-1",
       "chapter-9"
     ],
+    "aliases": [],
+    "visibility": "player",
+    "sourceType": "",
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_9_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-9-the-expedition-leaves-veylathar",
     "timelineValue": 9,
-    "searchableText": "arc 1, chapter 9: the expedition leaves veylathar the party left veylathar for the first time on an expedition to investigate the dark arcs beyond the city. their first major choice took them through the woods toward emberhold, where the mortal world overlapped with fey territory. the party survived the sacred hunt of the white stag and gained a binding fey pact: in fey territory, the fey cannot harm them or prevent them from leaving. character-calvin-nameloc character-fiona character-golo character-queen-flower character-sertraline veylathar emberhold outstanding item a lieutenant approached fiona and asked her to name the squadron so they would not have to keep calling themselves simply \"the squadron.\" fiona canon arc-1 chapter-9"
+    "searchableText": "arc 1, chapter 9: the expedition leaves veylathar the party left veylathar for the first time on an expedition to investigate the dark arcs beyond the city. their first major choice took them through the woods toward emberhold, where the mortal world overlapped with fey territory. the party survived the sacred hunt of the white stag and gained a binding fey pact: in fey territory, the fey cannot harm them or prevent them from leaving. character-calvin-nameloc character-fiona character-golo character-queen-flower character-sertraline veylathar emberhold  canon arc-1 chapter-9"
   }
 ]

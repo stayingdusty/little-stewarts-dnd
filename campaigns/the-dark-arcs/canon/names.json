@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/canonical-names.schema.json",
+  "records": [
+    {
+      "id": "location-petaltown",
+      "type": "location",
+      "canonical": "Petaltown",
+      "aliases": ["Peddletown", "Peddle Town", "Pedle Town"],
+      "status": "confirmed"
+    },
+    {
+      "id": "location-veylathar",
+      "type": "location",
+      "canonical": "Veylathar",
+      "aliases": ["Vlaar", "Valethar", "Velithar"],
+      "status": "confirmed"
+    },
+    {
+      "id": "deity-aureth",
+      "type": "deity",
+      "canonical": "Aureth",
+      "aliases": ["Arith"],
+      "status": "confirmed"
+    },
+    {
+      "id": "npc-tindily-migrot",
+      "type": "npc",
+      "canonical": "Tindily Migrot",
+      "aliases": ["Tindly Migrot"],
+      "pronouns": "she/her",
+      "status": "confirmed"
+    },
+    {
+      "id": "npc-garoth",
+      "type": "npc",
+      "canonical": "Garoth",
+      "aliases": ["Gareth"],
+      "status": "confirmed"
+    },
+    {
+      "id": "npc-jerry-mander",
+      "type": "npc",
+      "canonical": "Jerry Mander",
+      "aliases": ["Man in the White Suit", "the man in the white suit"],
+      "status": "confirmed"
+    }
+  ]
+}

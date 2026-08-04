@@ -1,4 +1,4 @@
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { addAnchorsToHtml } from './source-doc-utils.mjs';
@@ -25,7 +25,15 @@ const readJson = async (relativePath) => {
   return JSON.parse(content);
 };
 
-const writeDirectoryIndex = async (dirPath, title) => {
+const dmGuardMarkup = `
+    <style>html:not(.dm-unlocked) body{display:none}</style>
+    <script src="../../../dm-doc-guard.js"></script>`;
+
+const addDmGuard = (html) => html.includes('dm-doc-guard.js')
+  ? html
+  : html.replace(/<\/head>/i, `${dmGuardMarkup}\n  </head>`);
+
+const writeDirectoryIndex = async (dirPath, title, dmOnly = false) => {
   const entries = await readdir(dirPath, { withFileTypes: true });
   const htmlFiles = entries
     .filter((entry) => entry.isFile() && entry.name.endsWith('.html'))
@@ -39,7 +47,7 @@ const writeDirectoryIndex = async (dirPath, title) => {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${title}</title>
-    <style>body{font-family:system-ui,sans-serif;max-width:48rem;margin:2rem auto;padding:0 1rem;line-height:1.5;}a{color:#2563eb;}</style>
+    <style>body{font-family:system-ui,sans-serif;max-width:48rem;margin:2rem auto;padding:0 1rem;line-height:1.5;}a{color:#2563eb;}</style>${dmOnly ? dmGuardMarkup : ''}
   </head>
   <body>
     <h1>${title}</h1>
@@ -54,40 +62,36 @@ const writeDirectoryIndex = async (dirPath, title) => {
 const copyAnchoredSourceDocs = async () => {
   const sourceRoot = path.resolve(root, '../DND-Source-Docs/the-dark-arcs');
   const outputRoot = path.join(root, 'site/source-docs/the-dark-arcs');
+  await rm(outputRoot, { recursive: true, force: true });
   await mkdir(outputRoot, { recursive: true });
 
-  const walk = async (dirPath) => {
+  const walk = async (dirPath, dmOnly = false) => {
     const entries = await readdir(dirPath, { withFileTypes: true });
     for (const entry of entries) {
       const fullPath = path.join(dirPath, entry.name);
       if (entry.isDirectory()) {
-        await walk(fullPath);
+        await walk(fullPath, dmOnly);
       } else if (entry.isFile() && entry.name.endsWith('.html')) {
         const relativePath = path.relative(sourceRoot, fullPath);
         const outputPath = path.join(outputRoot, relativePath);
         await mkdir(path.dirname(outputPath), { recursive: true });
         const html = await readFile(fullPath, 'utf-8');
-        await writeFile(outputPath, addAnchorsToHtml(html));
+        const anchoredHtml = addAnchorsToHtml(html);
+        await writeFile(outputPath, dmOnly ? addDmGuard(anchoredHtml) : anchoredHtml);
       }
     }
   };
 
-  await walk(sourceRoot);
-  await writeDirectoryIndex(outputRoot, 'The Dark Arcs source documents');
+  const sourceDirectories = ['characters', 'playthrough-summaries', 'world'];
+  for (const directory of sourceDirectories) {
+    const sourceDirectory = path.join(sourceRoot, directory);
+    const dmOnly = directory === 'world';
+    await walk(sourceDirectory, dmOnly);
+    await writeDirectoryIndex(path.join(outputRoot, directory), directory, dmOnly);
+  }
 
-  const makeSubdirIndexes = async (dirPath) => {
-    const entries = await readdir(dirPath, { withFileTypes: true });
-    for (const entry of entries) {
-      if (entry.isDirectory()) {
-        const childPath = path.join(dirPath, entry.name);
-        const outputChildPath = path.join(outputRoot, path.relative(sourceRoot, childPath));
-        await writeDirectoryIndex(outputChildPath, entry.name);
-        await makeSubdirIndexes(childPath);
-      }
-    }
-  };
-
-  await makeSubdirIndexes(sourceRoot);
+  const rootIndex = `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>The Dark Arcs campaign documents</title></head><body><h1>The Dark Arcs campaign documents</h1><ul><li><a href="./characters/">Character sheets</a></li><li><a href="./playthrough-summaries/">Playthrough summaries</a></li><li><a href="./world/">DM world documents (spoiler mode required)</a></li></ul></body></html>`;
+  await writeFile(path.join(outputRoot, 'index.html'), rootIndex);
 };
 
 const normalizeText = (value) => String(value ?? '').toLowerCase();
@@ -117,6 +121,9 @@ const build = async () => {
       name: item.name,
       summary: item.summary,
       tags: item.tags || [],
+      aliases: item.aliases || [],
+      visibility: item.visibility,
+      sourceType: item.source?.type || '',
       sourcePath: item.source?.path || '',
       sourceAnchor: item.source?.anchor || '',
       timelineValue: Number(item.source?.chapter || item.chapter || item.source?.arc || 0),
@@ -132,6 +139,7 @@ const build = async () => {
       summary: event.summary,
       details: [event.participants, event.locations, event.secretsRevealed].flat().join(' '),
       tags: ['canon', `arc-${event.source?.arc || 'unknown'}`, `chapter-${event.source?.chapter || 'unknown'}`],
+      visibility: event.visibility,
       source: event.source,
       chapter: event.source?.chapter || 0
     }, 'canon'))
@@ -146,7 +154,8 @@ const build = async () => {
   await writeFile(path.join(outputDir, 'canon-events.json'), JSON.stringify(canonEvents, null, 2));
   await writeFile(path.join(outputDir, 'search-index.json'), JSON.stringify(searchIndex, null, 2));
 
-  console.log(`Generated ${searchIndex.length} searchable records.`);
+  const dmCount = searchIndex.filter((record) => record.visibility === 'dm-only').length;
+  console.log(`Generated ${searchIndex.length} searchable records (${dmCount} DM-only).`);
 };
 
 build().catch((error) => {

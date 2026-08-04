@@ -5,6 +5,16 @@ on:
     branches: [main]
     paths:
       - "knowledge-base-app/**"
+      - "DND-Source-Docs/**"
+      - "campaigns/**"
+      - "AGENTS.md"
+      - ".github/workflows/deploy-pages.yml"
+  pull_request:
+    paths:
+      - "knowledge-base-app/**"
+      - "DND-Source-Docs/**"
+      - "campaigns/**"
+      - "AGENTS.md"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -29,23 +39,24 @@ jobs:
         with:
           node-version: 20
 
-      - name: Extract and build knowledge data
+      - name: Build, validate, and test knowledge base
         working-directory: knowledge-base-app
-        run: |
-          npm run extract:data
-          npm run build:data
+        run: npm run verify
 
       - name: Setup Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
         with:
           enablement: true
 
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: knowledge-base-app/site
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

@@ -36,19 +36,20 @@ const sourceDocGroups = [
     ]
   },
   {
-    title: 'World documents',
+    title: 'DM world documents',
     spoiler: true,
     branches: [
       {
-        title: 'World',
+        title: 'The Dark Arcs',
         items: [
-          { label: 'Old World Encounters Tracker', href: './source-docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html', icon: '🗺️' },
-          { label: 'Lore, Cosmology & Mythology', href: './source-docs/the-dark-arcs/world/lore-cosmology-mythology.html', icon: '📜' }
+          { label: 'Lore, Cosmology & Mythology', href: './source-docs/the-dark-arcs/world/lore-cosmology-mythology.html', icon: '🌌' },
+          { label: 'Old World Encounters & Map Tracker', href: './source-docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html', icon: '🗺️' }
         ]
       }
     ]
   }
 ];
 
-export const getSourceDocNavGroups = (includeSpoilers) =>
-  sourceDocGroups.filter((group) => includeSpoilers || !group.spoiler);
+export const getSourceDocNavGroups = (includeSpoilers = false) => (
+  sourceDocGroups.filter((group) => includeSpoilers || !group.spoiler)
+);

@@ -11,6 +11,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html"
@@ -28,6 +36,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
@@ -45,23 +61,41 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
     }
   },
   {
-    "id": "npc-gareth",
+    "id": "npc-garoth",
     "domain": "npc",
-    "name": "Gareth",
+    "name": "Garoth",
     "summary": "A major security figure with key intelligence about dark arc anomalies.",
     "details": "A major security figure with key intelligence about dark arc anomalies.",
-    "aliases": [],
+    "aliases": [
+      "Gareth"
+    ],
     "tags": [
       "npc",
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html"
@@ -71,31 +105,25 @@
     "id": "npc-jerry-mander",
     "domain": "npc",
     "name": "Jerry Mander",
-    "summary": "A recurring figure tied to Dark Arc routes and deceptive trails.",
-    "details": "A recurring figure tied to Dark Arc routes and deceptive trails.",
-    "aliases": [],
+    "summary": "The recurring antagonist publicly known as the Man in the White Suit.",
+    "details": "The recurring antagonist publicly known as the Man in the White Suit.",
+    "aliases": [
+      "Man in the White Suit",
+      "the man in the white suit"
+    ],
     "tags": [
       "npc",
       "arc-1"
     ],
     "relatedIds": [],
-    "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_6_playthrough_summary.html"
-    }
-  },
-  {
-    "id": "npc-man-in-the-white-suit",
-    "domain": "npc",
-    "name": "Man in the White Suit",
-    "summary": "A recurring mysterious figure connected to the riverboat and vault events.",
-    "details": "A recurring mysterious figure connected to the riverboat and vault events.",
-    "aliases": [],
-    "tags": [
-      "npc",
-      "arc-1"
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html"
+      }
     ],
-    "relatedIds": [],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html"
@@ -107,12 +135,23 @@
     "name": "Tindily Migrot",
     "summary": "A figure tied to the ancient pendant and Academy of Antiquities council dynamics.",
     "details": "A figure tied to the ancient pendant and Academy of Antiquities council dynamics.",
-    "aliases": [],
+    "pronouns": "she/her",
+    "aliases": [
+      "Tindly Migrot"
+    ],
     "tags": [
       "npc",
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html"

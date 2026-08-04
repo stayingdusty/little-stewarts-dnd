@@ -9,13 +9,21 @@
   <body>
     <header class="hero">
       <h1>Little Stewarts Knowledge Base</h1>
-      <p>Globally searchable canon for characters, NPCs, locations, encounters, lore, secrets, and playthrough events.</p>
+      <p>Globally searchable campaign knowledge for characters, NPCs, locations, inventory, completed playthroughs, and DM planning.</p>
     </header>
 
     <main class="layout">
       <section class="controls">
         <label for="searchInput">Search everything</label>
         <input id="searchInput" type="search" placeholder="Type a name, tag, detail, or chapter..." />
+
+        <div class="dm-mode-card">
+          <div>
+            <strong>DM spoilers</strong>
+            <p id="dmModeStatus" class="dm-mode-card__status" aria-live="polite">Player-safe mode is on.</p>
+          </div>
+          <button id="dmModeButton" class="dm-mode-card__button" type="button">Unlock DM spoilers</button>
+        </div>
 
         <div class="nav-card" aria-label="Source document navigation">
           <div class="nav-card__heading">
@@ -25,7 +33,7 @@
               <span class="nav-card__toggle-text">Browse source docs</span>
             </button>
           </div>
-          <p class="nav-card__hint">Character sheets and playthrough summaries are shown by default. Spoiler-heavy documents appear when spoilers are enabled.</p>
+          <p class="nav-card__hint">Browse player-safe character sheets and completed playthrough summaries.</p>
           <div id="sourceDocNav" class="source-doc-nav" hidden></div>
         </div>
 
@@ -41,14 +49,6 @@
           <option value="inventory-item">Inventory Items</option>
           <option value="canon">Canon Events</option>
         </select>
-
-        <label for="spoilerToggle" class="spoiler-toggle" style="margin-top: 1rem;">
-          <span class="spoiler-toggle__label">Show spoilers</span>
-          <span class="spoiler-toggle__track">
-            <input id="spoilerToggle" type="checkbox" />
-            <span class="spoiler-toggle__thumb"></span>
-          </span>
-        </label>
       </section>
 
       <section>
@@ -56,6 +56,20 @@
         <div id="results" class="results"></div>
       </section>
     </main>
+
+    <dialog id="dmDialog" class="dm-dialog">
+      <form id="dmForm">
+        <h2>Unlock DM spoilers</h2>
+        <p>This password is a family/player spoiler deterrent. It does not make content in this public site or repository private.</p>
+        <label for="dmPassword">DM password</label>
+        <input id="dmPassword" type="password" autocomplete="current-password" required />
+        <p id="dmError" class="dm-dialog__error" aria-live="polite"></p>
+        <div class="dm-dialog__actions">
+          <button id="dmCancelButton" type="button">Cancel</button>
+          <button type="submit">Enter DM mode</button>
+        </div>
+      </form>
+    </dialog>
 
     <template id="resultCardTemplate">
       <article class="card">

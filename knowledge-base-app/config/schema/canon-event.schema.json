@@ -3,7 +3,7 @@
   "$id": "https://little-stewarts.local/canon-event.schema.json",
   "title": "Canon Event",
   "type": "object",
-  "required": ["id", "title", "summary", "participants", "locations", "source"],
+  "required": ["id", "title", "summary", "participants", "locations", "visibility", "canonStatus", "evidence", "source"],
   "properties": {
     "id": { "type": "string" },
     "title": { "type": "string" },
@@ -16,9 +16,18 @@
       "type": "array",
       "items": { "type": "string" }
     },
-    "secretsRevealed": {
+    "visibility": { "enum": ["player", "dm-only"] },
+    "canonStatus": { "enum": ["proposed", "confirmed", "superseded", "unresolved"] },
+    "evidence": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "object",
+        "required": ["type", "path"],
+        "properties": {
+          "type": { "type": "string" },
+          "path": { "type": "string" }
+        }
+      }
     },
     "source": {
       "type": "object",

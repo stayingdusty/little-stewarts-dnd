@@ -25,6 +25,14 @@
       "external-bonds-relationships"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html",
@@ -53,13 +61,20 @@
       "attacks-combat-actions"
     ],
     "relatedIds": [
-      "inventory-item-fiona-radiant-sword-of-aureth-1",
-      "inventory-item-fiona-golden-paladin-armor-2",
-      "inventory-item-fiona-brass-wings-3",
-      "inventory-item-fiona-rocky-talkie-4",
-      "inventory-item-fiona-jewelry-details-tbd-5",
-      "inventory-item-fiona-feast-of-ancestors-ticket-6",
-      "inventory-item-fiona-jewelry-7"
+      "inventory-item-fiona-radiant-sword-of-aureth",
+      "inventory-item-fiona-golden-paladin-armor",
+      "inventory-item-fiona-brass-wings",
+      "inventory-item-fiona-rocky-talkie",
+      "inventory-item-fiona-jewelry",
+      "inventory-item-fiona-feast-of-ancestors-ticket"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      }
     ],
     "source": {
       "type": "character_sheet",
@@ -89,13 +104,21 @@
       "attacks-damage-healing-dice"
     ],
     "relatedIds": [
-      "inventory-item-golo-bow-and-arrows-1",
-      "inventory-item-golo-dwarven-hammer-of-earthshatter-2",
-      "inventory-item-golo-the-artifact-3",
-      "inventory-item-golo-saddle-4",
-      "inventory-item-golo-flight-shoes-5",
-      "inventory-item-golo-rocky-talkie-6",
-      "inventory-item-golo-10-snap-matches-7"
+      "inventory-item-golo-bow-and-arrows",
+      "inventory-item-golo-dwarven-hammer-of-earthshatter",
+      "inventory-item-golo-the-artifact",
+      "inventory-item-golo-saddle",
+      "inventory-item-golo-flight-shoes",
+      "inventory-item-golo-rocky-talkie",
+      "inventory-item-golo-10-snap-matches"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+      }
     ],
     "source": {
       "type": "character_sheet",
@@ -127,11 +150,19 @@
       "attacks-damage-healing-dice"
     ],
     "relatedIds": [
-      "inventory-item-queen-flower-of-veylathar-ancestral-pendant-of-veylathar-1",
-      "inventory-item-queen-flower-of-veylathar-royal-regalia-2",
-      "inventory-item-queen-flower-of-veylathar-rocky-talkie-3",
-      "inventory-item-queen-flower-of-veylathar-map-4",
-      "inventory-item-queen-flower-of-veylathar-10-map-matches-5"
+      "inventory-item-queen-flower-of-veylathar-ancestral-pendant-of-veylathar",
+      "inventory-item-queen-flower-of-veylathar-royal-regalia",
+      "inventory-item-queen-flower-of-veylathar-rocky-talkie",
+      "inventory-item-queen-flower-of-veylathar-map",
+      "inventory-item-queen-flower-of-veylathar-10-snap-matches"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      }
     ],
     "source": {
       "type": "character_sheet",
@@ -161,10 +192,18 @@
       "attacks-damage-healing-dice"
     ],
     "relatedIds": [
-      "inventory-item-sertraline-wisp-cloak-1",
-      "inventory-item-sertraline-dwarven-bracers-of-mage-hands-2",
-      "inventory-item-sertraline-rocky-talkie-3",
-      "inventory-item-sertraline-10-snap-matches-4"
+      "inventory-item-sertraline-wisp-cloak",
+      "inventory-item-sertraline-dwarven-bracers-of-mage-hands",
+      "inventory-item-sertraline-rocky-talkie",
+      "inventory-item-sertraline-10-snap-matches"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      }
     ],
     "source": {
       "type": "character_sheet",
@@ -184,6 +223,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html"
@@ -201,6 +248,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
@@ -218,23 +273,41 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
     }
   },
   {
-    "id": "npc-gareth",
+    "id": "npc-garoth",
     "domain": "npc",
-    "name": "Gareth",
+    "name": "Garoth",
     "summary": "A major security figure with key intelligence about dark arc anomalies.",
     "details": "A major security figure with key intelligence about dark arc anomalies.",
-    "aliases": [],
+    "aliases": [
+      "Gareth"
+    ],
     "tags": [
       "npc",
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html"
@@ -244,31 +317,25 @@
     "id": "npc-jerry-mander",
     "domain": "npc",
     "name": "Jerry Mander",
-    "summary": "A recurring figure tied to Dark Arc routes and deceptive trails.",
-    "details": "A recurring figure tied to Dark Arc routes and deceptive trails.",
-    "aliases": [],
+    "summary": "The recurring antagonist publicly known as the Man in the White Suit.",
+    "details": "The recurring antagonist publicly known as the Man in the White Suit.",
+    "aliases": [
+      "Man in the White Suit",
+      "the man in the white suit"
+    ],
     "tags": [
       "npc",
       "arc-1"
     ],
     "relatedIds": [],
-    "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_6_playthrough_summary.html"
-    }
-  },
-  {
-    "id": "npc-man-in-the-white-suit",
-    "domain": "npc",
-    "name": "Man in the White Suit",
-    "summary": "A recurring mysterious figure connected to the riverboat and vault events.",
-    "details": "A recurring mysterious figure connected to the riverboat and vault events.",
-    "aliases": [],
-    "tags": [
-      "npc",
-      "arc-1"
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html"
+      }
     ],
-    "relatedIds": [],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html"
@@ -280,12 +347,23 @@
     "name": "Tindily Migrot",
     "summary": "A figure tied to the ancient pendant and Academy of Antiquities council dynamics.",
     "details": "A figure tied to the ancient pendant and Academy of Antiquities council dynamics.",
-    "aliases": [],
+    "pronouns": "she/her",
+    "aliases": [
+      "Tindly Migrot"
+    ],
     "tags": [
       "npc",
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html"
@@ -303,6 +381,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -320,6 +406,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -337,6 +431,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -354,6 +456,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -371,6 +481,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -388,6 +506,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -405,6 +531,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -416,12 +550,24 @@
     "name": "Petaltown",
     "summary": "Location referenced in Arc 1 source material: Petaltown.",
     "details": "Extracted from playthrough summaries and world references.",
-    "aliases": [],
+    "aliases": [
+      "Peddletown",
+      "Peddle Town",
+      "Pedle Town"
+    ],
     "tags": [
       "location",
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -433,12 +579,24 @@
     "name": "Veylathar",
     "summary": "Location referenced in Arc 1 source material: Veylathar.",
     "details": "Extracted from playthrough summaries and world references.",
-    "aliases": [],
+    "aliases": [
+      "Vlaar",
+      "Valethar",
+      "Velithar"
+    ],
     "tags": [
       "location",
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -456,6 +614,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      }
+    ],
     "source": {
       "type": "playthrough_summary",
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
@@ -477,6 +643,14 @@
       "wildlife"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -500,6 +674,14 @@
       "thieves"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -521,6 +703,14 @@
       "mountain"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -542,6 +732,14 @@
       "buried"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -551,7 +749,7 @@
     "id": "encounter-arc1-map-11",
     "domain": "encounter",
     "name": "Dead King’s Watch",
-    "summary": "Western old battlefield near Pedle Town • Honorable undead",
+    "summary": "Western old battlefield near Petaltown • Honorable undead",
     "details": "Encounter marker 11 from Old World tracker.",
     "aliases": [],
     "tags": [
@@ -560,11 +758,19 @@
       "western",
       "battlefield",
       "near",
-      "pedle",
-      "town",
-      "honorable"
+      "petaltown",
+      "honorable",
+      "undead"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -587,6 +793,14 @@
       "cavalry"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -610,6 +824,14 @@
       "kingdom"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -619,20 +841,27 @@
     "id": "encounter-arc1-map-2",
     "domain": "encounter",
     "name": "Moss Titan Boundary",
-    "summary": "Pedle Town wildwood edge • Old forest ruin",
+    "summary": "Petaltown wildwood edge • Old forest ruin",
     "details": "Encounter marker 2 from Old World tracker.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "pedle",
-      "town",
+      "petaltown",
       "wildwood",
       "edge",
       "forest",
       "ruin"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -656,6 +885,14 @@
       "beast"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -679,6 +916,14 @@
       "elemental"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -702,6 +947,14 @@
       "pirates"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -724,6 +977,14 @@
       "road"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      }
+    ],
     "source": {
       "type": "world_tracker",
       "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
@@ -746,6 +1007,14 @@
       "magic"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -766,6 +1035,14 @@
       "doubt"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -788,6 +1065,14 @@
       "hound"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -807,6 +1092,14 @@
       "glance"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -826,6 +1119,14 @@
       "arcs"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -848,6 +1149,14 @@
       "elements"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -871,6 +1180,14 @@
       "defeat"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -893,6 +1210,14 @@
       "role"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -914,6 +1239,14 @@
       "later"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -933,6 +1266,14 @@
       "canon"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -953,6 +1294,14 @@
       "progression"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -975,6 +1324,14 @@
       "archetypes"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -993,6 +1350,14 @@
       "convergence"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1014,6 +1379,14 @@
       "walking"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1033,6 +1406,14 @@
       "doubt"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1053,6 +1434,14 @@
       "realms"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1071,6 +1460,14 @@
       "restoration"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1091,6 +1488,14 @@
       "magic"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1111,6 +1516,14 @@
       "pillars"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1129,6 +1542,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1147,6 +1568,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1165,6 +1594,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1183,6 +1620,14 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
@@ -1201,34 +1646,21 @@
       "arc-1"
     ],
     "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      }
+    ],
     "source": {
       "type": "dm_lore_reference",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
     }
   },
   {
-    "id": "inventory-item-queen-flower-of-veylathar-10-map-matches-5",
-    "domain": "inventory-item",
-    "name": "10 Map Matches",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
-    "details": "Tracked in QUEEN FLOWER OF VEYLATHAR's inventory.",
-    "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
-    ],
-    "tags": [
-      "inventory-item",
-      "arc-1",
-      "inventory"
-    ],
-    "relatedIds": [],
-    "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
-    },
-    "ownerName": "QUEEN FLOWER OF VEYLATHAR"
-  },
-  {
-    "id": "inventory-item-golo-10-snap-matches-7",
+    "id": "inventory-item-golo-10-snap-matches",
     "domain": "inventory-item",
     "name": "10 Snap Matches",
     "summary": "Inventory entry for GOLO.",
@@ -1242,6 +1674,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
@@ -1249,7 +1689,36 @@
     "ownerName": "GOLO"
   },
   {
-    "id": "inventory-item-sertraline-10-snap-matches-4",
+    "id": "inventory-item-queen-flower-of-veylathar-10-snap-matches",
+    "domain": "inventory-item",
+    "name": "10 Snap Matches",
+    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
+    "details": "Tracked in QUEEN FLOWER OF VEYLATHAR's inventory.",
+    "aliases": [
+      "QUEEN FLOWER OF VEYLATHAR"
+    ],
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      }
+    ],
+    "source": {
+      "type": "character_sheet",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+    },
+    "ownerName": "QUEEN FLOWER OF VEYLATHAR"
+  },
+  {
+    "id": "inventory-item-sertraline-10-snap-matches",
     "domain": "inventory-item",
     "name": "10 Snap Matches",
     "summary": "Inventory entry for SERTRALINE.",
@@ -1263,6 +1732,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
@@ -1270,7 +1747,7 @@
     "ownerName": "SERTRALINE"
   },
   {
-    "id": "inventory-item-queen-flower-of-veylathar-ancestral-pendant-of-veylathar-1",
+    "id": "inventory-item-queen-flower-of-veylathar-ancestral-pendant-of-veylathar",
     "domain": "inventory-item",
     "name": "Ancestral Pendant of Veylathar",
     "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
@@ -1284,6 +1761,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
@@ -1291,7 +1776,7 @@
     "ownerName": "QUEEN FLOWER OF VEYLATHAR"
   },
   {
-    "id": "inventory-item-golo-bow-and-arrows-1",
+    "id": "inventory-item-golo-bow-and-arrows",
     "domain": "inventory-item",
     "name": "Bow and Arrows",
     "summary": "Inventory entry for GOLO.",
@@ -1305,6 +1790,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
@@ -1312,7 +1805,7 @@
     "ownerName": "GOLO"
   },
   {
-    "id": "inventory-item-fiona-brass-wings-3",
+    "id": "inventory-item-fiona-brass-wings",
     "domain": "inventory-item",
     "name": "Brass Wings",
     "summary": "Inventory entry for FIONA.",
@@ -1326,6 +1819,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
@@ -1333,7 +1834,7 @@
     "ownerName": "FIONA"
   },
   {
-    "id": "inventory-item-sertraline-dwarven-bracers-of-mage-hands-2",
+    "id": "inventory-item-sertraline-dwarven-bracers-of-mage-hands",
     "domain": "inventory-item",
     "name": "Dwarven Bracers of Mage Hands",
     "summary": "Inventory entry for SERTRALINE.",
@@ -1347,6 +1848,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
@@ -1354,7 +1863,7 @@
     "ownerName": "SERTRALINE"
   },
   {
-    "id": "inventory-item-golo-dwarven-hammer-of-earthshatter-2",
+    "id": "inventory-item-golo-dwarven-hammer-of-earthshatter",
     "domain": "inventory-item",
     "name": "Dwarven Hammer of Earthshatter",
     "summary": "Inventory entry for GOLO.",
@@ -1368,6 +1877,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
@@ -1375,7 +1892,7 @@
     "ownerName": "GOLO"
   },
   {
-    "id": "inventory-item-fiona-feast-of-ancestors-ticket-6",
+    "id": "inventory-item-fiona-feast-of-ancestors-ticket",
     "domain": "inventory-item",
     "name": "Feast of Ancestors Ticket",
     "summary": "Inventory entry for FIONA.",
@@ -1389,6 +1906,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
@@ -1396,7 +1921,7 @@
     "ownerName": "FIONA"
   },
   {
-    "id": "inventory-item-golo-flight-shoes-5",
+    "id": "inventory-item-golo-flight-shoes",
     "domain": "inventory-item",
     "name": "Flight Shoes",
     "summary": "Inventory entry for GOLO.",
@@ -1410,6 +1935,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
@@ -1417,7 +1950,7 @@
     "ownerName": "GOLO"
   },
   {
-    "id": "inventory-item-fiona-golden-paladin-armor-2",
+    "id": "inventory-item-fiona-golden-paladin-armor",
     "domain": "inventory-item",
     "name": "Golden Paladin Armor",
     "summary": "Inventory entry for FIONA.",
@@ -1431,6 +1964,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
@@ -1438,7 +1979,7 @@
     "ownerName": "FIONA"
   },
   {
-    "id": "inventory-item-fiona-jewelry-7",
+    "id": "inventory-item-fiona-jewelry",
     "domain": "inventory-item",
     "name": "Jewelry",
     "summary": "Inventory entry for FIONA.",
@@ -1452,6 +1993,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
@@ -1459,28 +2008,7 @@
     "ownerName": "FIONA"
   },
   {
-    "id": "inventory-item-fiona-jewelry-details-tbd-5",
-    "domain": "inventory-item",
-    "name": "Jewelry — details TBD",
-    "summary": "Inventory entry for FIONA.",
-    "details": "Tracked in FIONA's inventory.",
-    "aliases": [
-      "FIONA"
-    ],
-    "tags": [
-      "inventory-item",
-      "arc-1",
-      "inventory"
-    ],
-    "relatedIds": [],
-    "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
-    },
-    "ownerName": "FIONA"
-  },
-  {
-    "id": "inventory-item-queen-flower-of-veylathar-map-4",
+    "id": "inventory-item-queen-flower-of-veylathar-map",
     "domain": "inventory-item",
     "name": "Map",
     "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
@@ -1494,6 +2022,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
@@ -1501,7 +2037,7 @@
     "ownerName": "QUEEN FLOWER OF VEYLATHAR"
   },
   {
-    "id": "inventory-item-fiona-radiant-sword-of-aureth-1",
+    "id": "inventory-item-fiona-radiant-sword-of-aureth",
     "domain": "inventory-item",
     "name": "Radiant Sword of Aureth",
     "summary": "Inventory entry for FIONA.",
@@ -1515,6 +2051,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
@@ -1522,7 +2066,7 @@
     "ownerName": "FIONA"
   },
   {
-    "id": "inventory-item-fiona-rocky-talkie-4",
+    "id": "inventory-item-fiona-rocky-talkie",
     "domain": "inventory-item",
     "name": "Rocky Talkie",
     "summary": "Inventory entry for FIONA.",
@@ -1536,6 +2080,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
@@ -1543,7 +2095,7 @@
     "ownerName": "FIONA"
   },
   {
-    "id": "inventory-item-golo-rocky-talkie-6",
+    "id": "inventory-item-golo-rocky-talkie",
     "domain": "inventory-item",
     "name": "Rocky Talkie",
     "summary": "Inventory entry for GOLO.",
@@ -1557,6 +2109,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
@@ -1564,7 +2124,7 @@
     "ownerName": "GOLO"
   },
   {
-    "id": "inventory-item-queen-flower-of-veylathar-rocky-talkie-3",
+    "id": "inventory-item-queen-flower-of-veylathar-rocky-talkie",
     "domain": "inventory-item",
     "name": "Rocky Talkie",
     "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
@@ -1578,6 +2138,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
@@ -1585,7 +2153,7 @@
     "ownerName": "QUEEN FLOWER OF VEYLATHAR"
   },
   {
-    "id": "inventory-item-sertraline-rocky-talkie-3",
+    "id": "inventory-item-sertraline-rocky-talkie",
     "domain": "inventory-item",
     "name": "Rocky Talkie",
     "summary": "Inventory entry for SERTRALINE.",
@@ -1599,6 +2167,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
@@ -1606,7 +2182,7 @@
     "ownerName": "SERTRALINE"
   },
   {
-    "id": "inventory-item-queen-flower-of-veylathar-royal-regalia-2",
+    "id": "inventory-item-queen-flower-of-veylathar-royal-regalia",
     "domain": "inventory-item",
     "name": "Royal Regalia",
     "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
@@ -1620,6 +2196,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
@@ -1627,7 +2211,7 @@
     "ownerName": "QUEEN FLOWER OF VEYLATHAR"
   },
   {
-    "id": "inventory-item-golo-saddle-4",
+    "id": "inventory-item-golo-saddle",
     "domain": "inventory-item",
     "name": "Saddle",
     "summary": "Inventory entry for GOLO.",
@@ -1641,6 +2225,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
@@ -1648,7 +2240,7 @@
     "ownerName": "GOLO"
   },
   {
-    "id": "inventory-item-golo-the-artifact-3",
+    "id": "inventory-item-golo-the-artifact",
     "domain": "inventory-item",
     "name": "The Artifact",
     "summary": "Inventory entry for GOLO.",
@@ -1662,6 +2254,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
@@ -1669,7 +2269,7 @@
     "ownerName": "GOLO"
   },
   {
-    "id": "inventory-item-sertraline-wisp-cloak-1",
+    "id": "inventory-item-sertraline-wisp-cloak",
     "domain": "inventory-item",
     "name": "Wisp Cloak",
     "summary": "Inventory entry for SERTRALINE.",
@@ -1683,6 +2283,14 @@
       "inventory"
     ],
     "relatedIds": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "character-sheet",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      }
+    ],
     "source": {
       "type": "character_sheet",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
