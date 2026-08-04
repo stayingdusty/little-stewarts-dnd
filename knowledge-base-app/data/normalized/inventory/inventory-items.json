@@ -94,6 +94,14 @@
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "user-upload://sertraline-character-sheet-page-1"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "user-upload://sertraline-character-sheet-page-2"
       }
     ],
     "source": {
@@ -230,6 +238,14 @@
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "user-upload://sertraline-character-sheet-page-1"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "user-upload://sertraline-character-sheet-page-2"
       }
     ],
     "source": {
@@ -374,6 +390,46 @@
       "anchor": "golo"
     },
     "ownerName": "Golo"
+  },
+  {
+    "id": "inventory-item-sertraline-garoth-s-cigar-fire-breath-and-musclebound",
+    "domain": "inventory-item",
+    "name": "Garoth's Cigar (fire breath and musclebound)",
+    "summary": "Inventory entry for Sertraline.",
+    "details": "Tracked in Sertraline's inventory.",
+    "aliases": [
+      "Sertraline"
+    ],
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "relatedIds": [
+      "character-sertraline"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "user-upload://sertraline-character-sheet-page-1"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "user-upload://sertraline-character-sheet-page-2"
+      }
+    ],
+    "source": {
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "sertraline"
+    },
+    "ownerName": "Sertraline"
   },
   {
     "id": "inventory-item-fiona-golden-paladin-armor",
@@ -638,6 +694,14 @@
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "user-upload://sertraline-character-sheet-page-1"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "user-upload://sertraline-character-sheet-page-2"
       }
     ],
     "source": {
@@ -774,6 +838,14 @@
       {
         "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "user-upload://sertraline-character-sheet-page-1"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "user-upload://sertraline-character-sheet-page-2"
       }
     ],
     "source": {

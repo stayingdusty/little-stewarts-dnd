@@ -1,3 +1,14 @@
 {
-  "records": []
+  "records": [
+    {
+      "id": "sertraline-power-use-units",
+      "visibility": "dm-only",
+      "status": "unresolved",
+      "subject": "Sertraline power use limits",
+      "evidence": [
+        "The uploaded character sheet records '3 per', '1 per', and '3 per' for three powers without stating the recharge or time unit."
+      ],
+      "question": "What unit completes the use limits for Telepathic Communication, Psychic Interruption, and Active Druidic Control?"
+    }
+  ]
 }

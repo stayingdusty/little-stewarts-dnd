@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/character-update.schema.json",
+  "sessionId": "2026-08-04-sertraline-sheet-update",
+  "status": "applied",
+  "visibility": "dm-only",
+  "updates": [
+    {
+      "characterId": "character-sertraline",
+      "field": "levelRank",
+      "previousValue": "",
+      "proposedValue": "2",
+      "evidence": ["uploaded photo page 1, level/rank box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-sertraline",
+      "field": "movement",
+      "previousValue": "",
+      "proposedValue": "60",
+      "evidence": ["uploaded photo page 1, movement box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-sertraline",
+      "field": "abilityPointTotal",
+      "previousValue": "",
+      "proposedValue": "30 pts.",
+      "evidence": ["uploaded photo page 1, note above ability score boxes"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-sertraline",
+      "field": "abilityScores",
+      "previousValue": {"strength": "", "dexterity": "", "constitution": "", "intelligence": "", "wisdom": "", "charisma": ""},
+      "proposedValue": {"strength": "8", "dexterity": "0", "constitution": "8", "intelligence": "4", "wisdom": "5", "charisma": "5"},
+      "evidence": ["uploaded photo page 1, ability score boxes and 30-point total"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-sertraline",
+      "field": "combat",
+      "previousValue": {"currentHp": "", "maximumHp": "", "temporaryHp": "", "armorClass": ""},
+      "proposedValue": {"currentHp": "10", "maximumHp": "", "temporaryHp": "", "armorClass": "9"},
+      "evidence": ["uploaded photo page 1, combat boxes"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-sertraline",
+      "field": "powers",
+      "previousValue": "blank roll/check and uses/range fields",
+      "proposedValue": "All five powers are passive; ranges/uses are 60 ft / 3 per (unit unspecified), 60 ft / 1 per (unit unspecified), 30 ft / 3 per (unit unspecified), N/A, and N/A respectively; Active Druidic Control operates from half a movement away.",
+      "evidence": ["uploaded photo page 1, powers and abilities rows"],
+      "confidence": "medium",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-sertraline",
+      "field": "attacks",
+      "previousValue": "blank to-hit and range fields",
+      "proposedValue": "Telepathic Scream: 10, 1 movement; Vine Entangle and Vegetation Strike: enemy AC, 1/2 movement; Mage Hands: N/A (control), 30 ft.",
+      "evidence": ["uploaded photo page 2, attacks table"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-sertraline",
+      "field": "inventory",
+      "previousValue": "four listed items",
+      "proposedValue": "Add Garoth's Cigar (fire breath and musclebound).",
+      "evidence": ["uploaded photo page 2, inventory row; handwriting uses confirmed alias Gareth"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    }
+  ]
+}

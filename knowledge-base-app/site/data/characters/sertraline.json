@@ -7,8 +7,8 @@
   "subtitle": "Jungle Panther / Druidic Advisor",
   "player": "Lynette",
   "species": "Jungle Panther",
-  "levelRank": "",
-  "movement": "",
+  "levelRank": "2",
+  "movement": "60",
   "initiative": "",
   "visibility": "player",
   "canonStatus": "confirmed",
@@ -27,12 +27,21 @@
     "inventory-item-sertraline-wisp-cloak",
     "inventory-item-sertraline-dwarven-bracers-of-mage-hands",
     "inventory-item-sertraline-rocky-talkie",
-    "inventory-item-sertraline-10-snap-matches"
+    "inventory-item-sertraline-10-snap-matches",
+    "inventory-item-sertraline-garoth-s-cigar-fire-breath-and-musclebound"
   ],
   "evidence": [
     {
       "type": "source-document",
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+    },
+    {
+      "type": "uploaded-photo",
+      "path": "user-upload://sertraline-character-sheet-page-1"
+    },
+    {
+      "type": "uploaded-photo",
+      "path": "user-upload://sertraline-character-sheet-page-2"
     }
   ],
   "source": {
@@ -40,51 +49,51 @@
     "path": "characters/index.html",
     "anchor": "sertraline"
   },
-  "abilityPointTotal": "",
+  "abilityPointTotal": "30 pts.",
   "abilityScores": {
-    "strength": "",
-    "dexterity": "",
-    "constitution": "",
-    "intelligence": "",
-    "wisdom": "",
-    "charisma": ""
+    "strength": "8",
+    "dexterity": "0",
+    "constitution": "8",
+    "intelligence": "4",
+    "wisdom": "5",
+    "charisma": "5"
   },
   "combat": {
-    "currentHp": "",
+    "currentHp": "10",
     "maximumHp": "",
     "temporaryHp": "",
-    "armorClass": ""
+    "armorClass": "9"
   },
   "powers": [
     {
       "name": "Telepathic Communication",
       "description": "Communicates directly through the minds of nearby people and entities.",
-      "rollCheck": "",
-      "usesRange": ""
+      "rollCheck": "passive",
+      "usesRange": "60 ft / 3 per (unit unspecified)"
     },
     {
       "name": "Psychic Interruption",
       "description": "Telepathically screams into a target’s mind to interrupt psychic attacks, mind control, concentration, or control effects.",
-      "rollCheck": "",
-      "usesRange": ""
+      "rollCheck": "passive",
+      "usesRange": "60 ft / 1 per (unit unspecified)"
     },
     {
       "name": "Active Druidic Control",
-      "description": "Consciously commands vines and vegetation from one movement away with deliberate, practiced control.",
-      "rollCheck": "",
-      "usesRange": "One movement away"
+      "description": "Consciously commands vines and vegetation from half a movement away with deliberate, practiced control.",
+      "rollCheck": "passive",
+      "usesRange": "30 ft / 3 per (unit unspecified)"
     },
     {
       "name": "Stealth & Jungle Mastery",
       "description": "Moves quietly, tracks through natural terrain, and operates with strong tactical awareness.",
-      "rollCheck": "",
-      "usesRange": ""
+      "rollCheck": "passive",
+      "usesRange": "N/A"
     },
     {
       "name": "Wisp Cloak Command",
       "description": "Commands a troop of Wisp Cloaks and can direct them as agents or protectors.",
-      "rollCheck": "",
-      "usesRange": ""
+      "rollCheck": "passive",
+      "usesRange": "N/A"
     }
   ],
   "relationships": "Bond of admiration with Garoth; respects his strength and seeks training from him.",
@@ -92,26 +101,26 @@
   "attacks": [
     {
       "name": "Telepathic Scream",
-      "toHit": "",
-      "range": "",
+      "toHit": "10",
+      "range": "1 movement",
       "effect": "Temporary interruption / non-damage effect"
     },
     {
       "name": "Vine Entangle",
-      "toHit": "",
-      "range": "",
+      "toHit": "Enemy AC",
+      "range": "1/2 movement",
       "effect": ""
     },
     {
       "name": "Vegetation Strike",
-      "toHit": "",
-      "range": "",
+      "toHit": "Enemy AC",
+      "range": "1/2 movement",
       "effect": ""
     },
     {
       "name": "Mage Hands",
-      "toHit": "",
-      "range": "",
+      "toHit": "N/A (control)",
+      "range": "30 ft",
       "effect": ""
     }
   ],
@@ -137,6 +146,11 @@
       "name": "10 Snap Matches",
       "quantity": "",
       "charges": ""
+    },
+    {
+      "name": "Garoth's Cigar (fire breath and musclebound)",
+      "quantity": "",
+      "charges": ""
     }
   ],
   "currency": {
@@ -146,6 +160,6 @@
     "other": ""
   },
   "specialResources": "",
-  "sessionNotes": "",
+  "sessionNotes": "Character sheet updated from August 2026 handwritten photos. The recharge or time unit after the uses counts for Telepathic Communication, Psychic Interruption, and Active Druidic Control was not written on the sheet and remains unresolved.",
   "sheetRoute": "characters/index.html#sertraline"
 }
