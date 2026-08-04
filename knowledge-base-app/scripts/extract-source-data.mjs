@@ -10,7 +10,7 @@ const root = path.resolve(__dirname, '..');
 const repoRoot = path.resolve(root, '..');
 
 const STRUCTURED_CHAR_DIR = path.join(repoRoot, 'campaigns/the-dark-arcs/characters');
-const SUMMARY_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/playthrough-summaries');
+const SUMMARY_DIR = path.join(repoRoot, 'campaigns/the-dark-arcs/sessions');
 const WORLD_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/world');
 const CANON_NAMES_PATH = path.join(repoRoot, 'campaigns/the-dark-arcs/canon/names.json');
 
@@ -134,6 +134,17 @@ const readStructuredCharacterRecords = async () => {
   }
 
   return records;
+};
+
+const readStructuredSummaryRecords = async () => {
+  const records = [];
+  for (const arcEntry of await readdir(SUMMARY_DIR, { withFileTypes: true }).catch(() => [])) {
+    if (!arcEntry.isDirectory()) continue;
+    const arcDir = path.join(SUMMARY_DIR, arcEntry.name);
+    const names = (await readdir(arcDir)).filter((name) => /^chapter-\d+\.json$/.test(name)).sort();
+    for (const name of names) records.push(JSON.parse(await readFile(path.join(arcDir, name), 'utf8')));
+  }
+  return records.sort((a, b) => a.arc - b.arc || a.chapter - b.chapter);
 };
 
 const extractEncounterRecords = async () => {
@@ -264,8 +275,7 @@ const extractLoreAndSecrets = async () => {
   return { lore, secrets };
 };
 
-const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
-  const files = await readHtmlFiles(SUMMARY_DIR);
+const extractCanonAndLocationsAndNpcs = async (characterRecords, summaryRecords) => {
   const canonEvents = [];
   const locationSet = new Set();
   const npcMap = new Map();
@@ -278,7 +288,7 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
     }
   }
 
-  const ensureNpc = (name, summary, sourcePath, metadata = {}) => {
+  const ensureNpc = (name, summary, sourcePath, evidencePath, sourceAnchor, metadata = {}) => {
     const id = `npc-${toSlug(name)}`;
     if (!npcMap.has(id)) {
       npcMap.set(id, {
@@ -291,25 +301,25 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
         aliases: aliasesFor(name),
         tags: ['npc', 'arc-1'],
         relatedIds: [],
-        ...recordMetadata(sourcePath),
+        ...recordMetadata(evidencePath),
         source: {
-          type: 'playthrough_summary',
-          path: sourcePath
+          type: 'generated_playthrough_summary',
+          path: sourcePath,
+          anchor: sourceAnchor
         }
       });
     }
   };
 
-  for (const { name, html } of files) {
-    const sourcePath = `DND-Source-Docs/the-dark-arcs/playthrough-summaries/${name}`;
-    const chapterTitle = stripTags((html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || name.replace(/\.html$/, ''));
-    const chapterSnapshot = stripTags((html.match(/<h3>Chapter Snapshot<\/h3>\s*<p>([\s\S]*?)<\/p>/i) || [])[1] || '');
-    const majorOutcome = stripTags((html.match(/<h3>Major Outcome<\/h3>\s*<p>([\s\S]*?)<\/p>/i) || [])[1] || '');
-    const bodyText = stripTags(html);
-
-    const titleMatch = name.match(/arc_(\d+)_chapter_(\d+)_/i);
-    const arc = titleMatch ? titleMatch[1] : '1';
-    const chapter = titleMatch ? titleMatch[2] : '0';
+  for (const summaryRecord of summaryRecords) {
+    const sourcePath = summaryRecord.source.path;
+    const evidencePath = summaryRecord.evidence[0].path;
+    const chapterTitle = summaryRecord.title;
+    const chapterSnapshot = summaryRecord.summary;
+    const majorOutcome = summaryRecord.majorOutcome;
+    const bodyText = [chapterTitle, chapterSnapshot, majorOutcome, ...summaryRecord.sections.map((section) => `${section.heading} ${stripTags(section.bodyHtml)}`)].join(' ');
+    const arc = String(summaryRecord.arc);
+    const chapter = String(summaryRecord.chapter);
 
     const participants = [];
     for (const [label, id] of characterByName.entries()) {
@@ -343,7 +353,7 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
     ];
     for (const [needle, npcName, description, metadata] of npcRules) {
       if (bodyText.toLowerCase().includes(needle)) {
-        ensureNpc(npcName, description, sourcePath, metadata);
+        ensureNpc(npcName, description, sourcePath, evidencePath, summaryRecord.source.anchor, metadata);
       }
     }
 
@@ -355,12 +365,13 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
       locations,
       visibility: 'player',
       canonStatus: 'confirmed',
-      evidence: [{ type: 'playthrough-summary', path: sourcePath }],
+      evidence: [{ type: 'playthrough-summary', path: evidencePath }],
       source: {
         path: sourcePath,
+        type: 'generated_playthrough_summary',
         arc,
         chapter,
-        anchor: createSlug(chapterTitle)
+        anchor: summaryRecord.source.anchor
       }
     });
   }
@@ -376,10 +387,10 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
       aliases: aliasesFor(name),
       tags: ['location', 'arc-1'],
       relatedIds: [],
-      ...recordMetadata('DND-Source-Docs/the-dark-arcs/playthrough-summaries/'),
+      ...recordMetadata('campaigns/the-dark-arcs/sessions/arc-01/'),
       source: {
-        type: 'playthrough_summary',
-        path: 'DND-Source-Docs/the-dark-arcs/playthrough-summaries/'
+        type: 'playthrough_summary_collection',
+        path: 'playthrough-summaries/index.html'
       }
     }));
 
@@ -396,8 +407,9 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
       relatedIds: [],
       ...recordMetadata('DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html'),
       source: {
-        type: 'playthrough_summary',
-        path: 'DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html'
+        type: 'generated_playthrough_summary',
+        path: 'playthrough-summaries/index.html',
+        anchor: 'arc-01-chapter-01'
       }
     });
   }
@@ -418,9 +430,10 @@ const main = async () => {
   canonicalAliases = new Map(canonNames.records.map((record) => [record.canonical, record.aliases || []]));
 
   const characters = await readStructuredCharacterRecords();
+  const summaries = await readStructuredSummaryRecords();
   const encounters = await extractEncounterRecords();
   const { lore, secrets: loreSecrets } = await extractLoreAndSecrets();
-  const { canonEvents, locations, npcs } = await extractCanonAndLocationsAndNpcs(characters);
+  const { canonEvents, locations, npcs } = await extractCanonAndLocationsAndNpcs(characters, summaries);
 
   const inventoryItems = characters.flatMap((character) => extractInventoryItemsFromRecord(character));
 

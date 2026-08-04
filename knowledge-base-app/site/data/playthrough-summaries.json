@@ -1,0 +1,83 @@
+[
+  {
+    "id": "arc-01-chapter-01",
+    "title": "Arc 1, Chapter 1: Petaltown to the Wayward Flame",
+    "arc": 1,
+    "chapter": 1,
+    "visibility": "player",
+    "path": "data/playthrough-summaries/arc-01-chapter-01.json",
+    "documentRoute": "playthrough-summaries/index.html#arc-01-chapter-01"
+  },
+  {
+    "id": "arc-01-chapter-02",
+    "title": "Arc 1, Chapter 2: The City of Sparks",
+    "arc": 1,
+    "chapter": 2,
+    "visibility": "player",
+    "path": "data/playthrough-summaries/arc-01-chapter-02.json",
+    "documentRoute": "playthrough-summaries/index.html#arc-01-chapter-02"
+  },
+  {
+    "id": "arc-01-chapter-03",
+    "title": "Arc 1, Chapter 3: Contracts, Campaigns & Conspiracies",
+    "arc": 1,
+    "chapter": 3,
+    "visibility": "player",
+    "path": "data/playthrough-summaries/arc-01-chapter-03.json",
+    "documentRoute": "playthrough-summaries/index.html#arc-01-chapter-03"
+  },
+  {
+    "id": "arc-01-chapter-04",
+    "title": "Arc 1, Chapter 4: The Academy of Sparks Heist",
+    "arc": 1,
+    "chapter": 4,
+    "visibility": "player",
+    "path": "data/playthrough-summaries/arc-01-chapter-04.json",
+    "documentRoute": "playthrough-summaries/index.html#arc-01-chapter-04"
+  },
+  {
+    "id": "arc-01-chapter-05",
+    "title": "Arc 1, Chapter 5: The Academy of Antiquities",
+    "arc": 1,
+    "chapter": 5,
+    "visibility": "player",
+    "path": "data/playthrough-summaries/arc-01-chapter-05.json",
+    "documentRoute": "playthrough-summaries/index.html#arc-01-chapter-05"
+  },
+  {
+    "id": "arc-01-chapter-06",
+    "title": "Arc 1, Chapter 6: The Falling Arena",
+    "arc": 1,
+    "chapter": 6,
+    "visibility": "player",
+    "path": "data/playthrough-summaries/arc-01-chapter-06.json",
+    "documentRoute": "playthrough-summaries/index.html#arc-01-chapter-06"
+  },
+  {
+    "id": "arc-01-chapter-07",
+    "title": "Arc 1, Chapter 7: The Day After the Council",
+    "arc": 1,
+    "chapter": 7,
+    "visibility": "player",
+    "path": "data/playthrough-summaries/arc-01-chapter-07.json",
+    "documentRoute": "playthrough-summaries/index.html#arc-01-chapter-07"
+  },
+  {
+    "id": "arc-01-chapter-08",
+    "title": "Arc 1, Chapter 8: The Burgled Treasury & Nameloc",
+    "arc": 1,
+    "chapter": 8,
+    "visibility": "player",
+    "path": "data/playthrough-summaries/arc-01-chapter-08.json",
+    "documentRoute": "playthrough-summaries/index.html#arc-01-chapter-08"
+  },
+  {
+    "id": "arc-01-chapter-09",
+    "title": "Arc 1, Chapter 9: The Expedition Leaves Veylathar",
+    "arc": 1,
+    "chapter": 9,
+    "visibility": "player",
+    "path": "data/playthrough-summaries/arc-01-chapter-09.json",
+    "documentRoute": "playthrough-summaries/index.html#arc-01-chapter-09"
+  }
+]

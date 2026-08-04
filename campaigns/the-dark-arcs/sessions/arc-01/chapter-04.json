@@ -1,0 +1,140 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/playthrough-summary.schema.json",
+  "id": "arc-01-chapter-04",
+  "campaignId": "the-dark-arcs",
+  "arc": 1,
+  "chapter": 4,
+  "title": "Arc 1, Chapter 4: The Academy of Sparks Heist",
+  "subtitle": "Little Stewards D&D playthrough summary and canon record",
+  "visibility": "player",
+  "canonStatus": "confirmed",
+  "summary": "Chapter 4 delivers the payoff to the infiltration prepared at the end of Chapter 3. Sertraline and Fiona enter the nine-floor Academy of Sparks, move through specialized magical floors, trigger a full security response, and battle Garoth, the Academy's formidable head of security. The fight crashes into the Chronomancy floor, where time magic permanently transforms Fiona's armor and temporarily reshapes Sertraline. With Golo's arrival, the party combines flight, ice arrows, fire breath, berserker strength, and Dwarven Fire Runes to break open the Academy vault and recover the stolen Great Tree sap.",
+  "majorOutcome": "The party confirms that the black goop is authentic Great Tree sap through Golo's ancestral vision. They escape to the Crucible District, where the dwarven boss offers protection, promises the agreed reward, and announces custom dwarven-forged gifts for the party. The Academy of Sparks mini-arc is complete, Fiona's divine armor has awakened, Garoth survives as a possible future mentor or rival, and Chapter 5 is positioned to begin with the dwarven reward ceremony.",
+  "metadata": {
+    "campaign": "Little Stewarts D&D",
+    "arc": "Arc 1: The Dark Arc",
+    "chapter": "Chapter 4",
+    "coreShift": "The Academy heist succeeds and the stolen Great Tree sap is recovered"
+  },
+  "sections": [
+    {
+      "heading": "The Academy of Sparks",
+      "bodyHtml": "<p>The heist takes place inside the <b>Academy of Sparks</b>, not the Ethereum Academy. The Academy of Sparks is a nine-floor magical tower in Veylathar. Its floors are devoted to different schools, experiments, and dangerous forms of magic. Chapter 4 establishes three of its most important levels:</p>\n<ul>\n  <li><b>Conjuration Floor:</b> Contains magical books and experiments capable of producing or binding summoned objects.</li>\n  <li><b>Forbidden Arcana Floor:</b> Holds the Academy vault and restricted magical materials.</li>\n  <li><b>Chronomancy Floor:</b> Contains unstable zones where time moves backward, forward, or at different speeds.</li>\n</ul>\n\n<div class=\"story\">\n  <p><b>Canon:</b> The Academy of Sparks contains nine floors total. Each floor is associated with a specialized form of magical study or dangerous arcane experimentation.</p>\n</div>"
+    },
+    {
+      "heading": "The Infiltration Begins",
+      "bodyHtml": "<p>Sertraline and Fiona carry out the infiltration plan established at the end of Chapter 3. They enter the Academy through a bathroom window rather than using the public entrance.</p>\n<ul>\n  <li>The pair moves quietly through the Academy.</li>\n  <li>They avoid magical security devices that behave like sound-sensitive flying drones.</li>\n  <li>The drones are not ordinary mechanical devices. They are magical guardians that respond to noise and movement.</li>\n  <li>The infiltration remains controlled until the party reaches the restricted upper areas of the tower.</li>\n</ul>"
+    },
+    {
+      "heading": "The Conjuration Floor",
+      "bodyHtml": "<p>On the Conjuration floor, Fiona experiments with a magical book. The book allows her to summon chains, and the conjured chains attach themselves to her sword.</p>\n<ul>\n  <li>The chains become connected to Fiona's weapon rather than immediately disappearing.</li>\n  <li>This establishes a new form for the sword and adds a conjuration-based element to Fiona's equipment.</li>\n  <li>The chapter does not fully define every future combat use of the chains, leaving room for later development.</li>\n</ul>\n\n<div class=\"story\">\n  <p><b>Permanent item change:</b> Fiona's Sword of Aureth becomes a chain-bound weapon through conjuration magic.</p>\n</div>"
+    },
+    {
+      "heading": "The Forbidden Arcana Floor and the Vault",
+      "bodyHtml": "<p>Sertraline and Fiona continue upward to the Forbidden Arcana floor, where they locate the vault containing the suspected Great Tree sap.</p>\n<ul>\n  <li>The vault is positioned over a dangerous open area created by missing floor beams.</li>\n  <li>Movement around the vault is risky because the structure beneath it is unstable or absent.</li>\n  <li>Sertraline jumps onto the top of the vault.</li>\n  <li>Her landing triggers the Academy's alarm system.</li>\n</ul>\n\n<p>The alarm transforms the mission from a stealth operation into an open confrontation.</p>"
+    },
+    {
+      "heading": "Garoth, Head of Security",
+      "bodyHtml": "<p>The alarm summons <b>Garoth</b>, the head of security for the Academy of Sparks. Garoth is physically enormous and immediately memorable.</p>\n<ul>\n  <li>He is half tiefling and half orc.</li>\n  <li>He has red skin, horns, a tail, and large lower-jaw underbite fangs.</li>\n  <li>He is heavily muscled and built like a powerful professional fighter or bodyguard.</li>\n  <li>He wears an expensive, sharply tailored business suit despite his massive frame.</li>\n  <li>His overall appearance is that of an elite corporate security chief combined with a towering fantasy bruiser.</li>\n</ul>\n\n<p>Garoth carries an enchanted cigar. When he takes a powerful puff, the cigar causes him to bulk out, grow stronger, and breathe fire. The effect resembles the strange magical energy associated with the Snap Matches, though the cigar's exact origin is not yet established.</p>\n\n<div class=\"story\">\n  <p><b>Sertraline's reaction:</b> Sertraline does not simply fear or dislike Garoth. She thinks he is awesome and wants to train with him in the future.</p>\n</div>"
+    },
+    {
+      "heading": "The Fight Breaks Through the Floor",
+      "bodyHtml": "<p>During the encounter, Sertraline and Fiona fall through the floor and the ceiling below, crashing into the Chronomancy floor.</p>\n<ul>\n  <li>The battle physically moves from the Forbidden Arcana floor into a more dangerous magical environment.</li>\n  <li>The fall separates the action from the original vault level and exposes the party to uncontrolled temporal magic.</li>\n  <li>Garoth later follows the party downward after Fiona taunts him into jumping into the Chronomancy wing.</li>\n</ul>"
+    },
+    {
+      "heading": "The Chronomancy Floor",
+      "bodyHtml": "<p>The Chronomancy floor is divided into areas where time behaves differently. Some zones reverse time, some move it forward, and some accelerate it at dramatically different rates.</p>\n<ul>\n  <li>Magical items placed in a reverse-time area may return to an earlier or original state.</li>\n  <li>Items placed in a forward-time area may develop into a later or future version.</li>\n  <li>Living creatures may also be aged backward or forward if they enter the wrong zone.</li>\n  <li>Different parts of the same creature may be affected separately if the body is only partly inside a time field.</li>\n</ul>\n\n<div class=\"story\">\n  <p><b>Worldbuilding mechanic:</b> Chronomancy does not merely make things older or younger. It can reveal an object's original form, restore a lost state, or push an item toward a possible future condition.</p>\n</div>"
+    },
+    {
+      "heading": "Fiona's Armor Returns to Its True Form",
+      "bodyHtml": "<p>Fiona's glowing Armor of Aureth passes through a reverse-time effect and reverts to its original form.</p>\n<ul>\n  <li>The restored armor is more powerful than the form Fiona had been wearing.</li>\n  <li>It is made of radiant, glowing gold.</li>\n  <li>Golden wings sprout from the back of the breastplate.</li>\n  <li>The transformation reveals that the armor Fiona had previously worn was not its full or original state.</li>\n</ul>\n\n<div class=\"story\">\n  <p><b>Permanent canon:</b> Fiona's Armor of Aureth is restored to its original, more powerful golden form and now possesses golden wings.</p>\n</div>"
+    },
+    {
+      "heading": "Sertraline's Temporal Transformation",
+      "bodyHtml": "<p>Sertraline is caught in the Chronomancy floor's unstable time fields.</p>\n<ul>\n  <li>She is first reverted into a kitten.</li>\n  <li>She then enters a forward-time zone while only partly inside it.</li>\n  <li>Because different parts of her body experience different amounts of accelerated time, she becomes a mismatched panther form.</li>\n  <li>The back half of her body becomes a teenage panther.</li>\n  <li>The front half becomes a fully grown adult panther.</li>\n</ul>\n\n<p>The transformation is both dangerous and absurd, reinforcing that Chronomancy effects can be unpredictable when a creature is caught between zones.</p>"
+    },
+    {
+      "heading": "The Rocky Talkies and Golo's Arrival",
+      "bodyHtml": "<p>The party uses magical communication stones given to them by the dwarves. These devices are called <b>Rocky Talkies</b>.</p>\n<ul>\n  <li>The stones function like magical walkie-talkies.</li>\n  <li>They allow separated party members to speak with one another over distance.</li>\n  <li>The Rocky Talkies are used to summon Golo once the heist turns into a full battle.</li>\n</ul>\n\n<p>Golo flies to the Academy using his enchanted horseshoes and enters through a damaged sky-delivery freight elevator shaft that was not accessible from the first floor.</p>\n\n<div class=\"story\">\n  <p><b>Permanent item:</b> Rocky Talkies are magical stones of far speech used by the party for long-distance coordination.</p>\n</div>"
+    },
+    {
+      "heading": "Ice Against Fire",
+      "bodyHtml": "<p>By the time Golo arrives, Garoth has powered himself up with the enchanted cigar and is breathing fire.</p>\n<ul>\n  <li>Golo fires ice arrows directly at Garoth.</li>\n  <li>The ice arrows are especially effective against Garoth's fire breath.</li>\n  <li>One shot freezes Garoth's cheek.</li>\n  <li>Golo apologizes to Garoth for freezing him by accident, even while the battle continues.</li>\n</ul>\n\n<div class=\"story\">\n  <p><b>Combat canon:</b> Golo uses ice arrows in this encounter, not fire arrows. His ice magic serves as a direct counter to Garoth's cigar-powered fire breath.</p>\n</div>"
+    },
+    {
+      "heading": "Sertraline Steals the Cigar",
+      "bodyHtml": "<p>During the fight, Sertraline gets hold of Garoth's enchanted cigar.</p>\n<ul>\n  <li>She takes puffs from it.</li>\n  <li>The cigar causes her to bulk up somewhat.</li>\n  <li>It grants her the ability to breathe fire.</li>\n  <li>Her fire breath comes from the same cigar magic that allows Garoth to breathe fire.</li>\n</ul>\n\n<p>Sertraline's use of the cigar becomes important later when the party needs to heat the vault.</p>"
+    },
+    {
+      "heading": "Fiona Uses Berserker Potions",
+      "bodyHtml": "<p>Fiona begins drinking the Berserker Potions purchased before the infiltration.</p>\n<ul>\n  <li>The potions dramatically increase her physical strength.</li>\n  <li>The enhanced strength allows her to fight Garoth and later strike the vault with tremendous force.</li>\n  <li>The potions remain consistent with the earlier rule that they leave the user exhausted and in need of a long rest after the effect ends.</li>\n</ul>"
+    },
+    {
+      "heading": "Garoth Calls for Backup",
+      "bodyHtml": "<p>Garoth summons three security minions as backup.</p>\n<ul>\n  <li>The minions join the fight on the Chronomancy floor and around the vault.</li>\n  <li>They can use <b>Mist Step</b> to teleport.</li>\n  <li>They teleport onto the top of the vault to stop the party's escape plan.</li>\n  <li>As the vault becomes dangerously hot, the minions struggle to remain standing on it.</li>\n</ul>"
+    },
+    {
+      "heading": "The Party's Escape Plan",
+      "bodyHtml": "<p>Once Garoth's reinforcements arrive, the party decides that simply defeating everyone is not the objective. Their real goal is to recover the sap and escape.</p>\n<ul>\n  <li>The party climbs onto Golo's back.</li>\n  <li>Golo flies them back toward the vault.</li>\n  <li>They decide to heat and weaken the vault rather than trying to open it normally.</li>\n  <li>The plan combines several different abilities gained across earlier chapters.</li>\n</ul>"
+    },
+    {
+      "heading": "Breaking Open the Vault",
+      "bodyHtml": "<p>The vault is opened through a coordinated combination of fire, runes, and brute force.</p>\n<ul>\n  <li>Golo draws Dwarven Fire Runes across the vault's surface.</li>\n  <li>Sertraline breathes cigar-powered fire onto the vault.</li>\n  <li>Fiona repeatedly strikes the heated vault using Berserker-enhanced strength.</li>\n  <li>Garoth and his three minions continue attacking while the party works.</li>\n  <li>The minions Mist Step onto the vault but struggle as the metal grows hotter.</li>\n  <li>After repeated blows and sustained heat, the vault finally breaks open.</li>\n</ul>\n\n<div class=\"story\">\n  <p><b>Teamwork payoff:</b> The vault is not opened by a single spell or character. It requires Golo's licensed dwarven rune magic, Sertraline's stolen fire breath, Fiona's potion-enhanced strength, and the party's ability to remain coordinated during combat.</p>\n</div>"
+    },
+    {
+      "heading": "The Great Tree Sap",
+      "bodyHtml": "<p>Inside the vault, the party finds the stolen black goop believed to be the sacred sap of the Great Tree.</p>\n<ul>\n  <li>Golo tastes the substance to determine whether it is genuine.</li>\n  <li>The sap immediately triggers an ancestral vision.</li>\n  <li>Golo sees a migratory herd of his centaur ancestors.</li>\n  <li>The herd travels from one continent to another as the seasons change.</li>\n  <li>The vision confirms that the substance is authentic Great Tree sap.</li>\n</ul>\n\n<p>The vision also deepens Golo's connection to his people, revealing that his ancestors once moved across entire continents as part of an ancient seasonal migration.</p>"
+    },
+    {
+      "heading": "Escape to the Crucible District",
+      "bodyHtml": "<p>After recovering the sap, the party escapes the Academy on Golo's back and flies into the Crucible District.</p>\n<ul>\n  <li>The group meets with the dwarven boss.</li>\n  <li>The boss offers the entire party a protected place to stay that night.</li>\n  <li>The sanctuary is intended to keep them safe after the dangerous Academy heist.</li>\n  <li>The boss promises to pay the agreed reward the following morning.</li>\n  <li>He also promises additional custom dwarven-forged items for each party member as appreciation for their service.</li>\n</ul>"
+    },
+    {
+      "heading": "Message to Dr. Fizzlebig",
+      "bodyHtml": "<p>The dwarven boss and Sertraline coordinate a message to Dr. Fizzlebig.</p>\n<ul>\n  <li>They send a pigeon toward the Ethereum Academy.</li>\n  <li>The message is intended for Dr. Fizzlebig to read.</li>\n  <li>This updates him on the outcome of the Academy of Sparks mission and the recovery of the sap.</li>\n</ul>"
+    },
+    {
+      "heading": "Chapter Rewards Established",
+      "bodyHtml": "<table>\n<tr><th>Reward</th><th>Status at Chapter End</th></tr>\n<tr><td>500 gold for the Great Tree sap</td><td>Earned; payment promised the following morning</td></tr>\n<tr><td>Crucible District council vote</td><td>Condition satisfied through recovery of the sap</td></tr>\n<tr><td>Custom dwarven-forged party items</td><td>Promised; details deferred to Chapter 5</td></tr>\n<tr><td>Protected lodging in the Crucible District</td><td>Granted for the night immediately following the heist</td></tr>\n</table>"
+    },
+    {
+      "heading": "Items and Artifacts",
+      "bodyHtml": "<ul>\n  <li><b>Rocky Talkies:</b> Magical stones of far speech that function like walkie-talkies.</li>\n  <li><b>Fiona's Chain-Bound Sword of Aureth:</b> Fiona's sword now carries magically conjured chains.</li>\n  <li><b>Fiona's Restored Golden Armor of Aureth:</b> The armor returns to its original, more powerful form and sprouts golden wings.</li>\n  <li><b>Garoth's Enchanted Cigar:</b> Grants increased size and strength along with fire breath.</li>\n  <li><b>Berserker Potions:</b> Used by Fiona to gain the strength needed to battle Garoth and break the vault.</li>\n  <li><b>Dwarven Fire Runes:</b> Licensed rune magic used by Golo to heat and weaken the vault.</li>\n  <li><b>Great Tree Sap:</b> Sacred black goop confirmed authentic by Golo's ancestral vision.</li>\n</ul>"
+    },
+    {
+      "heading": "New NPCs and Expanded Roles",
+      "bodyHtml": "<ul>\n  <li><b>Garoth:</b> Half-tiefling, half-orc head of security for the Academy of Sparks. A sharply dressed, cigar-powered fire-breathing bruiser.</li>\n  <li><b>Garoth's Security Minions:</b> Three magical guards capable of using Mist Step.</li>\n  <li><b>Dwarven Boss:</b> Expands his role by protecting the party, confirming the reward, and promising custom-forged gifts.</li>\n</ul>"
+    },
+    {
+      "heading": "Permanent Mechanics Introduced",
+      "bodyHtml": "<table>\n<tr><th>Mechanic</th><th>Permanent Effect</th></tr>\n<tr><td>Rocky Talkies</td><td>Party members can communicate over distance through magical stones.</td></tr>\n<tr><td>Chronomancy Item Restoration</td><td>Time magic may return magical items to earlier or original forms.</td></tr>\n<tr><td>Chronomancy Item Advancement</td><td>Time magic may push items toward possible future versions.</td></tr>\n<tr><td>Fiona's Golden Wings</td><td>Fiona's restored Armor of Aureth now possesses golden wings.</td></tr>\n<tr><td>Chain-Bound Sword</td><td>Fiona's sword permanently retains conjured chains.</td></tr>\n<tr><td>Golo's Ancestral Sap Vision</td><td>The Great Tree sap can reveal ancestral memories and confirms Golo's people's ancient continental migrations.</td></tr>\n</table>"
+    },
+    {
+      "heading": "Character Development",
+      "bodyHtml": "<ul>\n  <li><b>Sertraline:</b> Demonstrates fearlessness, improvisation, and fascination with powerful figures. Her admiration for Garoth creates a possible future mentor relationship.</li>\n  <li><b>Fiona:</b> Pushes herself through Berserker Potions and has her divine identity visually transformed when her true armor awakens.</li>\n  <li><b>Golo:</b> Serves as the party's aerial rescue, counters fire with ice, uses his dwarven employment magic in a critical moment, and gains a major ancestral revelation.</li>\n  <li><b>Queen Flower:</b> Does not take a central combat role in the heist, but the mission directly advances her campaign by satisfying the condition for the Crucible District's council vote.</li>\n</ul>"
+    },
+    {
+      "heading": "Permanent Canon",
+      "bodyHtml": "<ul>\n  <li>The heist occurs at the Academy of Sparks.</li>\n  <li>The Academy of Sparks contains nine floors.</li>\n  <li>Garoth is the Academy's half-tiefling, half-orc head of security.</li>\n  <li>Garoth's enchanted cigar grants increased strength, size, and fire breath.</li>\n  <li>Golo uses ice arrows against Garoth's fire breath.</li>\n  <li>Sertraline thinks Garoth is awesome and wants to train with him.</li>\n  <li>Fiona's Armor of Aureth has returned to its original, stronger golden form.</li>\n  <li>Golden wings now sprout from Fiona's armor.</li>\n  <li>Fiona's sword is permanently altered by conjured chains.</li>\n  <li>The party possesses Rocky Talkies.</li>\n  <li>Chronomancy can restore items to earlier forms or advance them toward future forms.</li>\n  <li>The stolen black goop is confirmed to be authentic Great Tree sap.</li>\n  <li>Golo's ancestors migrated between continents with the changing seasons.</li>\n  <li>The party has earned the 500 gold reward for recovering the sap.</li>\n  <li>The Crucible District's condition for supporting Queen Flower has been satisfied.</li>\n  <li>Custom dwarven-forged rewards will be presented in Chapter 5.</li>\n  <li>The Academy of Sparks mini-arc is complete.</li>\n</ul>"
+    },
+    {
+      "heading": "Active Quest Threads at Chapter End",
+      "bodyHtml": "<ul>\n  <li>Receive the 500 gold reward from the dwarves.</li>\n  <li>Determine the form and abilities of each custom dwarven-forged item.</li>\n  <li>Confirm and record the Crucible District's council vote for Queen Flower.</li>\n  <li>Explore whether Garoth can become Sertraline's trainer or mentor.</li>\n  <li>Investigate the origin and magic of Garoth's cigar.</li>\n  <li>Learn whether the Academy's Chronomancy research connects to the unexplained sparks or the Dark Arcs.</li>\n  <li>Determine how the recovered Great Tree sap will be used during the Feast of the Ancestors.</li>\n</ul>"
+    },
+    {
+      "heading": "Chapter Transition",
+      "bodyHtml": "<p>Chapter 4 closes with the party sheltered inside the Crucible District after completing one of its most dangerous missions so far. The Great Tree sap has been recovered, the Academy of Sparks has been breached, and several permanent transformations have occurred. Fiona now wears her true golden winged armor, Golo has witnessed the ancient migration of his people, and Sertraline has found an unexpected figure she admires in Garoth. The immediate danger has passed, but the party's actions have likely created lasting consequences inside the Academy. Chapter 5 begins the following morning with the dwarven boss paying the reward, confirming the political payoff, and presenting custom-forged gifts created specifically for each member of the party.</p>"
+    }
+  ],
+  "evidence": [
+    {
+      "type": "source-document",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html"
+    }
+  ],
+  "source": {
+    "type": "generated_playthrough_summary",
+    "path": "playthrough-summaries/index.html",
+    "anchor": "arc-01-chapter-04"
+  }
+}

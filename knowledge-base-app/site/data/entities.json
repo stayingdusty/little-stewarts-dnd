@@ -846,8 +846,9 @@
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html"
+      "type": "generated_playthrough_summary",
+      "path": "playthrough-summaries/index.html",
+      "anchor": "arc-01-chapter-08"
     }
   },
   {
@@ -871,8 +872,9 @@
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
+      "type": "generated_playthrough_summary",
+      "path": "playthrough-summaries/index.html",
+      "anchor": "arc-01-chapter-02"
     }
   },
   {
@@ -896,8 +898,9 @@
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
+      "type": "generated_playthrough_summary",
+      "path": "playthrough-summaries/index.html",
+      "anchor": "arc-01-chapter-02"
     }
   },
   {
@@ -923,8 +926,9 @@
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html"
+      "type": "generated_playthrough_summary",
+      "path": "playthrough-summaries/index.html",
+      "anchor": "arc-01-chapter-04"
     }
   },
   {
@@ -951,8 +955,9 @@
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html"
+      "type": "generated_playthrough_summary",
+      "path": "playthrough-summaries/index.html",
+      "anchor": "arc-01-chapter-01"
     }
   },
   {
@@ -979,8 +984,9 @@
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html"
+      "type": "generated_playthrough_summary",
+      "path": "playthrough-summaries/index.html",
+      "anchor": "arc-01-chapter-05"
     }
   },
   {
@@ -1000,12 +1006,12 @@
     "evidence": [
       {
         "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+        "path": "campaigns/the-dark-arcs/sessions/arc-01/"
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      "type": "playthrough_summary_collection",
+      "path": "playthrough-summaries/index.html"
     }
   },
   {
@@ -1025,12 +1031,12 @@
     "evidence": [
       {
         "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+        "path": "campaigns/the-dark-arcs/sessions/arc-01/"
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      "type": "playthrough_summary_collection",
+      "path": "playthrough-summaries/index.html"
     }
   },
   {
@@ -1050,12 +1056,12 @@
     "evidence": [
       {
         "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+        "path": "campaigns/the-dark-arcs/sessions/arc-01/"
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      "type": "playthrough_summary_collection",
+      "path": "playthrough-summaries/index.html"
     }
   },
   {
@@ -1075,12 +1081,12 @@
     "evidence": [
       {
         "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+        "path": "campaigns/the-dark-arcs/sessions/arc-01/"
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      "type": "playthrough_summary_collection",
+      "path": "playthrough-summaries/index.html"
     }
   },
   {
@@ -1100,12 +1106,12 @@
     "evidence": [
       {
         "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+        "path": "campaigns/the-dark-arcs/sessions/arc-01/"
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      "type": "playthrough_summary_collection",
+      "path": "playthrough-summaries/index.html"
     }
   },
   {
@@ -1125,12 +1131,12 @@
     "evidence": [
       {
         "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+        "path": "campaigns/the-dark-arcs/sessions/arc-01/"
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      "type": "playthrough_summary_collection",
+      "path": "playthrough-summaries/index.html"
     }
   },
   {
@@ -1150,12 +1156,12 @@
     "evidence": [
       {
         "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+        "path": "campaigns/the-dark-arcs/sessions/arc-01/"
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      "type": "playthrough_summary_collection",
+      "path": "playthrough-summaries/index.html"
     }
   },
   {
@@ -1179,12 +1185,12 @@
     "evidence": [
       {
         "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+        "path": "campaigns/the-dark-arcs/sessions/arc-01/"
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      "type": "playthrough_summary_collection",
+      "path": "playthrough-summaries/index.html"
     }
   },
   {
@@ -1208,12 +1214,12 @@
     "evidence": [
       {
         "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+        "path": "campaigns/the-dark-arcs/sessions/arc-01/"
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      "type": "playthrough_summary_collection",
+      "path": "playthrough-summaries/index.html"
     }
   },
   {
@@ -1233,12 +1239,12 @@
     "evidence": [
       {
         "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+        "path": "campaigns/the-dark-arcs/sessions/arc-01/"
       }
     ],
     "source": {
-      "type": "playthrough_summary",
-      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/"
+      "type": "playthrough_summary_collection",
+      "path": "playthrough-summaries/index.html"
     }
   },
   {

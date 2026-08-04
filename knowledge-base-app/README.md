@@ -1,6 +1,6 @@
 # Little Stewarts Knowledge Base App
 
-This app is the static knowledge base layer for campaign content. Character sheets are sourced from structured JSON under `campaigns/the-dark-arcs/characters/`; extraction still reads legacy playthrough and world references under `DND-Source-Docs/` while those domains are migrated. Generated site files are written under `site/`.
+This app is the static knowledge base layer for campaign content. Character sheets and playthrough summaries are sourced from structured JSON under `campaigns/the-dark-arcs/`; extraction still reads legacy world references under `DND-Source-Docs/` while that domain is migrated. Generated site files are written under `site/`.
 
 ## Goals
 
@@ -30,8 +30,8 @@ DM lore, secrets, planned encounters, and DM documents are included in the publi
 
 ## Local Workflow
 
-1. Add or update character JSON under `campaigns/the-dark-arcs/characters/`. Legacy HTML character sheets are evidence only and are not scraped.
-2. Normalize structured characters and extract the remaining legacy campaign domains:
+1. Add or update character JSON under `campaigns/the-dark-arcs/characters/` or playthrough summary JSON under `campaigns/the-dark-arcs/sessions/`. Legacy HTML sheets and summaries are evidence only and are not scraped.
+2. Publish structured documents, normalize campaign records, and extract the remaining legacy campaign domains:
    - `npm run extract:data`
 3. Build search data for the static site:
    - `npm run build:data`

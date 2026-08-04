@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/playthrough-summary.schema.json",
+  "id": "arc-01-chapter-02",
+  "campaignId": "the-dark-arcs",
+  "arc": 1,
+  "chapter": 2,
+  "title": "Arc 1, Chapter 2: The City of Sparks",
+  "subtitle": "Little Stewards D&D playthrough summary and canon record",
+  "visibility": "player",
+  "canonStatus": "confirmed",
+  "summary": "The party establishes itself in Veylathar, explores the city's magical infrastructure, uncovers the first hints of political unrest, and Fiona undergoes a life-changing transformation.",
+  "majorOutcome": "The Wayward Flame becomes the party's home, Frederick becomes a friend, Queen Flower's pendant reacts to the Luminary Dome, and Fiona becomes a Paladin of Aureth.",
+  "metadata": {
+    "campaign": "Little Stewarts D&D",
+    "arc": "Arc 1: The Dark Arc",
+    "chapter": "Chapter 2",
+    "coreShift": "Discovering Veylathar"
+  },
+  "sections": [
+    {
+      "heading": "The Wayward Flame",
+      "bodyHtml": "<p>Kara Emberfall welcomes the party after the butcher vouches for them. Anja Willowbark serves Flameheart Ale and magical meals infused with druidic energy.</p>\n<div class='story'><p><b>Canon:</b> Anja unknowingly imbues her food and Flameheart Ale with druidic magic.</p></div>"
+    },
+    {
+      "heading": "Kara's Map",
+      "bodyHtml": "<p>Kara explains the city and marks the Ethereum Academy, Academy of Antiquities, Crucible District, Academy of Sparks, Council of Sparks, and Central Market with its towering blimp cargo spires.</p>"
+    },
+    {
+      "heading": "Academy of Sparks",
+      "bodyHtml": "<ul><li>The Academy is secretly the city's magical rail hub.</li><li>Conductors wear enchanted boots that channel fire magic.</li><li>Special Sparks power trains while the match burns.</li><li>Employee doors are keyed to the conductor boots.</li><li>The party notices face-changing putty used by local children.</li></ul>"
+    },
+    {
+      "heading": "Frederick",
+      "bodyHtml": "<p>The party befriends Frederick, a nervous young gnome conductor. Rather than steal from him, they encourage him. He rewards them with a free guided train tour.</p>"
+    },
+    {
+      "heading": "Tour of Veylathar",
+      "bodyHtml": "<ul><li>Crucible District's industrial forges.</li><li>Council of Sparks and city government.</li><li>Luminary Dome where Queen Flower's pendant mysteriously rises toward the museum.</li><li>Ethereum Academy where Dr. Fizzlebig studies Fiona's holy transformation.</li></ul>"
+    },
+    {
+      "heading": "Fiona's Transformation",
+      "bodyHtml": "<table><tr><th>Before</th><th>After</th></tr>\n<tr><td>Warlock</td><td>Paladin of Aureth</td></tr>\n<tr><td>Demonic sword</td><td>Golden holy blade</td></tr>\n<tr><td>Dark magic</td><td>Healing and radiant power</td></tr></table>"
+    },
+    {
+      "heading": "Academy of Antiquities",
+      "bodyHtml": "<p>Queen Flower and Sertraline investigate the pendant. Outside they overhear citizens criticizing the Queen Regent, introducing the campaign's first political conflict.</p>"
+    },
+    {
+      "heading": "Hunting Excursion",
+      "bodyHtml": "<p>Meanwhile, Golo learns a deer call from hunters. He accidentally wounds a fawn, allowing Fiona to perform her first miraculous healing.</p>"
+    },
+    {
+      "heading": "Downtime",
+      "bodyHtml": "<p>The venison gathered from the hunt pays for two weeks of lodging and meals at the Wayward Flame, establishing the campaign's downtime rhythm.</p>"
+    },
+    {
+      "heading": "Permanent Canon",
+      "bodyHtml": "<ul>\n<li>Fiona is now a Paladin of Aureth.</li>\n<li>Frederick becomes a recurring ally.</li>\n<li>The Academy of Sparks and magical railway are understood.</li>\n<li>Queen Flower's pendant is connected to the Luminary Dome.</li>\n<li>Political dissatisfaction with the Queen Regent has begun.</li>\n<li>The party has two weeks of paid room and board.</li>\n</ul>"
+    }
+  ],
+  "evidence": [
+    {
+      "type": "source-document",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
+    }
+  ],
+  "source": {
+    "type": "generated_playthrough_summary",
+    "path": "playthrough-summaries/index.html",
+    "anchor": "arc-01-chapter-02"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/playthrough-summary.schema.json",
+  "id": "arc-01-chapter-08",
+  "campaignId": "the-dark-arcs",
+  "arc": 1,
+  "chapter": 8,
+  "title": "Arc 1, Chapter 8: The Burgled Treasury & Nameloc",
+  "subtitle": "Little Stewards D&D playthrough summary and canon record",
+  "visibility": "player",
+  "canonStatus": "confirmed",
+  "summary": "Chapter 8 begins with the garrison in worsening condition because gold reserved for food, equipment, and repairs keeps vanishing from its locked treasury. The party investigates the theft while also responding to reports of a massive beast hunting deer in the surrounding woods. The supposed monster is revealed to be Nameloc, the gigantic blue Dog Spirit form of a misunderstood wandering boy named Calvin. After an initial fight, the misunderstanding is resolved, and his powerful senses become the key to tracking the true thief.",
+  "majorOutcome": "The party discovers that the treasury gold has been taken by Burgle, a harmless amphibious fish-person who lives in an underwater hovel in the riverbed and hoards anything shiny. The missing gold is recovered peacefully, the garrison's repairs and supplies can resume, Fiona earns greater respect as a leader, Burgle becomes a recurring local ally, and Calvin joins the party as a powerful tracker who can transform into Nameloc.",
+  "metadata": {
+    "campaign": "Little Stewarts D&D",
+    "arc": "Arc 1: The Dark Arc",
+    "chapter": "Chapter 8",
+    "coreShift": "The garrison burglary is solved, Burgle is introduced, and Calvin and his Dog Spirit form, Nameloc, join the story"
+  },
+  "sections": [
+    {
+      "heading": "The Garrison's Financial Crisis",
+      "bodyHtml": "<p>The chapter opens with the garrison struggling because money assigned to basic operations keeps disappearing overnight. The loss is not abstract; it is visibly damaging the soldiers and the condition of their home.</p>\n<ul>\n  <li>Roof repairs remain unfinished, forcing soldiers to catch leaks in buckets.</li>\n  <li>Food quality declines and morale worsens.</li>\n  <li>Training equipment is broken or worn out.</li>\n  <li>Armor and barracks facilities cannot be properly maintained.</li>\n  <li>Funds appear in the treasury and vanish by the following morning.</li>\n</ul>\n\n<p>There are no broken locks, damaged doors, or opened windows. The treasury guard insists that no one passed the post, making the theft appear impossible.</p>\n\n<div class=\"story\">\n  <p><b>Chapter premise:</b> The garrison is not merely missing treasure. Its ability to function and care for its soldiers is being steadily eroded.</p>\n</div>"
+    },
+    {
+      "heading": "Fiona Takes Responsibility",
+      "bodyHtml": "<p>The garrison turns to Fiona for help. The investigation becomes an important leadership moment for her because the soldiers are directly under her protection and depend on her judgment.</p>\n<ul>\n  <li>Fiona accepts responsibility for solving the mystery.</li>\n  <li>She treats the crisis as both a criminal problem and a morale problem.</li>\n  <li>Her choices emphasize investigation and mercy rather than immediate punishment.</li>\n  <li>The successful outcome increases the garrison's confidence in her leadership.</li>\n</ul>"
+    },
+    {
+      "heading": "Early Clues in the Treasury",
+      "bodyHtml": "<p>The party searches the treasury and finds only subtle clues.</p>\n<ul>\n  <li>No evidence of forced entry.</li>\n  <li>No sign that the treasury guard abandoned the post.</li>\n  <li>A faint damp or fish-like smell in the room.</li>\n  <li>Small wet marks near the latrine, toilet, or water access.</li>\n  <li>Evidence that the thief may be entering through the old water system beneath the garrison.</li>\n</ul>\n\n<p>At this stage, the clues are not enough to identify the thief. The investigation is interrupted or redirected by reports of a dangerous beast in the nearby woods.</p>"
+    },
+    {
+      "heading": "Reports of a Great Beast",
+      "bodyHtml": "<p>Royal deer from Queen Flower's protected herd have been killed in the forest. Guards and hunters believe a giant wolf-like creature is responsible.</p>\n<ul>\n  <li>The tracks are enormous.</li>\n  <li>Brush and branches are broken by something extremely heavy.</li>\n  <li>The kills are clean rather than wasteful.</li>\n  <li>The creature moves carefully and shows signs of intelligence.</li>\n  <li>No stolen treasury gold is found near the carcasses.</li>\n</ul>\n\n<p>The party initially assumes that the mysterious beast may also be connected to the garrison theft.</p>"
+    },
+    {
+      "heading": "The New Wanderer: Calvin",
+      "bodyHtml": "<p>The party encounters a lone young traveler named <b>Calvin</b>. Calvin is the boy form of the new player character and travels the world largely on his own.</p>\n\n<p>Calvin is not a normal werewolf. He can willingly transform into a supernatural Dog Spirit named <b>Nameloc</b>.</p>\n\n<h3>Nameloc: The Dog Spirit Transformation</h3>\n<ul>\n  <li>Calvin transforms into Nameloc, a gigantic blue spirit bulldog.</li>\n  <li>The transformed creature is roughly between a rhinoceros, hippopotamus, and small elephant in size.</li>\n  <li>The form is heavily built, extremely strong, and capable of sudden bursts of speed.</li>\n  <li>Its appearance is spectral or spirit-like rather than that of an ordinary animal.</li>\n  <li>The form is intimidating but not naturally cruel or malicious.</li>\n</ul>\n\n<h3>Passive Abilities</h3>\n<ul>\n  <li>Enhanced sense of smell even while untransformed.</li>\n  <li>Exceptional hearing.</li>\n  <li>Natural tracking ability.</li>\n  <li>Strong wilderness awareness and survival instincts.</li>\n  <li>Improved ability to follow hidden trails that other characters cannot detect.</li>\n</ul>\n\n<div class=\"story\">\n  <p><b>Permanent canon:</b> The character is <b>Calvin</b> in boy form and <b>Nameloc</b> in Dog Spirit form. Nameloc is a massive blue spirit bulldog, not a wolf.</p>\n</div>"
+    },
+    {
+      "heading": "The Fight in the Woods",
+      "bodyHtml": "<p>The party confronts Nameloc while Calvin is in his Dog Spirit form. Because the royal deer have been killed and the creature appears enormous and dangerous, the meeting becomes a fight.</p>\n<ul>\n  <li>Nameloc uses his size, strength, speed, and presence to overwhelm the party.</li>\n  <li>The encounter is dangerous and dramatic but does not become a fight to the death.</li>\n  <li>Calvin is defending himself rather than attempting to murder the party.</li>\n  <li>The party eventually realizes that the beast is intelligent and capable of restraint.</li>\n</ul>"
+    },
+    {
+      "heading": "The Misunderstanding Is Resolved",
+      "bodyHtml": "<p>After the fight, Nameloc transforms back into Calvin, who explains that he is not the treasury thief. He hunted the deer because his transformed body consumes enormous amounts of energy and requires a great deal of food.</p>\n<ul>\n  <li>He did not know the deer belonged to Queen Flower's protected herd.</li>\n  <li>He was hunting to survive rather than to attack the kingdom.</li>\n  <li>He accepts that his actions caused a problem once the ownership of the herd is explained.</li>\n  <li>The party chooses to treat him as a potential ally instead of a monster.</li>\n</ul>\n\n<p>The resolution establishes Calvin and Nameloc as a misunderstood wanderer and spirit guardian whose frightening appearance and hunger can easily create conflict even when he has no evil intentions.</p>"
+    },
+    {
+      "heading": "Calvin and Nameloc Join the Investigation",
+      "bodyHtml": "<p>To demonstrate good faith and help repair the damage caused by the misunderstanding, Calvin agrees to help the party solve the garrison burglary.</p>\n<ul>\n  <li>He returns with the party to the treasury.</li>\n  <li>He uses his enhanced smell to identify a scent that the others missed.</li>\n  <li>The scent is neither human, wolf, nor guard.</li>\n  <li>It is clearly aquatic and fish-like.</li>\n  <li>His tracking ability confirms that the thief used the water channels beneath the garrison.</li>\n</ul>\n\n<div class=\"story\">\n  <p><b>Character payoff:</b> The ability that made Nameloc seem dangerous in the woods becomes the exact ability needed to protect the garrison.</p>\n</div>"
+    },
+    {
+      "heading": "The Hidden Water Route",
+      "bodyHtml": "<p>The party follows the scent and evidence toward the old waterways beneath the garrison.</p>\n<ul>\n  <li>The treasury's toilet, latrine, or water access connects to a hidden channel.</li>\n  <li>The channel runs beneath the garrison and into the river.</li>\n  <li>Small splashes and disturbed water reveal recent movement.</li>\n  <li>The trail continues into the wall of the riverbed.</li>\n</ul>\n\n<p>Calvin's heightened senses allow the party to follow the route all the way to the thief's underwater hiding place.</p>"
+    },
+    {
+      "heading": "Burgle Appears",
+      "bodyHtml": "<p>The true thief is a small amphibious fish-person named <b>Burgle</b>. Burgle lives in an underwater hovel carved into the wall of the riverbed.</p>\n<ul>\n  <li>Burgle is fascinated by shiny objects.</li>\n  <li>He does not understand money, ownership, or the concept of theft.</li>\n  <li>He used the water route beneath the garrison to enter the treasury.</li>\n  <li>He took gold because it glittered, not because he wanted wealth or power.</li>\n  <li>His hovel contains the missing treasury gold among his collection of shiny objects.</li>\n</ul>\n\n<h3>Burgle's Speech</h3>\n<p>Burgle communicates almost entirely by saying the word “Burgle.” Meaning is conveyed through volume, tone, expression, and body language.</p>\n<ul>\n  <li>Curious: “Burgle?”</li>\n  <li>Happy: “BURGLe!”</li>\n  <li>Guilty: “...burgle...”</li>\n  <li>Defensive: “BURGLE!”</li>\n  <li>Proud: “Burgle.”</li>\n  <li>Overjoyed: “BURGLELLLLE!”</li>\n</ul>\n\n<div class=\"story\">\n  <p><b>Permanent NPC trait:</b> Burgle is not malicious and does not understand that taking shiny objects can harm others.</p>\n</div>"
+    },
+    {
+      "heading": "The Peaceful Resolution",
+      "bodyHtml": "<p>The party explains that the gold is needed by the garrison. Burgle returns the missing treasure once he understands that the soldiers need it.</p>\n<ul>\n  <li>The treasury funds are recovered without killing or imprisoning Burgle.</li>\n  <li>The garrison can resume repairs and purchase proper food and equipment.</li>\n  <li>Burgle is offered harmless shiny objects as replacements for the gold.</li>\n  <li>Possible gifts include polished stones, buttons, colored glass, metal charms, and other trinkets.</li>\n  <li>Burgle becomes a strange but friendly local contact instead of an enemy.</li>\n</ul>"
+    },
+    {
+      "heading": "Chapter Rewards and Outcomes",
+      "bodyHtml": "<table>\n<tr><th>Outcome</th><th>Result</th></tr>\n<tr><td>Missing garrison gold</td><td>Recovered from Burgle's underwater hovel</td></tr>\n<tr><td>Garrison repairs and supplies</td><td>Funding restored</td></tr>\n<tr><td>Fiona's standing with the soldiers</td><td>Improved through leadership, investigation, and mercy</td></tr>\n<tr><td>Calvin's relationship with the party</td><td>Misunderstanding resolved; joins as a new ally and adventuring companion</td></tr>\n<tr><td>Burgle's relationship with the party</td><td>Becomes a harmless recurring friend and possible future helper</td></tr>\n</table>"
+    },
+    {
+      "heading": "New Characters Introduced",
+      "bodyHtml": "<ul>\n  <li><b>Calvin:</b> The boy form of the new wandering shapeshifter. He possesses enhanced smell and hearing even when not transformed.</li>\n  <li><b>Nameloc:</b> Calvin's Dog Spirit form—a gigantic blue spirit bulldog who is massive, fast, powerful, highly perceptive, and burdened by an enormous appetite.</li>\n  <li><b>Burgle:</b> A small amphibious fish-person who lives in the riverbed wall, hoards shiny objects, and speaks almost entirely by saying his own name.</li>\n</ul>"
+    },
+    {
+      "heading": "Permanent Mechanics and Character Abilities",
+      "bodyHtml": "<table>\n<tr><th>Ability or Mechanic</th><th>Permanent Effect</th></tr>\n<tr><td>Calvin's Enhanced Smell</td><td>Allows him to identify and follow scents others cannot detect.</td></tr>\n<tr><td>Calvin's Enhanced Hearing</td><td>Grants heightened awareness even outside his transformed state.</td></tr>\n<tr><td>Nameloc Transformation</td><td>Transforms Calvin into Nameloc, a gigantic blue spirit bulldog with immense strength and speed.</td></tr>\n<tr><td>Transformation Hunger</td><td>Nameloc consumes tremendous energy and requires large amounts of food.</td></tr>\n<tr><td>Burgle's River Access</td><td>Burgle can move through waterways and hidden channels beneath the city and garrison.</td></tr>\n<tr><td>Burgle Favor</td><td>Burgle may later recover, notice, or retrieve lost shiny objects for the party.</td></tr>\n</table>"
+    },
+    {
+      "heading": "Character Development",
+      "bodyHtml": "<ul>\n  <li><b>Fiona:</b> Proves she can solve a crisis through leadership, investigation, and mercy. Her relationship with the garrison becomes stronger.</li>\n  <li><b>Calvin / Nameloc:</b> Moves from feared wilderness monster to trusted ally. His first major contribution is using his senses to solve a mystery no one else could solve.</li>\n  <li><b>Queen Flower:</b> Her protected herd becomes the source of the misunderstanding, but the situation ends without creating a new enemy.</li>\n  <li><b>The Party:</b> Demonstrates a growing willingness to stop fighting, reconsider assumptions, and seek peaceful explanations.</li>\n  <li><b>Burgle:</b> Learns that some shiny objects belong to others and that taking them can cause harm.</li>\n</ul>"
+    },
+    {
+      "heading": "Permanent Canon",
+      "bodyHtml": "<ul>\n  <li>Chapter 8 centers on solving the burglary of the garrison treasury.</li>\n  <li>The missing gold was being used for food, equipment, barracks upkeep, and repairs.</li>\n  <li>The thief entered through the waterways beneath the garrison.</li>\n  <li>The new player character is named Calvin in boy form.</li>\n  <li>His Dog Spirit form is named Nameloc.</li>\n  <li>Calvin can transform into Nameloc, a gigantic blue spirit bulldog.</li>\n  <li>Nameloc is approximately rhino-to-hippo sized.</li>\n  <li>Calvin has enhanced smell and hearing even when not transformed.</li>\n  <li>The transformed state requires very large amounts of food.</li>\n  <li>While transformed as Nameloc, Calvin hunted Queen Flower's deer without knowing they were protected.</li>\n  <li>The party initially fought Nameloc before realizing that he was Calvin and that the situation was a misunderstanding.</li>\n  <li>Calvin helped solve the burglary by tracking the thief's aquatic scent.</li>\n  <li>Burgle is the true thief.</li>\n  <li>Burgle is a small amphibious fish-person who lives in an underwater riverbed hovel.</li>\n  <li>Burgle hoards shiny things and does not understand money.</li>\n  <li>Burgle speaks almost entirely by saying “Burgle.”</li>\n  <li>The treasury gold is recovered peacefully.</li>\n  <li>Burgle becomes a local ally rather than an enemy.</li>\n  <li>Fiona gains respect from the garrison for resolving the crisis.</li>\n</ul>"
+    },
+    {
+      "heading": "Active Quest Threads at Chapter End",
+      "bodyHtml": "<ul>\n  \n  <li>Define the exact limits, duration, and combat mechanics of Calvin's transformation into Nameloc.</li>\n  <li>Determine how the party will provide enough food for Nameloc during long adventures.</li>\n  <li>Develop Burgle's riverbed hovel and the underwater channels beneath Veylathar.</li>\n  <li>Decide whether Burgle can become an information source, scavenger, guide, or retriever of lost items.</li>\n  <li>Explore how the garrison changes now that its repair funds have been restored.</li>\n</ul>"
+    },
+    {
+      "heading": "Chapter Transition",
+      "bodyHtml": "<p>Chapter 8 closes with the garrison's missing gold restored and two frightening figures redefined as friends. Calvin is no longer the monster in the woods but a new companion whose Dog Spirit form, Nameloc, gives the party extraordinary strength and tracking ability. Burgle is no longer an impossible thief but an innocent river-dweller whose love of shiny objects accidentally created a crisis. Fiona's leadership is strengthened, the garrison can finally repair itself, and the party enters the next chapter with a larger group, a strange new ally beneath the river, and a new companion whose transformation abilities are still developing.</p>"
+    }
+  ],
+  "evidence": [
+    {
+      "type": "source-document",
+      "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html"
+    }
+  ],
+  "source": {
+    "type": "generated_playthrough_summary",
+    "path": "playthrough-summaries/index.html",
+    "anchor": "arc-01-chapter-08"
+  }
+}
