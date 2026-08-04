@@ -308,7 +308,7 @@
     "domain": "inventory-item",
     "name": "Flight Shoes",
     "summary": "Inventory entry for Golo.",
-    "details": "Tracked in Golo's inventory.",
+    "details": "Charges: 1 hr/day",
     "aliases": [
       "Golo"
     ],
