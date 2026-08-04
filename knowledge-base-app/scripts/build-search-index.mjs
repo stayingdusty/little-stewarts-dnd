@@ -96,10 +96,38 @@ const copyAnchoredSourceDocs = async () => {
 
 const normalizeText = (value) => String(value ?? '').toLowerCase();
 
+const routeStructuredPlaythroughSources = (records) => records.map((record) => {
+  const sourcePath = record.source?.path || '';
+  if (!sourcePath.includes('playthrough-summaries')) return record;
+
+  const chapterMatch = sourcePath.match(/arc[_-]?(\d+)[_-]chapter[_-]?(\d+)/i);
+  if (!chapterMatch) {
+    return {
+      ...record,
+      source: {
+        ...record.source,
+        type: 'playthrough_summary_collection',
+        path: 'playthrough-summaries/index.html'
+      }
+    };
+  }
+
+  const anchor = `arc-${chapterMatch[1].padStart(2, '0')}-chapter-${chapterMatch[2].padStart(2, '0')}`;
+  return {
+    ...record,
+    source: {
+      ...record.source,
+      type: 'generated_playthrough_summary',
+      path: 'playthrough-summaries/index.html',
+      anchor
+    }
+  };
+});
+
 const build = async () => {
   const entitiesByDomain = await Promise.all(domainFiles.map((file) => readJson(file)));
-  const entities = entitiesByDomain.flat();
-  const canonEvents = await readJson(canonFile);
+  const entities = routeStructuredPlaythroughSources(entitiesByDomain.flat());
+  const canonEvents = routeStructuredPlaythroughSources(await readJson(canonFile));
 
   const buildSearchRecord = (item, kindOverride) => {
     const kind = kindOverride || item.domain;

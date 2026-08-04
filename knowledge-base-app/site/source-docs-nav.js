@@ -22,15 +22,15 @@ const sourceDocGroups = [
       {
         title: 'Arc 1',
         items: [
-          { label: 'Chapter 1', href: './source-docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html', icon: '🗺️' },
-          { label: 'Chapter 2', href: './source-docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html', icon: '💡' },
-          { label: 'Chapter 3', href: './source-docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_3_playthrough_summary.html', icon: '🤝' },
-          { label: 'Chapter 4', href: './source-docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html', icon: '⚔️' },
-          { label: 'Chapter 5', href: './source-docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html', icon: '🪄' },
-          { label: 'Chapter 6', href: './source-docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_6_playthrough_summary.html', icon: '🧿' },
-          { label: 'Chapter 7', href: './source-docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_7_playthrough_summary.html', icon: '🌌' },
-          { label: 'Chapter 8', href: './source-docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html', icon: '🧱' },
-          { label: 'Chapter 9', href: './source-docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_9_playthrough_summary.html', icon: '🔥' }
+          { label: 'Chapter 1', href: './playthrough-summaries/index.html#arc-01-chapter-01', icon: '🗺️' },
+          { label: 'Chapter 2', href: './playthrough-summaries/index.html#arc-01-chapter-02', icon: '💡' },
+          { label: 'Chapter 3', href: './playthrough-summaries/index.html#arc-01-chapter-03', icon: '🤝' },
+          { label: 'Chapter 4', href: './playthrough-summaries/index.html#arc-01-chapter-04', icon: '⚔️' },
+          { label: 'Chapter 5', href: './playthrough-summaries/index.html#arc-01-chapter-05', icon: '🪄' },
+          { label: 'Chapter 6', href: './playthrough-summaries/index.html#arc-01-chapter-06', icon: '🧿' },
+          { label: 'Chapter 7', href: './playthrough-summaries/index.html#arc-01-chapter-07', icon: '🌌' },
+          { label: 'Chapter 8', href: './playthrough-summaries/index.html#arc-01-chapter-08', icon: '🧱' },
+          { label: 'Chapter 9', href: './playthrough-summaries/index.html#arc-01-chapter-09', icon: '🔥' }
         ]
       }
     ]

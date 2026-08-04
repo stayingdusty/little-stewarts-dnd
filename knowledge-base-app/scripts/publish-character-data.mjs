@@ -2,6 +2,7 @@ import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createSlug } from './source-doc-utils.mjs';
+import { publishPlaythroughSummaries } from './publish-playthrough-summaries.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -60,6 +61,7 @@ const publish = async () => {
 
   await writeFile(manifestOutputPath, JSON.stringify(manifest, null, 2) + '\n');
   console.log(`Published ${records.length} structured character record(s) for app rendering.`);
+  await publishPlaythroughSummaries();
 };
 
 publish().catch((error) => {
