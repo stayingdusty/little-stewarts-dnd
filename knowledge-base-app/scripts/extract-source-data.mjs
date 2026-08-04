@@ -12,6 +12,9 @@ const repoRoot = path.resolve(root, '..');
 const CHAR_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/characters');
 const SUMMARY_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/playthrough-summaries');
 const WORLD_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/world');
+const CANON_NAMES_PATH = path.join(repoRoot, 'campaigns/the-dark-arcs/canon/names.json');
+
+let canonicalAliases = new Map();
 
 const PARTY_NAMES = ['Calvin', 'Nameloc', 'Fiona', 'Golo', 'Sertraline', 'Queen Flower'];
 const LOCATION_ALLOWLIST = new Set([
@@ -36,7 +39,6 @@ const LOCATION_ALLOWLIST = new Set([
   'Dawnmoor',
   'Serenth Canyon',
   'Sunreach',
-  'Pedle Town',
   'Ethereum Academy',
   'Castle Tower'
 ]);
@@ -84,6 +86,12 @@ const toSlug = (value) =>
 
 const unique = (values) => [...new Set(values.filter(Boolean))];
 const escapeRegex = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const aliasesFor = (name) => canonicalAliases.get(name) || [];
+const recordMetadata = (sourcePath, visibility = 'player') => ({
+  visibility,
+  canonStatus: 'confirmed',
+  evidence: [{ type: 'source-document', path: sourcePath }]
+});
 
 const readHtmlFiles = async (dirPath) => {
   const names = await readdir(dirPath);
@@ -141,6 +149,7 @@ const extractCharacterRecords = async () => {
       .filter((part) => part.length > 2);
 
     const aliases = unique([
+      ...aliasesFor(headerName),
       ...headerName.split('/').map((part) => part.trim()),
       ...stemParts.map((part) => part.charAt(0).toUpperCase() + part.slice(1)),
       stemParts.map((part) => part.charAt(0).toUpperCase() + part.slice(1)).join(' ')
@@ -159,6 +168,7 @@ const extractCharacterRecords = async () => {
       aliases,
       tags,
       relatedIds: inventoryItems.map((item) => item.id),
+      ...recordMetadata(sourcePath),
       source: {
         type: 'character_sheet',
         path: sourcePath,
@@ -178,7 +188,7 @@ const extractEncounterRecords = async () => {
   while ((match = rowRegex.exec(html))) {
     const idx = Number(match[1]);
     const name = stripTags(match[2]);
-    const descriptor = stripTags(match[3]);
+    const descriptor = stripTags(match[3]).replace(/\bPedle Town\b/g, 'Petaltown');
     rows.push({ idx, name, descriptor });
   }
 
@@ -191,6 +201,7 @@ const extractEncounterRecords = async () => {
     aliases: [],
     tags: unique(['encounter', 'arc-1', ...descriptor.toLowerCase().split(/[^a-z0-9]+/g).filter((w) => w.length > 3).slice(0, 6)]),
     relatedIds: [],
+    ...recordMetadata('DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html', 'dm-only'),
     source: {
       type: 'world_tracker',
       path: 'DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html'
@@ -262,6 +273,7 @@ const extractLoreAndSecrets = async () => {
       aliases: [],
       tags: unique(['lore', 'arc-1', ...sections[i].title.toLowerCase().split(/[^a-z0-9]+/g).filter((w) => w.length > 3)]),
       relatedIds: [],
+      ...recordMetadata('DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html', 'dm-only'),
       source: {
         type: 'dm_lore_reference',
         path: 'DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html'
@@ -284,6 +296,7 @@ const extractLoreAndSecrets = async () => {
     aliases: [],
     tags: ['secret', 'gm-only', 'arc-1'],
     relatedIds: [],
+    ...recordMetadata('DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html', 'dm-only'),
     source: {
       type: 'dm_lore_reference',
       path: 'DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html'
@@ -316,9 +329,10 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
         name,
         summary,
         details: summary,
-        aliases: [],
+        aliases: aliasesFor(name),
         tags: ['npc', 'arc-1'],
         relatedIds: [],
+        ...recordMetadata(sourcePath),
         source: {
           type: 'playthrough_summary',
           path: sourcePath
@@ -359,12 +373,12 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
     locations.forEach((loc) => locationSet.add(loc));
 
     const npcRules = [
-      ['man in the white suit', 'Man in the White Suit', 'A recurring mysterious figure connected to the riverboat and vault events.'],
+      ['man in the white suit', 'Jerry Mander', 'The recurring antagonist publicly known as the Man in the White Suit.'],
       ['jerry mander', 'Jerry Mander', 'A recurring figure tied to Dark Arc routes and deceptive trails.'],
       ['burgle', 'Burgle', 'An amphibious fish-person who hoards shiny objects and later becomes an ally.'],
       ['dr. fizzlebig', 'Dr. Fizzlebig', 'A scholar tied to security structures and dark arc investigations.'],
       ['dr fizzlebig', 'Dr. Fizzlebig', 'A scholar tied to security structures and dark arc investigations.'],
-      ['gareth', 'Gareth', 'A major security figure with key intelligence about dark arc anomalies.'],
+      ['garoth', 'Garoth', 'A major security figure with key intelligence about dark arc anomalies.'],
       ['frederick', 'Frederick', 'A trusted local ally connected to the party\'s city life in Veylathar.'],
       ['tindily migrot', 'Tindily Migrot', 'A figure tied to the ancient pendant and Academy of Antiquities council dynamics.']
     ];
@@ -374,16 +388,15 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
       }
     }
 
-    const secretsRevealed = extractTagMatches(html, /<div class="outstanding">([\s\S]*?)<\/div>/gi)
-      .map((text) => text.slice(0, 160));
-
     canonEvents.push({
       id: `canon-arc${arc}-chapter${chapter}`,
       title: chapterTitle,
       summary: [chapterSnapshot, majorOutcome].filter(Boolean).join(' '),
       participants: unique(participants),
       locations,
-      secretsRevealed,
+      visibility: 'player',
+      canonStatus: 'confirmed',
+      evidence: [{ type: 'playthrough-summary', path: sourcePath }],
       source: {
         path: sourcePath,
         arc,
@@ -401,9 +414,10 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
       name,
       summary: `Location referenced in Arc 1 source material: ${name}.`,
       details: 'Extracted from playthrough summaries and world references.',
-      aliases: [],
+      aliases: aliasesFor(name),
       tags: ['location', 'arc-1'],
       relatedIds: [],
+      ...recordMetadata('DND-Source-Docs/the-dark-arcs/playthrough-summaries/'),
       source: {
         type: 'playthrough_summary',
         path: 'DND-Source-Docs/the-dark-arcs/playthrough-summaries/'
@@ -411,16 +425,17 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
     }));
 
   const npcs = [...npcMap.values()];
-  if (!npcs.some((npc) => npc.name === 'Man in the White Suit')) {
+  if (!npcs.some((npc) => npc.name === 'Jerry Mander')) {
     npcs.push({
-      id: 'npc-man-in-the-white-suit',
+      id: 'npc-jerry-mander',
       domain: 'npc',
-      name: 'Man in the White Suit',
+      name: 'Jerry Mander',
       summary: 'Mysterious passenger introduced early and intended to recur.',
       details: 'Foreshadowed as an unresolved thread in Chapter 1.',
-      aliases: [],
+      aliases: aliasesFor('Jerry Mander'),
       tags: ['npc', 'arc-1', 'mystery'],
       relatedIds: [],
+      ...recordMetadata('DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html'),
       source: {
         type: 'playthrough_summary',
         path: 'DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html'
@@ -440,6 +455,9 @@ const writeJson = async (relativePath, value) => {
 const sortByName = (items) => [...items].sort((a, b) => a.name.localeCompare(b.name));
 
 const main = async () => {
+  const canonNames = JSON.parse(await readFile(CANON_NAMES_PATH, 'utf8'));
+  canonicalAliases = new Map(canonNames.records.map((record) => [record.canonical, record.aliases || []]));
+
   const characters = await extractCharacterRecords();
   const encounters = await extractEncounterRecords();
   const { lore, secrets: loreSecrets } = await extractLoreAndSecrets();

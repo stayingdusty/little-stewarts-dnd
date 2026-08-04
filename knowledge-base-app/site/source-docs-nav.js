@@ -34,21 +34,7 @@ const sourceDocGroups = [
         ]
       }
     ]
-  },
-  {
-    title: 'World documents',
-    spoiler: true,
-    branches: [
-      {
-        title: 'World',
-        items: [
-          { label: 'Old World Encounters Tracker', href: './source-docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html', icon: '🗺️' },
-          { label: 'Lore, Cosmology & Mythology', href: './source-docs/the-dark-arcs/world/lore-cosmology-mythology.html', icon: '📜' }
-        ]
-      }
-    ]
   }
 ];
 
-export const getSourceDocNavGroups = (includeSpoilers) =>
-  sourceDocGroups.filter((group) => includeSpoilers || !group.spoiler);
+export const getSourceDocNavGroups = () => sourceDocGroups;

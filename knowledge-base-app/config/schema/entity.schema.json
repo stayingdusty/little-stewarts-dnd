@@ -3,12 +3,12 @@
   "$id": "https://little-stewarts.local/entity.schema.json",
   "title": "Knowledge Base Entity",
   "type": "object",
-  "required": ["id", "domain", "name", "summary", "tags", "source"],
+  "required": ["id", "domain", "name", "summary", "tags", "visibility", "canonStatus", "evidence", "source"],
   "properties": {
     "id": { "type": "string", "minLength": 1 },
     "domain": {
       "type": "string",
-      "enum": ["character", "npc", "location", "encounter", "lore", "secret"]
+      "enum": ["character", "npc", "location", "encounter", "lore", "secret", "inventory-item"]
     },
     "name": { "type": "string", "minLength": 1 },
     "summary": { "type": "string" },
@@ -24,6 +24,25 @@
     "relatedIds": {
       "type": "array",
       "items": { "type": "string" }
+    },
+    "visibility": {
+      "type": "string",
+      "enum": ["player", "dm-only"]
+    },
+    "canonStatus": {
+      "type": "string",
+      "enum": ["proposed", "confirmed", "superseded", "unresolved"]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "path"],
+        "properties": {
+          "type": { "type": "string" },
+          "path": { "type": "string" }
+        }
+      }
     },
     "source": {
       "type": "object",

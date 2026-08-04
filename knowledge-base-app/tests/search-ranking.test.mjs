@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { filterSpoilers, sortRecords } from '../site/search-utils.js';
+import { filterPlayerVisible, sortRecords } from '../site/search-utils.js';
 
 test('sortRecords puts canon events first and newest first', () => {
   const records = [
@@ -27,16 +27,13 @@ test('sortRecords keeps inventory items after character records', () => {
   assert.deepEqual(sorted.map((record) => record.id), ['char-1', 'loc-1', 'item-1']);
 });
 
-test('filterSpoilers hides lore, secret, and encounter content by default', () => {
+test('filterPlayerVisible rejects dm-only records as defense in depth', () => {
   const records = [
-    { id: 'char-1', kind: 'character', name: 'Ada', sourceType: 'character_sheet' },
-    { id: 'canon-1', kind: 'canon', name: 'Chapter 1', sourceType: 'playthrough_summary' },
-    { id: 'lore-1', kind: 'lore', name: 'Secret Lore', sourceType: 'dm_lore_reference' },
-    { id: 'secret-1', kind: 'secret', name: 'DM Secret', sourceType: 'dm_lore_reference' },
-    { id: 'encounter-1', kind: 'encounter', name: 'Encounter', sourceType: 'world_tracker' }
+    { id: 'char-1', kind: 'character', name: 'Ada', visibility: 'player' },
+    { id: 'secret-1', kind: 'secret', name: 'DM Secret', visibility: 'dm-only' }
   ];
 
-  const filtered = filterSpoilers(records);
+  const filtered = filterPlayerVisible(records);
 
-  assert.deepEqual(filtered.map((record) => record.id), ['char-1', 'canon-1']);
+  assert.deepEqual(filtered.map((record) => record.id), ['char-1']);
 });

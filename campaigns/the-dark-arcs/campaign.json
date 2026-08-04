@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../knowledge-base-app/config/schema/campaign.schema.json",
+  "id": "the-dark-arcs",
+  "name": "The Dark Arcs",
+  "campaign": "Little Stewarts D&D",
+  "canonPolicy": "A proposed change becomes canon only when its pull request is reviewed and merged by Michael.",
+  "publicAudience": "players",
+  "defaultVisibility": "dm-only",
+  "currentArc": 1,
+  "latestRecordedChapter": 9
+}

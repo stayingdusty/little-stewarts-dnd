@@ -1,0 +1,176 @@
+import { access, readFile, readdir } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const appRoot = path.resolve(__dirname, '..');
+const repoRoot = path.resolve(appRoot, '..');
+
+const entityFiles = [
+  'data/normalized/characters/characters.json',
+  'data/normalized/npcs/npcs.json',
+  'data/normalized/locations/locations.json',
+  'data/normalized/encounters/encounters.json',
+  'data/normalized/lore/lore.json',
+  'data/normalized/secrets/secrets.json',
+  'data/normalized/inventory/inventory-items.json'
+];
+
+const allowedDomains = new Set(['character', 'npc', 'location', 'encounter', 'lore', 'secret', 'inventory-item']);
+const allowedVisibility = new Set(['player', 'dm-only']);
+const allowedCanonStatus = new Set(['proposed', 'confirmed', 'superseded', 'unresolved']);
+const errors = [];
+
+const readJson = async (relativePath) => JSON.parse(await readFile(path.join(appRoot, relativePath), 'utf8'));
+const requireValue = (condition, message) => {
+  if (!condition) errors.push(message);
+};
+
+const validateEvidence = (record, label) => {
+  requireValue(Array.isArray(record.evidence) && record.evidence.length > 0, `${label} must contain evidence.`);
+  for (const evidence of record.evidence || []) {
+    requireValue(Boolean(evidence?.type && evidence?.path), `${label} has incomplete evidence.`);
+  }
+};
+
+const validateEntities = async () => {
+  const groups = await Promise.all(entityFiles.map(readJson));
+  const entities = groups.flat();
+  const ids = new Set();
+
+  for (const entity of entities) {
+    const label = entity.id || '<missing entity id>';
+    requireValue(Boolean(entity.id && entity.name && entity.summary !== undefined), `${label} is missing required identity fields.`);
+    requireValue(!ids.has(entity.id), `Duplicate entity ID: ${entity.id}`);
+    ids.add(entity.id);
+    requireValue(allowedDomains.has(entity.domain), `${label} has unsupported domain: ${entity.domain}`);
+    requireValue(allowedVisibility.has(entity.visibility), `${label} has invalid visibility: ${entity.visibility}`);
+    requireValue(allowedCanonStatus.has(entity.canonStatus), `${label} has invalid canonStatus: ${entity.canonStatus}`);
+    requireValue(Array.isArray(entity.tags), `${label} must contain tags.`);
+    requireValue(Boolean(entity.source?.type && entity.source?.path), `${label} has an incomplete source.`);
+    validateEvidence(entity, label);
+  }
+
+  for (const entity of entities) {
+    for (const relatedId of entity.relatedIds || []) {
+      requireValue(ids.has(relatedId), `${entity.id} references missing related ID: ${relatedId}`);
+    }
+  }
+
+  return entities;
+};
+
+const validateCanonEvents = async (entityIds) => {
+  const events = await readJson('data/normalized/canon/canon_events.json');
+  const ids = new Set();
+
+  for (const event of events) {
+    const label = event.id || '<missing canon event id>';
+    requireValue(Boolean(event.id && event.title && event.source?.path), `${label} is missing required fields.`);
+    requireValue(!ids.has(event.id), `Duplicate canon event ID: ${event.id}`);
+    ids.add(event.id);
+    requireValue(allowedVisibility.has(event.visibility), `${label} has invalid visibility: ${event.visibility}`);
+    requireValue(allowedCanonStatus.has(event.canonStatus), `${label} has invalid canonStatus: ${event.canonStatus}`);
+    validateEvidence(event, label);
+    for (const participant of event.participants || []) {
+      requireValue(entityIds.has(participant), `${label} references missing participant: ${participant}`);
+    }
+  }
+};
+
+const validateCanonicalNames = async (entities) => {
+  const registryPath = path.join(repoRoot, 'campaigns/the-dark-arcs/canon/names.json');
+  const registry = JSON.parse(await readFile(registryPath, 'utf8'));
+  const canonical = new Set();
+  const aliases = new Map();
+
+  for (const record of registry.records || []) {
+    requireValue(Boolean(record.id && record.canonical), 'Canonical name record is missing an ID or canonical value.');
+    requireValue(!canonical.has(record.canonical.toLowerCase()), `Duplicate canonical name: ${record.canonical}`);
+    canonical.add(record.canonical.toLowerCase());
+    for (const alias of record.aliases || []) aliases.set(alias.toLowerCase(), record.canonical);
+  }
+
+  for (const entity of entities.filter((item) => item.visibility === 'player')) {
+    const replacement = aliases.get(entity.name.toLowerCase());
+    requireValue(!replacement, `${entity.id} uses alias '${entity.name}' as its canonical name; use '${replacement}'.`);
+  }
+};
+
+const validatePublicBuild = async () => {
+  const entities = await readJson('site/data/entities.json');
+  const canonEvents = await readJson('site/data/canon-events.json');
+  const searchIndex = await readJson('site/data/search-index.json');
+
+  for (const record of [...entities, ...canonEvents, ...searchIndex]) {
+    requireValue(record.visibility !== 'dm-only', `Public artifact contains dm-only record: ${record.id}`);
+    requireValue(!['secret', 'lore', 'encounter'].includes(record.domain || record.kind), `Public artifact contains private domain: ${record.id}`);
+    requireValue(!['dm_lore_reference', 'world_tracker'].includes(record.sourceType || record.source?.type), `Public artifact contains private source: ${record.id}`);
+  }
+
+  const privateWorldPath = path.join(appRoot, 'site/source-docs/the-dark-arcs/world');
+  try {
+    await access(privateWorldPath);
+    errors.push('Public source documents contain the DM-only world directory.');
+  } catch {
+    // Expected: DM-only source documents are absent from the public artifact.
+  }
+
+  for (const record of searchIndex) {
+    if (!record.sourcePath) continue;
+    const relativeSource = record.sourcePath
+      .replace(/^DND-Source-Docs\//i, 'source-docs/')
+      .replace(/^\.\//, '')
+      .replace(/\\/g, '/');
+    const relativeTarget = relativeSource.toLowerCase().endsWith('.html')
+      ? relativeSource
+      : `${relativeSource.replace(/\/+$/, '')}/index.html`;
+    const targetPath = path.join(appRoot, 'site', relativeTarget);
+    try {
+      const html = await readFile(targetPath, 'utf8');
+      if (record.sourceAnchor) {
+        requireValue(html.includes(`id="${record.sourceAnchor}"`), `${record.id} links to missing anchor #${record.sourceAnchor}.`);
+      }
+    } catch {
+      errors.push(`${record.id} links to missing public source document: ${relativeTarget}`);
+    }
+  }
+
+  const { getSourceDocNavGroups } = await import('../site/source-docs-nav.js');
+  for (const group of getSourceDocNavGroups()) {
+    for (const branch of group.branches) {
+      for (const item of branch.items) {
+        const navTarget = path.join(appRoot, 'site', item.href.replace(/^\.\//, ''));
+        try {
+          await access(navTarget);
+        } catch {
+          errors.push(`Source navigation links to missing file: ${item.href}`);
+        }
+      }
+    }
+  }
+};
+
+const validatePrintSources = async () => {
+  const characterDir = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/characters');
+  const names = (await readdir(characterDir)).filter((name) => /^character_sheet_.*\.html$/.test(name));
+  for (const name of names) {
+    const html = await readFile(path.join(characterDir, name), 'utf8');
+    requireValue(/@media\s+print/i.test(html), `${name} is missing print-specific CSS.`);
+    requireValue(/@page\s*{/i.test(html), `${name} is missing an @page print rule.`);
+  }
+};
+
+const entities = await validateEntities();
+await validateCanonEvents(new Set(entities.map((entity) => entity.id)));
+await validateCanonicalNames(entities);
+await validatePublicBuild();
+await validatePrintSources();
+
+if (errors.length) {
+  console.error(errors.map((error) => `- ${error}`).join('\n'));
+  process.exit(1);
+}
+
+console.log(`Validated ${entities.length} entities, public visibility, canonical names, references, and print rules.`);

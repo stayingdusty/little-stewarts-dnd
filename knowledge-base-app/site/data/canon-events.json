@@ -14,8 +14,13 @@
       "Veylathar",
       "Wayward Flame"
     ],
-    "secretsRevealed": [
-      "Recurring Thread The man in the white suit has not been resolved. He should remain connected to the riverboat, the stolen vault, the artifact, or the broader fo"
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "playthrough-summary",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html"
+      }
     ],
     "source": {
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html",
@@ -41,7 +46,14 @@
       "Crucible District",
       "Wayward Flame"
     ],
-    "secretsRevealed": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "playthrough-summary",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html"
+      }
+    ],
     "source": {
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html",
       "arc": "1",
@@ -65,7 +77,14 @@
       "Crucible District",
       "Wayward Flame"
     ],
-    "secretsRevealed": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "playthrough-summary",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_3_playthrough_summary.html"
+      }
+    ],
     "source": {
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_3_playthrough_summary.html",
       "arc": "1",
@@ -76,7 +95,7 @@
   {
     "id": "canon-arc1-chapter4",
     "title": "Arc 1, Chapter 4: The Academy of Sparks Heist",
-    "summary": "Chapter 4 delivers the payoff to the infiltration prepared at the end of Chapter 3. Sertraline and Fiona enter the nine-floor Academy of Sparks, move through specialized magical floors, trigger a full security response, and battle Gareth, the Academy's formidable head of security. The fight crashes into the Chronomancy floor, where time magic permanently transforms Fiona's armor and temporarily reshapes Sertraline. With Golo's arrival, the party combines flight, ice arrows, fire breath, berserker strength, and Dwarven Fire Runes to break open the Academy vault and recover the stolen Great Tree sap. The party confirms that the black goop is authentic Great Tree sap through Golo's ancestral vision. They escape to the Crucible District, where the dwarven boss offers protection, promises the agreed reward, and announces custom dwarven-forged gifts for the party. The Academy of Sparks mini-arc is complete, Fiona's divine armor has awakened, Gareth survives as a possible future mentor or rival, and Chapter 5 is positioned to begin with the dwarven reward ceremony.",
+    "summary": "Chapter 4 delivers the payoff to the infiltration prepared at the end of Chapter 3. Sertraline and Fiona enter the nine-floor Academy of Sparks, move through specialized magical floors, trigger a full security response, and battle Garoth, the Academy's formidable head of security. The fight crashes into the Chronomancy floor, where time magic permanently transforms Fiona's armor and temporarily reshapes Sertraline. With Golo's arrival, the party combines flight, ice arrows, fire breath, berserker strength, and Dwarven Fire Runes to break open the Academy vault and recover the stolen Great Tree sap. The party confirms that the black goop is authentic Great Tree sap through Golo's ancestral vision. They escape to the Crucible District, where the dwarven boss offers protection, promises the agreed reward, and announces custom dwarven-forged gifts for the party. The Academy of Sparks mini-arc is complete, Fiona's divine armor has awakened, Garoth survives as a possible future mentor or rival, and Chapter 5 is positioned to begin with the dwarven reward ceremony.",
     "participants": [
       "character-fiona",
       "character-golo",
@@ -89,7 +108,14 @@
       "Ethereum Academy",
       "Veylathar"
     ],
-    "secretsRevealed": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "playthrough-summary",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html"
+      }
+    ],
     "source": {
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html",
       "arc": "1",
@@ -112,9 +138,17 @@
       "Crucible District",
       "Ethereum Academy",
       "Wayward Flame",
-      "Veylathar"
+      "Veylathar",
+      "Petaltown"
     ],
-    "secretsRevealed": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "playthrough-summary",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html"
+      }
+    ],
     "source": {
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html",
       "arc": "1",
@@ -125,7 +159,7 @@
   {
     "id": "canon-arc1-chapter6",
     "title": "Arc 1, Chapter 6: The Falling Arena",
-    "summary": "Chapter 6 culminates in an arena battle fought on a platform suspended high above Veylathar. As the contest ends, the man in the white suit—known publicly in the city as Jerry Mander—uses snap matches to teleport from the spectator stands to the arena platform and disables the charms keeping it aloft. The entire arena begins falling toward the city. Jerry then attempts to reach and capture Queen Flower, but she surprises him, steals the snap matches from his hand, and snaps down to the falling platform. Fiona calls upon Arith for guidance and, after one match proves insufficient, uses roughly one hundred snap matches together to pull the arena and everyone within the resulting dark arc blip into the Ethereal Realm. Arith then returns the survivors to the Wayward Flame. Veylathar is saved from catastrophic destruction, but Jerry Mander escapes with his cronies using a separate supply of snap matches. The party convenes the city council and begins a formal investigation. Gareth reports that Jerry sometimes enters the Material Realm first as a rounded, indistinct shape before taking the form of a man. Dr. Fizzlebig explains that dark arcs are tears in reality: temporary blips may heal, but repeated damage can make them permanent. Every known dark arc bends toward the same central location. The party ends the chapter seeking Jerry, questioning his true nature, and investigating whether the wounds in reality can be healed.",
+    "summary": "Chapter 6 culminates in an arena battle fought on a platform suspended high above Veylathar. As the contest ends, the man in the white suit—known publicly in the city as Jerry Mander—uses snap matches to teleport from the spectator stands to the arena platform and disables the charms keeping it aloft. The entire arena begins falling toward the city. Jerry then attempts to reach and capture Queen Flower, but she surprises him, steals the snap matches from his hand, and snaps down to the falling platform. Fiona calls upon Aureth for guidance and, after one match proves insufficient, uses roughly one hundred snap matches together to pull the arena and everyone within the resulting dark arc blip into the Ethereal Realm. Aureth then returns the survivors to the Wayward Flame. Veylathar is saved from catastrophic destruction, but Jerry Mander escapes with his cronies using a separate supply of snap matches. The party convenes the city council and begins a formal investigation. Garoth reports that Jerry sometimes enters the Material Realm first as a rounded, indistinct shape before taking the form of a man. Dr. Fizzlebig explains that dark arcs are tears in reality: temporary blips may heal, but repeated damage can make them permanent. Every known dark arc bends toward the same central location. The party ends the chapter seeking Jerry, questioning his true nature, and investigating whether the wounds in reality can be healed.",
     "participants": [
       "character-fiona",
       "character-golo",
@@ -138,7 +172,14 @@
       "Wayward Flame",
       "Material Realm"
     ],
-    "secretsRevealed": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "playthrough-summary",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_6_playthrough_summary.html"
+      }
+    ],
     "source": {
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_6_playthrough_summary.html",
       "arc": "1",
@@ -163,7 +204,14 @@
       "Crucible District",
       "Ethereal Realm"
     ],
-    "secretsRevealed": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "playthrough-summary",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_7_playthrough_summary.html"
+      }
+    ],
     "source": {
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_7_playthrough_summary.html",
       "arc": "1",
@@ -183,7 +231,14 @@
     "locations": [
       "Veylathar"
     ],
-    "secretsRevealed": [],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "playthrough-summary",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html"
+      }
+    ],
     "source": {
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html",
       "arc": "1",
@@ -206,8 +261,13 @@
       "Veylathar",
       "Emberhold"
     ],
-    "secretsRevealed": [
-      "Outstanding Item A lieutenant approached Fiona and asked her to name the squadron so they would not have to keep calling themselves simply \"the Squadron.\" Fiona"
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "playthrough-summary",
+        "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_9_playthrough_summary.html"
+      }
     ],
     "source": {
       "path": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_9_playthrough_summary.html",

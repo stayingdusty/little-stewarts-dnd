@@ -1,18 +1,16 @@
-import { filterSpoilers, sortRecords } from './search-utils.js';
+import { filterPlayerVisible, sortRecords } from './search-utils.js';
 import { getSourceDocNavGroups } from './source-docs-nav.js';
 
 const state = {
   records: [],
   query: '',
   domain: 'all',
-  includeSpoilers: false,
   sourceNavOpen: false
 };
 
 const elements = {
   searchInput: document.querySelector('#searchInput'),
   domainFilter: document.querySelector('#domainFilter'),
-  spoilerToggle: document.querySelector('#spoilerToggle'),
   resultCount: document.querySelector('#resultCount'),
   results: document.querySelector('#results'),
   template: document.querySelector('#resultCardTemplate'),
@@ -73,11 +71,11 @@ const filterRecords = () => {
     return matchesDomain && matchesQueryText;
   });
 
-  return sortRecords(filterSpoilers(matches, state.includeSpoilers));
+  return sortRecords(filterPlayerVisible(matches));
 };
 
 const renderSourceDocNav = () => {
-  const groups = getSourceDocNavGroups(state.includeSpoilers);
+  const groups = getSourceDocNavGroups();
   elements.sourceDocNav.innerHTML = '';
   elements.sourceDocNav.hidden = !state.sourceNavOpen;
   elements.navToggle.setAttribute('aria-expanded', String(state.sourceNavOpen));
@@ -88,7 +86,7 @@ const renderSourceDocNav = () => {
   }
 
   if (!groups.length) {
-    elements.sourceDocNav.innerHTML = '<p class="nav-card__hint">No spoiler docs are visible yet.</p>';
+    elements.sourceDocNav.innerHTML = '<p class="nav-card__hint">No player documents are available.</p>';
     return;
   }
 
@@ -137,11 +135,6 @@ const bindEvents = () => {
 
   elements.domainFilter.addEventListener('change', (event) => {
     state.domain = event.target.value;
-    render();
-  });
-
-  elements.spoilerToggle.addEventListener('change', (event) => {
-    state.includeSpoilers = event.target.checked;
     render();
   });
 

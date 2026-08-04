@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../knowledge-base-app/config/schema/character-update.schema.json",
+  "sessionId": "arc-01-chapter-pending",
+  "status": "proposed",
+  "visibility": "dm-only",
+  "updates": [
+    {
+      "characterId": "character-fiona",
+      "field": "inventory",
+      "previousValue": "Example existing value",
+      "proposedValue": "Example value transcribed from notes",
+      "evidence": ["evidence/character_sheet_fiona_front.jpg"],
+      "confidence": "high",
+      "reviewState": "pending"
+    }
+  ]
+}

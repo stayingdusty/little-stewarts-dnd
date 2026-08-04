@@ -9,7 +9,7 @@
   <body>
     <header class="hero">
       <h1>Little Stewarts Knowledge Base</h1>
-      <p>Globally searchable canon for characters, NPCs, locations, encounters, lore, secrets, and playthrough events.</p>
+      <p>Globally searchable player knowledge for characters, NPCs, locations, inventory, and completed playthrough events.</p>
     </header>
 
     <main class="layout">
@@ -25,7 +25,7 @@
               <span class="nav-card__toggle-text">Browse source docs</span>
             </button>
           </div>
-          <p class="nav-card__hint">Character sheets and playthrough summaries are shown by default. Spoiler-heavy documents appear when spoilers are enabled.</p>
+          <p class="nav-card__hint">Browse player-safe character sheets and completed playthrough summaries.</p>
           <div id="sourceDocNav" class="source-doc-nav" hidden></div>
         </div>
 
@@ -35,20 +35,9 @@
           <option value="character">Characters</option>
           <option value="npc">NPCs</option>
           <option value="location">Locations</option>
-          <option value="encounter">Encounters</option>
-          <option value="lore">Lore</option>
-          <option value="secret">Secrets</option>
           <option value="inventory-item">Inventory Items</option>
           <option value="canon">Canon Events</option>
         </select>
-
-        <label for="spoilerToggle" class="spoiler-toggle" style="margin-top: 1rem;">
-          <span class="spoiler-toggle__label">Show spoilers</span>
-          <span class="spoiler-toggle__track">
-            <input id="spoilerToggle" type="checkbox" />
-            <span class="spoiler-toggle__thumb"></span>
-          </span>
-        </label>
       </section>
 
       <section>

@@ -26,22 +26,31 @@ const toSlug = (value) =>
     .replace(/^-+|-+$/g, '');
 
 export const extractInventoryItems = (html, ownerName, sourcePath) => {
-  const records = [];
+  const records = new Map();
   const inventoryRows = [...html.matchAll(/<div class="inventory-row">([\s\S]*?)<\/div>/gi)];
 
-  inventoryRows.forEach((rowMatch, rowIndex) => {
-    const rowText = normalizeText(stripTags(rowMatch[1]));
-    if (!rowText || rowText.toLowerCase() === 'none') return;
-
-    const cells = rowText.split(/\s{2,}/).map((part) => normalizeText(part)).filter(Boolean);
-    const itemName = cells[0];
+  inventoryRows.forEach((rowMatch) => {
+    const cellMatches = [...rowMatch[1].matchAll(/<div[^>]*>([\s\S]*?)<\/div>/gi)];
+    const cells = cellMatches.map((match) => normalizeText(stripTags(match[1])));
+    const fallbackText = normalizeText(stripTags(rowMatch[1]));
+    const rawItemName = cells[0] || fallbackText;
+    const itemName = rawItemName.replace(/\s+[—-]\s+details TBD$/i, '').trim();
     if (!itemName) return;
 
-    const detailText = cells.slice(1).join(' — ');
-    const slug = toSlug(`${ownerName}-${itemName}-${rowIndex + 1}`);
+    const detailText = cells.slice(1).filter(Boolean).join(' — ');
+    const slug = toSlug(`${ownerName}-${itemName}`);
+    const id = `inventory-item-${slug}`;
+    const existing = records.get(id);
 
-    records.push({
-      id: `inventory-item-${slug}`,
+    if (existing) {
+      if (detailText && !existing.details.includes(detailText)) {
+        existing.details = `${existing.details} | ${detailText}`;
+      }
+      return;
+    }
+
+    records.set(id, {
+      id,
       domain: 'inventory-item',
       name: itemName,
       summary: `Inventory entry for ${ownerName}.`,
@@ -49,6 +58,9 @@ export const extractInventoryItems = (html, ownerName, sourcePath) => {
       aliases: [ownerName],
       tags: ['inventory-item', 'arc-1', 'inventory'],
       relatedIds: [],
+      visibility: 'player',
+      canonStatus: 'confirmed',
+      evidence: [{ type: 'character-sheet', path: sourcePath }],
       source: {
         type: 'character_sheet',
         path: sourcePath
@@ -57,5 +69,5 @@ export const extractInventoryItems = (html, ownerName, sourcePath) => {
     });
   });
 
-  return records;
+  return [...records.values()];
 };

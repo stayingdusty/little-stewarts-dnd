@@ -9,36 +9,10 @@ const GROUP_ORDER = {
   'inventory-item': 7
 };
 
-const SPOILER_KINDS = new Set(['lore', 'secret']);
-const SAFE_SOURCE_TYPES = new Set(['character_sheet', 'playthrough_summary']);
-
 const getKindPriority = (record) => GROUP_ORDER[record.kind] ?? 99;
 const getTimelineValue = (record) => Number(record.timelineValue ?? record.chapter ?? record.chapterNumber ?? 0);
 
-const getSourceType = (record) => record.sourceType || record.source?.type || '';
-
-export const filterSpoilers = (records, includeSpoilers = false) => {
-  if (includeSpoilers) {
-    return records;
-  }
-
-  return records.filter((record) => {
-    if (SPOILER_KINDS.has(record.kind)) {
-      return false;
-    }
-
-    if (record.kind === 'encounter') {
-      return false;
-    }
-
-    const sourceType = getSourceType(record);
-    if (sourceType === 'dm_lore_reference' || sourceType === 'world_tracker') {
-      return false;
-    }
-
-    return SAFE_SOURCE_TYPES.has(sourceType) || record.kind === 'canon' || record.kind === 'character' || record.kind === 'npc' || record.kind === 'location' || record.kind === 'inventory-item';
-  });
-};
+export const filterPlayerVisible = (records) => records.filter((record) => record.visibility !== 'dm-only');
 
 export const sortRecords = (records) => {
   return [...records].sort((left, right) => {

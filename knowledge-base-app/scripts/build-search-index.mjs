@@ -1,4 +1,4 @@
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { addAnchorsToHtml } from './source-doc-utils.mjs';
@@ -11,9 +11,6 @@ const domainFiles = [
   'data/normalized/characters/characters.json',
   'data/normalized/npcs/npcs.json',
   'data/normalized/locations/locations.json',
-  'data/normalized/encounters/encounters.json',
-  'data/normalized/lore/lore.json',
-  'data/normalized/secrets/secrets.json',
   'data/normalized/inventory/inventory-items.json'
 ];
 
@@ -54,6 +51,7 @@ const writeDirectoryIndex = async (dirPath, title) => {
 const copyAnchoredSourceDocs = async () => {
   const sourceRoot = path.resolve(root, '../DND-Source-Docs/the-dark-arcs');
   const outputRoot = path.join(root, 'site/source-docs/the-dark-arcs');
+  await rm(outputRoot, { recursive: true, force: true });
   await mkdir(outputRoot, { recursive: true });
 
   const walk = async (dirPath) => {
@@ -72,30 +70,23 @@ const copyAnchoredSourceDocs = async () => {
     }
   };
 
-  await walk(sourceRoot);
-  await writeDirectoryIndex(outputRoot, 'The Dark Arcs source documents');
+  const publicDirectories = ['characters', 'playthrough-summaries'];
+  for (const directory of publicDirectories) {
+    const sourceDirectory = path.join(sourceRoot, directory);
+    await walk(sourceDirectory);
+    await writeDirectoryIndex(path.join(outputRoot, directory), directory);
+  }
 
-  const makeSubdirIndexes = async (dirPath) => {
-    const entries = await readdir(dirPath, { withFileTypes: true });
-    for (const entry of entries) {
-      if (entry.isDirectory()) {
-        const childPath = path.join(dirPath, entry.name);
-        const outputChildPath = path.join(outputRoot, path.relative(sourceRoot, childPath));
-        await writeDirectoryIndex(outputChildPath, entry.name);
-        await makeSubdirIndexes(childPath);
-      }
-    }
-  };
-
-  await makeSubdirIndexes(sourceRoot);
+  const rootIndex = `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>The Dark Arcs player documents</title></head><body><h1>The Dark Arcs player documents</h1><ul><li><a href="./characters/">Character sheets</a></li><li><a href="./playthrough-summaries/">Playthrough summaries</a></li></ul></body></html>`;
+  await writeFile(path.join(outputRoot, 'index.html'), rootIndex);
 };
 
 const normalizeText = (value) => String(value ?? '').toLowerCase();
 
 const build = async () => {
   const entitiesByDomain = await Promise.all(domainFiles.map((file) => readJson(file)));
-  const entities = entitiesByDomain.flat();
-  const canonEvents = await readJson(canonFile);
+  const entities = entitiesByDomain.flat().filter((item) => item.visibility === 'player');
+  const canonEvents = (await readJson(canonFile)).filter((event) => event.visibility === 'player');
 
   const buildSearchRecord = (item, kindOverride) => {
     const kind = kindOverride || item.domain;
@@ -117,6 +108,9 @@ const build = async () => {
       name: item.name,
       summary: item.summary,
       tags: item.tags || [],
+      aliases: item.aliases || [],
+      visibility: item.visibility,
+      sourceType: item.source?.type || '',
       sourcePath: item.source?.path || '',
       sourceAnchor: item.source?.anchor || '',
       timelineValue: Number(item.source?.chapter || item.chapter || item.source?.arc || 0),

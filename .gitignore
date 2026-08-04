@@ -1,0 +1,4 @@
+# Locally generated DM-only normalized records. Never publish these from the public repository.
+knowledge-base-app/data/normalized/encounters/encounters.json
+knowledge-base-app/data/normalized/lore/lore.json
+knowledge-base-app/data/normalized/secrets/secrets.json
