@@ -1,0 +1,157 @@
+{
+  "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
+  "id": "character-fiona",
+  "domain": "character",
+  "name": "Fiona",
+  "title": "Protective holy knight",
+  "subtitle": "Knight & Paladin of Aureth",
+  "player": "Lily",
+  "species": "",
+  "levelRank": "",
+  "movement": "Walking; brass-wing gliding",
+  "initiative": "",
+  "visibility": "player",
+  "canonStatus": "confirmed",
+  "summary": "Fiona is a brave and protective knight who serves Aureth. Her holy abilities center on battlefield healing, radiant swordsmanship, and instinctively shielding others. Her golden paladin armor responds most strongly when she acts out of protectiveness.",
+  "details": "Knight and paladin of Aureth, Goddess of Magic.",
+  "aliases": [
+    "Lily"
+  ],
+  "tags": [
+    "character",
+    "arc-1",
+    "character-sheet",
+    "paladin",
+    "aureth"
+  ],
+  "relatedIds": [
+    "inventory-item-fiona-radiant-sword-of-aureth",
+    "inventory-item-fiona-golden-paladin-armor",
+    "inventory-item-fiona-brass-wings",
+    "inventory-item-fiona-rocky-talkie",
+    "inventory-item-fiona-jewelry",
+    "inventory-item-fiona-feast-of-ancestors-ticket"
+  ],
+  "evidence": [
+    {
+      "type": "source-document",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
+    }
+  ],
+  "source": {
+    "type": "generated_character_sheet",
+    "path": "characters/index.html",
+    "anchor": "fiona"
+  },
+  "abilityPointTotal": "",
+  "abilityScores": {
+    "strength": "",
+    "dexterity": "",
+    "constitution": "",
+    "intelligence": "",
+    "wisdom": "",
+    "charisma": ""
+  },
+  "combat": {
+    "currentHp": "",
+    "maximumHp": "",
+    "temporaryHp": "",
+    "armorClass": ""
+  },
+  "powers": [
+    {
+      "name": "Battlefield Healing",
+      "description": "Channels holy magic to heal or stabilize allies during battle. Exact healing dice and number of uses remain to be established.",
+      "rollCheck": "TBD",
+      "usesRange": "TBD"
+    },
+    {
+      "name": "Brass Wings of Protection",
+      "description": "The brass wings connected to Fiona’s golden paladin armor awaken in moments of protection or protectiveness and can wrap around Fiona or shield up to two other people.",
+      "rollCheck": "Protection effect TBD",
+      "usesRange": "Self or up to 2 others; uses TBD"
+    },
+    {
+      "name": "Wind-Harnessed Glide",
+      "description": "Uses the wings to glide from high places or ride strong updrafts; cannot take off from level ground, hover, or maintain powered flight.",
+      "rollCheck": "",
+      "usesRange": "As terrain allows"
+    }
+  ],
+  "relationships": "Bonded in holy service to Aureth, Goddess of Magic. Recognized by the dwarves through the Feast of Ancestors honor and carries a ceremonial ticket granting entry or favor.",
+  "specialRules": "Golden Paladin Armor provides holy protection. Fiona’s sword can ward off undead; exact mechanical bonuses are TBD.",
+  "attacks": [
+    {
+      "name": "Radiant Sword Strike",
+      "toHit": "",
+      "range": "Melee",
+      "effect": "TBD radiant + holy"
+    },
+    {
+      "name": "Demon-Banishing Strike",
+      "toHit": "",
+      "range": "Melee",
+      "effect": "TBD + banishment effect"
+    },
+    {
+      "name": "Undead-Warding Sweep",
+      "toHit": "",
+      "range": "Melee / nearby",
+      "effect": "TBD radiant; ward effect"
+    },
+    {
+      "name": "Wing Shield Interpose",
+      "toHit": "",
+      "range": "Self or 2 allies",
+      "effect": "No damage; protection TBD"
+    },
+    {
+      "name": "Unarmed / Backup Attack",
+      "toHit": "",
+      "range": "Melee",
+      "effect": ""
+    }
+  ],
+  "attackRules": "Demon Banishment can return demons to the Nine Hells, but the required hit, saving throw, damage threshold, and usage limit are TBD. Undead Warding radius, duration, and save are TBD.",
+  "futureUpgrades": "",
+  "inventory": [
+    {
+      "name": "Radiant Sword of Aureth",
+      "quantity": "1",
+      "charges": "Equipped"
+    },
+    {
+      "name": "Golden Paladin Armor",
+      "quantity": "1",
+      "charges": "Equipped"
+    },
+    {
+      "name": "Brass Wings",
+      "quantity": "1 pair",
+      "charges": "Armor-linked"
+    },
+    {
+      "name": "Rocky Talkie",
+      "quantity": "1",
+      "charges": "Carried"
+    },
+    {
+      "name": "Jewelry",
+      "quantity": "",
+      "charges": "Details unresolved"
+    },
+    {
+      "name": "Feast of Ancestors Ticket",
+      "quantity": "1",
+      "charges": "Ceremonial access"
+    }
+  ],
+  "currency": {
+    "gold": "125",
+    "silver": "",
+    "copper": "",
+    "other": ""
+  },
+  "specialResources": "",
+  "sessionNotes": "The source notes a handwritten jewelry addition, but its details are not clear enough to confirm. Other unclear handwritten markings remain unresolved."
+}
