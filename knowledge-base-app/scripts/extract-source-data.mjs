@@ -11,7 +11,7 @@ const repoRoot = path.resolve(root, '..');
 
 const STRUCTURED_CHAR_DIR = path.join(repoRoot, 'campaigns/the-dark-arcs/characters');
 const SUMMARY_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/playthrough-summaries');
-const WORLD_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/world');
+const STRUCTURED_WORLD_DIR = path.join(repoRoot, 'campaigns/the-dark-arcs/world');
 const CANON_NAMES_PATH = path.join(repoRoot, 'campaigns/the-dark-arcs/canon/names.json');
 
 let canonicalAliases = new Map();
@@ -106,15 +106,6 @@ const readHtmlFiles = async (dirPath) => {
   return pairs;
 };
 
-const extractTagMatches = (html, regex) => {
-  const out = [];
-  let match;
-  while ((match = regex.exec(html))) {
-    out.push(stripTags(match[1]));
-  }
-  return out;
-};
-
 const readStructuredCharacterRecords = async () => {
   const names = await readdir(STRUCTURED_CHAR_DIR).catch(() => []);
   const records = [];
@@ -136,35 +127,47 @@ const readStructuredCharacterRecords = async () => {
   return records;
 };
 
-const extractEncounterRecords = async () => {
-  const trackerPath = path.join(WORLD_DIR, 'little_stewarts_old_world_encounters_map_tracker.html');
-  const html = await readFile(trackerPath, 'utf-8');
+const readStructuredWorldRecords = async () => {
+  const tracker = JSON.parse(await readFile(path.join(STRUCTURED_WORLD_DIR, 'old-world-encounters.json'), 'utf8'));
+  const loreDocument = JSON.parse(await readFile(path.join(STRUCTURED_WORLD_DIR, 'lore-cosmology-mythology.json'), 'utf8'));
+  const source = (document, anchor) => ({
+    type: 'generated_world_document',
+    path: `world/index.html?document=${document}#${anchor}`,
+    anchor
+  });
 
-  const rows = [];
-  const rowRegex = /<td class="marker">\s*(\d+)\s*<\/td>\s*<td><b>([\s\S]*?)<\/b><br><span>([\s\S]*?)<\/span><\/td>/gi;
-  let match;
-  while ((match = rowRegex.exec(html))) {
-    const idx = Number(match[1]);
-    const name = stripTags(match[2]);
-    const descriptor = stripTags(match[3]).replace(/\bPedle Town\b/g, 'Petaltown');
-    rows.push({ idx, name, descriptor });
-  }
-
-  return rows.map(({ idx, name, descriptor }) => ({
-    id: `encounter-arc1-map-${idx}`,
+  const encounters = tracker.encounters.map((encounter) => ({
+    id: encounter.id,
     domain: 'encounter',
-    name,
-    summary: descriptor,
-    details: `Encounter marker ${idx} from Old World tracker.`,
+    name: encounter.name,
+    summary: encounter.hook,
+    details: [encounter.location, encounter.roster, encounter.battlefield, encounter.motivation, encounter.alternateEndings, encounter.reward].filter(Boolean).join(' '),
     aliases: [],
-    tags: unique(['encounter', 'arc-1', ...descriptor.toLowerCase().split(/[^a-z0-9]+/g).filter((w) => w.length > 3).slice(0, 6)]),
+    tags: encounter.tags,
     relatedIds: [],
-    ...recordMetadata('DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html', 'dm-only'),
-    source: {
-      type: 'world_tracker',
-      path: 'DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html'
-    }
+    visibility: encounter.visibility,
+    canonStatus: encounter.canonStatus,
+    evidence: tracker.evidence,
+    source: source('encounters', encounter.id)
   }));
+
+  const blockText = (blocks) => blocks.flatMap((block) => [block.text, block.headers, block.rows, block.items]).flat(3).filter(Boolean).join(' ');
+  const lore = loreDocument.sections.map((section) => ({
+    id: `lore-${section.id}`,
+    domain: 'lore',
+    name: section.title,
+    summary: blockText(section.blocks).slice(0, 240),
+    details: blockText(section.blocks),
+    aliases: [],
+    tags: [...loreDocument.tags, section.id],
+    relatedIds: [],
+    visibility: loreDocument.visibility,
+    canonStatus: loreDocument.canonStatus,
+    evidence: loreDocument.evidence,
+    source: source('lore', section.id)
+  }));
+
+  return { encounters, lore, secrets: [] };
 };
 
 const collectLocationCandidates = (text) => {
@@ -202,66 +205,6 @@ const collectLocationCandidates = (text) => {
       return locationWords.some((word) => lower.includes(word));
     })
   );
-};
-
-const extractLoreAndSecrets = async () => {
-  const lorePath = path.join(WORLD_DIR, 'lore-cosmology-mythology.html');
-  const html = await readFile(lorePath, 'utf-8');
-
-  const lore = [];
-  const h2Regex = /<h2[^>]*>([\s\S]*?)<\/h2>/gi;
-  let match;
-  const sections = [];
-  while ((match = h2Regex.exec(html))) {
-    sections.push({ title: stripTags(match[1]), index: match.index, end: h2Regex.lastIndex });
-  }
-
-  for (let i = 0; i < sections.length; i += 1) {
-    const start = sections[i].end;
-    const end = i + 1 < sections.length ? sections[i + 1].index : html.length;
-    const chunk = html.slice(start, end);
-    const paragraph = stripTags((chunk.match(/<p[^>]*>([\s\S]*?)<\/p>/i) || [])[1] || '');
-
-    lore.push({
-      id: `lore-${toSlug(sections[i].title)}`,
-      domain: 'lore',
-      name: sections[i].title,
-      summary: paragraph || `Lore section: ${sections[i].title}`,
-      details: stripTags(chunk).slice(0, 600),
-      aliases: [],
-      tags: unique(['lore', 'arc-1', ...sections[i].title.toLowerCase().split(/[^a-z0-9]+/g).filter((w) => w.length > 3)]),
-      relatedIds: [],
-      ...recordMetadata('DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html', 'dm-only'),
-      source: {
-        type: 'dm_lore_reference',
-        path: 'DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html'
-      }
-    });
-  }
-
-  const secretBlocks = [
-    ...extractTagMatches(html, /<div class="warning">([\s\S]*?)<\/div>/gi),
-    ...extractTagMatches(html, /<div class="dm">([\s\S]*?)<\/div>/gi),
-    ...extractTagMatches(html, /<div class="outstanding">([\s\S]*?)<\/div>/gi)
-  ];
-
-  const secrets = secretBlocks.map((text, index) => ({
-    id: `secret-lore-${index + 1}`,
-    domain: 'secret',
-    name: `DM Secret ${index + 1}`,
-    summary: text.slice(0, 200),
-    details: text,
-    aliases: [],
-    tags: ['secret', 'gm-only', 'arc-1'],
-    relatedIds: [],
-    ...recordMetadata('DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html', 'dm-only'),
-    source: {
-      type: 'dm_lore_reference',
-      path: 'DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html'
-    }
-  }));
-
-  return { lore, secrets };
 };
 
 const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
@@ -418,8 +361,7 @@ const main = async () => {
   canonicalAliases = new Map(canonNames.records.map((record) => [record.canonical, record.aliases || []]));
 
   const characters = await readStructuredCharacterRecords();
-  const encounters = await extractEncounterRecords();
-  const { lore, secrets: loreSecrets } = await extractLoreAndSecrets();
+  const { encounters, lore, secrets: loreSecrets } = await readStructuredWorldRecords();
   const { canonEvents, locations, npcs } = await extractCanonAndLocationsAndNpcs(characters);
 
   const inventoryItems = characters.flatMap((character) => extractInventoryItemsFromRecord(character));

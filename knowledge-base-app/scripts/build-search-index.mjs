@@ -82,7 +82,7 @@ const copyAnchoredSourceDocs = async () => {
     }
   };
 
-  const sourceDirectories = ['characters', 'playthrough-summaries', 'world'];
+  const sourceDirectories = ['characters', 'playthrough-summaries'];
   for (const directory of sourceDirectories) {
     const sourceDirectory = path.join(sourceRoot, directory);
     const dmOnly = directory === 'world';
@@ -90,7 +90,7 @@ const copyAnchoredSourceDocs = async () => {
     await writeDirectoryIndex(path.join(outputRoot, directory), directory, dmOnly);
   }
 
-  const rootIndex = `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>The Dark Arcs campaign documents</title></head><body><h1>The Dark Arcs campaign documents</h1><ul><li><a href="./characters/">Character sheets</a></li><li><a href="./playthrough-summaries/">Playthrough summaries</a></li><li><a href="./world/">DM world documents (spoiler mode required)</a></li></ul></body></html>`;
+  const rootIndex = `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>The Dark Arcs campaign documents</title></head><body><h1>The Dark Arcs campaign documents</h1><ul><li><a href="./characters/">Character sheets</a></li><li><a href="./playthrough-summaries/">Playthrough summaries</a></li><li><a href="../../../world/index.html">Generated DM world documents (spoiler mode required)</a></li></ul></body></html>`;
   await writeFile(path.join(outputRoot, 'index.html'), rootIndex);
 };
 

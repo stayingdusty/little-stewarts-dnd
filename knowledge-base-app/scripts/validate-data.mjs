@@ -80,6 +80,39 @@ const validateStructuredCharacterSources = async () => {
   }
 };
 
+const validateStructuredWorldSources = async () => {
+  const worldDir = path.join(repoRoot, 'campaigns/the-dark-arcs/world');
+  const lore = JSON.parse(await readFile(path.join(worldDir, 'lore-cosmology-mythology.json'), 'utf8'));
+  const tracker = JSON.parse(await readFile(path.join(worldDir, 'old-world-encounters.json'), 'utf8'));
+
+  for (const [label, document] of [['Lore document', lore], ['World encounter document', tracker]]) {
+    requireValue(Boolean(document.id && document.title && document.summary), `${label} is missing required identity fields.`);
+    requireValue(allowedVisibility.has(document.visibility), `${label} has invalid visibility: ${document.visibility}`);
+    requireValue(allowedCanonStatus.has(document.canonStatus), `${label} has invalid canonStatus: ${document.canonStatus}`);
+    validateEvidence(document, label);
+  }
+
+  requireValue(Array.isArray(lore.sections) && lore.sections.length > 0, 'Lore document must contain structured sections.');
+  requireValue(Array.isArray(tracker.encounters) && tracker.encounters.length > 0, 'World encounter document must contain encounters.');
+  requireValue(Boolean(tracker.map?.coordinateSystem?.width && tracker.map?.coordinateSystem?.height), 'World encounter document must define map coordinates.');
+  requireValue(Array.isArray(tracker.map?.regions) && tracker.map.regions.length > 0, 'World encounter document must define map regions.');
+  requireValue(Array.isArray(tracker.map?.landmarks) && tracker.map.landmarks.length > 0, 'World encounter document must define map landmarks.');
+  requireValue(tracker.map?.encounterMarkers?.length === tracker.encounters.length, 'Every structured encounter must have a map marker.');
+
+  const ids = new Set();
+  for (const encounter of tracker.encounters || []) {
+    requireValue(Boolean(encounter.id && encounter.name && encounter.hook && encounter.location), 'A structured encounter is missing required fields.');
+    requireValue(!ids.has(encounter.id), `Duplicate structured encounter ID: ${encounter.id}`);
+    ids.add(encounter.id);
+    requireValue(allowedVisibility.has(encounter.visibility), `${encounter.id} has invalid visibility: ${encounter.visibility}`);
+    requireValue(allowedCanonStatus.has(encounter.canonStatus), `${encounter.id} has invalid canonStatus: ${encounter.canonStatus}`);
+  }
+  for (const marker of tracker.map?.encounterMarkers || []) {
+    requireValue(ids.has(marker.encounterId), `Map marker references missing encounter: ${marker.encounterId}`);
+    requireValue(Number.isFinite(marker.x) && Number.isFinite(marker.y), `Map marker ${marker.marker} has invalid coordinates.`);
+  }
+};
+
 const validateCanonEvents = async (entityIds) => {
   const events = await readJson('data/normalized/canon/canon_events.json');
   const ids = new Set();
@@ -128,16 +161,16 @@ const validateSiteBuild = async () => {
     requireValue(allowedVisibility.has(record.visibility), `Site search record has invalid visibility: ${record.id}`);
   }
 
-  const dmWorldPath = path.join(appRoot, 'site/source-docs/the-dark-arcs/world');
+  const dmWorldPath = path.join(appRoot, 'site/world');
   try {
     const names = (await readdir(dmWorldPath)).filter((name) => name.endsWith('.html'));
-    requireValue(names.length > 0, 'DM world source directory contains no HTML documents.');
+    requireValue(names.length > 0, 'Generated DM world directory contains no HTML documents.');
     for (const name of names) {
       const html = await readFile(path.join(dmWorldPath, name), 'utf8');
-      requireValue(html.includes('dm-doc-guard.js'), `DM source document is missing the spoiler deterrent: ${name}`);
+      requireValue(html.includes('dm-doc-guard.js'), `Generated DM document is missing the spoiler deterrent: ${name}`);
     }
   } catch {
-    errors.push('Site source documents are missing the DM world directory.');
+    errors.push('Site is missing the generated DM world directory.');
   }
 
   for (const record of searchIndex) {
@@ -157,13 +190,14 @@ const validateSiteBuild = async () => {
       .replace(/^DND-Source-Docs\//i, 'source-docs/')
       .replace(/^\.\//, '')
       .replace(/\\/g, '/');
-    const relativeTarget = relativeSource.toLowerCase().endsWith('.html')
-      ? relativeSource
-      : `${relativeSource.replace(/\/+$/, '')}/index.html`;
+    const sourceWithoutQuery = relativeSource.split(/[?#]/)[0];
+    const relativeTarget = sourceWithoutQuery.toLowerCase().endsWith('.html')
+      ? sourceWithoutQuery
+      : `${sourceWithoutQuery.replace(/\/+$/, '')}/index.html`;
     const targetPath = path.join(appRoot, 'site', relativeTarget);
     try {
       const html = await readFile(targetPath, 'utf8');
-      if (record.sourceAnchor) {
+      if (record.sourceAnchor && record.sourceType !== 'generated_world_document') {
         requireValue(html.includes(`id="${record.sourceAnchor}"`), `${record.id} links to missing anchor #${record.sourceAnchor}.`);
       }
     } catch {
@@ -210,6 +244,7 @@ const validatePrintSources = async () => {
 };
 
 await validateStructuredCharacterSources();
+await validateStructuredWorldSources();
 const entities = await validateEntities();
 await validateCanonEvents(new Set(entities.map((entity) => entity.id)));
 await validateCanonicalNames(entities);
