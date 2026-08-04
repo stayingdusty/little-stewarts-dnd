@@ -1,0 +1,112 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/character-update.schema.json",
+  "sessionId": "2026-08-04-golo-sheet-update",
+  "status": "applied",
+  "visibility": "dm-only",
+  "updates": [
+    {
+      "characterId": "character-golo",
+      "field": "movement",
+      "previousValue": "",
+      "proposedValue": "60 ft",
+      "evidence": ["uploaded photo page 1, movement box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-golo",
+      "field": "levelRank",
+      "previousValue": "",
+      "proposedValue": "2",
+      "evidence": ["uploaded photo page 1, level/rank box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-golo",
+      "field": "abilityPointTotal",
+      "previousValue": "",
+      "proposedValue": "30",
+      "evidence": ["uploaded photo page 1, ability scores heading"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-golo",
+      "field": "abilityScores",
+      "previousValue": {
+        "strength": "",
+        "dexterity": "",
+        "constitution": "",
+        "intelligence": "",
+        "wisdom": "",
+        "charisma": ""
+      },
+      "proposedValue": {
+        "strength": "10",
+        "dexterity": "8",
+        "constitution": "4",
+        "intelligence": "4",
+        "wisdom": "3",
+        "charisma": "1"
+      },
+      "evidence": ["uploaded photo page 1, ability score boxes; values total the noted 30 points"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-golo",
+      "field": "combat.currentHp",
+      "previousValue": "",
+      "proposedValue": "10",
+      "evidence": ["uploaded photo page 1, current HP box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-golo",
+      "field": "combat.armorClass",
+      "previousValue": "",
+      "proposedValue": "10",
+      "evidence": ["uploaded photo page 1, armor class box"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-golo",
+      "field": "attacks.*.toHit",
+      "previousValue": "+3 against AC on Bow Shot, Ice Arrow, Fire Rune Attack, and Hammer Strike",
+      "proposedValue": "+3 against AC on Bow Shot and Ice Arrow only; blank on Fire Rune Attack and Hammer Strike",
+      "evidence": ["uploaded photo page 1, modifier boost annotated 'archery only'"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-golo",
+      "field": "inventory.flightShoes.charges",
+      "previousValue": "",
+      "proposedValue": "1 hr/day",
+      "evidence": ["uploaded photo page 2, Flight Shoes charges column"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-golo",
+      "field": "attacks.fireRuneAttack",
+      "previousValue": "Fire Rune Attack; +3 against AC; blank range and effect",
+      "proposedValue": "Unresolved handwritten replacement text and range/effect notation",
+      "evidence": ["uploaded photo page 2, altered Fire Rune Attack row"],
+      "confidence": "illegible",
+      "reviewState": "pending"
+    },
+    {
+      "characterId": "character-golo",
+      "field": "inventory.saddle",
+      "previousValue": "Saddle",
+      "proposedValue": "Unresolved handwritten addition that may mention a saddlebag and quantity",
+      "evidence": ["uploaded photo page 2, Saddle inventory row"],
+      "confidence": "illegible",
+      "reviewState": "pending"
+    }
+  ]
+}

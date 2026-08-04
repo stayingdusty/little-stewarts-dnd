@@ -7,8 +7,8 @@
   "subtitle": "Half-Giant / Half-Centaur Archer",
   "player": "Elijah",
   "species": "Half-Giant / Half-Centaur",
-  "levelRank": "",
-  "movement": "",
+  "levelRank": "2",
+  "movement": "60 ft",
   "initiative": "",
   "visibility": "player",
   "canonStatus": "confirmed",
@@ -43,20 +43,20 @@
     "path": "characters/index.html",
     "anchor": "golo"
   },
-  "abilityPointTotal": "",
+  "abilityPointTotal": "30",
   "abilityScores": {
-    "strength": "",
-    "dexterity": "",
-    "constitution": "",
-    "intelligence": "",
-    "wisdom": "",
-    "charisma": ""
+    "strength": "10",
+    "dexterity": "8",
+    "constitution": "4",
+    "intelligence": "4",
+    "wisdom": "3",
+    "charisma": "1"
   },
   "combat": {
-    "currentHp": "",
+    "currentHp": "10",
     "maximumHp": "",
     "temporaryHp": "",
-    "armorClass": ""
+    "armorClass": "10"
   },
   "powers": [
     {
@@ -107,13 +107,13 @@
     },
     {
       "name": "Fire Rune Attack",
-      "toHit": "+3 against AC",
+      "toHit": "",
       "range": "",
       "effect": ""
     },
     {
       "name": "Hammer Strike",
-      "toHit": "+3 against AC",
+      "toHit": "",
       "range": "Melee",
       "effect": ""
     },
@@ -150,7 +150,7 @@
     {
       "name": "Flight Shoes",
       "quantity": "",
-      "charges": ""
+      "charges": "1 hr/day"
     },
     {
       "name": "Rocky Talkie",
