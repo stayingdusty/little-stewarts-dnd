@@ -109,7 +109,7 @@
     "sourcePath": "characters/index.html",
     "sourceAnchor": "sertraline",
     "timelineValue": 0,
-    "searchableText": "sertraline a telepathic jungle panther whose practiced druidic control and tactical instincts allow her to disrupt psychic domination and command nearby vegetation with precision. jungle panther and druidic advisor. [object object] [object object] [object object] [object object] character arc-1 character-sheet druidic-advisor telepathic jungle-panther"
+    "searchableText": "sertraline a telepathic jungle panther whose practiced druidic control and tactical instincts allow her to disrupt psychic domination and command nearby vegetation with precision. jungle panther and druidic advisor. [object object] [object object] [object object] [object object] [object object] character arc-1 character-sheet druidic-advisor telepathic jungle-panther"
   },
   {
     "id": "npc-burgle",
@@ -1341,6 +1341,26 @@
     "sourceAnchor": "golo",
     "timelineValue": 0,
     "searchableText": "flight shoes inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
+  },
+  {
+    "id": "inventory-item-sertraline-garoth-s-cigar-fire-breath-and-musclebound",
+    "kind": "inventory-item",
+    "name": "Garoth's Cigar (fire breath and musclebound)",
+    "summary": "Inventory entry for Sertraline.",
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "aliases": [
+      "Sertraline"
+    ],
+    "visibility": "player",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "sertraline",
+    "timelineValue": 0,
+    "searchableText": "garoth's cigar (fire breath and musclebound) inventory entry for sertraline. tracked in sertraline's inventory. sertraline inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-fiona-golden-paladin-armor",
