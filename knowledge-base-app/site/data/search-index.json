@@ -87,19 +87,14 @@
   {
     "id": "character-queen-flower",
     "kind": "character",
-    "name": "QUEEN FLOWER OF VEYLATHAR",
+    "name": "Queen Flower of Veylathar",
     "summary": "Queen Flower rules Veylathar as Queen Regent, balancing personal authority, public sentiment, taxation, and council oversight. Her astral projection is conducted through the two halves of her ancestral pendant and her enchanted chalkboard map in the Castle Tower.",
     "tags": [
       "character",
       "arc-1",
-      "character-overview",
-      "ability-scores-modifiers",
-      "powers-abilities",
-      "combat",
-      "modifier-boosts",
-      "external-bonds-relationships",
-      "special-rules-notes",
-      "attacks-damage-healing-dice"
+      "character-sheet",
+      "queen-regent",
+      "veylathar"
     ],
     "aliases": [
       "Queen",
@@ -107,11 +102,11 @@
       "Queen Flower"
     ],
     "visibility": "player",
-    "sourceType": "character_sheet",
-    "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
     "sourceAnchor": "queen-flower-of-veylathar",
     "timelineValue": 0,
-    "searchableText": "queen flower of veylathar queen flower rules veylathar as queen regent, balancing personal authority, public sentiment, taxation, and council oversight. her astral projection is conducted through the two halves of her ancestral pendant and her enchanted chalkboard map in the castle tower. queen regent of veylathar queen flower queen flower character arc-1 character-overview ability-scores-modifiers powers-abilities combat modifier-boosts external-bonds-relationships special-rules-notes attacks-damage-healing-dice"
+    "searchableText": "queen flower of veylathar queen flower rules veylathar as queen regent, balancing personal authority, public sentiment, taxation, and council oversight. her astral projection is conducted through the two halves of her ancestral pendant and her enchanted chalkboard map in the castle tower. queen regent of veylathar [object object] [object object] [object object] [object object] [object object] queen flower queen flower character arc-1 character-sheet queen-regent veylathar"
   },
   {
     "id": "character-sertraline",
@@ -1172,6 +1167,26 @@
     "searchableText": "dm secret 5 final dm note: the mythology should remain flexible enough to respond to the children's choices. the cosmology provides a destination and thematic structure, but the party's actions should determine w final dm note: the mythology should remain flexible enough to respond to the children's choices. the cosmology provides a destination and thematic structure, but the party's actions should determine what reconciliation actually looks like and who ultimately accepts responsibility for the future. secret gm-only arc-1"
   },
   {
+    "id": "inventory-item-queen-flower-of-veylathar-10-snap-matches",
+    "kind": "inventory-item",
+    "name": "10 Snap Matches",
+    "summary": "Inventory entry for Queen Flower of Veylathar.",
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "aliases": [
+      "Queen Flower of Veylathar"
+    ],
+    "visibility": "player",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "queen-flower-of-veylathar",
+    "timelineValue": 0,
+    "searchableText": "10 snap matches inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
+  },
+  {
     "id": "inventory-item-golo-10-snap-matches",
     "kind": "inventory-item",
     "name": "10 Snap Matches",
@@ -1190,26 +1205,6 @@
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "10 snap matches inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
-  },
-  {
-    "id": "inventory-item-queen-flower-of-veylathar-10-snap-matches",
-    "kind": "inventory-item",
-    "name": "10 Snap Matches",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
-    "tags": [
-      "inventory-item",
-      "arc-1",
-      "inventory"
-    ],
-    "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
-    ],
-    "visibility": "player",
-    "sourceType": "character_sheet",
-    "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
-    "sourceAnchor": "",
-    "timelineValue": 0,
-    "searchableText": "10 snap matches inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-sertraline-10-snap-matches",
@@ -1235,19 +1230,19 @@
     "id": "inventory-item-queen-flower-of-veylathar-ancestral-pendant-of-veylathar",
     "kind": "inventory-item",
     "name": "Ancestral Pendant of Veylathar",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
+    "summary": "Inventory entry for Queen Flower of Veylathar.",
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
     "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
+      "Queen Flower of Veylathar"
     ],
     "visibility": "player",
-    "sourceType": "character_sheet",
-    "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
-    "sourceAnchor": "",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "queen-flower-of-veylathar",
     "timelineValue": 0,
     "searchableText": "ancestral pendant of veylathar inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
   },
@@ -1415,19 +1410,19 @@
     "id": "inventory-item-queen-flower-of-veylathar-map",
     "kind": "inventory-item",
     "name": "Map",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
+    "summary": "Inventory entry for Queen Flower of Veylathar.",
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
     "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
+      "Queen Flower of Veylathar"
     ],
     "visibility": "player",
-    "sourceType": "character_sheet",
-    "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
-    "sourceAnchor": "",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "queen-flower-of-veylathar",
     "timelineValue": 0,
     "searchableText": "map inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
   },
@@ -1450,6 +1445,26 @@
     "sourceAnchor": "",
     "timelineValue": 0,
     "searchableText": "radiant sword of aureth inventory entry for fiona. tracked in fiona's inventory. fiona inventory-item arc-1 inventory"
+  },
+  {
+    "id": "inventory-item-queen-flower-of-veylathar-rocky-talkie",
+    "kind": "inventory-item",
+    "name": "Rocky Talkie",
+    "summary": "Inventory entry for Queen Flower of Veylathar.",
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "aliases": [
+      "Queen Flower of Veylathar"
+    ],
+    "visibility": "player",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "queen-flower-of-veylathar",
+    "timelineValue": 0,
+    "searchableText": "rocky talkie inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-fiona-rocky-talkie",
@@ -1492,26 +1507,6 @@
     "searchableText": "rocky talkie inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
   },
   {
-    "id": "inventory-item-queen-flower-of-veylathar-rocky-talkie",
-    "kind": "inventory-item",
-    "name": "Rocky Talkie",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
-    "tags": [
-      "inventory-item",
-      "arc-1",
-      "inventory"
-    ],
-    "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
-    ],
-    "visibility": "player",
-    "sourceType": "character_sheet",
-    "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
-    "sourceAnchor": "",
-    "timelineValue": 0,
-    "searchableText": "rocky talkie inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
-  },
-  {
     "id": "inventory-item-sertraline-rocky-talkie",
     "kind": "inventory-item",
     "name": "Rocky Talkie",
@@ -1535,19 +1530,19 @@
     "id": "inventory-item-queen-flower-of-veylathar-royal-regalia",
     "kind": "inventory-item",
     "name": "Royal Regalia",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
+    "summary": "Inventory entry for Queen Flower of Veylathar.",
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
     "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
+      "Queen Flower of Veylathar"
     ],
     "visibility": "player",
-    "sourceType": "character_sheet",
-    "sourcePath": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html",
-    "sourceAnchor": "",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "queen-flower-of-veylathar",
     "timelineValue": 0,
     "searchableText": "royal regalia inventory entry for queen flower of veylathar. tracked in queen flower of veylathar's inventory. queen flower of veylathar inventory-item arc-1 inventory"
   },
@@ -1627,7 +1622,7 @@
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_1_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-1-petaltown-to-the-wayward-flame",
     "timelineValue": 1,
-    "searchableText": "arc 1, chapter 1: petaltown to the wayward flame the party formed in petaltown after strange animal aggression and enormous dark arcs appeared in the sky. their first journey carried them through a starving outpost, onto a magical riverboat, into possession of a rune-covered artifact, and finally to the outskirts of veylathar. the party ended the chapter with a new magical power, one remaining snap match, a dangerous connection to the mysterious man in the white suit, and a new home base at the wayward flame. character-fiona character-golo character-queen-flower character-sertraline petaltown veylathar wayward flame  canon arc-1 chapter-1"
+    "searchableText": "arc 1, chapter 1: petaltown to the wayward flame the party formed in petaltown after strange animal aggression and enormous dark arcs appeared in the sky. their first journey carried them through a starving outpost, onto a magical riverboat, into possession of a rune-covered artifact, and finally to the outskirts of veylathar. the party ended the chapter with a new magical power, one remaining snap match, a dangerous connection to the mysterious man in the white suit, and a new home base at the wayward flame. character-queen-flower character-fiona character-golo character-sertraline petaltown veylathar wayward flame  canon arc-1 chapter-1"
   },
   {
     "id": "canon-arc1-chapter2",
@@ -1645,7 +1640,7 @@
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_2_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-2-the-city-of-sparks",
     "timelineValue": 2,
-    "searchableText": "arc 1, chapter 2: the city of sparks the party establishes itself in veylathar, explores the city's magical infrastructure, uncovers the first hints of political unrest, and fiona undergoes a life-changing transformation. the wayward flame becomes the party's home, frederick becomes a friend, queen flower's pendant reacts to the luminary dome, and fiona becomes a paladin of aureth. character-fiona character-golo character-queen-flower character-sertraline veylathar luminary dome ethereum academy crucible district wayward flame  canon arc-1 chapter-2"
+    "searchableText": "arc 1, chapter 2: the city of sparks the party establishes itself in veylathar, explores the city's magical infrastructure, uncovers the first hints of political unrest, and fiona undergoes a life-changing transformation. the wayward flame becomes the party's home, frederick becomes a friend, queen flower's pendant reacts to the luminary dome, and fiona becomes a paladin of aureth. character-queen-flower character-fiona character-golo character-sertraline veylathar luminary dome ethereum academy crucible district wayward flame  canon arc-1 chapter-2"
   },
   {
     "id": "canon-arc1-chapter3",
@@ -1663,7 +1658,7 @@
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_3_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-3-contracts-campaigns-conspiracies",
     "timelineValue": 3,
-    "searchableText": "arc 1, chapter 3: contracts, campaigns & conspiracies after two weeks of living in veylathar, the party stops feeling like temporary visitors. they take jobs, build goodwill, unlock new magical abilities, begin queen flower's political campaign, gain permanent lodging, and uncover several mysteries connected to the man in the white suit, the stolen great tree sap, and the academy of sparks. the party ends the chapter financially stable, politically active, and equipped for infiltration. golo gains licensed hellfire magic and flight, sertraline awakens her druidic power, fiona becomes a trusted healer, and queen flower gains a path toward securing district votes in the election for queen regent. character-fiona character-golo character-queen-flower character-sertraline veylathar great tree crucible district wayward flame  canon arc-1 chapter-3"
+    "searchableText": "arc 1, chapter 3: contracts, campaigns & conspiracies after two weeks of living in veylathar, the party stops feeling like temporary visitors. they take jobs, build goodwill, unlock new magical abilities, begin queen flower's political campaign, gain permanent lodging, and uncover several mysteries connected to the man in the white suit, the stolen great tree sap, and the academy of sparks. the party ends the chapter financially stable, politically active, and equipped for infiltration. golo gains licensed hellfire magic and flight, sertraline awakens her druidic power, fiona becomes a trusted healer, and queen flower gains a path toward securing district votes in the election for queen regent. character-queen-flower character-fiona character-golo character-sertraline veylathar great tree crucible district wayward flame  canon arc-1 chapter-3"
   },
   {
     "id": "canon-arc1-chapter4",
@@ -1681,7 +1676,7 @@
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_4_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-4-the-academy-of-sparks-heist",
     "timelineValue": 4,
-    "searchableText": "arc 1, chapter 4: the academy of sparks heist chapter 4 delivers the payoff to the infiltration prepared at the end of chapter 3. sertraline and fiona enter the nine-floor academy of sparks, move through specialized magical floors, trigger a full security response, and battle garoth, the academy's formidable head of security. the fight crashes into the chronomancy floor, where time magic permanently transforms fiona's armor and temporarily reshapes sertraline. with golo's arrival, the party combines flight, ice arrows, fire breath, berserker strength, and dwarven fire runes to break open the academy vault and recover the stolen great tree sap. the party confirms that the black goop is authentic great tree sap through golo's ancestral vision. they escape to the crucible district, where the dwarven boss offers protection, promises the agreed reward, and announces custom dwarven-forged gifts for the party. the academy of sparks mini-arc is complete, fiona's divine armor has awakened, garoth survives as a possible future mentor or rival, and chapter 5 is positioned to begin with the dwarven reward ceremony. character-fiona character-golo character-queen-flower character-sertraline great tree crucible district ethereum academy veylathar  canon arc-1 chapter-4"
+    "searchableText": "arc 1, chapter 4: the academy of sparks heist chapter 4 delivers the payoff to the infiltration prepared at the end of chapter 3. sertraline and fiona enter the nine-floor academy of sparks, move through specialized magical floors, trigger a full security response, and battle garoth, the academy's formidable head of security. the fight crashes into the chronomancy floor, where time magic permanently transforms fiona's armor and temporarily reshapes sertraline. with golo's arrival, the party combines flight, ice arrows, fire breath, berserker strength, and dwarven fire runes to break open the academy vault and recover the stolen great tree sap. the party confirms that the black goop is authentic great tree sap through golo's ancestral vision. they escape to the crucible district, where the dwarven boss offers protection, promises the agreed reward, and announces custom dwarven-forged gifts for the party. the academy of sparks mini-arc is complete, fiona's divine armor has awakened, garoth survives as a possible future mentor or rival, and chapter 5 is positioned to begin with the dwarven reward ceremony. character-queen-flower character-fiona character-golo character-sertraline great tree crucible district ethereum academy veylathar  canon arc-1 chapter-4"
   },
   {
     "id": "canon-arc1-chapter5",
@@ -1699,7 +1694,7 @@
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_5_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-5-the-academy-of-antiquities",
     "timelineValue": 5,
-    "searchableText": "arc 1, chapter 5: the academy of antiquities chapter 5 begins the morning after the academy of sparks heist. the dwarven boss formally rewards the party for recovering the stolen great tree sap, confirms the crucible district's support for queen flower, and presents each hero with a personalized gift or promise. a concealed security escort returns the party to the ethereum academy, where sertraline discovers that dr. fizzlebig is secretly connected to the robed guard and is herself promoted to command a six-person unit. the party then pieces together the matching vaults from the river cruise and the academy of sparks, chooses an election instead of a trial, and splits its efforts between the people of the marketplace and the academy of antiquities. queen flower's inherited pendant is revealed to be only half of an ancient artifact. beneath the great tree, tindily migrot reunites it with its missing half. the completed pendant projects a living map of every place it has previously traveled and hides untouched lands beneath fog. by tracing the map, queen flower gains limited astral projection and the ability to observe and interact with distant places connected to the pendant's history. tindily allows her to keep the artifact and makes the academy of antiquities' council vote contingent on queen flower researching and reporting on its nature and use. character-fiona character-golo character-queen-flower character-sertraline great tree crucible district ethereum academy wayward flame veylathar petaltown  canon arc-1 chapter-5"
+    "searchableText": "arc 1, chapter 5: the academy of antiquities chapter 5 begins the morning after the academy of sparks heist. the dwarven boss formally rewards the party for recovering the stolen great tree sap, confirms the crucible district's support for queen flower, and presents each hero with a personalized gift or promise. a concealed security escort returns the party to the ethereum academy, where sertraline discovers that dr. fizzlebig is secretly connected to the robed guard and is herself promoted to command a six-person unit. the party then pieces together the matching vaults from the river cruise and the academy of sparks, chooses an election instead of a trial, and splits its efforts between the people of the marketplace and the academy of antiquities. queen flower's inherited pendant is revealed to be only half of an ancient artifact. beneath the great tree, tindily migrot reunites it with its missing half. the completed pendant projects a living map of every place it has previously traveled and hides untouched lands beneath fog. by tracing the map, queen flower gains limited astral projection and the ability to observe and interact with distant places connected to the pendant's history. tindily allows her to keep the artifact and makes the academy of antiquities' council vote contingent on queen flower researching and reporting on its nature and use. character-queen-flower character-fiona character-golo character-sertraline great tree crucible district ethereum academy wayward flame veylathar petaltown  canon arc-1 chapter-5"
   },
   {
     "id": "canon-arc1-chapter6",
@@ -1717,7 +1712,7 @@
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_6_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-6-the-falling-arena",
     "timelineValue": 6,
-    "searchableText": "arc 1, chapter 6: the falling arena chapter 6 culminates in an arena battle fought on a platform suspended high above veylathar. as the contest ends, the man in the white suit—known publicly in the city as jerry mander—uses snap matches to teleport from the spectator stands to the arena platform and disables the charms keeping it aloft. the entire arena begins falling toward the city. jerry then attempts to reach and capture queen flower, but she surprises him, steals the snap matches from his hand, and snaps down to the falling platform. fiona calls upon aureth for guidance and, after one match proves insufficient, uses roughly one hundred snap matches together to pull the arena and everyone within the resulting dark arc blip into the ethereal realm. aureth then returns the survivors to the wayward flame. veylathar is saved from catastrophic destruction, but jerry mander escapes with his cronies using a separate supply of snap matches. the party convenes the city council and begins a formal investigation. garoth reports that jerry sometimes enters the material realm first as a rounded, indistinct shape before taking the form of a man. dr. fizzlebig explains that dark arcs are tears in reality: temporary blips may heal, but repeated damage can make them permanent. every known dark arc bends toward the same central location. the party ends the chapter seeking jerry, questioning his true nature, and investigating whether the wounds in reality can be healed. character-fiona character-golo character-queen-flower character-sertraline veylathar ethereal realm wayward flame material realm  canon arc-1 chapter-6"
+    "searchableText": "arc 1, chapter 6: the falling arena chapter 6 culminates in an arena battle fought on a platform suspended high above veylathar. as the contest ends, the man in the white suit—known publicly in the city as jerry mander—uses snap matches to teleport from the spectator stands to the arena platform and disables the charms keeping it aloft. the entire arena begins falling toward the city. jerry then attempts to reach and capture queen flower, but she surprises him, steals the snap matches from his hand, and snaps down to the falling platform. fiona calls upon aureth for guidance and, after one match proves insufficient, uses roughly one hundred snap matches together to pull the arena and everyone within the resulting dark arc blip into the ethereal realm. aureth then returns the survivors to the wayward flame. veylathar is saved from catastrophic destruction, but jerry mander escapes with his cronies using a separate supply of snap matches. the party convenes the city council and begins a formal investigation. garoth reports that jerry sometimes enters the material realm first as a rounded, indistinct shape before taking the form of a man. dr. fizzlebig explains that dark arcs are tears in reality: temporary blips may heal, but repeated damage can make them permanent. every known dark arc bends toward the same central location. the party ends the chapter seeking jerry, questioning his true nature, and investigating whether the wounds in reality can be healed. character-queen-flower character-fiona character-golo character-sertraline veylathar ethereal realm wayward flame material realm  canon arc-1 chapter-6"
   },
   {
     "id": "canon-arc1-chapter7",
@@ -1735,7 +1730,7 @@
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_7_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-7-the-day-after-the-council",
     "timelineValue": 7,
-    "searchableText": "arc 1, chapter 7: the day after the council chapter 7 takes place the day after the emergency city council meeting. with jerry mander missing and veylathar still unsettled, the heroes do not travel as a single party. each follows a personal responsibility: fiona inspects the city's military, golo returns to the crucible, sertraline tests her connection to nature and investigates the luminary dome, and queen flower begins working through the responsibilities of rulership. the chapter establishes four new campaign threads. fiona discovers serious neglect and possible theft within the southern garrison. golo learns that earthshatter now carries a heartbeat. sertraline discovers a lens beneath the luminary dome aimed toward an ethereal platform. queen flower is shown a full map of the wider world, opening the campaign beyond veylathar. character-fiona character-golo character-queen-flower character-sertraline veylathar luminary dome wayward flame crucible district ethereal realm  canon arc-1 chapter-7"
+    "searchableText": "arc 1, chapter 7: the day after the council chapter 7 takes place the day after the emergency city council meeting. with jerry mander missing and veylathar still unsettled, the heroes do not travel as a single party. each follows a personal responsibility: fiona inspects the city's military, golo returns to the crucible, sertraline tests her connection to nature and investigates the luminary dome, and queen flower begins working through the responsibilities of rulership. the chapter establishes four new campaign threads. fiona discovers serious neglect and possible theft within the southern garrison. golo learns that earthshatter now carries a heartbeat. sertraline discovers a lens beneath the luminary dome aimed toward an ethereal platform. queen flower is shown a full map of the wider world, opening the campaign beyond veylathar. character-queen-flower character-fiona character-golo character-sertraline veylathar luminary dome wayward flame crucible district ethereal realm  canon arc-1 chapter-7"
   },
   {
     "id": "canon-arc1-chapter8",
@@ -1753,7 +1748,7 @@
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_8_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-8-the-burgled-treasury-nameloc",
     "timelineValue": 8,
-    "searchableText": "arc 1, chapter 8: the burgled treasury & nameloc chapter 8 begins with the garrison in worsening condition because gold reserved for food, equipment, and repairs keeps vanishing from its locked treasury. the party investigates the theft while also responding to reports of a massive beast hunting deer in the surrounding woods. the supposed monster is revealed to be nameloc, the gigantic blue dog spirit form of a misunderstood wandering boy named calvin. after an initial fight, the misunderstanding is resolved, and his powerful senses become the key to tracking the true thief. the party discovers that the treasury gold has been taken by burgle, a harmless amphibious fish-person who lives in an underwater hovel in the riverbed and hoards anything shiny. the missing gold is recovered peacefully, the garrison's repairs and supplies can resume, fiona earns greater respect as a leader, burgle becomes a recurring local ally, and calvin joins the party as a powerful tracker who can transform into nameloc. character-calvin-nameloc character-fiona character-queen-flower veylathar  canon arc-1 chapter-8"
+    "searchableText": "arc 1, chapter 8: the burgled treasury & nameloc chapter 8 begins with the garrison in worsening condition because gold reserved for food, equipment, and repairs keeps vanishing from its locked treasury. the party investigates the theft while also responding to reports of a massive beast hunting deer in the surrounding woods. the supposed monster is revealed to be nameloc, the gigantic blue dog spirit form of a misunderstood wandering boy named calvin. after an initial fight, the misunderstanding is resolved, and his powerful senses become the key to tracking the true thief. the party discovers that the treasury gold has been taken by burgle, a harmless amphibious fish-person who lives in an underwater hovel in the riverbed and hoards anything shiny. the missing gold is recovered peacefully, the garrison's repairs and supplies can resume, fiona earns greater respect as a leader, burgle becomes a recurring local ally, and calvin joins the party as a powerful tracker who can transform into nameloc. character-queen-flower character-calvin-nameloc character-fiona veylathar  canon arc-1 chapter-8"
   },
   {
     "id": "canon-arc1-chapter9",
@@ -1771,6 +1766,6 @@
     "sourcePath": "DND-Source-Docs/the-dark-arcs/playthrough-summaries/arc_1_chapter_9_playthrough_summary.html",
     "sourceAnchor": "arc-1-chapter-9-the-expedition-leaves-veylathar",
     "timelineValue": 9,
-    "searchableText": "arc 1, chapter 9: the expedition leaves veylathar the party left veylathar for the first time on an expedition to investigate the dark arcs beyond the city. their first major choice took them through the woods toward emberhold, where the mortal world overlapped with fey territory. the party survived the sacred hunt of the white stag and gained a binding fey pact: in fey territory, the fey cannot harm them or prevent them from leaving. character-calvin-nameloc character-fiona character-golo character-queen-flower character-sertraline veylathar emberhold  canon arc-1 chapter-9"
+    "searchableText": "arc 1, chapter 9: the expedition leaves veylathar the party left veylathar for the first time on an expedition to investigate the dark arcs beyond the city. their first major choice took them through the woods toward emberhold, where the mortal world overlapped with fey territory. the party survived the sacred hunt of the white stag and gained a binding fey pact: in fey territory, the fey cannot harm them or prevent them from leaving. character-queen-flower character-calvin-nameloc character-fiona character-golo character-sertraline veylathar emberhold  canon arc-1 chapter-9"
   }
 ]

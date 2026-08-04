@@ -123,6 +123,17 @@ const validateSiteBuild = async () => {
 
   for (const record of searchIndex) {
     if (!record.sourcePath) continue;
+    if (record.sourceType === 'generated_character_sheet') {
+      const characterDataPath = path.join(appRoot, 'site/data/characters', `${record.sourceAnchor}.json`);
+      try {
+        await access(characterDataPath);
+        await access(path.join(appRoot, 'site/characters/index.html'));
+      } catch {
+        errors.push(`${record.id} links to a generated character sheet without published character data.`);
+      }
+      continue;
+    }
+
     const relativeSource = record.sourcePath
       .replace(/^DND-Source-Docs\//i, 'source-docs/')
       .replace(/^\.\//, '')
@@ -145,7 +156,8 @@ const validateSiteBuild = async () => {
   for (const group of getSourceDocNavGroups(true)) {
     for (const branch of group.branches) {
       for (const item of branch.items) {
-        const navTarget = path.join(appRoot, 'site', item.href.replace(/^\.\//, ''));
+        const navHref = item.href.replace(/^\.\//, '').split('#')[0].split('?')[0];
+        const navTarget = path.join(appRoot, 'site', navHref);
         try {
           await access(navTarget);
         } catch {
@@ -157,6 +169,18 @@ const validateSiteBuild = async () => {
 };
 
 const validatePrintSources = async () => {
+  const generatedSheetHtml = path.join(appRoot, 'site/characters/index.html');
+  const generatedSheetCss = path.join(appRoot, 'site/characters/sheet.css');
+  try {
+    await access(generatedSheetHtml);
+    const css = await readFile(generatedSheetCss, 'utf8');
+    requireValue(/@media\s+print/i.test(css), 'Generated character sheet renderer is missing print-specific CSS.');
+    requireValue(/@page\s*{/i.test(css), 'Generated character sheet renderer is missing an @page print rule.');
+    requireValue(/page-break-after|break-after/i.test(css), 'Generated character sheet renderer is missing intentional page breaks.');
+  } catch {
+    errors.push('Generated character sheet renderer is missing.');
+  }
+
   const characterDir = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/characters');
   const names = (await readdir(characterDir)).filter((name) => /^character_sheet_.*\.html$/.test(name));
   for (const name of names) {

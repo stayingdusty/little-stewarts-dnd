@@ -1,7 +1,7 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { extractInventoryItems } from './inventory-utils.mjs';
+import { extractInventoryItems, extractInventoryItemsFromRecord } from './inventory-utils.mjs';
 import { createSlug } from './source-doc-utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -10,6 +10,7 @@ const root = path.resolve(__dirname, '..');
 const repoRoot = path.resolve(root, '..');
 
 const CHAR_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/characters');
+const STRUCTURED_CHAR_DIR = path.join(repoRoot, 'campaigns/the-dark-arcs/characters');
 const SUMMARY_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/playthrough-summaries');
 const WORLD_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/world');
 const CANON_NAMES_PATH = path.join(repoRoot, 'campaigns/the-dark-arcs/canon/names.json');
@@ -116,10 +117,12 @@ const extractTagMatches = (html, regex) => {
 };
 
 const extractCharacterRecords = async () => {
+  const structuredCharacters = await readStructuredCharacterRecords();
+  const structuredIds = new Set(structuredCharacters.map((character) => character.id));
   const files = await readHtmlFiles(CHAR_DIR);
   const characterFiles = files.filter(({ name }) => !name.includes('template'));
 
-  return characterFiles.map(({ name, html }) => {
+  const legacyCharacters = characterFiles.map(({ name, html }) => {
     const headerName = stripTags((html.match(/<header[^>]*>[\s\S]*?<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || 'Unknown');
     const subtitle = stripTags((html.match(/<div class="subtitle"[^>]*>([\s\S]*?)<\/div>/i) || [])[1] || '');
     const inventoryItems = extractInventoryItems(html, headerName, `DND-Source-Docs/the-dark-arcs/characters/${name}`);
@@ -175,7 +178,30 @@ const extractCharacterRecords = async () => {
         anchor
       }
     };
-  });
+  }).filter((character) => !structuredIds.has(character.id));
+
+  return [...structuredCharacters, ...legacyCharacters];
+};
+
+const readStructuredCharacterRecords = async () => {
+  const names = await readdir(STRUCTURED_CHAR_DIR).catch(() => []);
+  const records = [];
+
+  for (const name of names.filter((entry) => entry.endsWith('.json')).sort((a, b) => a.localeCompare(b))) {
+    const record = JSON.parse(await readFile(path.join(STRUCTURED_CHAR_DIR, name), 'utf8'));
+    const anchor = record.source?.anchor || createSlug(record.name);
+    records.push({
+      ...record,
+      source: {
+        ...record.source,
+        type: 'generated_character_sheet',
+        path: 'characters/index.html',
+        anchor
+      }
+    });
+  }
+
+  return records;
 };
 
 const extractEncounterRecords = async () => {
@@ -466,6 +492,11 @@ const main = async () => {
 
   const inventoryItems = [];
   for (const character of characters) {
+    if (character.source?.type === 'generated_character_sheet') {
+      inventoryItems.push(...extractInventoryItemsFromRecord(character));
+      continue;
+    }
+
     const sourcePath = character.source?.path || '';
     const htmlPath = path.join(repoRoot, sourcePath);
     const html = await readFile(htmlPath, 'utf8').catch(() => '');

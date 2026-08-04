@@ -1,0 +1,156 @@
+{
+  "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
+  "id": "character-queen-flower",
+  "domain": "character",
+  "name": "Queen Flower of Veylathar",
+  "title": "Queen Regent",
+  "subtitle": "Queen Regent of Veylathar",
+  "player": "Amelia",
+  "species": "Flower Queen",
+  "levelRank": "2",
+  "movement": "30",
+  "initiative": "",
+  "visibility": "player",
+  "canonStatus": "confirmed",
+  "summary": "Queen Flower rules Veylathar as Queen Regent, balancing personal authority, public sentiment, taxation, and council oversight. Her astral projection is conducted through the two halves of her ancestral pendant and her enchanted chalkboard map in the Castle Tower.",
+  "details": "Queen Regent of Veylathar",
+  "aliases": [
+    "Queen",
+    "Flower",
+    "Queen Flower"
+  ],
+  "tags": [
+    "character",
+    "arc-1",
+    "character-sheet",
+    "queen-regent",
+    "veylathar"
+  ],
+  "relatedIds": [
+    "inventory-item-queen-flower-of-veylathar-ancestral-pendant-of-veylathar",
+    "inventory-item-queen-flower-of-veylathar-royal-regalia",
+    "inventory-item-queen-flower-of-veylathar-rocky-talkie",
+    "inventory-item-queen-flower-of-veylathar-map",
+    "inventory-item-queen-flower-of-veylathar-10-snap-matches"
+  ],
+  "evidence": [
+    {
+      "type": "source-document",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+    },
+    {
+      "type": "uploaded-photo",
+      "path": "upload/IMG_53E7534D-F69A-4073-8203-285B9B7145CD.jpeg"
+    },
+    {
+      "type": "uploaded-photo",
+      "path": "upload/IMG_29EFE516-C22A-4205-929C-25763E4238FB.jpeg"
+    }
+  ],
+  "source": {
+    "type": "generated_character_sheet",
+    "path": "characters/index.html",
+    "anchor": "queen-flower-of-veylathar"
+  },
+  "abilityPointTotal": "30 pts.",
+  "abilityScores": {
+    "strength": "2",
+    "dexterity": "2",
+    "constitution": "8",
+    "intelligence": "5",
+    "wisdom": "7",
+    "charisma": "6"
+  },
+  "combat": {
+    "currentHp": "10",
+    "maximumHp": "",
+    "temporaryHp": "",
+    "armorClass": "5"
+  },
+  "powers": [
+    {
+      "name": "Royal Authority",
+      "description": "May raise or lower taxes, influence public sentiment, and propose use of public funds.",
+      "rollCheck": "passive",
+      "usesRange": ""
+    },
+    {
+      "name": "Astral Projection - Seen",
+      "description": "Projects visibly through the linked pendant halves to the party's current location in the material realm, but cannot be heard or physically felt.",
+      "rollCheck": "passive",
+      "usesRange": "N/A"
+    },
+    {
+      "name": "Astral Projection - Heard",
+      "description": "Projects her voice through the linked pendant halves to the party's current location in the material realm, but cannot be seen or physically felt.",
+      "rollCheck": "passive",
+      "usesRange": "N/A"
+    },
+    {
+      "name": "Astral Projection - Felt",
+      "description": "Exerts physical influence through the linked pendant halves at the party's current location in the material realm, but cannot be seen or heard.",
+      "rollCheck": "passive",
+      "usesRange": "N/A"
+    },
+    {
+      "name": "Personal Treasury",
+      "description": "Receives 50 gold per week for discretionary personal spending; other tax revenue requires council approval. Tax revenue may also be rolled once per in-game month.",
+      "rollCheck": "Roll for taxes: 10d10 gold",
+      "usesRange": "1 time per in-game month"
+    }
+  ],
+  "relationships": "Crowned Queen Regent of Veylathar.",
+  "specialRules": "Astral projection requires the two linked halves of the ancestral pendant. Queen Flower must be wearing one half, while the other half may travel with the player party. As long as both halves remain within the same material realm, the traveling half appears as a glowing point on the enchanted chalkboard map in her Castle Tower. By placing her finger on that point while wearing her half of the pendant, she can project to the party's location. Astral projection currently allows only one manifestation at a time: Seen, Heard, or Felt. A future upgrade may allow two manifestations simultaneously. Tax increases can generate unrest; tax reductions can improve public favor.",
+  "attacks": [
+    {
+      "name": "Astral Influence - Felt",
+      "toHit": "Roll exceeds enemy AC",
+      "range": "",
+      "effect": "1d4 physical effect"
+    },
+    {
+      "name": "Royal Command",
+      "toHit": "",
+      "range": "",
+      "effect": "Social / authority effect"
+    }
+  ],
+  "attackRules": "Astral Influence - Felt hits when Queen Flower's roll exceeds the enemy's AC and deals 1d4 damage.",
+  "futureUpgrades": "",
+  "inventory": [
+    {
+      "name": "Ancestral Pendant of Veylathar",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "Royal Regalia",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "Rocky Talkie",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "Map",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "10 Snap Matches",
+      "quantity": "",
+      "charges": ""
+    }
+  ],
+  "currency": {
+    "gold": "125",
+    "silver": "",
+    "copper": "",
+    "other": ""
+  },
+  "specialResources": "",
+  "sessionNotes": "Character sheet updated from August 2026 handwritten test photos.",
+  "sheetRoute": "characters/index.html#queen-flower-of-veylathar"
+}
