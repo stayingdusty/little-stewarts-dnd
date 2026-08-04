@@ -1,0 +1,151 @@
+{
+  "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
+  "id": "character-sertraline",
+  "domain": "character",
+  "name": "Sertraline",
+  "title": "Druidic Advisor",
+  "subtitle": "Jungle Panther / Druidic Advisor",
+  "player": "Lynette",
+  "species": "Jungle Panther",
+  "levelRank": "",
+  "movement": "",
+  "initiative": "",
+  "visibility": "player",
+  "canonStatus": "confirmed",
+  "summary": "A telepathic jungle panther whose practiced druidic control and tactical instincts allow her to disrupt psychic domination and command nearby vegetation with precision.",
+  "details": "Jungle Panther and Druidic Advisor.",
+  "aliases": [],
+  "tags": [
+    "character",
+    "arc-1",
+    "character-sheet",
+    "druidic-advisor",
+    "telepathic",
+    "jungle-panther"
+  ],
+  "relatedIds": [
+    "inventory-item-sertraline-wisp-cloak",
+    "inventory-item-sertraline-dwarven-bracers-of-mage-hands",
+    "inventory-item-sertraline-rocky-talkie",
+    "inventory-item-sertraline-10-snap-matches"
+  ],
+  "evidence": [
+    {
+      "type": "source-document",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html"
+    }
+  ],
+  "source": {
+    "type": "generated_character_sheet",
+    "path": "characters/index.html",
+    "anchor": "sertraline"
+  },
+  "abilityPointTotal": "",
+  "abilityScores": {
+    "strength": "",
+    "dexterity": "",
+    "constitution": "",
+    "intelligence": "",
+    "wisdom": "",
+    "charisma": ""
+  },
+  "combat": {
+    "currentHp": "",
+    "maximumHp": "",
+    "temporaryHp": "",
+    "armorClass": ""
+  },
+  "powers": [
+    {
+      "name": "Telepathic Communication",
+      "description": "Communicates directly through the minds of nearby people and entities.",
+      "rollCheck": "",
+      "usesRange": ""
+    },
+    {
+      "name": "Psychic Interruption",
+      "description": "Telepathically screams into a target’s mind to interrupt psychic attacks, mind control, concentration, or control effects.",
+      "rollCheck": "",
+      "usesRange": ""
+    },
+    {
+      "name": "Active Druidic Control",
+      "description": "Consciously commands vines and vegetation from one movement away with deliberate, practiced control.",
+      "rollCheck": "",
+      "usesRange": "One movement away"
+    },
+    {
+      "name": "Stealth & Jungle Mastery",
+      "description": "Moves quietly, tracks through natural terrain, and operates with strong tactical awareness.",
+      "rollCheck": "",
+      "usesRange": ""
+    },
+    {
+      "name": "Wisp Cloak Command",
+      "description": "Commands a troop of Wisp Cloaks and can direct them as agents or protectors.",
+      "rollCheck": "",
+      "usesRange": ""
+    }
+  ],
+  "relationships": "Bond of admiration with Garoth; respects his strength and seeks training from him.",
+  "specialRules": "Two agents are tailing the former queen to determine whether she is connected to Jerry Mander or the thefts. No contact with Jerry Mander has been detected. Investigation suggests each burned Snap Match destroys a piece of reality and enlarges a growing rift rather than simply opening a portal.",
+  "attacks": [
+    {
+      "name": "Telepathic Scream",
+      "toHit": "",
+      "range": "",
+      "effect": "Temporary interruption / non-damage effect"
+    },
+    {
+      "name": "Vine Entangle",
+      "toHit": "",
+      "range": "",
+      "effect": ""
+    },
+    {
+      "name": "Vegetation Strike",
+      "toHit": "",
+      "range": "",
+      "effect": ""
+    },
+    {
+      "name": "Mage Hands",
+      "toHit": "",
+      "range": "",
+      "effect": ""
+    }
+  ],
+  "attackRules": "",
+  "futureUpgrades": "",
+  "inventory": [
+    {
+      "name": "Wisp Cloak",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "Dwarven Bracers of Mage Hands",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "Rocky Talkie",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "10 Snap Matches",
+      "quantity": "",
+      "charges": ""
+    }
+  ],
+  "currency": {
+    "gold": "125",
+    "silver": "",
+    "copper": "",
+    "other": ""
+  },
+  "specialResources": "",
+  "sessionNotes": "",
+  "sheetRoute": "characters/index.html#sertraline"
+}

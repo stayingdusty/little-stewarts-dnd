@@ -1,0 +1,174 @@
+{
+  "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
+  "id": "character-golo",
+  "domain": "character",
+  "name": "Golo",
+  "title": "Archer, Hunter & Artifact Bearer",
+  "subtitle": "Half-Giant / Half-Centaur Archer",
+  "player": "Elijah",
+  "species": "Half-Giant / Half-Centaur",
+  "levelRank": "",
+  "movement": "",
+  "initiative": "",
+  "visibility": "player",
+  "canonStatus": "confirmed",
+  "summary": "A powerful centaur archer and hunter whose dwarven alliances grant him rune magic, the magically lightweight Hammer of Earthshatter, and responsibility for a major artifact.",
+  "details": "Half-Giant / Half-Centaur archer, hunter, and artifact bearer.",
+  "aliases": [],
+  "tags": [
+    "character",
+    "arc-1",
+    "character-sheet",
+    "archer",
+    "hunter",
+    "artifact-bearer"
+  ],
+  "relatedIds": [
+    "inventory-item-golo-bow-and-arrows",
+    "inventory-item-golo-dwarven-hammer-of-earthshatter",
+    "inventory-item-golo-the-artifact",
+    "inventory-item-golo-saddle",
+    "inventory-item-golo-flight-shoes",
+    "inventory-item-golo-rocky-talkie",
+    "inventory-item-golo-10-snap-matches"
+  ],
+  "evidence": [
+    {
+      "type": "source-document",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+    }
+  ],
+  "source": {
+    "type": "generated_character_sheet",
+    "path": "characters/index.html",
+    "anchor": "golo"
+  },
+  "abilityPointTotal": "",
+  "abilityScores": {
+    "strength": "",
+    "dexterity": "",
+    "constitution": "",
+    "intelligence": "",
+    "wisdom": "",
+    "charisma": ""
+  },
+  "combat": {
+    "currentHp": "",
+    "maximumHp": "",
+    "temporaryHp": "",
+    "armorClass": ""
+  },
+  "powers": [
+    {
+      "name": "Master Archer",
+      "description": "Uses strength, range, and practiced accuracy to strike targets with bows and magical arrows.",
+      "rollCheck": "",
+      "usesRange": ""
+    },
+    {
+      "name": "Ice Arrows",
+      "description": "Fires magically empowered ice arrows that can damage, freeze, slow, or counter heat and fire.",
+      "rollCheck": "",
+      "usesRange": ""
+    },
+    {
+      "name": "Licensed Fire Rune",
+      "description": "Uses dwarven-licensed fire rune power under the terms of his employment contract.",
+      "rollCheck": "",
+      "usesRange": ""
+    },
+    {
+      "name": "Hammer of Earthshatter",
+      "description": "Instantly explodes or powders a 10-foot radius of non-living stone, including non-living spirit-conjured rock.",
+      "rollCheck": "",
+      "usesRange": "10-foot radius"
+    },
+    {
+      "name": "Magically Lightweight Hammer",
+      "description": "The hammer is easy to wield regardless of normal weight and can be lent to other characters for use.",
+      "rollCheck": "",
+      "usesRange": ""
+    }
+  ],
+  "relationships": "Trusted by the dwarves as artifact bearer and rune licensee. Butcher's Guild bond established through the Iceman connection.",
+  "specialRules": "Earthshatter affects non-living stone and rock conjurations, but does not directly destroy living creatures. The hammer is magically lightweight and may be wielded by anyone Golo lends it to.",
+  "attacks": [
+    {
+      "name": "Bow Shot",
+      "toHit": "+3 against AC",
+      "range": "Ranged",
+      "effect": ""
+    },
+    {
+      "name": "Ice Arrow",
+      "toHit": "+3 against AC",
+      "range": "Ranged",
+      "effect": ""
+    },
+    {
+      "name": "Fire Rune Attack",
+      "toHit": "+3 against AC",
+      "range": "",
+      "effect": ""
+    },
+    {
+      "name": "Hammer Strike",
+      "toHit": "+3 against AC",
+      "range": "Melee",
+      "effect": ""
+    },
+    {
+      "name": "Earthshatter",
+      "toHit": "",
+      "range": "10-foot radius",
+      "effect": "Stone destruction / terrain effect"
+    }
+  ],
+  "attackRules": "",
+  "futureUpgrades": "",
+  "inventory": [
+    {
+      "name": "Bow and Arrows",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "Dwarven Hammer of Earthshatter",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "The Artifact",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "Saddle",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "Flight Shoes",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "Rocky Talkie",
+      "quantity": "",
+      "charges": ""
+    },
+    {
+      "name": "10 Snap Matches",
+      "quantity": "",
+      "charges": ""
+    }
+  ],
+  "currency": {
+    "gold": "125",
+    "silver": "",
+    "copper": "",
+    "other": ""
+  },
+  "specialResources": "",
+  "sessionNotes": ""
+}

@@ -1,7 +1,7 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { extractInventoryItems, extractInventoryItemsFromRecord } from './inventory-utils.mjs';
+import { extractInventoryItemsFromRecord } from './inventory-utils.mjs';
 import { createSlug } from './source-doc-utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -9,7 +9,6 @@ const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, '..');
 const repoRoot = path.resolve(root, '..');
 
-const CHAR_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/characters');
 const STRUCTURED_CHAR_DIR = path.join(repoRoot, 'campaigns/the-dark-arcs/characters');
 const SUMMARY_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/playthrough-summaries');
 const WORLD_DIR = path.join(repoRoot, 'DND-Source-Docs/the-dark-arcs/world');
@@ -114,73 +113,6 @@ const extractTagMatches = (html, regex) => {
     out.push(stripTags(match[1]));
   }
   return out;
-};
-
-const extractCharacterRecords = async () => {
-  const structuredCharacters = await readStructuredCharacterRecords();
-  const structuredIds = new Set(structuredCharacters.map((character) => character.id));
-  const files = await readHtmlFiles(CHAR_DIR);
-  const characterFiles = files.filter(({ name }) => !name.includes('template'));
-
-  const legacyCharacters = characterFiles.map(({ name, html }) => {
-    const headerName = stripTags((html.match(/<header[^>]*>[\s\S]*?<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || 'Unknown');
-    const subtitle = stripTags((html.match(/<div class="subtitle"[^>]*>([\s\S]*?)<\/div>/i) || [])[1] || '');
-    const inventoryItems = extractInventoryItems(html, headerName, `DND-Source-Docs/the-dark-arcs/characters/${name}`);
-
-    const overviewBlock = (html.match(/<h2>Character Overview<\/h2>([\s\S]*?)<\/div>/i) || [])[1] || '';
-    const overviewParts = extractTagMatches(overviewBlock, /<p[^>]*>([\s\S]*?)<\/p>/gi);
-    const overviewText = overviewParts.join(' ').trim();
-
-    const traitBlock = (html.match(/<h2>Core Traits<\/h2>([\s\S]*?)<\/div>/i) || [])[1] || '';
-    const traitItems = extractTagMatches(traitBlock, /<li[^>]*>([\s\S]*?)<\/li>/gi).map((item) => item.replace(/\s*:\s*/g, ': '));
-
-    const sectionHeads = extractTagMatches(html, /<h2[^>]*>([\s\S]*?)<\/h2>/gi);
-    const tags = unique([
-      'character',
-      'arc-1',
-      ...sectionHeads
-        .map((item) => item.toLowerCase().replace(/[^a-z0-9]+/g, '-'))
-        .filter((item) => item && item.length <= 40)
-        .slice(0, 8)
-    ]);
-
-    const fileStem = name.replace(/^character_sheet_/, '').replace(/\.html$/, '');
-    const id = `character-${toSlug(fileStem.replace(/_/g, '-'))}`;
-    const stemParts = fileStem
-      .split(/[-_]/g)
-      .map((part) => part.trim())
-      .filter((part) => part.length > 2);
-
-    const aliases = unique([
-      ...aliasesFor(headerName),
-      ...headerName.split('/').map((part) => part.trim()),
-      ...stemParts.map((part) => part.charAt(0).toUpperCase() + part.slice(1)),
-      stemParts.map((part) => part.charAt(0).toUpperCase() + part.slice(1)).join(' ')
-    ].filter((part) => part && part !== headerName));
-    const summary = overviewText || subtitle || 'Character extracted from source sheet.';
-
-    const sourcePath = `DND-Source-Docs/the-dark-arcs/characters/${name}`;
-    const anchor = createSlug(headerName);
-
-    return {
-      id,
-      domain: 'character',
-      name: headerName,
-      summary,
-      details: unique([subtitle, ...traitItems]).join(' | '),
-      aliases,
-      tags,
-      relatedIds: inventoryItems.map((item) => item.id),
-      ...recordMetadata(sourcePath),
-      source: {
-        type: 'character_sheet',
-        path: sourcePath,
-        anchor
-      }
-    };
-  }).filter((character) => !structuredIds.has(character.id));
-
-  return [...structuredCharacters, ...legacyCharacters];
 };
 
 const readStructuredCharacterRecords = async () => {
@@ -485,23 +417,12 @@ const main = async () => {
   const canonNames = JSON.parse(await readFile(CANON_NAMES_PATH, 'utf8'));
   canonicalAliases = new Map(canonNames.records.map((record) => [record.canonical, record.aliases || []]));
 
-  const characters = await extractCharacterRecords();
+  const characters = await readStructuredCharacterRecords();
   const encounters = await extractEncounterRecords();
   const { lore, secrets: loreSecrets } = await extractLoreAndSecrets();
   const { canonEvents, locations, npcs } = await extractCanonAndLocationsAndNpcs(characters);
 
-  const inventoryItems = [];
-  for (const character of characters) {
-    if (character.source?.type === 'generated_character_sheet') {
-      inventoryItems.push(...extractInventoryItemsFromRecord(character));
-      continue;
-    }
-
-    const sourcePath = character.source?.path || '';
-    const htmlPath = path.join(repoRoot, sourcePath);
-    const html = await readFile(htmlPath, 'utf8').catch(() => '');
-    inventoryItems.push(...extractInventoryItems(html, character.name, sourcePath));
-  }
+  const inventoryItems = characters.flatMap((character) => extractInventoryItemsFromRecord(character));
 
   const secrets = sortByName(loreSecrets);
 

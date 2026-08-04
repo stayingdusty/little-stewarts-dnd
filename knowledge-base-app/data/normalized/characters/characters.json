@@ -1,32 +1,33 @@
 [
   {
+    "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
     "id": "character-calvin-nameloc",
     "domain": "character",
-    "name": "CALVIN / NAMELOC",
-    "summary": "Calvin is bonded to an ancient and powerful Dog Spirit. In moments of danger, loyalty, or protection, he can unleash the spirit as Nameloc —a massive glowing guardian hound. The spirit chose him for his courage, instinct, and willingness to stand between danger and his friends.",
-    "details": "Spiritbound Guardian of the Great Hound | Loyal: protects friends above all. | Brave: faces danger without abandoning the pack. | Instinctive: senses threats and disturbances others miss.",
+    "name": "Calvin / Nameloc",
+    "title": "Guardian / Protector",
+    "subtitle": "Spiritbound Guardian of the Great Hound",
+    "player": "",
+    "species": "Human / Spiritbound",
+    "levelRank": "",
+    "movement": "",
+    "initiative": "",
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "summary": "Calvin is bonded to an ancient and powerful Dog Spirit. In moments of danger, loyalty, or protection, he can unleash the spirit as Nameloc—a massive glowing guardian hound. The spirit chose him for his courage, instinct, and willingness to stand between danger and his friends.",
+    "details": "Calvin is the boy form; Nameloc is the bonded Great Hound spirit form.",
     "aliases": [
-      "CALVIN",
-      "NAMELOC",
       "Calvin",
-      "Nameloc",
-      "Calvin Nameloc"
+      "Nameloc"
     ],
     "tags": [
       "character",
       "arc-1",
-      "character-overview",
-      "ability-scores-modifiers",
-      "passive-powers",
-      "combat",
-      "modifier-boosts",
-      "core-traits",
-      "base-form-notes",
-      "external-bonds-relationships"
+      "character-sheet",
+      "spiritbound",
+      "guardian",
+      "great-hound"
     ],
     "relatedIds": [],
-    "visibility": "player",
-    "canonStatus": "confirmed",
     "evidence": [
       {
         "type": "source-document",
@@ -34,31 +35,134 @@
       }
     ],
     "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html",
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
       "anchor": "calvin-nameloc"
-    }
+    },
+    "abilityPointTotal": "",
+    "abilityScores": {
+      "strength": "",
+      "dexterity": "",
+      "constitution": "",
+      "intelligence": "",
+      "wisdom": "",
+      "charisma": ""
+    },
+    "combat": {
+      "currentHp": "",
+      "maximumHp": "",
+      "temporaryHp": "",
+      "armorClass": ""
+    },
+    "powers": [
+      {
+        "name": "Keen Nose",
+        "description": "Tracks creatures, people, animals, magical disturbances, and unusual spiritual scents.",
+        "rollCheck": "",
+        "usesRange": ""
+      },
+      {
+        "name": "Guardian Instinct",
+        "description": "Can react instantly to protect an ally in danger. The original guardian rule grants one automatic success per encounter.",
+        "rollCheck": "",
+        "usesRange": "One automatic success per encounter"
+      },
+      {
+        "name": "Unleash the Great Hound",
+        "description": "Once per session, Calvin transforms into Nameloc or summons Nameloc beside him as a separate 10–15-foot glowing guardian presence.",
+        "rollCheck": "",
+        "usesRange": "Once per session"
+      },
+      {
+        "name": "Titan Leap",
+        "description": "Leap great distances, cross gaps, save allies, break obstacles, or slam into enemies and terrain.",
+        "rollCheck": "",
+        "usesRange": ""
+      },
+      {
+        "name": "Pack Protector",
+        "description": "Shields allies with spirit energy. Enemies may roll with disadvantage against protected allies.",
+        "rollCheck": "",
+        "usesRange": ""
+      },
+      {
+        "name": "Spirit Sight",
+        "description": "Sees invisible enemies, hidden magic, spiritual disturbances, and threats concealed from normal vision.",
+        "rollCheck": "",
+        "usesRange": ""
+      },
+      {
+        "name": "Howl of the Great Hound",
+        "description": "Choose to frighten enemies or empower allies with advantage on their next action.",
+        "rollCheck": "",
+        "usesRange": ""
+      }
+    ],
+    "relationships": "",
+    "specialRules": "After Spirit Form ends, Calvin becomes tired and cannot use it again until the next session. Spirit awakening may be triggered when a friend is in serious danger, a powerful enemy appears, a major story moment occurs, or Calvin chooses loyalty over fear.",
+    "attacks": [
+      {
+        "name": "Spirit Bite",
+        "toHit": "",
+        "range": "Melee",
+        "effect": ""
+      },
+      {
+        "name": "Titan Leap Slam",
+        "toHit": "",
+        "range": "",
+        "effect": ""
+      },
+      {
+        "name": "Howl — Fear",
+        "toHit": "",
+        "range": "",
+        "effect": "Non-damage effect"
+      },
+      {
+        "name": "Howl — Empower",
+        "toHit": "",
+        "range": "",
+        "effect": "Advantage effect"
+      }
+    ],
+    "attackRules": "",
+    "futureUpgrades": "",
+    "inventory": [],
+    "currency": {
+      "gold": "",
+      "silver": "",
+      "copper": "",
+      "other": ""
+    },
+    "specialResources": "",
+    "sessionNotes": "Base-form equipment, ordinary attacks, special training, Great Hound appearance, personality, favorite move, and awakening catchphrase remain unrecorded."
   },
   {
+    "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
     "id": "character-fiona",
     "domain": "character",
-    "name": "FIONA",
-    "summary": "Knight & Paladin of Aureth",
-    "details": "Knight & Paladin of Aureth",
+    "name": "Fiona",
+    "title": "Protective holy knight",
+    "subtitle": "Knight & Paladin of Aureth",
+    "player": "Lily",
+    "species": "",
+    "levelRank": "",
+    "movement": "Walking; brass-wing gliding",
+    "initiative": "",
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "summary": "Fiona is a brave and protective knight who serves Aureth. Her holy abilities center on battlefield healing, radiant swordsmanship, and instinctively shielding others. Her golden paladin armor responds most strongly when she acts out of protectiveness.",
+    "details": "Knight and paladin of Aureth, Goddess of Magic.",
     "aliases": [
-      "Fiona"
+      "Lily"
     ],
     "tags": [
       "character",
       "arc-1",
-      "character-overview",
-      "ability-scores-modifiers",
-      "powers-abilities",
-      "combat-statistics",
-      "modifier-boosts",
-      "defenses-resistances",
-      "external-bonds-relationships",
-      "attacks-combat-actions"
+      "character-sheet",
+      "paladin",
+      "aureth"
     ],
     "relatedIds": [
       "inventory-item-fiona-radiant-sword-of-aureth",
@@ -68,8 +172,6 @@
       "inventory-item-fiona-jewelry",
       "inventory-item-fiona-feast-of-ancestors-ticket"
     ],
-    "visibility": "player",
-    "canonStatus": "confirmed",
     "evidence": [
       {
         "type": "source-document",
@@ -77,31 +179,146 @@
       }
     ],
     "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html",
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
       "anchor": "fiona"
-    }
+    },
+    "abilityPointTotal": "",
+    "abilityScores": {
+      "strength": "",
+      "dexterity": "",
+      "constitution": "",
+      "intelligence": "",
+      "wisdom": "",
+      "charisma": ""
+    },
+    "combat": {
+      "currentHp": "",
+      "maximumHp": "",
+      "temporaryHp": "",
+      "armorClass": ""
+    },
+    "powers": [
+      {
+        "name": "Battlefield Healing",
+        "description": "Channels holy magic to heal or stabilize allies during battle. Exact healing dice and number of uses remain to be established.",
+        "rollCheck": "TBD",
+        "usesRange": "TBD"
+      },
+      {
+        "name": "Brass Wings of Protection",
+        "description": "The brass wings connected to Fiona’s golden paladin armor awaken in moments of protection or protectiveness and can wrap around Fiona or shield up to two other people.",
+        "rollCheck": "Protection effect TBD",
+        "usesRange": "Self or up to 2 others; uses TBD"
+      },
+      {
+        "name": "Wind-Harnessed Glide",
+        "description": "Uses the wings to glide from high places or ride strong updrafts; cannot take off from level ground, hover, or maintain powered flight.",
+        "rollCheck": "",
+        "usesRange": "As terrain allows"
+      }
+    ],
+    "relationships": "Bonded in holy service to Aureth, Goddess of Magic. Recognized by the dwarves through the Feast of Ancestors honor and carries a ceremonial ticket granting entry or favor.",
+    "specialRules": "Golden Paladin Armor provides holy protection. Fiona’s sword can ward off undead; exact mechanical bonuses are TBD.",
+    "attacks": [
+      {
+        "name": "Radiant Sword Strike",
+        "toHit": "",
+        "range": "Melee",
+        "effect": "TBD radiant + holy"
+      },
+      {
+        "name": "Demon-Banishing Strike",
+        "toHit": "",
+        "range": "Melee",
+        "effect": "TBD + banishment effect"
+      },
+      {
+        "name": "Undead-Warding Sweep",
+        "toHit": "",
+        "range": "Melee / nearby",
+        "effect": "TBD radiant; ward effect"
+      },
+      {
+        "name": "Wing Shield Interpose",
+        "toHit": "",
+        "range": "Self or 2 allies",
+        "effect": "No damage; protection TBD"
+      },
+      {
+        "name": "Unarmed / Backup Attack",
+        "toHit": "",
+        "range": "Melee",
+        "effect": ""
+      }
+    ],
+    "attackRules": "Demon Banishment can return demons to the Nine Hells, but the required hit, saving throw, damage threshold, and usage limit are TBD. Undead Warding radius, duration, and save are TBD.",
+    "futureUpgrades": "",
+    "inventory": [
+      {
+        "name": "Radiant Sword of Aureth",
+        "quantity": "1",
+        "charges": "Equipped"
+      },
+      {
+        "name": "Golden Paladin Armor",
+        "quantity": "1",
+        "charges": "Equipped"
+      },
+      {
+        "name": "Brass Wings",
+        "quantity": "1 pair",
+        "charges": "Armor-linked"
+      },
+      {
+        "name": "Rocky Talkie",
+        "quantity": "1",
+        "charges": "Carried"
+      },
+      {
+        "name": "Jewelry",
+        "quantity": "",
+        "charges": "Details unresolved"
+      },
+      {
+        "name": "Feast of Ancestors Ticket",
+        "quantity": "1",
+        "charges": "Ceremonial access"
+      }
+    ],
+    "currency": {
+      "gold": "125",
+      "silver": "",
+      "copper": "",
+      "other": ""
+    },
+    "specialResources": "",
+    "sessionNotes": "The source notes a handwritten jewelry addition, but its details are not clear enough to confirm. Other unclear handwritten markings remain unresolved."
   },
   {
+    "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
     "id": "character-golo",
     "domain": "character",
-    "name": "GOLO",
+    "name": "Golo",
+    "title": "Archer, Hunter & Artifact Bearer",
+    "subtitle": "Half-Giant / Half-Centaur Archer",
+    "player": "Elijah",
+    "species": "Half-Giant / Half-Centaur",
+    "levelRank": "",
+    "movement": "",
+    "initiative": "",
+    "visibility": "player",
+    "canonStatus": "confirmed",
     "summary": "A powerful centaur archer and hunter whose dwarven alliances grant him rune magic, the magically lightweight Hammer of Earthshatter, and responsibility for a major artifact.",
-    "details": "Half-Giant / Half-Centaur Archer",
-    "aliases": [
-      "Golo"
-    ],
+    "details": "Half-Giant / Half-Centaur archer, hunter, and artifact bearer.",
+    "aliases": [],
     "tags": [
       "character",
       "arc-1",
-      "character-overview",
-      "ability-scores-modifiers",
-      "powers-abilities",
-      "combat",
-      "modifier-boosts",
-      "external-bonds-relationships",
-      "special-rules-notes",
-      "attacks-damage-healing-dice"
+      "character-sheet",
+      "archer",
+      "hunter",
+      "artifact-bearer"
     ],
     "relatedIds": [
       "inventory-item-golo-bow-and-arrows",
@@ -112,8 +329,6 @@
       "inventory-item-golo-rocky-talkie",
       "inventory-item-golo-10-snap-matches"
     ],
-    "visibility": "player",
-    "canonStatus": "confirmed",
     "evidence": [
       {
         "type": "source-document",
@@ -121,10 +336,138 @@
       }
     ],
     "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html",
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
       "anchor": "golo"
-    }
+    },
+    "abilityPointTotal": "",
+    "abilityScores": {
+      "strength": "",
+      "dexterity": "",
+      "constitution": "",
+      "intelligence": "",
+      "wisdom": "",
+      "charisma": ""
+    },
+    "combat": {
+      "currentHp": "",
+      "maximumHp": "",
+      "temporaryHp": "",
+      "armorClass": ""
+    },
+    "powers": [
+      {
+        "name": "Master Archer",
+        "description": "Uses strength, range, and practiced accuracy to strike targets with bows and magical arrows.",
+        "rollCheck": "",
+        "usesRange": ""
+      },
+      {
+        "name": "Ice Arrows",
+        "description": "Fires magically empowered ice arrows that can damage, freeze, slow, or counter heat and fire.",
+        "rollCheck": "",
+        "usesRange": ""
+      },
+      {
+        "name": "Licensed Fire Rune",
+        "description": "Uses dwarven-licensed fire rune power under the terms of his employment contract.",
+        "rollCheck": "",
+        "usesRange": ""
+      },
+      {
+        "name": "Hammer of Earthshatter",
+        "description": "Instantly explodes or powders a 10-foot radius of non-living stone, including non-living spirit-conjured rock.",
+        "rollCheck": "",
+        "usesRange": "10-foot radius"
+      },
+      {
+        "name": "Magically Lightweight Hammer",
+        "description": "The hammer is easy to wield regardless of normal weight and can be lent to other characters for use.",
+        "rollCheck": "",
+        "usesRange": ""
+      }
+    ],
+    "relationships": "Trusted by the dwarves as artifact bearer and rune licensee. Butcher's Guild bond established through the Iceman connection.",
+    "specialRules": "Earthshatter affects non-living stone and rock conjurations, but does not directly destroy living creatures. The hammer is magically lightweight and may be wielded by anyone Golo lends it to.",
+    "attacks": [
+      {
+        "name": "Bow Shot",
+        "toHit": "+3 against AC",
+        "range": "Ranged",
+        "effect": ""
+      },
+      {
+        "name": "Ice Arrow",
+        "toHit": "+3 against AC",
+        "range": "Ranged",
+        "effect": ""
+      },
+      {
+        "name": "Fire Rune Attack",
+        "toHit": "+3 against AC",
+        "range": "",
+        "effect": ""
+      },
+      {
+        "name": "Hammer Strike",
+        "toHit": "+3 against AC",
+        "range": "Melee",
+        "effect": ""
+      },
+      {
+        "name": "Earthshatter",
+        "toHit": "",
+        "range": "10-foot radius",
+        "effect": "Stone destruction / terrain effect"
+      }
+    ],
+    "attackRules": "",
+    "futureUpgrades": "",
+    "inventory": [
+      {
+        "name": "Bow and Arrows",
+        "quantity": "",
+        "charges": ""
+      },
+      {
+        "name": "Dwarven Hammer of Earthshatter",
+        "quantity": "",
+        "charges": ""
+      },
+      {
+        "name": "The Artifact",
+        "quantity": "",
+        "charges": ""
+      },
+      {
+        "name": "Saddle",
+        "quantity": "",
+        "charges": ""
+      },
+      {
+        "name": "Flight Shoes",
+        "quantity": "",
+        "charges": ""
+      },
+      {
+        "name": "Rocky Talkie",
+        "quantity": "",
+        "charges": ""
+      },
+      {
+        "name": "10 Snap Matches",
+        "quantity": "",
+        "charges": ""
+      }
+    ],
+    "currency": {
+      "gold": "125",
+      "silver": "",
+      "copper": "",
+      "other": ""
+    },
+    "specialResources": "",
+    "sessionNotes": ""
   },
   {
     "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
@@ -282,25 +625,29 @@
     "sessionNotes": "Character sheet updated from August 2026 handwritten test photos."
   },
   {
+    "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
     "id": "character-sertraline",
     "domain": "character",
-    "name": "SERTRALINE",
+    "name": "Sertraline",
+    "title": "Druidic Advisor",
+    "subtitle": "Jungle Panther / Druidic Advisor",
+    "player": "Lynette",
+    "species": "Jungle Panther",
+    "levelRank": "",
+    "movement": "",
+    "initiative": "",
+    "visibility": "player",
+    "canonStatus": "confirmed",
     "summary": "A telepathic jungle panther whose practiced druidic control and tactical instincts allow her to disrupt psychic domination and command nearby vegetation with precision.",
-    "details": "Jungle Panther / Druidic Advisor",
-    "aliases": [
-      "Sertraline"
-    ],
+    "details": "Jungle Panther and Druidic Advisor.",
+    "aliases": [],
     "tags": [
       "character",
       "arc-1",
-      "character-overview",
-      "ability-scores-modifiers",
-      "powers-abilities",
-      "combat",
-      "modifier-boosts",
-      "external-bonds-relationships",
-      "special-rules-notes",
-      "attacks-damage-healing-dice"
+      "character-sheet",
+      "druidic-advisor",
+      "telepathic",
+      "jungle-panther"
     ],
     "relatedIds": [
       "inventory-item-sertraline-wisp-cloak",
@@ -308,8 +655,6 @@
       "inventory-item-sertraline-rocky-talkie",
       "inventory-item-sertraline-10-snap-matches"
     ],
-    "visibility": "player",
-    "canonStatus": "confirmed",
     "evidence": [
       {
         "type": "source-document",
@@ -317,9 +662,116 @@
       }
     ],
     "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_sertraline.html",
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
       "anchor": "sertraline"
-    }
+    },
+    "abilityPointTotal": "",
+    "abilityScores": {
+      "strength": "",
+      "dexterity": "",
+      "constitution": "",
+      "intelligence": "",
+      "wisdom": "",
+      "charisma": ""
+    },
+    "combat": {
+      "currentHp": "",
+      "maximumHp": "",
+      "temporaryHp": "",
+      "armorClass": ""
+    },
+    "powers": [
+      {
+        "name": "Telepathic Communication",
+        "description": "Communicates directly through the minds of nearby people and entities.",
+        "rollCheck": "",
+        "usesRange": ""
+      },
+      {
+        "name": "Psychic Interruption",
+        "description": "Telepathically screams into a target’s mind to interrupt psychic attacks, mind control, concentration, or control effects.",
+        "rollCheck": "",
+        "usesRange": ""
+      },
+      {
+        "name": "Active Druidic Control",
+        "description": "Consciously commands vines and vegetation from one movement away with deliberate, practiced control.",
+        "rollCheck": "",
+        "usesRange": "One movement away"
+      },
+      {
+        "name": "Stealth & Jungle Mastery",
+        "description": "Moves quietly, tracks through natural terrain, and operates with strong tactical awareness.",
+        "rollCheck": "",
+        "usesRange": ""
+      },
+      {
+        "name": "Wisp Cloak Command",
+        "description": "Commands a troop of Wisp Cloaks and can direct them as agents or protectors.",
+        "rollCheck": "",
+        "usesRange": ""
+      }
+    ],
+    "relationships": "Bond of admiration with Garoth; respects his strength and seeks training from him.",
+    "specialRules": "Two agents are tailing the former queen to determine whether she is connected to Jerry Mander or the thefts. No contact with Jerry Mander has been detected. Investigation suggests each burned Snap Match destroys a piece of reality and enlarges a growing rift rather than simply opening a portal.",
+    "attacks": [
+      {
+        "name": "Telepathic Scream",
+        "toHit": "",
+        "range": "",
+        "effect": "Temporary interruption / non-damage effect"
+      },
+      {
+        "name": "Vine Entangle",
+        "toHit": "",
+        "range": "",
+        "effect": ""
+      },
+      {
+        "name": "Vegetation Strike",
+        "toHit": "",
+        "range": "",
+        "effect": ""
+      },
+      {
+        "name": "Mage Hands",
+        "toHit": "",
+        "range": "",
+        "effect": ""
+      }
+    ],
+    "attackRules": "",
+    "futureUpgrades": "",
+    "inventory": [
+      {
+        "name": "Wisp Cloak",
+        "quantity": "",
+        "charges": ""
+      },
+      {
+        "name": "Dwarven Bracers of Mage Hands",
+        "quantity": "",
+        "charges": ""
+      },
+      {
+        "name": "Rocky Talkie",
+        "quantity": "",
+        "charges": ""
+      },
+      {
+        "name": "10 Snap Matches",
+        "quantity": "",
+        "charges": ""
+      }
+    ],
+    "currency": {
+      "gold": "125",
+      "silver": "",
+      "copper": "",
+      "other": ""
+    },
+    "specialResources": "",
+    "sessionNotes": ""
   }
 ]

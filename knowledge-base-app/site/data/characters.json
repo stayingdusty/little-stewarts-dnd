@@ -1,10 +1,42 @@
 [
   {
+    "id": "character-calvin-nameloc",
+    "name": "Calvin / Nameloc",
+    "visibility": "player",
+    "sourceAnchor": "calvin-nameloc",
+    "path": "data/characters/calvin-nameloc.json",
+    "sheetRoute": "characters/index.html#calvin-nameloc"
+  },
+  {
+    "id": "character-fiona",
+    "name": "Fiona",
+    "visibility": "player",
+    "sourceAnchor": "fiona",
+    "path": "data/characters/fiona.json",
+    "sheetRoute": "characters/index.html#fiona"
+  },
+  {
+    "id": "character-golo",
+    "name": "Golo",
+    "visibility": "player",
+    "sourceAnchor": "golo",
+    "path": "data/characters/golo.json",
+    "sheetRoute": "characters/index.html#golo"
+  },
+  {
     "id": "character-queen-flower",
     "name": "Queen Flower of Veylathar",
     "visibility": "player",
     "sourceAnchor": "queen-flower-of-veylathar",
     "path": "data/characters/queen-flower-of-veylathar.json",
     "sheetRoute": "characters/index.html#queen-flower-of-veylathar"
+  },
+  {
+    "id": "character-sertraline",
+    "name": "Sertraline",
+    "visibility": "player",
+    "sourceAnchor": "sertraline",
+    "path": "data/characters/sertraline.json",
+    "sheetRoute": "characters/index.html#sertraline"
   }
 ]

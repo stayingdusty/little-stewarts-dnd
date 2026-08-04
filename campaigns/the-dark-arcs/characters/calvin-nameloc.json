@@ -1,0 +1,139 @@
+{
+  "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
+  "id": "character-calvin-nameloc",
+  "domain": "character",
+  "name": "Calvin / Nameloc",
+  "title": "Guardian / Protector",
+  "subtitle": "Spiritbound Guardian of the Great Hound",
+  "player": "",
+  "species": "Human / Spiritbound",
+  "levelRank": "",
+  "movement": "",
+  "initiative": "",
+  "visibility": "player",
+  "canonStatus": "confirmed",
+  "summary": "Calvin is bonded to an ancient and powerful Dog Spirit. In moments of danger, loyalty, or protection, he can unleash the spirit as Nameloc—a massive glowing guardian hound. The spirit chose him for his courage, instinct, and willingness to stand between danger and his friends.",
+  "details": "Calvin is the boy form; Nameloc is the bonded Great Hound spirit form.",
+  "aliases": [
+    "Calvin",
+    "Nameloc"
+  ],
+  "tags": [
+    "character",
+    "arc-1",
+    "character-sheet",
+    "spiritbound",
+    "guardian",
+    "great-hound"
+  ],
+  "relatedIds": [],
+  "evidence": [
+    {
+      "type": "source-document",
+      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html"
+    }
+  ],
+  "source": {
+    "type": "generated_character_sheet",
+    "path": "characters/index.html",
+    "anchor": "calvin-nameloc"
+  },
+  "abilityPointTotal": "",
+  "abilityScores": {
+    "strength": "",
+    "dexterity": "",
+    "constitution": "",
+    "intelligence": "",
+    "wisdom": "",
+    "charisma": ""
+  },
+  "combat": {
+    "currentHp": "",
+    "maximumHp": "",
+    "temporaryHp": "",
+    "armorClass": ""
+  },
+  "powers": [
+    {
+      "name": "Keen Nose",
+      "description": "Tracks creatures, people, animals, magical disturbances, and unusual spiritual scents.",
+      "rollCheck": "",
+      "usesRange": ""
+    },
+    {
+      "name": "Guardian Instinct",
+      "description": "Can react instantly to protect an ally in danger. The original guardian rule grants one automatic success per encounter.",
+      "rollCheck": "",
+      "usesRange": "One automatic success per encounter"
+    },
+    {
+      "name": "Unleash the Great Hound",
+      "description": "Once per session, Calvin transforms into Nameloc or summons Nameloc beside him as a separate 10–15-foot glowing guardian presence.",
+      "rollCheck": "",
+      "usesRange": "Once per session"
+    },
+    {
+      "name": "Titan Leap",
+      "description": "Leap great distances, cross gaps, save allies, break obstacles, or slam into enemies and terrain.",
+      "rollCheck": "",
+      "usesRange": ""
+    },
+    {
+      "name": "Pack Protector",
+      "description": "Shields allies with spirit energy. Enemies may roll with disadvantage against protected allies.",
+      "rollCheck": "",
+      "usesRange": ""
+    },
+    {
+      "name": "Spirit Sight",
+      "description": "Sees invisible enemies, hidden magic, spiritual disturbances, and threats concealed from normal vision.",
+      "rollCheck": "",
+      "usesRange": ""
+    },
+    {
+      "name": "Howl of the Great Hound",
+      "description": "Choose to frighten enemies or empower allies with advantage on their next action.",
+      "rollCheck": "",
+      "usesRange": ""
+    }
+  ],
+  "relationships": "",
+  "specialRules": "After Spirit Form ends, Calvin becomes tired and cannot use it again until the next session. Spirit awakening may be triggered when a friend is in serious danger, a powerful enemy appears, a major story moment occurs, or Calvin chooses loyalty over fear.",
+  "attacks": [
+    {
+      "name": "Spirit Bite",
+      "toHit": "",
+      "range": "Melee",
+      "effect": ""
+    },
+    {
+      "name": "Titan Leap Slam",
+      "toHit": "",
+      "range": "",
+      "effect": ""
+    },
+    {
+      "name": "Howl — Fear",
+      "toHit": "",
+      "range": "",
+      "effect": "Non-damage effect"
+    },
+    {
+      "name": "Howl — Empower",
+      "toHit": "",
+      "range": "",
+      "effect": "Advantage effect"
+    }
+  ],
+  "attackRules": "",
+  "futureUpgrades": "",
+  "inventory": [],
+  "currency": {
+    "gold": "",
+    "silver": "",
+    "copper": "",
+    "other": ""
+  },
+  "specialResources": "",
+  "sessionNotes": "Base-form equipment, ordinary attacks, special training, Great Hound appearance, personality, favorite move, and awakening catchphrase remain unrecorded."
+}

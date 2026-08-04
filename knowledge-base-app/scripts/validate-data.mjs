@@ -61,6 +61,25 @@ const validateEntities = async () => {
   return entities;
 };
 
+const validateStructuredCharacterSources = async () => {
+  const characterDir = path.join(repoRoot, 'campaigns/the-dark-arcs/characters');
+  const names = (await readdir(characterDir)).filter((name) => name.endsWith('.json'));
+  requireValue(names.length > 0, 'No structured character sources were found.');
+
+  for (const name of names) {
+    const character = JSON.parse(await readFile(path.join(characterDir, name), 'utf8'));
+    const label = `Structured character ${name}`;
+    requireValue(character.domain === 'character', `${label} must use the character domain.`);
+    requireValue(character.source?.type === 'generated_character_sheet', `${label} must link to the generated character sheet.`);
+    requireValue(Boolean(character.source?.anchor), `${label} must declare a stable source anchor.`);
+    requireValue(Array.isArray(character.powers), `${label} must contain a powers array.`);
+    requireValue(Array.isArray(character.attacks), `${label} must contain an attacks array.`);
+    requireValue(Array.isArray(character.inventory), `${label} must contain an inventory array.`);
+    requireValue(Boolean(character.abilityScores && character.combat && character.currency), `${label} is missing sheet data sections.`);
+    validateEvidence(character, label);
+  }
+};
+
 const validateCanonEvents = async (entityIds) => {
   const events = await readJson('data/normalized/canon/canon_events.json');
   const ids = new Set();
@@ -190,6 +209,7 @@ const validatePrintSources = async () => {
   }
 };
 
+await validateStructuredCharacterSources();
 const entities = await validateEntities();
 await validateCanonEvents(new Set(entities.map((entity) => entity.id)));
 await validateCanonicalNames(entities);
