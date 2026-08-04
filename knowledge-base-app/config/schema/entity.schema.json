@@ -11,6 +11,7 @@
       "enum": ["character", "npc", "location", "encounter", "lore", "secret", "inventory-item"]
     },
     "name": { "type": "string", "minLength": 1 },
+    "pronouns": { "type": "string", "minLength": 1 },
     "summary": { "type": "string" },
     "details": { "type": "string" },
     "aliases": {

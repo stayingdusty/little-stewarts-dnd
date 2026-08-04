@@ -1,4 +1,6 @@
-# Locally generated DM-only normalized records. Never publish these from the public repository.
+# Rebuilt from legacy source documents; do not track duplicate normalized copies.
+# The Pages build still includes their searchable records for front-end DM Spoilers Mode.
 knowledge-base-app/data/normalized/encounters/encounters.json
 knowledge-base-app/data/normalized/lore/lore.json
 knowledge-base-app/data/normalized/secrets/secrets.json
+knowledge-base-app/site/source-docs/the-dark-arcs/world/

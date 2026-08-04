@@ -34,7 +34,22 @@ const sourceDocGroups = [
         ]
       }
     ]
+  },
+  {
+    title: 'DM world documents',
+    spoiler: true,
+    branches: [
+      {
+        title: 'The Dark Arcs',
+        items: [
+          { label: 'Lore, Cosmology & Mythology', href: './source-docs/the-dark-arcs/world/lore-cosmology-mythology.html', icon: '🌌' },
+          { label: 'Old World Encounters & Map Tracker', href: './source-docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html', icon: '🗺️' }
+        ]
+      }
+    ]
   }
 ];
 
-export const getSourceDocNavGroups = () => sourceDocGroups;
+export const getSourceDocNavGroups = (includeSpoilers = false) => (
+  sourceDocGroups.filter((group) => includeSpoilers || !group.spoiler)
+);

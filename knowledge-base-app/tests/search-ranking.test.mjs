@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { filterPlayerVisible, sortRecords } from '../site/search-utils.js';
+import { filterPlayerVisible, filterVisibleForMode, sortRecords } from '../site/search-utils.js';
 
 test('sortRecords puts canon events first and newest first', () => {
   const records = [
@@ -36,4 +36,14 @@ test('filterPlayerVisible rejects dm-only records as defense in depth', () => {
   const filtered = filterPlayerVisible(records);
 
   assert.deepEqual(filtered.map((record) => record.id), ['char-1']);
+});
+
+test('filterVisibleForMode includes dm-only records after DM mode is unlocked', () => {
+  const records = [
+    { id: 'char-1', kind: 'character', name: 'Ada', visibility: 'player' },
+    { id: 'secret-1', kind: 'secret', name: 'DM Secret', visibility: 'dm-only' }
+  ];
+
+  assert.deepEqual(filterVisibleForMode(records, false).map((record) => record.id), ['char-1']);
+  assert.deepEqual(filterVisibleForMode(records, true).map((record) => record.id), ['char-1', 'secret-1']);
 });

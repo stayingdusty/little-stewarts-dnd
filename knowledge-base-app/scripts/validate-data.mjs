@@ -98,23 +98,27 @@ const validateCanonicalNames = async (entities) => {
   }
 };
 
-const validatePublicBuild = async () => {
+const validateSiteBuild = async () => {
   const entities = await readJson('site/data/entities.json');
   const canonEvents = await readJson('site/data/canon-events.json');
   const searchIndex = await readJson('site/data/search-index.json');
 
-  for (const record of [...entities, ...canonEvents, ...searchIndex]) {
-    requireValue(record.visibility !== 'dm-only', `Public artifact contains dm-only record: ${record.id}`);
-    requireValue(!['secret', 'lore', 'encounter'].includes(record.domain || record.kind), `Public artifact contains private domain: ${record.id}`);
-    requireValue(!['dm_lore_reference', 'world_tracker'].includes(record.sourceType || record.source?.type), `Public artifact contains private source: ${record.id}`);
+  requireValue(searchIndex.some((record) => record.visibility === 'player'), 'Site search index has no player-visible records.');
+  requireValue(searchIndex.some((record) => record.visibility === 'dm-only'), 'Site search index has no DM-only records for spoilers mode.');
+  for (const record of searchIndex) {
+    requireValue(allowedVisibility.has(record.visibility), `Site search record has invalid visibility: ${record.id}`);
   }
 
-  const privateWorldPath = path.join(appRoot, 'site/source-docs/the-dark-arcs/world');
+  const dmWorldPath = path.join(appRoot, 'site/source-docs/the-dark-arcs/world');
   try {
-    await access(privateWorldPath);
-    errors.push('Public source documents contain the DM-only world directory.');
+    const names = (await readdir(dmWorldPath)).filter((name) => name.endsWith('.html'));
+    requireValue(names.length > 0, 'DM world source directory contains no HTML documents.');
+    for (const name of names) {
+      const html = await readFile(path.join(dmWorldPath, name), 'utf8');
+      requireValue(html.includes('dm-doc-guard.js'), `DM source document is missing the spoiler deterrent: ${name}`);
+    }
   } catch {
-    // Expected: DM-only source documents are absent from the public artifact.
+    errors.push('Site source documents are missing the DM world directory.');
   }
 
   for (const record of searchIndex) {
@@ -138,7 +142,7 @@ const validatePublicBuild = async () => {
   }
 
   const { getSourceDocNavGroups } = await import('../site/source-docs-nav.js');
-  for (const group of getSourceDocNavGroups()) {
+  for (const group of getSourceDocNavGroups(true)) {
     for (const branch of group.branches) {
       for (const item of branch.items) {
         const navTarget = path.join(appRoot, 'site', item.href.replace(/^\.\//, ''));
@@ -165,7 +169,7 @@ const validatePrintSources = async () => {
 const entities = await validateEntities();
 await validateCanonEvents(new Set(entities.map((entity) => entity.id)));
 await validateCanonicalNames(entities);
-await validatePublicBuild();
+await validateSiteBuild();
 await validatePrintSources();
 
 if (errors.length) {
@@ -173,4 +177,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Validated ${entities.length} entities, public visibility, canonical names, references, and print rules.`);
+console.log(`Validated ${entities.length} entities, spoiler-mode visibility, canonical names, references, and print rules.`);

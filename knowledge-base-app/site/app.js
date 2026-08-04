@@ -1,11 +1,13 @@
-import { filterPlayerVisible, sortRecords } from './search-utils.js';
+import { DM_MODE_SESSION_KEY, DM_PASSWORD_SHA256 } from './dm-mode-config.js';
+import { filterVisibleForMode, sortRecords } from './search-utils.js';
 import { getSourceDocNavGroups } from './source-docs-nav.js';
 
 const state = {
   records: [],
   query: '',
   domain: 'all',
-  sourceNavOpen: false
+  sourceNavOpen: false,
+  dmMode: sessionStorage.getItem(DM_MODE_SESSION_KEY) === 'unlocked'
 };
 
 const elements = {
@@ -15,12 +17,25 @@ const elements = {
   results: document.querySelector('#results'),
   template: document.querySelector('#resultCardTemplate'),
   sourceDocNav: document.querySelector('#sourceDocNav'),
-  navToggle: document.querySelector('#navToggle')
+  navToggle: document.querySelector('#navToggle'),
+  dmModeButton: document.querySelector('#dmModeButton'),
+  dmModeStatus: document.querySelector('#dmModeStatus'),
+  dmDialog: document.querySelector('#dmDialog'),
+  dmForm: document.querySelector('#dmForm'),
+  dmPassword: document.querySelector('#dmPassword'),
+  dmError: document.querySelector('#dmError'),
+  dmCancelButton: document.querySelector('#dmCancelButton')
 };
 
 const LABEL_OVERRIDES = {
   canon: 'Canon',
   'inventory-item': 'Inventory Item'
+};
+
+const sha256 = async (value) => {
+  const bytes = new TextEncoder().encode(value);
+  const digest = await crypto.subtle.digest('SHA-256', bytes);
+  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
 };
 
 const titleCase = (value) => {
@@ -71,11 +86,11 @@ const filterRecords = () => {
     return matchesDomain && matchesQueryText;
   });
 
-  return sortRecords(filterPlayerVisible(matches));
+  return sortRecords(filterVisibleForMode(matches, state.dmMode));
 };
 
 const renderSourceDocNav = () => {
-  const groups = getSourceDocNavGroups();
+  const groups = getSourceDocNavGroups(state.dmMode);
   elements.sourceDocNav.innerHTML = '';
   elements.sourceDocNav.hidden = !state.sourceNavOpen;
   elements.navToggle.setAttribute('aria-expanded', String(state.sourceNavOpen));
@@ -109,11 +124,15 @@ const renderSourceDocNav = () => {
 const render = () => {
   const matches = filterRecords();
   renderSourceDocNav();
-  elements.resultCount.textContent = `${matches.length} record(s) found`;
+  elements.dmModeStatus.textContent = state.dmMode ? 'DM spoilers mode is on.' : 'Player-safe mode is on.';
+  elements.dmModeButton.textContent = state.dmMode ? 'Lock DM spoilers' : 'Unlock DM spoilers';
+  elements.resultCount.textContent = `${matches.length} record(s) found${state.dmMode ? ' · DM spoilers included' : ''}`;
   elements.results.innerHTML = '';
 
   for (const record of matches) {
     const fragment = elements.template.content.cloneNode(true);
+    const card = fragment.querySelector('.card');
+    if (record.visibility === 'dm-only') card.classList.add('card--dm');
     fragment.querySelector('.card-title').textContent = record.name;
     fragment.querySelector('.pill').textContent = titleCase(record.kind);
     fragment.querySelector('.card-summary').textContent = record.summary || 'No summary available.';
@@ -121,7 +140,8 @@ const render = () => {
 
     const sourceLink = fragment.querySelector('.card-source');
     const sourceHref = buildSourceHref(record);
-    sourceLink.innerHTML = `<a href="${sourceHref}" target="_blank" rel="noopener noreferrer">Source: ${record.sourcePath || 'n/a'}</a>`;
+    const linkTarget = record.visibility === 'dm-only' ? '' : ' target="_blank" rel="noopener noreferrer"';
+    sourceLink.innerHTML = `<a href="${sourceHref}"${linkTarget}>Source: ${record.sourcePath || 'n/a'}</a>`;
 
     elements.results.append(fragment);
   }
@@ -142,6 +162,37 @@ const bindEvents = () => {
     state.sourceNavOpen = !state.sourceNavOpen;
     renderSourceDocNav();
   });
+
+  elements.dmModeButton.addEventListener('click', () => {
+    if (state.dmMode) {
+      state.dmMode = false;
+      sessionStorage.removeItem(DM_MODE_SESSION_KEY);
+      render();
+      return;
+    }
+
+    elements.dmError.textContent = '';
+    elements.dmPassword.value = '';
+    elements.dmDialog.showModal();
+    elements.dmPassword.focus();
+  });
+
+  elements.dmCancelButton.addEventListener('click', () => elements.dmDialog.close());
+
+  elements.dmForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const passwordHash = await sha256(elements.dmPassword.value);
+    if (passwordHash !== DM_PASSWORD_SHA256) {
+      elements.dmError.textContent = 'That password did not match.';
+      elements.dmPassword.select();
+      return;
+    }
+
+    state.dmMode = true;
+    sessionStorage.setItem(DM_MODE_SESSION_KEY, 'unlocked');
+    elements.dmDialog.close();
+    render();
+  });
 };
 
 const init = async () => {
@@ -149,6 +200,10 @@ const init = async () => {
   state.records = await response.json();
   bindEvents();
   render();
+
+  if (new URLSearchParams(window.location.search).get('dm') === 'locked') {
+    elements.dmModeButton.click();
+  }
 };
 
 init().catch((error) => {

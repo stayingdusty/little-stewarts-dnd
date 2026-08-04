@@ -9,13 +9,21 @@
   <body>
     <header class="hero">
       <h1>Little Stewarts Knowledge Base</h1>
-      <p>Globally searchable player knowledge for characters, NPCs, locations, inventory, and completed playthrough events.</p>
+      <p>Globally searchable campaign knowledge for characters, NPCs, locations, inventory, completed playthroughs, and DM planning.</p>
     </header>
 
     <main class="layout">
       <section class="controls">
         <label for="searchInput">Search everything</label>
         <input id="searchInput" type="search" placeholder="Type a name, tag, detail, or chapter..." />
+
+        <div class="dm-mode-card">
+          <div>
+            <strong>DM spoilers</strong>
+            <p id="dmModeStatus" class="dm-mode-card__status" aria-live="polite">Player-safe mode is on.</p>
+          </div>
+          <button id="dmModeButton" class="dm-mode-card__button" type="button">Unlock DM spoilers</button>
+        </div>
 
         <div class="nav-card" aria-label="Source document navigation">
           <div class="nav-card__heading">
@@ -35,6 +43,9 @@
           <option value="character">Characters</option>
           <option value="npc">NPCs</option>
           <option value="location">Locations</option>
+          <option value="encounter">Encounters</option>
+          <option value="lore">Lore</option>
+          <option value="secret">Secrets</option>
           <option value="inventory-item">Inventory Items</option>
           <option value="canon">Canon Events</option>
         </select>
@@ -45,6 +56,20 @@
         <div id="results" class="results"></div>
       </section>
     </main>
+
+    <dialog id="dmDialog" class="dm-dialog">
+      <form id="dmForm">
+        <h2>Unlock DM spoilers</h2>
+        <p>This password is a family/player spoiler deterrent. It does not make content in this public site or repository private.</p>
+        <label for="dmPassword">DM password</label>
+        <input id="dmPassword" type="password" autocomplete="current-password" required />
+        <p id="dmError" class="dm-dialog__error" aria-live="polite"></p>
+        <div class="dm-dialog__actions">
+          <button id="dmCancelButton" type="button">Cancel</button>
+          <button type="submit">Enter DM mode</button>
+        </div>
+      </form>
+    </dialog>
 
     <template id="resultCardTemplate">
       <article class="card">

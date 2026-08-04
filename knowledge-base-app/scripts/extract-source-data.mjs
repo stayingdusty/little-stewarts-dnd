@@ -320,7 +320,7 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
     }
   }
 
-  const ensureNpc = (name, summary, sourcePath) => {
+  const ensureNpc = (name, summary, sourcePath, metadata = {}) => {
     const id = `npc-${toSlug(name)}`;
     if (!npcMap.has(id)) {
       npcMap.set(id, {
@@ -329,6 +329,7 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
         name,
         summary,
         details: summary,
+        ...metadata,
         aliases: aliasesFor(name),
         tags: ['npc', 'arc-1'],
         relatedIds: [],
@@ -380,11 +381,11 @@ const extractCanonAndLocationsAndNpcs = async (characterRecords) => {
       ['dr fizzlebig', 'Dr. Fizzlebig', 'A scholar tied to security structures and dark arc investigations.'],
       ['garoth', 'Garoth', 'A major security figure with key intelligence about dark arc anomalies.'],
       ['frederick', 'Frederick', 'A trusted local ally connected to the party\'s city life in Veylathar.'],
-      ['tindily migrot', 'Tindily Migrot', 'A figure tied to the ancient pendant and Academy of Antiquities council dynamics.']
+      ['tindily migrot', 'Tindily Migrot', 'A figure tied to the ancient pendant and Academy of Antiquities council dynamics.', { pronouns: 'she/her' }]
     ];
-    for (const [needle, npcName, description] of npcRules) {
+    for (const [needle, npcName, description, metadata] of npcRules) {
       if (bodyText.toLowerCase().includes(needle)) {
-        ensureNpc(npcName, description, sourcePath);
+        ensureNpc(npcName, description, sourcePath, metadata);
       }
     }
 

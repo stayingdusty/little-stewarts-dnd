@@ -12,9 +12,9 @@ This repository is the campaign source and player-facing knowledge base for **Li
 
 ## Player site and DM material
 
-The Pages build is intentionally player-safe. It publishes completed playthrough summaries, character sheets, inventories, and player-known entities. DM-only world documents, encounter plans, lore records, and secrets are excluded at build time and verified by automated tests.
+The Pages app opens in player-safe mode. Completed playthrough summaries, character sheets, inventories, and player-known entities are immediately searchable. A password prompt enables DM Spoilers Mode in the same app, adding encounter plans, unrevealed lore, secrets, and DM world documents to the search results.
 
-This source repository has historically been public. Excluding a file from Pages does not protect a file that remains in the repository or its Git history. True DM secrecy requires moving the source repository to private storage and publishing only the filtered Pages artifact from a separate public destination, or using an authenticated server that never sends unauthorized plaintext to the browser.
+The password is deliberately a spoiler deterrent for family and players, not a security boundary. The repository and Pages files remain public and plaintext so the project can stay on GitHub Free with one public GitHub Pages app.
 
 ## Verify locally
 
@@ -23,4 +23,4 @@ cd knowledge-base-app
 npm run verify
 ```
 
-The verification command rebuilds normalized data and the player site, validates canon names and references, checks spoiler boundaries and print rules, and runs the automated tests.
+The verification command rebuilds normalized data and the site, validates canon names and references, checks player/DM mode behavior and print rules, and runs the automated tests.

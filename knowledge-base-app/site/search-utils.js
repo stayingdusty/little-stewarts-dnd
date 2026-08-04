@@ -14,6 +14,10 @@ const getTimelineValue = (record) => Number(record.timelineValue ?? record.chapt
 
 export const filterPlayerVisible = (records) => records.filter((record) => record.visibility !== 'dm-only');
 
+export const filterVisibleForMode = (records, dmMode = false) => (
+  dmMode ? [...records] : filterPlayerVisible(records)
+);
+
 export const sortRecords = (records) => {
   return [...records].sort((left, right) => {
     const leftKindPriority = getKindPriority(left);
