@@ -1,4 +1,4 @@
-import { DM_MODE_SESSION_KEY, DM_PASSWORD_SHA256 } from './dm-mode-config.js';
+import { DM_MODE_SESSION_KEY, DM_PASSWORD } from './dm-mode-config.js';
 import { filterVisibleForMode, sortRecords } from './search-utils.js';
 import { getSourceDocNavGroups } from './source-docs-nav.js';
 
@@ -30,12 +30,6 @@ const elements = {
 const LABEL_OVERRIDES = {
   canon: 'Canon',
   'inventory-item': 'Inventory Item'
-};
-
-const sha256 = async (value) => {
-  const bytes = new TextEncoder().encode(value);
-  const digest = await crypto.subtle.digest('SHA-256', bytes);
-  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
 };
 
 const titleCase = (value) => {
@@ -180,10 +174,9 @@ const bindEvents = () => {
 
   elements.dmCancelButton.addEventListener('click', () => elements.dmDialog.close());
 
-  elements.dmForm.addEventListener('submit', async (event) => {
+  elements.dmForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const passwordHash = await sha256(elements.dmPassword.value);
-    if (passwordHash !== DM_PASSWORD_SHA256) {
+    if (elements.dmPassword.value !== DM_PASSWORD) {
       elements.dmError.textContent = 'That password did not match.';
       elements.dmPassword.select();
       return;
