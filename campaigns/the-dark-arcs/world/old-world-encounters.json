@@ -1,0 +1,486 @@
+{
+  "id": "arc-01-old-world-encounters",
+  "documentType": "world-map-encounters",
+  "title": "Little Stewarts Old World — Map & Encounters",
+  "campaignId": "the-dark-arcs",
+  "arc": 1,
+  "visibility": "dm-only",
+  "canonStatus": "proposed",
+  "summary": "DM map tracker and twelve prepared encounters for Old World travel.",
+  "tags": [
+    "world-map",
+    "encounters",
+    "arc-1"
+  ],
+  "evidence": [
+    {
+      "type": "legacy-source-document",
+      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+    }
+  ],
+  "map": {
+    "coordinateSystem": {
+      "width": 1000,
+      "height": 620
+    },
+    "alt": "Stylized Old World map showing regions, settlements, travel routes, and twelve encounter markers.",
+    "regions": [
+      {
+        "id": "region-frostgrim-peaks",
+        "name": "Frostgrim Peaks",
+        "terrain": "mountains",
+        "x": 250,
+        "y": 82,
+        "width": 430,
+        "height": 130
+      },
+      {
+        "id": "region-izdari-sands",
+        "name": "Izdari Sands",
+        "terrain": "desert",
+        "x": 720,
+        "y": 90,
+        "width": 250,
+        "height": 180
+      },
+      {
+        "id": "region-mirewood-bog",
+        "name": "Mirewood Bog",
+        "terrain": "bog",
+        "x": 55,
+        "y": 185,
+        "width": 260,
+        "height": 150
+      },
+      {
+        "id": "region-azure-sea",
+        "name": "The Azure Sea",
+        "terrain": "sea",
+        "x": 20,
+        "y": 465,
+        "width": 360,
+        "height": 145
+      },
+      {
+        "id": "region-dawnmoor",
+        "name": "Dawnmoor",
+        "terrain": "moor",
+        "x": 90,
+        "y": 370,
+        "width": 230,
+        "height": 145
+      }
+    ],
+    "landmarks": [
+      {
+        "id": "location-petaltown",
+        "name": "Petaltown",
+        "kind": "town",
+        "x": 275,
+        "y": 300
+      },
+      {
+        "id": "location-veylathar",
+        "name": "Veylathar",
+        "kind": "city",
+        "x": 470,
+        "y": 255
+      },
+      {
+        "id": "location-emberhold",
+        "name": "Emberhold",
+        "kind": "fortress",
+        "x": 665,
+        "y": 405
+      },
+      {
+        "id": "location-sunreach",
+        "name": "Sunreach",
+        "kind": "city",
+        "x": 825,
+        "y": 430
+      },
+      {
+        "id": "location-icewind-port",
+        "name": "Icewind Port",
+        "kind": "port",
+        "x": 650,
+        "y": 555
+      },
+      {
+        "id": "location-dark-arc",
+        "name": "Dark Arc",
+        "kind": "arc",
+        "x": 500,
+        "y": 500
+      }
+    ],
+    "waterways": [
+      {
+        "id": "serenth-river",
+        "name": "Serenth River",
+        "points": [
+          [
+            320,
+            310
+          ],
+          [
+            385,
+            325
+          ],
+          [
+            445,
+            340
+          ],
+          [
+            525,
+            360
+          ],
+          [
+            615,
+            380
+          ]
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "id": "path-to-convergence",
+        "name": "Path to the Convergence",
+        "style": "dashed",
+        "points": [
+          [
+            480,
+            290
+          ],
+          [
+            590,
+            255
+          ],
+          [
+            700,
+            275
+          ],
+          [
+            760,
+            345
+          ],
+          [
+            830,
+            360
+          ]
+        ]
+      }
+    ],
+    "encounterMarkers": [
+      {
+        "encounterId": "encounter-arc1-map-1",
+        "marker": 1,
+        "x": 720,
+        "y": 300
+      },
+      {
+        "encounterId": "encounter-arc1-map-2",
+        "marker": 2,
+        "x": 270,
+        "y": 250
+      },
+      {
+        "encounterId": "encounter-arc1-map-3",
+        "marker": 3,
+        "x": 570,
+        "y": 195
+      },
+      {
+        "encounterId": "encounter-arc1-map-4",
+        "marker": 4,
+        "x": 500,
+        "y": 80
+      },
+      {
+        "encounterId": "encounter-arc1-map-5",
+        "marker": 5,
+        "x": 790,
+        "y": 170
+      },
+      {
+        "encounterId": "encounter-arc1-map-6",
+        "marker": 6,
+        "x": 260,
+        "y": 135
+      },
+      {
+        "encounterId": "encounter-arc1-map-7",
+        "marker": 7,
+        "x": 790,
+        "y": 585
+      },
+      {
+        "encounterId": "encounter-arc1-map-8",
+        "marker": 8,
+        "x": 850,
+        "y": 165
+      },
+      {
+        "encounterId": "encounter-arc1-map-9",
+        "marker": 9,
+        "x": 280,
+        "y": 390
+      },
+      {
+        "encounterId": "encounter-arc1-map-10",
+        "marker": 10,
+        "x": 75,
+        "y": 215
+      },
+      {
+        "encounterId": "encounter-arc1-map-11",
+        "marker": 11,
+        "x": 45,
+        "y": 330
+      },
+      {
+        "encounterId": "encounter-arc1-map-12",
+        "marker": 12,
+        "x": 930,
+        "y": 400
+      }
+    ]
+  },
+  "instructions": [
+    "Let the party choose a direction or landmark from the map.",
+    "Use the matching number if they travel into that region.",
+    "Check Discovered when they learn about it or pass nearby.",
+    "Check Completed when they resolve it by combat, parley, escape, or clever nonsense."
+  ],
+  "encounters": [
+    {
+      "id": "encounter-arc1-map-1",
+      "marker": 1,
+      "name": "Thorn Court Hunt",
+      "location": "Path to the Convergence • Ancient forest / fey road",
+      "hook": "Masked fey hunters mistake Coleman’s giant spirit-bulldog form for sacred quarry.",
+      "roster": "1 Thorn Captain: AC16 HP70 +6, 2d8+4; 2 Briar Knights: AC15 HP32 +5, 1d8+3; 3 Needle Sprites: AC13 HP12 +4, 1d6+2",
+      "battlefield": "Moving hedges, mushroom rings, low branches. At the top of each round, one path closes and another opens.",
+      "motivation": "The fey want proof the party is not poaching a sacred white stag.",
+      "alternateEndings": "Single combat, apology, fey token, or showing Coleman is a person.",
+      "reward": "Moonleaf clasp: ignore plant-based difficult terrain once.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-2",
+      "marker": 2,
+      "name": "Moss Titan Boundary",
+      "location": "Petaltown wildwood edge • Old forest ruin",
+      "hook": "The party crosses an invisible border and awakens a guardian older than the current kingdoms.",
+      "roster": "1 Moss Titan: AC17 HP110 +6, 2d10+4; 2 Stone Wardens: AC15 HP32 +5, 1d8+3",
+      "battlefield": "Broken columns, buried arch, standing stones. Titan can move one terrain piece each round.",
+      "motivation": "Ancient command: “No crown-bearer may pass the Seventh Gate.”",
+      "alternateEndings": "Leave the boundary, hide royal symbols, place weapons down, or find the carved password.",
+      "reward": "Guardian stone: grows warm near ancient imperial ruins.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-3",
+      "marker": 3,
+      "name": "Clockwork Mausoleum",
+      "location": "Old road east of Veylathar • Buried road",
+      "hook": "Bronze funeral defenses rise because an ancient culture assumed all travelers were grave robbers.",
+      "roster": "1 Tomb Marshal: AC16 HP75 +6, 2d8+4; 3 Brass Dead: AC15 HP32 +5, 1d8+3; 2 Key-Spiders: AC13 HP10 +4, steal item",
+      "battlefield": "Open burial shafts, sinking stone doors, brass bells under the road.",
+      "motivation": "The machines want intruders to return stolen grave tokens that nobody actually stole.",
+      "alternateEndings": "Ring the central bell three times, return a found token, or outrun the sinking road.",
+      "reward": "Clockwork key: opens one nonmagical lock automatically.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-4",
+      "marker": 4,
+      "name": "Choir of Blinding Wings",
+      "location": "Frostgrim central pass • Mountain pass",
+      "hook": "Holy guardians judge Coleman’s shapeshifting as forbidden under an ancient, outdated law.",
+      "roster": "1 Radiant Adjudicator: AC16 HP80 +6, 2d10 radiant; 2 Winged Lancers: AC15 HP32 +5, 1d8+3; 2 Halo Wisps: AC14 HP18, DC13 blind/restraint",
+      "battlefield": "Bright zones empower celestials; shade protects the party. Narrow cliffs create falling danger.",
+      "motivation": "They are not evil. They are dangerously certain they are right.",
+      "alternateEndings": "Invoke Aureth, show mercy, protect Coleman, or force the Adjudicator to reconsider.",
+      "reward": "Dawn feather: end fear or magical darkness once.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-5",
+      "marker": 5,
+      "name": "Saltglass Wyrm",
+      "location": "Izdari Sands glass basin • Giant beast",
+      "hook": "A burrowing wyrm mistakes enchanted armor and rune weapons for mineral deposits it eats.",
+      "roster": "1 Saltglass Wyrm: AC15 HP110 +6, 2d10+4; 3 Glass Mites: AC13 HP10 +4, 1d6+2",
+      "battlefield": "Crystal ridges can be shattered for 2d6 area damage. Reflections create false positions.",
+      "motivation": "It is hungry, not evil, and it wants metal more than blood.",
+      "alternateEndings": "Feed it metal, lure it away, protect the supply wagon until it retreats.",
+      "reward": "Three reflective scales usable by a smith.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-6",
+      "marker": 6,
+      "name": "Iron Banner Surveyors",
+      "location": "Frostgrim western border pass • Rival kingdom",
+      "hook": "Foreign engineers are quietly marking land for a road, fort, or future invasion.",
+      "roster": "1 Banner Knight: AC16 HP75 +6, 2d8+4; 4 Pike Soldiers: AC15 HP32 +5, 1d8+3; 2 Survey Adepts: AC14 HP24, DC13 smoke/trip lines",
+      "battlefield": "Survey chains trip movement; black stakes mark enemy firing lanes.",
+      "motivation": "They want to finish their map and leave with it.",
+      "alternateEndings": "Duel, seize the map, negotiate, expose an expired treaty, or escort them away.",
+      "reward": "Border map showing a safe pass and abandoned fort.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-7",
+      "marker": 7,
+      "name": "Blackwake Marauders",
+      "location": "Icewind Port / southern coast • Pirate thieves",
+      "hook": "Hidden chains drag the party’s ferry sideways toward a black-sailed raider ship.",
+      "roster": "1 Pirate Captain: AC16 HP70 +6, 2d8+4; 3 Deck Raiders: AC15 HP32 +5, 1d8+3; 3 Rope-Runners: AC13 HP18 +4, steal item",
+      "battlefield": "Two moving decks, ropes, cargo, deep water. Falling overboard costs a turn unless rescued.",
+      "motivation": "They want food, medicine, weapons, and royal-looking valuables.",
+      "alternateEndings": "Cut the chain, seize the winch, board their ship, bargain, or scare them off.",
+      "reward": "Pirate route chart and grappling launcher.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-8",
+      "marker": 8,
+      "name": "Skyhook Reavers",
+      "location": "Izdari Sands caravan road • Airship pirates",
+      "hook": "An airship drops hooked chains and begins lifting soldiers, wagons, and heroes into the sky.",
+      "roster": "1 Hookmaster: AC16 HP80 +6, 2d10+4; 2 Chain Bruisers: AC14 HP55 +5, 2d8+3; 4 Sail Raiders: AC13 HP18 +4, 1d6+2",
+      "battlefield": "Chains rise 10 feet each round. Heroes can climb, cut, swing, ride, or board.",
+      "motivation": "They want the Garrison banner and royal seal as trophies.",
+      "alternateEndings": "Cut anchor chains, rescue soldiers, board the ship, or have Coleman pull it down.",
+      "reward": "Folded sky-sail: two people glide safely once.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-9",
+      "marker": 9,
+      "name": "Singing Stones",
+      "location": "Dawnmoor cliffs / lower Serenth canyon • Elemental hazard",
+      "hook": "A magical windstorm awakens stone creatures whose song shatters metal and pushes travelers toward danger.",
+      "roster": "1 Resonance Giant: AC16 HP90 +6, 2d10 thunder; 3 Chime Golems: AC15 HP32 +5, 1d8+3; 2 Windlings: AC14 HP20, DC13 push",
+      "battlefield": "Gust lanes push targets 10 feet. Metal items hum and may be dropped.",
+      "motivation": "The stones are reacting to sound, not choosing sides.",
+      "alternateEndings": "Break the harmony, topple a standing stone, match the melody, or survive the storm.",
+      "reward": "Chime shard: whisper 300 feet through stone.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-10",
+      "marker": 10,
+      "name": "Ashmaw Pack",
+      "location": "Mirewood Bog • Seven Hells wildlife",
+      "hook": "Beasts descended from creatures stranded during an ancient opening to the Seven Hells hunt the party’s food.",
+      "roster": "1 Ashmaw Alpha: AC14 HP70 +5, 2d8+3; 4 Cinder Hounds: AC13 HP22 +4, 1d6+2 fire; 2 Ember Bats: AC13 HP12, smoke cloud",
+      "battlefield": "Steam clouds, burning reeds, wet ground, food sacks under attack.",
+      "motivation": "They are hungry animals, not villains.",
+      "alternateEndings": "Feed them, drive off the Alpha, protect supplies, or scare them with a bigger beast.",
+      "reward": "Ember gland: keeps a campfire burning seven nights.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-11",
+      "marker": 11,
+      "name": "Dead King’s Watch",
+      "location": "Western old battlefield near Petaltown • Honorable undead",
+      "hook": "The Garrison banner resembles that of an ancient enemy, awakening soldiers who still guard a lost kingdom.",
+      "roster": "1 Oathbound General: AC16 HP85 +6, 2d10+4; 4 Grave Guards: AC15 HP32 +5, 1d8+3; 2 Banner Shades: AC14 HP18, fear DC13",
+      "battlefield": "Trenches, broken shields, spectral banners. Tearing down banners weakens fear effects.",
+      "motivation": "They believe the old war is still happening.",
+      "alternateEndings": "Lower the banner, speak the lost kingdom’s name, duel the General, or return his sword.",
+      "reward": "Oath coin: demand one minute of parley with undead soldiers once.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    },
+    {
+      "id": "encounter-arc1-map-12",
+      "marker": 12,
+      "name": "Griffin Patrol",
+      "location": "Sunreach border road • Rival air cavalry",
+      "hook": "A neighboring kingdom’s griffin riders mistake Fiona’s Garrison squad for an unauthorized military incursion.",
+      "roster": "1 Griffin Commander: AC16 HP70 +6, 2d8+4; 2 Griffin Riders: AC15 HP32 +5, 1d8+3; 3 Griffins: AC14 HP40 +5, 2d6+3",
+      "battlefield": "Airborne riders, dives, ledges, dropped weapons, scary but nonlethal takedowns.",
+      "motivation": "They want papers, names, destination, and the banner lowered.",
+      "alternateEndings": "Formal parley, Queen Flower projection, border writ, guided crossing, or aerial duel.",
+      "reward": "Border writ: safe passage through one rival checkpoint.",
+      "visibility": "dm-only",
+      "canonStatus": "proposed",
+      "tags": [
+        "encounter",
+        "arc-1",
+        "old-world-map"
+      ]
+    }
+  ]
+}

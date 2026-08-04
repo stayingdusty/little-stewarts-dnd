@@ -5,9 +5,9 @@ This repository is the campaign source and player-facing knowledge base for **Li
 ## Operating model
 
 - GitHub pull requests are the canon review boundary.
-- `campaigns/the-dark-arcs/` contains campaign policy, canonical-name records, and session intake records as the structured migration proceeds.
+- `campaigns/the-dark-arcs/` contains structured character, lore, world-map, encounter, policy, canonical-name, and session intake records.
 - `DND-Source-Docs/` contains legacy printable campaign documents.
-- `knowledge-base-app/` extracts normalized records, validates them, and builds the static GitHub Pages site.
+- `knowledge-base-app/` publishes structured records, validates them, and builds the static GitHub Pages site; only unmigrated playthrough summaries still use legacy HTML extraction.
 - `AGENTS.md` defines the standing rules for Codex and other repository agents.
 
 ## Player site and DM material

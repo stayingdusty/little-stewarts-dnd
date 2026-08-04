@@ -53,8 +53,9 @@ const buildSourceHref = (record) => {
     .replace(/^DND-Source-Docs\//i, 'source-docs/')
     .replace(/^\.\//, '')
     .replace(/\\/g, '/');
-  const anchor = record.sourceAnchor ? `#${record.sourceAnchor}` : '';
-  const hasHtmlExtension = normalized.toLowerCase().endsWith('.html');
+  const anchor = record.sourceAnchor && !normalized.includes('#') ? `#${record.sourceAnchor}` : '';
+  const [pathPart] = normalized.split(/[?#]/);
+  const hasHtmlExtension = pathPart.toLowerCase().endsWith('.html');
   const targetPath = hasHtmlExtension ? normalized : `${normalized.replace(/\/+$/, '')}/index.html`;
 
   return `./${targetPath}${anchor}`;

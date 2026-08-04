@@ -1,0 +1,1003 @@
+{
+  "id": "arc-01-cosmology-and-fate-mythology",
+  "documentType": "lore",
+  "title": "Arc 1: Cosmology and the Fate Mythology",
+  "campaignId": "the-dark-arcs",
+  "arc": 1,
+  "visibility": "dm-only",
+  "canonStatus": "proposed",
+  "summary": "DM lore reference for the hidden cosmology of fate, possibility, magic, realms, Dark Arcs, and the Convergence.",
+  "tags": [
+    "lore",
+    "cosmology",
+    "mythology",
+    "arc-1"
+  ],
+  "evidence": [
+    {
+      "type": "legacy-source-document",
+      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    }
+  ],
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Little Stewards D&D — DM lore reference, future implications, and long-term reveal guide"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Purpose of This Document"
+    },
+    {
+      "type": "paragraph",
+      "text": "This document separates the campaign's deeper mythology from the chapter-by-chapter playthrough summaries. It records the hidden cosmology behind the Dark Arcs, Aureth, the Old God of Fate, Jerry Mander, the Dream Plane, Calvin and Nameloc, the Convergence, and the intended long-term resolution."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "How to Use It"
+    },
+    {
+      "type": "paragraph",
+      "text": "Treat the material below as DM-facing truth and direction rather than information already known by the players. Individual ideas can be revealed slowly through artifacts, visions, ancient records, mini-bosses, and encounters with the Ethereal Realm."
+    },
+    {
+      "type": "callout",
+      "style": "warning",
+      "text": "Continuity Rule: Nothing in this document should be copied into a playthrough summary until the characters actually encounter, learn, or reasonably infer it during play."
+    }
+  ],
+  "sections": [
+    {
+      "id": "cosmology-at-a-glance",
+      "title": "Cosmology at a Glance",
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Concept",
+            "Hidden Truth",
+            "Future Story Function"
+          ],
+          "rows": [
+            [
+              "The Old God of Fate",
+              "The oldest known divine intelligence, once defined by perfect certainty.",
+              "The ancient power behind the restoration of the permanent Dark Arcs."
+            ],
+            [
+              "The First Doubt",
+              "The first moment in which Fate questioned its own certainty.",
+              "The event that fractured absolute destiny and made true possibility possible."
+            ],
+            [
+              "Aureth",
+              "Born from the crack created by Fate's first doubt; embodiment of possibility and author of magic.",
+              "Provides the philosophical and magical counterweight to rigid fate."
+            ],
+            [
+              "Magic",
+              "The practice of bending fate through spaces of uncertainty rather than breaking reality outright.",
+              "Connects every spellcaster to Aureth's discovery, whether they know it or not."
+            ],
+            [
+              "The Ethereal Realm",
+              "A neighboring layer of existence where meaning, possibility, memory, and unrealized paths are more fluid.",
+              "The source of many mysteries, platforms, Dark Arc crossings, and hidden powers."
+            ],
+            [
+              "The Dream Plane",
+              "A moonlit, shifting region within or beside the Ethereal Realm, formed from dreams, memory, fear, and unrealized possibilities.",
+              "Provides a new route for investigation, character revelation, and travel through Calvin's Moon-Walking."
+            ],
+            [
+              "Calvin / Nameloc",
+              "A boy who can become the Great Spirit Hound Nameloc and naturally senses the paths between waking reality and dreams.",
+              "Becomes the party's guide and anchor when entering the Dream Plane."
+            ],
+            [
+              "Dark Arcs",
+              "Wounds or bridges between the Material and Ethereal Realms.",
+              "Serve as regional campaign threats and roads leading toward the Convergence."
+            ],
+            [
+              "The Convergence",
+              "The place or event toward which all permanent Dark Arcs ultimately point.",
+              "The destination of the campaign's final mythological conflict and reconciliation."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "before-the-first-doubt",
+      "title": "Before the First Doubt",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In the oldest version of creation, the Old God of Fate existed alone. Fate was not merely a being who predicted events. Fate was the principle that events could happen only one way."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "There was no uncertainty because nothing had ever departed from the intended pattern.",
+            "Choice may have appeared to exist, but every choice had only one final answer.",
+            "Possibility had not yet become an independent force.",
+            "The Old God understood reality as a complete design rather than an unfolding story."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "quote",
+          "text": "Before doubt, the future was not unknown. It was simply waiting to arrive."
+        }
+      ]
+    },
+    {
+      "id": "the-first-doubt",
+      "title": "The First Doubt",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At some unknowable moment, the Old God of Fate experienced the first doubt. This was not a minor hesitation. It was the first event that Fate had not fully contained within certainty."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The doubt created a crack within Fate's own mind or divine nature.",
+            "That crack was the first space in which more than one future could exist.",
+            "The existence of doubt did not destroy Fate, but it made Fate incomplete.",
+            "From that internal fracture, possibility became capable of taking form."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "story",
+          "text": "Core mythological principle: Aureth was not created as an enemy of Fate. She was born from something Fate discovered within itself."
+        }
+      ]
+    },
+    {
+      "id": "aureth-daughter-of-fate-and-author-of-magic",
+      "title": "Aureth — Daughter of Fate and Author of Magic",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aureth emerged from the first doubt as the embodiment of possibility. She is the Old God's daughter in a metaphysical sense: formed from his own uncertainty, but possessing an identity and purpose of her own."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What Aureth Represents"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Possibility rather than certainty.",
+            "The unexplored path.",
+            "The meaningful risk of choosing without knowing the result.",
+            "The idea that a future can be shaped rather than merely received.",
+            "The creative space between what must happen and what might happen."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Aureth's Relationship to Fate"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "She is not simply rebellion made divine.",
+            "She proves that doubt was always latent within Fate.",
+            "Her existence makes absolute certainty impossible to restore without destroying part of the Old God's own nature.",
+            "Their conflict is ultimately familial and philosophical rather than a simple war between good and evil."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "dm",
+          "text": "DM Direction: Aureth should not be revealed as an ordinary benevolent goddess who opposes an evil god. She represents necessary uncertainty, but uncertainty can also cause fear, loss, chaos, and painful responsibility. Her value comes from making meaningful choice possible."
+        }
+      ]
+    },
+    {
+      "id": "the-origin-and-nature-of-magic",
+      "title": "The Origin and Nature of Magic",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Magic exists because Aureth discovered the spaces where fate could bend. A spell does not need to shatter destiny. It creates a temporary path through which another outcome can become real."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Magic as Fate-Bending"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "A healing spell bends a destined injury toward recovery.",
+            "An illusion gives temporary form to something that is not materially present.",
+            "Divination explores futures that have not yet hardened into certainty.",
+            "Transformation allows a creature to occupy a different possible form.",
+            "Teleportation forces distance to accept an alternate relationship between two places.",
+            "Chronomancy bends the expected sequence of change."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Implications for Spellcasters"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Every spellcaster participates in Aureth's discovery, even without worshiping or knowing her.",
+            "Different magical traditions may describe the same process with different religious or academic language.",
+            "Magic is strongest where possibility is abundant and most unstable where certainty has been violently imposed.",
+            "Spells near permanent Dark Arcs may behave strangely because two incompatible structures of fate overlap."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Snap Matches and Other Boundary-Bending Artifacts"
+        },
+        {
+          "type": "paragraph",
+          "text": "Artifacts that force movement, distance, time, or planar boundaries may exploit the same cracks that make magic possible. Repeated or careless use can damage the boundary between realms."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Snap Matches can act as small, forceful violations of normal spatial fate.",
+            "The twenty-sided rune die may represent a more deliberate interaction with probability and chosen outcomes.",
+            "Living or awakening artifacts may have accumulated enough possibility, memory, or purpose to develop an identity."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-material-and-ethereal-realms",
+      "title": "The Material and Ethereal Realms",
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Material Realm",
+            "Ethereal Realm"
+          ],
+          "rows": [
+            [
+              "Stable matter, embodied life, visible institutions, and consequences that persist.",
+              "Memory, possibility, unrealized paths, spiritual impressions, and structures that may not obey ordinary physical rules."
+            ],
+            [
+              "Certainty has greater weight.",
+              "Possibility has greater freedom."
+            ],
+            [
+              "Actions become history.",
+              "History, intention, and potential can overlap."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The realms are not meant to be entirely separate. Healthy points of connection may exist naturally. Dark Arcs are dangerous because they create forced, wounded, or unstable connections."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Ethereal Platforms"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ethereal platforms may serve as observation points, anchor sites, transit nodes, or remnants of older crossings.",
+            "The platform observed beneath the Luminary Dome suggests that scholars or unknown builders have studied these connections before the current party.",
+            "Different platforms may correspond to different Dark Arcs, forgotten civilizations, or methods of planar travel."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-dream-plane-and-moon-walking",
+      "title": "The Dream Plane and Moon-Walking",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The Dream Plane is a shifting borderland connected to the Ethereal Realm. It is made from sleeping minds, remembered places, fears, hopes, and futures that have not yet become real. Unlike ordinary prophecy, the Dream Plane does not show what will happen. It shows what may happen, what once almost happened, and what a person believes might happen."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Why Dreams Matter to the Fate Mythology"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Dreams are among the places where fate is least settled and possibility is most active.",
+            "Aureth's influence can be felt strongly there because sleeping minds create paths that certainty has not yet closed.",
+            "The Old God's servants may seek to control dreams because a population that can imagine another future is difficult to rule completely.",
+            "Dream visions must never be treated as guaranteed prophecy; they are clues, warnings, memories, symbolic truths, or possible futures.",
+            "Permanent Dark Arcs can cast shadows into the Dream Plane, allowing distant threats to appear first as recurring nightmares."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Moon-Walking"
+        },
+        {
+          "type": "paragraph",
+          "text": "Moon-Walking is the name for consciously entering and traveling through the Dream Plane. The moon does not create the power. It serves as a stable reflected light—a guide that helps a dreamer remember the way back to waking reality."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Moon-Walking usually begins while Calvin is sleeping, dreaming, or resting beneath moonlight.",
+            "Calvin may first enter unintentionally through unusually vivid dreams before learning to control the ability.",
+            "In the Dream Plane, he most naturally appears as Nameloc, the Great Spirit Hound.",
+            "Nameloc can follow the “scent” of a person, memory, fear, artifact, or Dark Arc across dream terrain.",
+            "With practice, Calvin may lead willing companions into a shared dream while their bodies remain asleep in the Material Realm.",
+            "Moon-Walking can reveal hidden information and paths, but it should not replace ordinary investigation or guarantee a single correct answer."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "story",
+          "text": "Core image: In waking life, Calvin is the boy traveling with the party. In dreams, Nameloc runs beneath an enormous moon across paths made from memories and unrealized futures, tracking things that cannot be followed in the physical world."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Suggested Boundaries"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Boundary",
+            "Reason"
+          ],
+          "rows": [
+            [
+              "Consent matters",
+              "Calvin should normally enter another person's dream only with permission, an invitation, or a strong existing bond. This reinforces the campaign's theme that power must preserve choice."
+            ],
+            [
+              "Dreams are symbolic",
+              "Locations and creatures may represent emotions or memories rather than literal physical facts."
+            ],
+            [
+              "Possible futures are not promises",
+              "A vision can become false the moment the party makes a different choice."
+            ],
+            [
+              "The body remains vulnerable",
+              "Moon-Walkers still need allies, wards, or a safe resting place in the Material Realm."
+            ],
+            [
+              "Deep travel carries a cost",
+              "Long or dangerous journeys may cause exhaustion, lost sleep, temporary confusion, or difficulty separating dream memories from waking memories."
+            ],
+            [
+              "Nameloc is the anchor",
+              "If the dream becomes unstable, the party follows the Great Spirit Hound back toward the moonlight and their sleeping bodies."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calvin-and-nameloc-the-great-spirit-hound",
+      "title": "Calvin and Nameloc — The Great Spirit Hound",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Calvin is the boy who joins the party in later chapters. Nameloc is his enormous blue Great Spirit Hound form. The transformation can be connected directly to dreaming without reducing either form to an illusion: Calvin and Nameloc are two real expressions of the same person."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Working Mythological Role"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Calvin represents imagination, instinct, and the courage to enter the unknown without controlling it.",
+            "Nameloc is the form best suited to the Dream Plane, where identity follows meaning more readily than physical shape.",
+            "His spirit-hound senses allow him to track the emotional and magical trails left by dreams, Dark Arcs, Ethereal travelers, and boundary-bending artifacts.",
+            "He can become a bridge between the younger, personal scale of the party's adventures and the larger cosmological struggle.",
+            "His power gives the party a way to discover the mythology through playable dream journeys rather than long explanations from NPCs."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Possible Origin — Keep Flexible Until Revealed"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Nameloc may be Calvin's true dream-self, awakened when he first crossed the boundary between realms.",
+            "The Great Spirit Hound may belong to an ancient line of guardians that protected sleepers and hunted creatures that entered dreams without permission.",
+            "Aureth may have awakened the power because hounds can follow paths without needing to know where those paths will end.",
+            "The power may also predate Aureth's known worship, making Nameloc part of an older natural response to the First Doubt."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "dm",
+          "text": "Recommended interpretation: Calvin should not be revealed as secretly more important than every other hero. His special role is practical and thematic: he can take the group into a realm none of them could safely navigate alone, while the other heroes remain essential to surviving and understanding what they find there."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Moon-Walking Growth Path"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Stage",
+            "Ability",
+            "Campaign Use"
+          ],
+          "rows": [
+            [
+              "Dream Scent",
+              "Calvin remembers vivid fragments and Nameloc can identify the emotional “scent” of a recurring dream.",
+              "Introduces dream clues and warnings without immediately allowing planar travel."
+            ],
+            [
+              "First Moon-Walk",
+              "Calvin consciously becomes Nameloc inside his own dream and explores a limited dream location.",
+              "Personal character chapter and discovery of the Dream Plane."
+            ],
+            [
+              "Shared Moon-Walk",
+              "One willing companion can enter the dream with him.",
+              "Allows character-pair stories and rescue missions inside a dream."
+            ],
+            [
+              "Pack Walk",
+              "Nameloc guides the full party through a shared dream.",
+              "Turns the Dream Plane into a recurring adventure location."
+            ],
+            [
+              "Arc Tracking",
+              "Nameloc follows the nightmare-shadow of a permanent Dark Arc.",
+              "Reveals hidden arc locations, trapped memories, or Jerry Mander's route."
+            ],
+            [
+              "Moon Road",
+              "The party uses a stable dream path to approach the Convergence or cross between distant arc sites.",
+              "Provides a major late-campaign travel and endgame tool."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Potential Dream-Plane Plot Points"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Calvin repeatedly dreams of a moon with a dark crack running through it; the crack is the Dream Plane's reflection of a permanent Dark Arc.",
+            "Nameloc discovers that certain nightmares do not belong to the dreamers experiencing them—they have been planted by an outside intelligence.",
+            "The party enters the dream of someone whose memories have been altered and recovers the emotional truth even when the waking facts are missing.",
+            "Jerry Mander learns to leave false dream trails, forcing Nameloc to distinguish genuine scent from manufactured possibility.",
+            "An agent of Fate attempts to create a city where everyone dreams the same approved dream every night.",
+            "Aureth first speaks clearly to the party in the Dream Plane because ordinary language cannot contain all of the possible meanings she is trying to express.",
+            "At the Convergence, Nameloc may be the only one able to find a path home after the possible futures begin collapsing into a single imposed destiny."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dark-arcs",
+      "title": "Dark Arcs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dark Arcs are tears, bridges, or scars between the Material and Ethereal Realms. They can be temporary or permanent."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Temporary Dark Arcs"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "May be created through unstable magic, artifacts, experiments, or catastrophic events.",
+            "Can close naturally if the forces sustaining them are removed.",
+            "Often produce localized distortions, creatures, visions, or magical side effects."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Permanent Dark Arcs"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Have become anchored to both realms.",
+            "Do not heal simply because an immediate threat is defeated.",
+            "Act as roads or channels through which the Old God's influence can return.",
+            "Appear across distant regions and collectively point toward the Convergence.",
+            "Can be represented on campaign maps as dotted, curved wounds trending toward a common destination."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "story",
+          "text": "Campaign structure: Each major region can contain its own permanent Dark Arc, local crisis, and agent of control. Solving the regional problem reveals another piece of the greater cosmology."
+        }
+      ]
+    },
+    {
+      "id": "the-old-god-s-restoration",
+      "title": "The Old God's Restoration",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The Old God of Fate is not necessarily seeking simple conquest. The restoration effort is driven by a belief that reality has become dangerously fragmented by uncertainty."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Permanent Dark Arcs reconnect reality through fixed points.",
+            "Agents create certainty by removing, narrowing, or controlling choice.",
+            "The Old God's servants may believe they are healing the world.",
+            "Their methods become oppressive because they treat uncertainty as a wound rather than a necessary part of existence."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Why the Servants May Not See Themselves as Evil"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "They may have witnessed suffering caused by chaos and uncontrolled magic.",
+            "They may sincerely believe enforced certainty prevents war, grief, and disorder.",
+            "Some may have accepted control willingly after losing faith in freedom.",
+            "Defeating them should often require understanding what kind of certainty they are imposing and why it appeals to others."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regional-agents-and-mini-boss-archetypes",
+      "title": "Regional Agents and Mini-Boss Archetypes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Different Dark Arc servants can embody distinct methods of imposing certainty. These figures should feel thematically related without repeating the same powers or motivations."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Method of Control",
+            "Possible Expression",
+            "Story Question"
+          ],
+          "rows": [
+            [
+              "Mind Control",
+              "Citizens are compelled to follow a single plan or ruler.",
+              "Is peace meaningful when nobody can refuse it?"
+            ],
+            [
+              "Illusion",
+              "A region lives inside a false but comforting reality.",
+              "Is a painless lie preferable to an uncertain truth?"
+            ],
+            [
+              "Possession",
+              "Important leaders become vessels for a single directing intelligence.",
+              "Who is responsible when a person's will is replaced?"
+            ],
+            [
+              "Enforced Harmony",
+              "Conflict is magically suppressed, along with individuality.",
+              "Can community exist without disagreement?"
+            ],
+            [
+              "Memory Manipulation",
+              "Painful history is removed so that society repeats an approved story.",
+              "Can people choose wisely without remembering failure?"
+            ],
+            [
+              "Silence",
+              "Speech, names, protest, or even private thought becomes impossible.",
+              "What remains of a person who cannot express uncertainty?"
+            ],
+            [
+              "Predestination",
+              "Every citizen receives a fixed role, profession, relationship, or death.",
+              "Is security worth surrendering the unwritten future?"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jerry-mander-working-mythological-role",
+      "title": "Jerry Mander — Working Mythological Role",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Jerry Mander, the Man in the White Suit, serves as the recurring human-scale antagonist who connects Veylathar's immediate conflicts to the deeper restoration of Fate."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Likely Functions"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Creates, discovers, strengthens, or exploits Dark Arcs.",
+            "Uses artifacts such as Snap Matches to move through unstable boundaries.",
+            "Tests cities and institutions for weaknesses that can be converted into permanent points of control.",
+            "Recruites or coordinates agents who embody different methods of certainty.",
+            "Understands more about the Ethereal Realm than he initially reveals."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What Should Remain Flexible"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Whether Jerry fully understands the Old God's final purpose.",
+            "Whether he is a loyal servant, a partner, a deceived mortal, or someone seeking to use Fate for himself.",
+            "Whether his polished public identity conceals a deeper personal connection to Aureth, the Old God, or the Convergence."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "dm",
+          "text": "Recommended interpretation: Jerry is most compelling if he believes freedom produces disorder and that he alone is willing to impose the structure necessary to save people from themselves. His name and political methods can mirror his supernatural goal: shaping boundaries so outcomes favor his chosen design."
+        }
+      ]
+    },
+    {
+      "id": "the-party-as-mythological-pillars",
+      "title": "The Party as Mythological Pillars",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The party should not merely discover the cosmology. Their existing character arcs naturally embody the forces needed to resolve it."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Queen Flower — Stewardship"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Represents the responsibility to make choices that affect others.",
+            "Must learn the difference between ruling, protecting, and controlling.",
+            "Can become the person capable of holding fate without turning it into tyranny.",
+            "Potential end-state: Steward of Fate rather than a conventional goddess or absolute monarch."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Fiona — Chosen Action"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Aureth's paladin and protector of possibility.",
+            "Her strength should grow most when the right action is uncertain but she chooses courageously.",
+            "Her faith can evolve from obedience toward conscious commitment.",
+            "She demonstrates that doubt does not prevent action; it makes action meaningful."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Golo — Momentum and Living Weight"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Represents endurance, movement, labor, and the consequences carried forward by action.",
+            "His connection to the Crucible grounds cosmic themes in craft, work, and physical reality.",
+            "Earthshatter's heartbeat may signal that artifacts can awaken through repeated purpose, memory, and chosen use.",
+            "Golo can prove that a future is built through motion rather than merely foretold."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Sertraline — Witness and Memory"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Represents listening, connection, nature, and the preservation of what happened.",
+            "Nature communicates with her through impressions rather than explanations.",
+            "She can sense places where thought, memory, or natural choice has been unnaturally suppressed.",
+            "She demonstrates that fate without memory becomes repetition and doubt without witness becomes confusion."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Calvin / Nameloc — Dreams and Instinct"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Represents imagination, instinct, and the ability to move through uncertainty without demanding that it become predictable.",
+            "Calvin brings human curiosity and vulnerability; Nameloc brings protection, tracking, and spiritual strength.",
+            "Moon-Walking lets the party enter possible stories without mistaking them for fixed destiny.",
+            "He demonstrates that an unknown path can still be followed when trust, consent, and companionship provide an anchor."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "future-implications-for-existing-campaign-elements",
+      "title": "Future Implications for Existing Campaign Elements",
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Existing Element",
+            "Possible Future Meaning"
+          ],
+          "rows": [
+            [
+              "Earthshatter's heartbeat",
+              "The hammer may be becoming a living witness to Golo's choices, or awakening as an older artifact tied to the construction or destruction of Dark Arc anchors."
+            ],
+            [
+              "Queen Flower's pendant map",
+              "Its limited astral projection may trace places the pendant has previously touched, gradually exposing a hidden network of routes, memories, and Dark Arc sites."
+            ],
+            [
+              "The Luminary Dome lens",
+              "The Academy may have observed the Ethereal Realm for generations, perhaps knowingly or unknowingly following the development of the permanent arcs."
+            ],
+            [
+              "The Great Tree",
+              "Its roots may preserve memories of older crossings, and its life cycle may provide a natural model for integrating decay, renewal, fate, and possibility."
+            ],
+            [
+              "Snap Matches",
+              "Repeated use may worsen planar wounds, create traceable paths, or reveal that Jerry's escape method is part of a larger transportation network."
+            ],
+            [
+              "The twenty-sided rune die",
+              "It may be an ancient tool for negotiating with probability rather than simply producing random magical effects."
+            ],
+            [
+              "Wisp Cloaks",
+              "Their relationship to concealment, surveillance, or silent observation could become important in regions where thoughts or identities are controlled."
+            ],
+            [
+              "Fiona's restored winged armor",
+              "The armor may respond to acts that preserve another person's ability to choose rather than merely to obedience or victory."
+            ],
+            [
+              "Calvin's recurring dreams",
+              "They may be involuntary Moon-Walks that reveal the Dream Plane, the nightmare-shadows of Dark Arcs, or trails left by Jerry Mander."
+            ],
+            [
+              "Nameloc's Great Spirit Hound form",
+              "Nameloc may be Calvin's natural form within the Dream Plane and the anchor that allows the party to travel there safely."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recommended-reveal-progression",
+      "title": "Recommended Reveal Progression",
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Stage",
+            "What the Players May Learn",
+            "Good Delivery Methods"
+          ],
+          "rows": [
+            [
+              "Early Arc",
+              "Dark Arcs connect the Material and Ethereal Realms and can be worsened by powerful magic or artifacts.",
+              "Academy research, visual phenomena, Dr. Fizzlebig, the Luminary lens."
+            ],
+            [
+              "Regional Adventures",
+              "Different enemies are imposing different kinds of certainty and appear connected to the same larger pattern.",
+              "Mini-boss confessions, symbols, shared language, maps of curved arc-lines."
+            ],
+            [
+              "Mid-Arc Revelation",
+              "Aureth is linked to possibility and magic; Fate is older and more complicated than a simple villain. Calvin learns that his vivid dreams are early Moon-Walks.",
+              "Temple fragments, Calvin's recurring dreams, living artifacts, ancient Ethereal records."
+            ],
+            [
+              "Approach to the Convergence",
+              "Aureth was born from Fate's first doubt, and the servants believe they are restoring a broken reality.",
+              "Direct encounter with Aureth, an Old God emissary, or a preserved creation myth."
+            ],
+            [
+              "Finale",
+              "The conflict cannot be permanently solved by destroying one side. Fate and doubt must coexist.",
+              "Party choices at the Convergence, sacrifice, stewardship, and character-specific trials."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-convergence",
+      "title": "The Convergence",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The Convergence is the ultimate meeting point of the permanent Dark Arcs. It may be a location, a planar structure, a ritual, or all three simultaneously."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Possible Physical Form"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "A place where the Material and Ethereal Realms overlap without a stable boundary.",
+            "A landscape made from several possible versions of the same world.",
+            "A central chamber or ancient mechanism to which every permanent arc is anchored.",
+            "A path that can only be reached after the party has visited enough arc sites to understand the pattern."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Possible Final Trials"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Queen Flower must choose whether to accept responsibility for futures she cannot fully control.",
+            "Fiona must act without certainty that Aureth's path will succeed.",
+            "Golo must decide whether to break, wield, or release Earthshatter as a living being.",
+            "Sertraline must preserve the truth of both Fate and Aureth when either side offers a simpler story.",
+            "Calvin and Nameloc must guide the party through collapsing dream-paths without allowing fear or false prophecy to choose the route for them."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intended-endgame-integration-rather-than-defeat",
+      "title": "Intended Endgame — Integration Rather Than Defeat",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The preferred ending is not the destruction of the Old God of Fate. Destroying Fate entirely could leave reality unable to hold consequence, continuity, or meaning. Likewise, eliminating doubt would remove genuine choice."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "The Necessary Resolution"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Fate must recognize doubt as part of itself rather than an external corruption.",
+            "Aureth must accept that possibility needs continuity and consequence in order to matter.",
+            "The permanent Dark Arcs must be transformed from wounds of control into stable relationships between realms.",
+            "The heroes must choose a new stewardship model that preserves both structure and freedom."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "quote",
+          "text": "Fate without doubt is tyranny. Doubt without fate is chaos. Choice is the act that binds them together."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Queen Flower's Potential Final Role"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "She may become Steward of Fate rather than replacing the Old God outright.",
+            "Her task would be to protect the possibility of choice while preserving the continuity of the world.",
+            "She would not decide every future; she would guard the conditions under which futures can be chosen.",
+            "This role completes her arc from aspiring ruler to responsible caretaker of power."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "permanent-dm-canon",
+      "title": "Permanent DM Canon",
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "status",
+          "text": "The Old God of Fate originally represented absolute certainty. The Old God's first doubt created a crack within his own nature. Aureth was born from that crack as the embodiment of possibility. Aureth is the author or discoverer of magic. Magic bends fate by making alternate outcomes temporarily possible. Dark Arcs are wounds or forced connections between the Material and Ethereal Realms. Permanent Dark Arcs contribute to the Old God's restoration and point toward the Convergence. Regional servants can embody different methods of enforcing certainty. Calvin is the boy form and Nameloc is his Great Spirit Hound form. Calvin's dream-travel ability is called Moon-Walking. The Dream Plane is connected to the Ethereal Realm and contains dreams, memories, fears, and unrealized possibilities. Nameloc serves as the party's natural guide and anchor within the Dream Plane. Dream visions reveal possibilities and symbolic truths, not guaranteed futures. The intended campaign resolution is the integration of Fate and Doubt, not the simple destruction of either."
+        }
+      ]
+    },
+    {
+      "id": "open-questions-to-resolve-later",
+      "title": "Open Questions to Resolve Later",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "What event caused the Old God to experience the first doubt?",
+            "Did Aureth leave Fate willingly, or was she rejected?",
+            "Who first built the Ethereal platforms and the Luminary Dome lens?",
+            "How much does Jerry Mander truly know?",
+            "What exactly transforms a temporary Dark Arc into a permanent one?",
+            "What role did the Great Tree play in earlier planar history?",
+            "Why is Earthshatter awakening now?",
+            "What first awakened Calvin's ability to Moon-Walk?",
+            "Is Nameloc Calvin's dream-self, an inherited guardian spirit, or both?",
+            "Who or what first created the Moon Roads through the Dream Plane?",
+            "Can Jerry Mander Moon-Walk, or does he require a stolen artifact or captive dreamer to enter?",
+            "What price must be paid to transform the permanent arcs instead of merely closing them?",
+            "Does the Old God still possess love, fear, or regret concerning Aureth?",
+            "Will Aureth willingly reunite with Fate, or will the heroes need to create a new relationship neither deity expected?"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "dm",
+          "text": "Final DM Note: The mythology should remain flexible enough to respond to the children's choices. The cosmology provides a destination and thematic structure, but the party's actions should determine what reconciliation actually looks like and who ultimately accepts responsibility for the future."
+        }
+      ]
+    }
+  ]
+}

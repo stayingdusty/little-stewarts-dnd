@@ -1245,1032 +1245,875 @@
     "id": "encounter-arc1-map-10",
     "domain": "encounter",
     "name": "Ashmaw Pack",
-    "summary": "Mirewood Bog • Seven Hells wildlife",
-    "details": "Encounter marker 10 from Old World tracker.",
+    "summary": "Beasts descended from creatures stranded during an ancient opening to the Seven Hells hunt the party’s food.",
+    "details": "Mirewood Bog • Seven Hells wildlife 1 Ashmaw Alpha: AC14 HP70 +5, 2d8+3; 4 Cinder Hounds: AC13 HP22 +4, 1d6+2 fire; 2 Ember Bats: AC13 HP12, smoke cloud Steam clouds, burning reeds, wet ground, food sacks under attack. They are hungry animals, not villains. Feed them, drive off the Alpha, protect supplies, or scare them with a bigger beast. Ember gland: keeps a campfire burning seven nights.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "mirewood",
-      "seven",
-      "hells",
-      "wildlife"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-10",
+      "anchor": "encounter-arc1-map-10"
     }
   },
   {
     "id": "encounter-arc1-map-7",
     "domain": "encounter",
     "name": "Blackwake Marauders",
-    "summary": "Icewind Port / southern coast • Pirate thieves",
-    "details": "Encounter marker 7 from Old World tracker.",
+    "summary": "Hidden chains drag the party’s ferry sideways toward a black-sailed raider ship.",
+    "details": "Icewind Port / southern coast • Pirate thieves 1 Pirate Captain: AC16 HP70 +6, 2d8+4; 3 Deck Raiders: AC15 HP32 +5, 1d8+3; 3 Rope-Runners: AC13 HP18 +4, steal item Two moving decks, ropes, cargo, deep water. Falling overboard costs a turn unless rescued. They want food, medicine, weapons, and royal-looking valuables. Cut the chain, seize the winch, board their ship, bargain, or scare them off. Pirate route chart and grappling launcher.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "icewind",
-      "port",
-      "southern",
-      "coast",
-      "pirate",
-      "thieves"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-7",
+      "anchor": "encounter-arc1-map-7"
     }
   },
   {
     "id": "encounter-arc1-map-4",
     "domain": "encounter",
     "name": "Choir of Blinding Wings",
-    "summary": "Frostgrim central pass • Mountain pass",
-    "details": "Encounter marker 4 from Old World tracker.",
+    "summary": "Holy guardians judge Coleman’s shapeshifting as forbidden under an ancient, outdated law.",
+    "details": "Frostgrim central pass • Mountain pass 1 Radiant Adjudicator: AC16 HP80 +6, 2d10 radiant; 2 Winged Lancers: AC15 HP32 +5, 1d8+3; 2 Halo Wisps: AC14 HP18, DC13 blind/restraint Bright zones empower celestials; shade protects the party. Narrow cliffs create falling danger. They are not evil. They are dangerously certain they are right. Invoke Aureth, show mercy, protect Coleman, or force the Adjudicator to reconsider. Dawn feather: end fear or magical darkness once.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "frostgrim",
-      "central",
-      "pass",
-      "mountain"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-4",
+      "anchor": "encounter-arc1-map-4"
     }
   },
   {
     "id": "encounter-arc1-map-3",
     "domain": "encounter",
     "name": "Clockwork Mausoleum",
-    "summary": "Old road east of Veylathar • Buried road",
-    "details": "Encounter marker 3 from Old World tracker.",
+    "summary": "Bronze funeral defenses rise because an ancient culture assumed all travelers were grave robbers.",
+    "details": "Old road east of Veylathar • Buried road 1 Tomb Marshal: AC16 HP75 +6, 2d8+4; 3 Brass Dead: AC15 HP32 +5, 1d8+3; 2 Key-Spiders: AC13 HP10 +4, steal item Open burial shafts, sinking stone doors, brass bells under the road. The machines want intruders to return stolen grave tokens that nobody actually stole. Ring the central bell three times, return a found token, or outrun the sinking road. Clockwork key: opens one nonmagical lock automatically.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "road",
-      "east",
-      "veylathar",
-      "buried"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-3",
+      "anchor": "encounter-arc1-map-3"
     }
   },
   {
     "id": "encounter-arc1-map-11",
     "domain": "encounter",
     "name": "Dead King’s Watch",
-    "summary": "Western old battlefield near Petaltown • Honorable undead",
-    "details": "Encounter marker 11 from Old World tracker.",
+    "summary": "The Garrison banner resembles that of an ancient enemy, awakening soldiers who still guard a lost kingdom.",
+    "details": "Western old battlefield near Petaltown • Honorable undead 1 Oathbound General: AC16 HP85 +6, 2d10+4; 4 Grave Guards: AC15 HP32 +5, 1d8+3; 2 Banner Shades: AC14 HP18, fear DC13 Trenches, broken shields, spectral banners. Tearing down banners weakens fear effects. They believe the old war is still happening. Lower the banner, speak the lost kingdom’s name, duel the General, or return his sword. Oath coin: demand one minute of parley with undead soldiers once.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "western",
-      "battlefield",
-      "near",
-      "petaltown",
-      "honorable",
-      "undead"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-11",
+      "anchor": "encounter-arc1-map-11"
     }
   },
   {
     "id": "encounter-arc1-map-12",
     "domain": "encounter",
     "name": "Griffin Patrol",
-    "summary": "Sunreach border road • Rival air cavalry",
-    "details": "Encounter marker 12 from Old World tracker.",
+    "summary": "A neighboring kingdom’s griffin riders mistake Fiona’s Garrison squad for an unauthorized military incursion.",
+    "details": "Sunreach border road • Rival air cavalry 1 Griffin Commander: AC16 HP70 +6, 2d8+4; 2 Griffin Riders: AC15 HP32 +5, 1d8+3; 3 Griffins: AC14 HP40 +5, 2d6+3 Airborne riders, dives, ledges, dropped weapons, scary but nonlethal takedowns. They want papers, names, destination, and the banner lowered. Formal parley, Queen Flower projection, border writ, guided crossing, or aerial duel. Border writ: safe passage through one rival checkpoint.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "sunreach",
-      "border",
-      "road",
-      "rival",
-      "cavalry"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-12",
+      "anchor": "encounter-arc1-map-12"
     }
   },
   {
     "id": "encounter-arc1-map-6",
     "domain": "encounter",
     "name": "Iron Banner Surveyors",
-    "summary": "Frostgrim western border pass • Rival kingdom",
-    "details": "Encounter marker 6 from Old World tracker.",
+    "summary": "Foreign engineers are quietly marking land for a road, fort, or future invasion.",
+    "details": "Frostgrim western border pass • Rival kingdom 1 Banner Knight: AC16 HP75 +6, 2d8+4; 4 Pike Soldiers: AC15 HP32 +5, 1d8+3; 2 Survey Adepts: AC14 HP24, DC13 smoke/trip lines Survey chains trip movement; black stakes mark enemy firing lanes. They want to finish their map and leave with it. Duel, seize the map, negotiate, expose an expired treaty, or escort them away. Border map showing a safe pass and abandoned fort.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "frostgrim",
-      "western",
-      "border",
-      "pass",
-      "rival",
-      "kingdom"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-6",
+      "anchor": "encounter-arc1-map-6"
     }
   },
   {
     "id": "encounter-arc1-map-2",
     "domain": "encounter",
     "name": "Moss Titan Boundary",
-    "summary": "Petaltown wildwood edge • Old forest ruin",
-    "details": "Encounter marker 2 from Old World tracker.",
+    "summary": "The party crosses an invisible border and awakens a guardian older than the current kingdoms.",
+    "details": "Petaltown wildwood edge • Old forest ruin 1 Moss Titan: AC17 HP110 +6, 2d10+4; 2 Stone Wardens: AC15 HP32 +5, 1d8+3 Broken columns, buried arch, standing stones. Titan can move one terrain piece each round. Ancient command: “No crown-bearer may pass the Seventh Gate.” Leave the boundary, hide royal symbols, place weapons down, or find the carved password. Guardian stone: grows warm near ancient imperial ruins.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "petaltown",
-      "wildwood",
-      "edge",
-      "forest",
-      "ruin"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-2",
+      "anchor": "encounter-arc1-map-2"
     }
   },
   {
     "id": "encounter-arc1-map-5",
     "domain": "encounter",
     "name": "Saltglass Wyrm",
-    "summary": "Izdari Sands glass basin • Giant beast",
-    "details": "Encounter marker 5 from Old World tracker.",
+    "summary": "A burrowing wyrm mistakes enchanted armor and rune weapons for mineral deposits it eats.",
+    "details": "Izdari Sands glass basin • Giant beast 1 Saltglass Wyrm: AC15 HP110 +6, 2d10+4; 3 Glass Mites: AC13 HP10 +4, 1d6+2 Crystal ridges can be shattered for 2d6 area damage. Reflections create false positions. It is hungry, not evil, and it wants metal more than blood. Feed it metal, lure it away, protect the supply wagon until it retreats. Three reflective scales usable by a smith.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "izdari",
-      "sands",
-      "glass",
-      "basin",
-      "giant",
-      "beast"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-5",
+      "anchor": "encounter-arc1-map-5"
     }
   },
   {
     "id": "encounter-arc1-map-9",
     "domain": "encounter",
     "name": "Singing Stones",
-    "summary": "Dawnmoor cliffs / lower Serenth canyon • Elemental hazard",
-    "details": "Encounter marker 9 from Old World tracker.",
+    "summary": "A magical windstorm awakens stone creatures whose song shatters metal and pushes travelers toward danger.",
+    "details": "Dawnmoor cliffs / lower Serenth canyon • Elemental hazard 1 Resonance Giant: AC16 HP90 +6, 2d10 thunder; 3 Chime Golems: AC15 HP32 +5, 1d8+3; 2 Windlings: AC14 HP20, DC13 push Gust lanes push targets 10 feet. Metal items hum and may be dropped. The stones are reacting to sound, not choosing sides. Break the harmony, topple a standing stone, match the melody, or survive the storm. Chime shard: whisper 300 feet through stone.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "dawnmoor",
-      "cliffs",
-      "lower",
-      "serenth",
-      "canyon",
-      "elemental"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-9",
+      "anchor": "encounter-arc1-map-9"
     }
   },
   {
     "id": "encounter-arc1-map-8",
     "domain": "encounter",
     "name": "Skyhook Reavers",
-    "summary": "Izdari Sands caravan road • Airship pirates",
-    "details": "Encounter marker 8 from Old World tracker.",
+    "summary": "An airship drops hooked chains and begins lifting soldiers, wagons, and heroes into the sky.",
+    "details": "Izdari Sands caravan road • Airship pirates 1 Hookmaster: AC16 HP80 +6, 2d10+4; 2 Chain Bruisers: AC14 HP55 +5, 2d8+3; 4 Sail Raiders: AC13 HP18 +4, 1d6+2 Chains rise 10 feet each round. Heroes can climb, cut, swing, ride, or board. They want the Garrison banner and royal seal as trophies. Cut anchor chains, rescue soldiers, board the ship, or have Coleman pull it down. Folded sky-sail: two people glide safely once.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "izdari",
-      "sands",
-      "caravan",
-      "road",
-      "airship",
-      "pirates"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-8",
+      "anchor": "encounter-arc1-map-8"
     }
   },
   {
     "id": "encounter-arc1-map-1",
     "domain": "encounter",
     "name": "Thorn Court Hunt",
-    "summary": "Path to the Convergence • Ancient forest / fey road",
-    "details": "Encounter marker 1 from Old World tracker.",
+    "summary": "Masked fey hunters mistake Coleman’s giant spirit-bulldog form for sacred quarry.",
+    "details": "Path to the Convergence • Ancient forest / fey road 1 Thorn Captain: AC16 HP70 +6, 2d8+4; 2 Briar Knights: AC15 HP32 +5, 1d8+3; 3 Needle Sprites: AC13 HP12 +4, 1d6+2 Moving hedges, mushroom rings, low branches. At the top of each round, one path closes and another opens. The fey want proof the party is not poaching a sacred white stag. Single combat, apology, fey token, or showing Coleman is a person. Moonleaf clasp: ignore plant-based difficult terrain once.",
     "aliases": [],
     "tags": [
       "encounter",
       "arc-1",
-      "path",
-      "convergence",
-      "ancient",
-      "forest",
-      "road"
+      "old-world-map"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
       }
     ],
     "source": {
-      "type": "world_tracker",
-      "path": "DND-Source-Docs/the-dark-arcs/world/little_stewarts_old_world_encounters_map_tracker.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=encounters#encounter-arc1-map-1",
+      "anchor": "encounter-arc1-map-1"
     }
   },
   {
     "id": "lore-aureth-daughter-of-fate-and-author-of-magic",
     "domain": "lore",
     "name": "Aureth — Daughter of Fate and Author of Magic",
-    "summary": "Aureth emerged from the first doubt as the embodiment of possibility. She is the Old God's daughter in a metaphysical sense: formed from his own uncertainty, but possessing an identity and purpose of her own.",
-    "details": "Aureth emerged from the first doubt as the embodiment of possibility. She is the Old God's daughter in a metaphysical sense: formed from his own uncertainty, but possessing an identity and purpose of her own. What Aureth Represents Possibility rather than certainty. The unexplored path. The meaningful risk of choosing without knowing the result. The idea that a future can be shaped rather than merely received. The creative space between what must happen and what might happen. Aureth's Relationship to Fate She is not simply rebellion made divine. She proves that doubt was always latent within F",
+    "summary": "Aureth emerged from the first doubt as the embodiment of possibility. She is the Old God's daughter in a metaphysical sense: formed from his own uncertainty, but possessing an identity and purpose of her own. What Aureth Represents Possibil",
+    "details": "Aureth emerged from the first doubt as the embodiment of possibility. She is the Old God's daughter in a metaphysical sense: formed from his own uncertainty, but possessing an identity and purpose of her own. What Aureth Represents Possibility rather than certainty. The unexplored path. The meaningful risk of choosing without knowing the result. The idea that a future can be shaped rather than merely received. The creative space between what must happen and what might happen. Aureth's Relationship to Fate She is not simply rebellion made divine. She proves that doubt was always latent within Fate. Her existence makes absolute certainty impossible to restore without destroying part of the Old God's own nature. Their conflict is ultimately familial and philosophical rather than a simple war between good and evil. DM Direction: Aureth should not be revealed as an ordinary benevolent goddess who opposes an evil god. She represents necessary uncertainty, but uncertainty can also cause fear, loss, chaos, and painful responsibility. Her value comes from making meaningful choice possible.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "aureth",
-      "daughter",
-      "fate",
-      "author",
-      "magic"
+      "aureth-daughter-of-fate-and-author-of-magic"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#aureth-daughter-of-fate-and-author-of-magic",
+      "anchor": "aureth-daughter-of-fate-and-author-of-magic"
     }
   },
   {
     "id": "lore-before-the-first-doubt",
     "domain": "lore",
     "name": "Before the First Doubt",
-    "summary": "In the oldest version of creation, the Old God of Fate existed alone. Fate was not merely a being who predicted events. Fate was the principle that events could happen only one way.",
+    "summary": "In the oldest version of creation, the Old God of Fate existed alone. Fate was not merely a being who predicted events. Fate was the principle that events could happen only one way. There was no uncertainty because nothing had ever departed",
     "details": "In the oldest version of creation, the Old God of Fate existed alone. Fate was not merely a being who predicted events. Fate was the principle that events could happen only one way. There was no uncertainty because nothing had ever departed from the intended pattern. Choice may have appeared to exist, but every choice had only one final answer. Possibility had not yet become an independent force. The Old God understood reality as a complete design rather than an unfolding story. Before doubt, the future was not unknown. It was simply waiting to arrive.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "before",
-      "first",
-      "doubt"
+      "before-the-first-doubt"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#before-the-first-doubt",
+      "anchor": "before-the-first-doubt"
     }
   },
   {
     "id": "lore-calvin-and-nameloc-the-great-spirit-hound",
     "domain": "lore",
     "name": "Calvin and Nameloc — The Great Spirit Hound",
-    "summary": "Calvin is the boy who joins the party in later chapters. Nameloc is his enormous blue Great Spirit Hound form. The transformation can be connected directly to dreaming without reducing either form to an illusion: Calvin and Nameloc are two real expressions of the same person.",
-    "details": "Calvin is the boy who joins the party in later chapters. Nameloc is his enormous blue Great Spirit Hound form. The transformation can be connected directly to dreaming without reducing either form to an illusion: Calvin and Nameloc are two real expressions of the same person. Working Mythological Role Calvin represents imagination, instinct, and the courage to enter the unknown without controlling it. Nameloc is the form best suited to the Dream Plane, where identity follows meaning more readily than physical shape. His spirit-hound senses allow him to track the emotional and magical trails le",
+    "summary": "Calvin is the boy who joins the party in later chapters. Nameloc is his enormous blue Great Spirit Hound form. The transformation can be connected directly to dreaming without reducing either form to an illusion: Calvin and Nameloc are two ",
+    "details": "Calvin is the boy who joins the party in later chapters. Nameloc is his enormous blue Great Spirit Hound form. The transformation can be connected directly to dreaming without reducing either form to an illusion: Calvin and Nameloc are two real expressions of the same person. Working Mythological Role Calvin represents imagination, instinct, and the courage to enter the unknown without controlling it. Nameloc is the form best suited to the Dream Plane, where identity follows meaning more readily than physical shape. His spirit-hound senses allow him to track the emotional and magical trails left by dreams, Dark Arcs, Ethereal travelers, and boundary-bending artifacts. He can become a bridge between the younger, personal scale of the party's adventures and the larger cosmological struggle. His power gives the party a way to discover the mythology through playable dream journeys rather than long explanations from NPCs. Possible Origin — Keep Flexible Until Revealed Nameloc may be Calvin's true dream-self, awakened when he first crossed the boundary between realms. The Great Spirit Hound may belong to an ancient line of guardians that protected sleepers and hunted creatures that entered dreams without permission. Aureth may have awakened the power because hounds can follow paths without needing to know where those paths will end. The power may also predate Aureth's known worship, making Nameloc part of an older natural response to the First Doubt. Recommended interpretation: Calvin should not be revealed as secretly more important than every other hero. His special role is practical and thematic: he can take the group into a realm none of them could safely navigate alone, while the other heroes remain essential to surviving and understanding what they find there. Moon-Walking Growth Path Stage Ability Campaign Use Dream Scent Calvin remembers vivid fragments and Nameloc can identify the emotional “scent” of a recurring dream. Introduces dream clues and warnings without immediately allowing planar travel. First Moon-Walk Calvin consciously becomes Nameloc inside his own dream and explores a limited dream location. Personal character chapter and discovery of the Dream Plane. Shared Moon-Walk One willing companion can enter the dream with him. Allows character-pair stories and rescue missions inside a dream. Pack Walk Nameloc guides the full party through a shared dream. Turns the Dream Plane into a recurring adventure location. Arc Tracking Nameloc follows the nightmare-shadow of a permanent Dark Arc. Reveals hidden arc locations, trapped memories, or Jerry Mander's route. Moon Road The party uses a stable dream path to approach the Convergence or cross between distant arc sites. Provides a major late-campaign travel and endgame tool. Potential Dream-Plane Plot Points Calvin repeatedly dreams of a moon with a dark crack running through it; the crack is the Dream Plane's reflection of a permanent Dark Arc. Nameloc discovers that certain nightmares do not belong to the dreamers experiencing them—they have been planted by an outside intelligence. The party enters the dream of someone whose memories have been altered and recovers the emotional truth even when the waking facts are missing. Jerry Mander learns to leave false dream trails, forcing Nameloc to distinguish genuine scent from manufactured possibility. An agent of Fate attempts to create a city where everyone dreams the same approved dream every night. Aureth first speaks clearly to the party in the Dream Plane because ordinary language cannot contain all of the possible meanings she is trying to express. At the Convergence, Nameloc may be the only one able to find a path home after the possible futures begin collapsing into a single imposed destiny.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "calvin",
-      "nameloc",
-      "great",
-      "spirit",
-      "hound"
+      "calvin-and-nameloc-the-great-spirit-hound"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#calvin-and-nameloc-the-great-spirit-hound",
+      "anchor": "calvin-and-nameloc-the-great-spirit-hound"
     }
   },
   {
     "id": "lore-cosmology-at-a-glance",
     "domain": "lore",
     "name": "Cosmology at a Glance",
-    "summary": "Lore section: Cosmology at a Glance",
-    "details": "Concept Hidden Truth Future Story Function The Old God of Fate The oldest known divine intelligence, once defined by perfect certainty. The ancient power behind the restoration of the permanent Dark Arcs. The First Doubt The first moment in which Fate questioned its own certainty. The event that fractured absolute destiny and made true possibility possible. Aureth Born from the crack created by Fate's first doubt; embodiment of possibility and author of magic. Provides the philosophical and magical counterweight to rigid fate. Magic The practice of bending fate through spaces of uncertainty ra",
+    "summary": "Concept Hidden Truth Future Story Function The Old God of Fate The oldest known divine intelligence, once defined by perfect certainty. The ancient power behind the restoration of the permanent Dark Arcs. The First Doubt The first moment in",
+    "details": "Concept Hidden Truth Future Story Function The Old God of Fate The oldest known divine intelligence, once defined by perfect certainty. The ancient power behind the restoration of the permanent Dark Arcs. The First Doubt The first moment in which Fate questioned its own certainty. The event that fractured absolute destiny and made true possibility possible. Aureth Born from the crack created by Fate's first doubt; embodiment of possibility and author of magic. Provides the philosophical and magical counterweight to rigid fate. Magic The practice of bending fate through spaces of uncertainty rather than breaking reality outright. Connects every spellcaster to Aureth's discovery, whether they know it or not. The Ethereal Realm A neighboring layer of existence where meaning, possibility, memory, and unrealized paths are more fluid. The source of many mysteries, platforms, Dark Arc crossings, and hidden powers. The Dream Plane A moonlit, shifting region within or beside the Ethereal Realm, formed from dreams, memory, fear, and unrealized possibilities. Provides a new route for investigation, character revelation, and travel through Calvin's Moon-Walking. Calvin / Nameloc A boy who can become the Great Spirit Hound Nameloc and naturally senses the paths between waking reality and dreams. Becomes the party's guide and anchor when entering the Dream Plane. Dark Arcs Wounds or bridges between the Material and Ethereal Realms. Serve as regional campaign threats and roads leading toward the Convergence. The Convergence The place or event toward which all permanent Dark Arcs ultimately point. The destination of the campaign's final mythological conflict and reconciliation.",
     "aliases": [],
     "tags": [
       "lore",
-      "arc-1",
       "cosmology",
-      "glance"
+      "mythology",
+      "arc-1",
+      "cosmology-at-a-glance"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#cosmology-at-a-glance",
+      "anchor": "cosmology-at-a-glance"
     }
   },
   {
     "id": "lore-dark-arcs",
     "domain": "lore",
     "name": "Dark Arcs",
-    "summary": "Dark Arcs are tears, bridges, or scars between the Material and Ethereal Realms. They can be temporary or permanent.",
-    "details": "Dark Arcs are tears, bridges, or scars between the Material and Ethereal Realms. They can be temporary or permanent. Temporary Dark Arcs May be created through unstable magic, artifacts, experiments, or catastrophic events. Can close naturally if the forces sustaining them are removed. Often produce localized distortions, creatures, visions, or magical side effects. Permanent Dark Arcs Have become anchored to both realms. Do not heal simply because an immediate threat is defeated. Act as roads or channels through which the Old God's influence can return. Appear across distant regions and colle",
+    "summary": "Dark Arcs are tears, bridges, or scars between the Material and Ethereal Realms. They can be temporary or permanent. Temporary Dark Arcs May be created through unstable magic, artifacts, experiments, or catastrophic events. Can close natura",
+    "details": "Dark Arcs are tears, bridges, or scars between the Material and Ethereal Realms. They can be temporary or permanent. Temporary Dark Arcs May be created through unstable magic, artifacts, experiments, or catastrophic events. Can close naturally if the forces sustaining them are removed. Often produce localized distortions, creatures, visions, or magical side effects. Permanent Dark Arcs Have become anchored to both realms. Do not heal simply because an immediate threat is defeated. Act as roads or channels through which the Old God's influence can return. Appear across distant regions and collectively point toward the Convergence. Can be represented on campaign maps as dotted, curved wounds trending toward a common destination. Campaign structure: Each major region can contain its own permanent Dark Arc, local crisis, and agent of control. Solving the regional problem reveals another piece of the greater cosmology.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "dark",
-      "arcs"
+      "dark-arcs"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#dark-arcs",
+      "anchor": "dark-arcs"
     }
   },
   {
     "id": "lore-future-implications-for-existing-campaign-elements",
     "domain": "lore",
     "name": "Future Implications for Existing Campaign Elements",
-    "summary": "Lore section: Future Implications for Existing Campaign Elements",
-    "details": "Existing Element Possible Future Meaning Earthshatter's heartbeat The hammer may be becoming a living witness to Golo's choices, or awakening as an older artifact tied to the construction or destruction of Dark Arc anchors. Queen Flower's pendant map Its limited astral projection may trace places the pendant has previously touched, gradually exposing a hidden network of routes, memories, and Dark Arc sites. The Luminary Dome lens The Academy may have observed the Ethereal Realm for generations, perhaps knowingly or unknowingly following the development of the permanent arcs. The Great Tree Its",
+    "summary": "Existing Element Possible Future Meaning Earthshatter's heartbeat The hammer may be becoming a living witness to Golo's choices, or awakening as an older artifact tied to the construction or destruction of Dark Arc anchors. Queen Flower's p",
+    "details": "Existing Element Possible Future Meaning Earthshatter's heartbeat The hammer may be becoming a living witness to Golo's choices, or awakening as an older artifact tied to the construction or destruction of Dark Arc anchors. Queen Flower's pendant map Its limited astral projection may trace places the pendant has previously touched, gradually exposing a hidden network of routes, memories, and Dark Arc sites. The Luminary Dome lens The Academy may have observed the Ethereal Realm for generations, perhaps knowingly or unknowingly following the development of the permanent arcs. The Great Tree Its roots may preserve memories of older crossings, and its life cycle may provide a natural model for integrating decay, renewal, fate, and possibility. Snap Matches Repeated use may worsen planar wounds, create traceable paths, or reveal that Jerry's escape method is part of a larger transportation network. The twenty-sided rune die It may be an ancient tool for negotiating with probability rather than simply producing random magical effects. Wisp Cloaks Their relationship to concealment, surveillance, or silent observation could become important in regions where thoughts or identities are controlled. Fiona's restored winged armor The armor may respond to acts that preserve another person's ability to choose rather than merely to obedience or victory. Calvin's recurring dreams They may be involuntary Moon-Walks that reveal the Dream Plane, the nightmare-shadows of Dark Arcs, or trails left by Jerry Mander. Nameloc's Great Spirit Hound form Nameloc may be Calvin's natural form within the Dream Plane and the anchor that allows the party to travel there safely.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "future",
-      "implications",
-      "existing",
-      "campaign",
-      "elements"
+      "future-implications-for-existing-campaign-elements"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#future-implications-for-existing-campaign-elements",
+      "anchor": "future-implications-for-existing-campaign-elements"
     }
   },
   {
     "id": "lore-intended-endgame-integration-rather-than-defeat",
     "domain": "lore",
     "name": "Intended Endgame — Integration Rather Than Defeat",
-    "summary": "The preferred ending is not the destruction of the Old God of Fate. Destroying Fate entirely could leave reality unable to hold consequence, continuity, or meaning. Likewise, eliminating doubt would remove genuine choice.",
-    "details": "The preferred ending is not the destruction of the Old God of Fate. Destroying Fate entirely could leave reality unable to hold consequence, continuity, or meaning. Likewise, eliminating doubt would remove genuine choice. The Necessary Resolution Fate must recognize doubt as part of itself rather than an external corruption. Aureth must accept that possibility needs continuity and consequence in order to matter. The permanent Dark Arcs must be transformed from wounds of control into stable relationships between realms. The heroes must choose a new stewardship model that preserves both structur",
+    "summary": "The preferred ending is not the destruction of the Old God of Fate. Destroying Fate entirely could leave reality unable to hold consequence, continuity, or meaning. Likewise, eliminating doubt would remove genuine choice. The Necessary Reso",
+    "details": "The preferred ending is not the destruction of the Old God of Fate. Destroying Fate entirely could leave reality unable to hold consequence, continuity, or meaning. Likewise, eliminating doubt would remove genuine choice. The Necessary Resolution Fate must recognize doubt as part of itself rather than an external corruption. Aureth must accept that possibility needs continuity and consequence in order to matter. The permanent Dark Arcs must be transformed from wounds of control into stable relationships between realms. The heroes must choose a new stewardship model that preserves both structure and freedom. Fate without doubt is tyranny. Doubt without fate is chaos. Choice is the act that binds them together. Queen Flower's Potential Final Role She may become Steward of Fate rather than replacing the Old God outright. Her task would be to protect the possibility of choice while preserving the continuity of the world. She would not decide every future; she would guard the conditions under which futures can be chosen. This role completes her arc from aspiring ruler to responsible caretaker of power.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "intended",
-      "endgame",
-      "integration",
-      "rather",
-      "than",
-      "defeat"
+      "intended-endgame-integration-rather-than-defeat"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#intended-endgame-integration-rather-than-defeat",
+      "anchor": "intended-endgame-integration-rather-than-defeat"
     }
   },
   {
     "id": "lore-jerry-mander-working-mythological-role",
     "domain": "lore",
     "name": "Jerry Mander — Working Mythological Role",
-    "summary": "Jerry Mander, the Man in the White Suit, serves as the recurring human-scale antagonist who connects Veylathar's immediate conflicts to the deeper restoration of Fate.",
-    "details": "Jerry Mander, the Man in the White Suit, serves as the recurring human-scale antagonist who connects Veylathar's immediate conflicts to the deeper restoration of Fate. Likely Functions Creates, discovers, strengthens, or exploits Dark Arcs. Uses artifacts such as Snap Matches to move through unstable boundaries. Tests cities and institutions for weaknesses that can be converted into permanent points of control. Recruites or coordinates agents who embody different methods of certainty. Understands more about the Ethereal Realm than he initially reveals. What Should Remain Flexible Whether Jerry",
+    "summary": "Jerry Mander, the Man in the White Suit, serves as the recurring human-scale antagonist who connects Veylathar's immediate conflicts to the deeper restoration of Fate. Likely Functions Creates, discovers, strengthens, or exploits Dark Arcs.",
+    "details": "Jerry Mander, the Man in the White Suit, serves as the recurring human-scale antagonist who connects Veylathar's immediate conflicts to the deeper restoration of Fate. Likely Functions Creates, discovers, strengthens, or exploits Dark Arcs. Uses artifacts such as Snap Matches to move through unstable boundaries. Tests cities and institutions for weaknesses that can be converted into permanent points of control. Recruites or coordinates agents who embody different methods of certainty. Understands more about the Ethereal Realm than he initially reveals. What Should Remain Flexible Whether Jerry fully understands the Old God's final purpose. Whether he is a loyal servant, a partner, a deceived mortal, or someone seeking to use Fate for himself. Whether his polished public identity conceals a deeper personal connection to Aureth, the Old God, or the Convergence. Recommended interpretation: Jerry is most compelling if he believes freedom produces disorder and that he alone is willing to impose the structure necessary to save people from themselves. His name and political methods can mirror his supernatural goal: shaping boundaries so outcomes favor his chosen design.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "jerry",
-      "mander",
-      "working",
-      "mythological",
-      "role"
+      "jerry-mander-working-mythological-role"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#jerry-mander-working-mythological-role",
+      "anchor": "jerry-mander-working-mythological-role"
     }
   },
   {
     "id": "lore-open-questions-to-resolve-later",
     "domain": "lore",
     "name": "Open Questions to Resolve Later",
-    "summary": "Lore section: Open Questions to Resolve Later",
-    "details": "What event caused the Old God to experience the first doubt? Did Aureth leave Fate willingly, or was she rejected? Who first built the Ethereal platforms and the Luminary Dome lens? How much does Jerry Mander truly know? What exactly transforms a temporary Dark Arc into a permanent one? What role did the Great Tree play in earlier planar history? Why is Earthshatter awakening now? What first awakened Calvin's ability to Moon-Walk? Is Nameloc Calvin's dream-self, an inherited guardian spirit, or both? Who or what first created the Moon Roads through the Dream Plane? Can Jerry Mander Moon-Walk, ",
+    "summary": "What event caused the Old God to experience the first doubt? Did Aureth leave Fate willingly, or was she rejected? Who first built the Ethereal platforms and the Luminary Dome lens? How much does Jerry Mander truly know? What exactly transf",
+    "details": "What event caused the Old God to experience the first doubt? Did Aureth leave Fate willingly, or was she rejected? Who first built the Ethereal platforms and the Luminary Dome lens? How much does Jerry Mander truly know? What exactly transforms a temporary Dark Arc into a permanent one? What role did the Great Tree play in earlier planar history? Why is Earthshatter awakening now? What first awakened Calvin's ability to Moon-Walk? Is Nameloc Calvin's dream-self, an inherited guardian spirit, or both? Who or what first created the Moon Roads through the Dream Plane? Can Jerry Mander Moon-Walk, or does he require a stolen artifact or captive dreamer to enter? What price must be paid to transform the permanent arcs instead of merely closing them? Does the Old God still possess love, fear, or regret concerning Aureth? Will Aureth willingly reunite with Fate, or will the heroes need to create a new relationship neither deity expected? Final DM Note: The mythology should remain flexible enough to respond to the children's choices. The cosmology provides a destination and thematic structure, but the party's actions should determine what reconciliation actually looks like and who ultimately accepts responsibility for the future.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "open",
-      "questions",
-      "resolve",
-      "later"
+      "open-questions-to-resolve-later"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#open-questions-to-resolve-later",
+      "anchor": "open-questions-to-resolve-later"
     }
   },
   {
     "id": "lore-permanent-dm-canon",
     "domain": "lore",
     "name": "Permanent DM Canon",
-    "summary": "Lore section: Permanent DM Canon",
-    "details": "The Old God of Fate originally represented absolute certainty. The Old God's first doubt created a crack within his own nature. Aureth was born from that crack as the embodiment of possibility. Aureth is the author or discoverer of magic. Magic bends fate by making alternate outcomes temporarily possible. Dark Arcs are wounds or forced connections between the Material and Ethereal Realms. Permanent Dark Arcs contribute to the Old God's restoration and point toward the Convergence. Regional servants can embody different methods of enforcing certainty. Calvin is the boy form and Nameloc is his G",
+    "summary": "The Old God of Fate originally represented absolute certainty. The Old God's first doubt created a crack within his own nature. Aureth was born from that crack as the embodiment of possibility. Aureth is the author or discoverer of magic. M",
+    "details": "The Old God of Fate originally represented absolute certainty. The Old God's first doubt created a crack within his own nature. Aureth was born from that crack as the embodiment of possibility. Aureth is the author or discoverer of magic. Magic bends fate by making alternate outcomes temporarily possible. Dark Arcs are wounds or forced connections between the Material and Ethereal Realms. Permanent Dark Arcs contribute to the Old God's restoration and point toward the Convergence. Regional servants can embody different methods of enforcing certainty. Calvin is the boy form and Nameloc is his Great Spirit Hound form. Calvin's dream-travel ability is called Moon-Walking. The Dream Plane is connected to the Ethereal Realm and contains dreams, memories, fears, and unrealized possibilities. Nameloc serves as the party's natural guide and anchor within the Dream Plane. Dream visions reveal possibilities and symbolic truths, not guaranteed futures. The intended campaign resolution is the integration of Fate and Doubt, not the simple destruction of either.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "permanent",
-      "canon"
+      "permanent-dm-canon"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#permanent-dm-canon",
+      "anchor": "permanent-dm-canon"
     }
   },
   {
     "id": "lore-recommended-reveal-progression",
     "domain": "lore",
     "name": "Recommended Reveal Progression",
-    "summary": "Lore section: Recommended Reveal Progression",
-    "details": "Stage What the Players May Learn Good Delivery Methods Early Arc Dark Arcs connect the Material and Ethereal Realms and can be worsened by powerful magic or artifacts. Academy research, visual phenomena, Dr. Fizzlebig, the Luminary lens. Regional Adventures Different enemies are imposing different kinds of certainty and appear connected to the same larger pattern. Mini-boss confessions, symbols, shared language, maps of curved arc-lines. Mid-Arc Revelation Aureth is linked to possibility and magic; Fate is older and more complicated than a simple villain. Calvin learns that his vivid dreams ar",
+    "summary": "Stage What the Players May Learn Good Delivery Methods Early Arc Dark Arcs connect the Material and Ethereal Realms and can be worsened by powerful magic or artifacts. Academy research, visual phenomena, Dr. Fizzlebig, the Luminary lens. Re",
+    "details": "Stage What the Players May Learn Good Delivery Methods Early Arc Dark Arcs connect the Material and Ethereal Realms and can be worsened by powerful magic or artifacts. Academy research, visual phenomena, Dr. Fizzlebig, the Luminary lens. Regional Adventures Different enemies are imposing different kinds of certainty and appear connected to the same larger pattern. Mini-boss confessions, symbols, shared language, maps of curved arc-lines. Mid-Arc Revelation Aureth is linked to possibility and magic; Fate is older and more complicated than a simple villain. Calvin learns that his vivid dreams are early Moon-Walks. Temple fragments, Calvin's recurring dreams, living artifacts, ancient Ethereal records. Approach to the Convergence Aureth was born from Fate's first doubt, and the servants believe they are restoring a broken reality. Direct encounter with Aureth, an Old God emissary, or a preserved creation myth. Finale The conflict cannot be permanently solved by destroying one side. Fate and doubt must coexist. Party choices at the Convergence, sacrifice, stewardship, and character-specific trials.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "recommended",
-      "reveal",
-      "progression"
+      "recommended-reveal-progression"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#recommended-reveal-progression",
+      "anchor": "recommended-reveal-progression"
     }
   },
   {
     "id": "lore-regional-agents-and-mini-boss-archetypes",
     "domain": "lore",
     "name": "Regional Agents and Mini-Boss Archetypes",
-    "summary": "Different Dark Arc servants can embody distinct methods of imposing certainty. These figures should feel thematically related without repeating the same powers or motivations.",
-    "details": "Different Dark Arc servants can embody distinct methods of imposing certainty. These figures should feel thematically related without repeating the same powers or motivations. Method of Control Possible Expression Story Question Mind Control Citizens are compelled to follow a single plan or ruler. Is peace meaningful when nobody can refuse it? Illusion A region lives inside a false but comforting reality. Is a painless lie preferable to an uncertain truth? Possession Important leaders become vessels for a single directing intelligence. Who is responsible when a person's will is replaced? Enfor",
+    "summary": "Different Dark Arc servants can embody distinct methods of imposing certainty. These figures should feel thematically related without repeating the same powers or motivations. Method of Control Possible Expression Story Question Mind Contro",
+    "details": "Different Dark Arc servants can embody distinct methods of imposing certainty. These figures should feel thematically related without repeating the same powers or motivations. Method of Control Possible Expression Story Question Mind Control Citizens are compelled to follow a single plan or ruler. Is peace meaningful when nobody can refuse it? Illusion A region lives inside a false but comforting reality. Is a painless lie preferable to an uncertain truth? Possession Important leaders become vessels for a single directing intelligence. Who is responsible when a person's will is replaced? Enforced Harmony Conflict is magically suppressed, along with individuality. Can community exist without disagreement? Memory Manipulation Painful history is removed so that society repeats an approved story. Can people choose wisely without remembering failure? Silence Speech, names, protest, or even private thought becomes impossible. What remains of a person who cannot express uncertainty? Predestination Every citizen receives a fixed role, profession, relationship, or death. Is security worth surrendering the unwritten future?",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "regional",
-      "agents",
-      "mini",
-      "boss",
-      "archetypes"
+      "regional-agents-and-mini-boss-archetypes"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#regional-agents-and-mini-boss-archetypes",
+      "anchor": "regional-agents-and-mini-boss-archetypes"
     }
   },
   {
     "id": "lore-the-convergence",
     "domain": "lore",
     "name": "The Convergence",
-    "summary": "The Convergence is the ultimate meeting point of the permanent Dark Arcs. It may be a location, a planar structure, a ritual, or all three simultaneously.",
-    "details": "The Convergence is the ultimate meeting point of the permanent Dark Arcs. It may be a location, a planar structure, a ritual, or all three simultaneously. Possible Physical Form A place where the Material and Ethereal Realms overlap without a stable boundary. A landscape made from several possible versions of the same world. A central chamber or ancient mechanism to which every permanent arc is anchored. A path that can only be reached after the party has visited enough arc sites to understand the pattern. Possible Final Trials Queen Flower must choose whether to accept responsibility for futu",
+    "summary": "The Convergence is the ultimate meeting point of the permanent Dark Arcs. It may be a location, a planar structure, a ritual, or all three simultaneously. Possible Physical Form A place where the Material and Ethereal Realms overlap without",
+    "details": "The Convergence is the ultimate meeting point of the permanent Dark Arcs. It may be a location, a planar structure, a ritual, or all three simultaneously. Possible Physical Form A place where the Material and Ethereal Realms overlap without a stable boundary. A landscape made from several possible versions of the same world. A central chamber or ancient mechanism to which every permanent arc is anchored. A path that can only be reached after the party has visited enough arc sites to understand the pattern. Possible Final Trials Queen Flower must choose whether to accept responsibility for futures she cannot fully control. Fiona must act without certainty that Aureth's path will succeed. Golo must decide whether to break, wield, or release Earthshatter as a living being. Sertraline must preserve the truth of both Fate and Aureth when either side offers a simpler story. Calvin and Nameloc must guide the party through collapsing dream-paths without allowing fear or false prophecy to choose the route for them.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "convergence"
+      "the-convergence"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#the-convergence",
+      "anchor": "the-convergence"
     }
   },
   {
     "id": "lore-the-dream-plane-and-moon-walking",
     "domain": "lore",
     "name": "The Dream Plane and Moon-Walking",
-    "summary": "The Dream Plane is a shifting borderland connected to the Ethereal Realm. It is made from sleeping minds, remembered places, fears, hopes, and futures that have not yet become real. Unlike ordinary prophecy, the Dream Plane does not show what will happen. It shows what may happen, what once almost happened, and what a person believes might happen.",
-    "details": "The Dream Plane is a shifting borderland connected to the Ethereal Realm. It is made from sleeping minds, remembered places, fears, hopes, and futures that have not yet become real. Unlike ordinary prophecy, the Dream Plane does not show what will happen. It shows what may happen, what once almost happened, and what a person believes might happen. Why Dreams Matter to the Fate Mythology Dreams are among the places where fate is least settled and possibility is most active. Aureth's influence can be felt strongly there because sleeping minds create paths that certainty has not yet closed. The O",
+    "summary": "The Dream Plane is a shifting borderland connected to the Ethereal Realm. It is made from sleeping minds, remembered places, fears, hopes, and futures that have not yet become real. Unlike ordinary prophecy, the Dream Plane does not show wh",
+    "details": "The Dream Plane is a shifting borderland connected to the Ethereal Realm. It is made from sleeping minds, remembered places, fears, hopes, and futures that have not yet become real. Unlike ordinary prophecy, the Dream Plane does not show what will happen. It shows what may happen, what once almost happened, and what a person believes might happen. Why Dreams Matter to the Fate Mythology Dreams are among the places where fate is least settled and possibility is most active. Aureth's influence can be felt strongly there because sleeping minds create paths that certainty has not yet closed. The Old God's servants may seek to control dreams because a population that can imagine another future is difficult to rule completely. Dream visions must never be treated as guaranteed prophecy; they are clues, warnings, memories, symbolic truths, or possible futures. Permanent Dark Arcs can cast shadows into the Dream Plane, allowing distant threats to appear first as recurring nightmares. Moon-Walking Moon-Walking is the name for consciously entering and traveling through the Dream Plane. The moon does not create the power. It serves as a stable reflected light—a guide that helps a dreamer remember the way back to waking reality. Moon-Walking usually begins while Calvin is sleeping, dreaming, or resting beneath moonlight. Calvin may first enter unintentionally through unusually vivid dreams before learning to control the ability. In the Dream Plane, he most naturally appears as Nameloc, the Great Spirit Hound. Nameloc can follow the “scent” of a person, memory, fear, artifact, or Dark Arc across dream terrain. With practice, Calvin may lead willing companions into a shared dream while their bodies remain asleep in the Material Realm. Moon-Walking can reveal hidden information and paths, but it should not replace ordinary investigation or guarantee a single correct answer. Core image: In waking life, Calvin is the boy traveling with the party. In dreams, Nameloc runs beneath an enormous moon across paths made from memories and unrealized futures, tracking things that cannot be followed in the physical world. Suggested Boundaries Boundary Reason Consent matters Calvin should normally enter another person's dream only with permission, an invitation, or a strong existing bond. This reinforces the campaign's theme that power must preserve choice. Dreams are symbolic Locations and creatures may represent emotions or memories rather than literal physical facts. Possible futures are not promises A vision can become false the moment the party makes a different choice. The body remains vulnerable Moon-Walkers still need allies, wards, or a safe resting place in the Material Realm. Deep travel carries a cost Long or dangerous journeys may cause exhaustion, lost sleep, temporary confusion, or difficulty separating dream memories from waking memories. Nameloc is the anchor If the dream becomes unstable, the party follows the Great Spirit Hound back toward the moonlight and their sleeping bodies.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "dream",
-      "plane",
-      "moon",
-      "walking"
+      "the-dream-plane-and-moon-walking"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#the-dream-plane-and-moon-walking",
+      "anchor": "the-dream-plane-and-moon-walking"
     }
   },
   {
     "id": "lore-the-first-doubt",
     "domain": "lore",
     "name": "The First Doubt",
-    "summary": "At some unknowable moment, the Old God of Fate experienced the first doubt. This was not a minor hesitation. It was the first event that Fate had not fully contained within certainty.",
-    "details": "At some unknowable moment, the Old God of Fate experienced the first doubt. This was not a minor hesitation. It was the first event that Fate had not fully contained within certainty. The doubt created a crack within Fate's own mind or divine nature. That crack was the first space in which more than one future could exist. The existence of doubt did not destroy Fate, but it made Fate incomplete. From that internal fracture, possibility became capable of taking form. Core mythological principle: Aureth was not created as an enemy of Fate. She was born from something Fate discovered within itsel",
+    "summary": "At some unknowable moment, the Old God of Fate experienced the first doubt. This was not a minor hesitation. It was the first event that Fate had not fully contained within certainty. The doubt created a crack within Fate's own mind or divi",
+    "details": "At some unknowable moment, the Old God of Fate experienced the first doubt. This was not a minor hesitation. It was the first event that Fate had not fully contained within certainty. The doubt created a crack within Fate's own mind or divine nature. That crack was the first space in which more than one future could exist. The existence of doubt did not destroy Fate, but it made Fate incomplete. From that internal fracture, possibility became capable of taking form. Core mythological principle: Aureth was not created as an enemy of Fate. She was born from something Fate discovered within itself.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "first",
-      "doubt"
+      "the-first-doubt"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#the-first-doubt",
+      "anchor": "the-first-doubt"
     }
   },
   {
     "id": "lore-the-material-and-ethereal-realms",
     "domain": "lore",
     "name": "The Material and Ethereal Realms",
-    "summary": "The realms are not meant to be entirely separate. Healthy points of connection may exist naturally. Dark Arcs are dangerous because they create forced, wounded, or unstable connections.",
-    "details": "Material Realm Ethereal Realm Stable matter, embodied life, visible institutions, and consequences that persist. Memory, possibility, unrealized paths, spiritual impressions, and structures that may not obey ordinary physical rules. Certainty has greater weight. Possibility has greater freedom. Actions become history. History, intention, and potential can overlap. The realms are not meant to be entirely separate. Healthy points of connection may exist naturally. Dark Arcs are dangerous because they create forced, wounded, or unstable connections. Ethereal Platforms Ethereal platforms may serve",
+    "summary": "Material Realm Ethereal Realm Stable matter, embodied life, visible institutions, and consequences that persist. Memory, possibility, unrealized paths, spiritual impressions, and structures that may not obey ordinary physical rules. Certain",
+    "details": "Material Realm Ethereal Realm Stable matter, embodied life, visible institutions, and consequences that persist. Memory, possibility, unrealized paths, spiritual impressions, and structures that may not obey ordinary physical rules. Certainty has greater weight. Possibility has greater freedom. Actions become history. History, intention, and potential can overlap. The realms are not meant to be entirely separate. Healthy points of connection may exist naturally. Dark Arcs are dangerous because they create forced, wounded, or unstable connections. Ethereal Platforms Ethereal platforms may serve as observation points, anchor sites, transit nodes, or remnants of older crossings. The platform observed beneath the Luminary Dome suggests that scholars or unknown builders have studied these connections before the current party. Different platforms may correspond to different Dark Arcs, forgotten civilizations, or methods of planar travel.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "material",
-      "ethereal",
-      "realms"
+      "the-material-and-ethereal-realms"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#the-material-and-ethereal-realms",
+      "anchor": "the-material-and-ethereal-realms"
     }
   },
   {
     "id": "lore-the-old-god-s-restoration",
     "domain": "lore",
     "name": "The Old God's Restoration",
-    "summary": "The Old God of Fate is not necessarily seeking simple conquest. The restoration effort is driven by a belief that reality has become dangerously fragmented by uncertainty.",
-    "details": "The Old God of Fate is not necessarily seeking simple conquest. The restoration effort is driven by a belief that reality has become dangerously fragmented by uncertainty. Permanent Dark Arcs reconnect reality through fixed points. Agents create certainty by removing, narrowing, or controlling choice. The Old God's servants may believe they are healing the world. Their methods become oppressive because they treat uncertainty as a wound rather than a necessary part of existence. Why the Servants May Not See Themselves as Evil They may have witnessed suffering caused by chaos and uncontrolled ma",
+    "summary": "The Old God of Fate is not necessarily seeking simple conquest. The restoration effort is driven by a belief that reality has become dangerously fragmented by uncertainty. Permanent Dark Arcs reconnect reality through fixed points. Agents c",
+    "details": "The Old God of Fate is not necessarily seeking simple conquest. The restoration effort is driven by a belief that reality has become dangerously fragmented by uncertainty. Permanent Dark Arcs reconnect reality through fixed points. Agents create certainty by removing, narrowing, or controlling choice. The Old God's servants may believe they are healing the world. Their methods become oppressive because they treat uncertainty as a wound rather than a necessary part of existence. Why the Servants May Not See Themselves as Evil They may have witnessed suffering caused by chaos and uncontrolled magic. They may sincerely believe enforced certainty prevents war, grief, and disorder. Some may have accepted control willingly after losing faith in freedom. Defeating them should often require understanding what kind of certainty they are imposing and why it appeals to others.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "restoration"
+      "the-old-god-s-restoration"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#the-old-god-s-restoration",
+      "anchor": "the-old-god-s-restoration"
     }
   },
   {
     "id": "lore-the-origin-and-nature-of-magic",
     "domain": "lore",
     "name": "The Origin and Nature of Magic",
-    "summary": "Magic exists because Aureth discovered the spaces where fate could bend. A spell does not need to shatter destiny. It creates a temporary path through which another outcome can become real.",
-    "details": "Magic exists because Aureth discovered the spaces where fate could bend. A spell does not need to shatter destiny. It creates a temporary path through which another outcome can become real. Magic as Fate-Bending A healing spell bends a destined injury toward recovery. An illusion gives temporary form to something that is not materially present. Divination explores futures that have not yet hardened into certainty. Transformation allows a creature to occupy a different possible form. Teleportation forces distance to accept an alternate relationship between two places. Chronomancy bends the expe",
+    "summary": "Magic exists because Aureth discovered the spaces where fate could bend. A spell does not need to shatter destiny. It creates a temporary path through which another outcome can become real. Magic as Fate-Bending A healing spell bends a dest",
+    "details": "Magic exists because Aureth discovered the spaces where fate could bend. A spell does not need to shatter destiny. It creates a temporary path through which another outcome can become real. Magic as Fate-Bending A healing spell bends a destined injury toward recovery. An illusion gives temporary form to something that is not materially present. Divination explores futures that have not yet hardened into certainty. Transformation allows a creature to occupy a different possible form. Teleportation forces distance to accept an alternate relationship between two places. Chronomancy bends the expected sequence of change. Implications for Spellcasters Every spellcaster participates in Aureth's discovery, even without worshiping or knowing her. Different magical traditions may describe the same process with different religious or academic language. Magic is strongest where possibility is abundant and most unstable where certainty has been violently imposed. Spells near permanent Dark Arcs may behave strangely because two incompatible structures of fate overlap. Snap Matches and Other Boundary-Bending Artifacts Artifacts that force movement, distance, time, or planar boundaries may exploit the same cracks that make magic possible. Repeated or careless use can damage the boundary between realms. Snap Matches can act as small, forceful violations of normal spatial fate. The twenty-sided rune die may represent a more deliberate interaction with probability and chosen outcomes. Living or awakening artifacts may have accumulated enough possibility, memory, or purpose to develop an identity.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "origin",
-      "nature",
-      "magic"
+      "the-origin-and-nature-of-magic"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#the-origin-and-nature-of-magic",
+      "anchor": "the-origin-and-nature-of-magic"
     }
   },
   {
     "id": "lore-the-party-as-mythological-pillars",
     "domain": "lore",
     "name": "The Party as Mythological Pillars",
-    "summary": "The party should not merely discover the cosmology. Their existing character arcs naturally embody the forces needed to resolve it.",
-    "details": "The party should not merely discover the cosmology. Their existing character arcs naturally embody the forces needed to resolve it. Queen Flower — Stewardship Represents the responsibility to make choices that affect others. Must learn the difference between ruling, protecting, and controlling. Can become the person capable of holding fate without turning it into tyranny. Potential end-state: Steward of Fate rather than a conventional goddess or absolute monarch. Fiona — Chosen Action Aureth's paladin and protector of possibility. Her strength should grow most when the right action is uncertai",
+    "summary": "The party should not merely discover the cosmology. Their existing character arcs naturally embody the forces needed to resolve it. Queen Flower — Stewardship Represents the responsibility to make choices that affect others. Must learn the ",
+    "details": "The party should not merely discover the cosmology. Their existing character arcs naturally embody the forces needed to resolve it. Queen Flower — Stewardship Represents the responsibility to make choices that affect others. Must learn the difference between ruling, protecting, and controlling. Can become the person capable of holding fate without turning it into tyranny. Potential end-state: Steward of Fate rather than a conventional goddess or absolute monarch. Fiona — Chosen Action Aureth's paladin and protector of possibility. Her strength should grow most when the right action is uncertain but she chooses courageously. Her faith can evolve from obedience toward conscious commitment. She demonstrates that doubt does not prevent action; it makes action meaningful. Golo — Momentum and Living Weight Represents endurance, movement, labor, and the consequences carried forward by action. His connection to the Crucible grounds cosmic themes in craft, work, and physical reality. Earthshatter's heartbeat may signal that artifacts can awaken through repeated purpose, memory, and chosen use. Golo can prove that a future is built through motion rather than merely foretold. Sertraline — Witness and Memory Represents listening, connection, nature, and the preservation of what happened. Nature communicates with her through impressions rather than explanations. She can sense places where thought, memory, or natural choice has been unnaturally suppressed. She demonstrates that fate without memory becomes repetition and doubt without witness becomes confusion. Calvin / Nameloc — Dreams and Instinct Represents imagination, instinct, and the ability to move through uncertainty without demanding that it become predictable. Calvin brings human curiosity and vulnerability; Nameloc brings protection, tracking, and spiritual strength. Moon-Walking lets the party enter possible stories without mistaking them for fixed destiny. He demonstrates that an unknown path can still be followed when trust, consent, and companionship provide an anchor.",
     "aliases": [],
     "tags": [
       "lore",
+      "cosmology",
+      "mythology",
       "arc-1",
-      "party",
-      "mythological",
-      "pillars"
+      "the-party-as-mythological-pillars"
     ],
     "relatedIds": [],
     "visibility": "dm-only",
-    "canonStatus": "confirmed",
+    "canonStatus": "proposed",
     "evidence": [
       {
-        "type": "source-document",
+        "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
       }
     ],
     "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
-    }
-  },
-  {
-    "id": "secret-lore-1",
-    "domain": "secret",
-    "name": "DM Secret 1",
-    "summary": "Continuity Rule: Nothing in this document should be copied into a playthrough summary until the characters actually encounter, learn, or reasonably infer it during play.",
-    "details": "Continuity Rule: Nothing in this document should be copied into a playthrough summary until the characters actually encounter, learn, or reasonably infer it during play.",
-    "aliases": [],
-    "tags": [
-      "secret",
-      "gm-only",
-      "arc-1"
-    ],
-    "relatedIds": [],
-    "visibility": "dm-only",
-    "canonStatus": "confirmed",
-    "evidence": [
-      {
-        "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
-      }
-    ],
-    "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
-    }
-  },
-  {
-    "id": "secret-lore-2",
-    "domain": "secret",
-    "name": "DM Secret 2",
-    "summary": "DM Direction: Aureth should not be revealed as an ordinary benevolent goddess who opposes an evil god. She represents necessary uncertainty, but uncertainty can also cause fear, loss, chaos, and painf",
-    "details": "DM Direction: Aureth should not be revealed as an ordinary benevolent goddess who opposes an evil god. She represents necessary uncertainty, but uncertainty can also cause fear, loss, chaos, and painful responsibility. Her value comes from making meaningful choice possible.",
-    "aliases": [],
-    "tags": [
-      "secret",
-      "gm-only",
-      "arc-1"
-    ],
-    "relatedIds": [],
-    "visibility": "dm-only",
-    "canonStatus": "confirmed",
-    "evidence": [
-      {
-        "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
-      }
-    ],
-    "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
-    }
-  },
-  {
-    "id": "secret-lore-3",
-    "domain": "secret",
-    "name": "DM Secret 3",
-    "summary": "Recommended interpretation: Calvin should not be revealed as secretly more important than every other hero. His special role is practical and thematic: he can take the group into a realm none of them ",
-    "details": "Recommended interpretation: Calvin should not be revealed as secretly more important than every other hero. His special role is practical and thematic: he can take the group into a realm none of them could safely navigate alone, while the other heroes remain essential to surviving and understanding what they find there.",
-    "aliases": [],
-    "tags": [
-      "secret",
-      "gm-only",
-      "arc-1"
-    ],
-    "relatedIds": [],
-    "visibility": "dm-only",
-    "canonStatus": "confirmed",
-    "evidence": [
-      {
-        "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
-      }
-    ],
-    "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
-    }
-  },
-  {
-    "id": "secret-lore-4",
-    "domain": "secret",
-    "name": "DM Secret 4",
-    "summary": "Recommended interpretation: Jerry is most compelling if he believes freedom produces disorder and that he alone is willing to impose the structure necessary to save people from themselves. His name an",
-    "details": "Recommended interpretation: Jerry is most compelling if he believes freedom produces disorder and that he alone is willing to impose the structure necessary to save people from themselves. His name and political methods can mirror his supernatural goal: shaping boundaries so outcomes favor his chosen design.",
-    "aliases": [],
-    "tags": [
-      "secret",
-      "gm-only",
-      "arc-1"
-    ],
-    "relatedIds": [],
-    "visibility": "dm-only",
-    "canonStatus": "confirmed",
-    "evidence": [
-      {
-        "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
-      }
-    ],
-    "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
-    }
-  },
-  {
-    "id": "secret-lore-5",
-    "domain": "secret",
-    "name": "DM Secret 5",
-    "summary": "Final DM Note: The mythology should remain flexible enough to respond to the children's choices. The cosmology provides a destination and thematic structure, but the party's actions should determine w",
-    "details": "Final DM Note: The mythology should remain flexible enough to respond to the children's choices. The cosmology provides a destination and thematic structure, but the party's actions should determine what reconciliation actually looks like and who ultimately accepts responsibility for the future.",
-    "aliases": [],
-    "tags": [
-      "secret",
-      "gm-only",
-      "arc-1"
-    ],
-    "relatedIds": [],
-    "visibility": "dm-only",
-    "canonStatus": "confirmed",
-    "evidence": [
-      {
-        "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
-      }
-    ],
-    "source": {
-      "type": "dm_lore_reference",
-      "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#the-party-as-mythological-pillars",
+      "anchor": "the-party-as-mythological-pillars"
     }
   },
   {
