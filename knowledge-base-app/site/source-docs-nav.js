@@ -9,7 +9,7 @@ const sourceDocGroups = [
           { label: 'Calvin / Nameloc', href: './source-docs/the-dark-arcs/characters/character_sheet_calvin_nameloc.html', icon: '🧑' },
           { label: 'Fiona', href: './source-docs/the-dark-arcs/characters/character_sheet_fiona.html', icon: '✨' },
           { label: 'Golo', href: './source-docs/the-dark-arcs/characters/character_sheet_golo.html', icon: '🛡️' },
-          { label: 'Queen Flower', href: './source-docs/the-dark-arcs/characters/character_sheet_queen_flower.html', icon: '🌸' },
+          { label: 'Queen Flower', href: './characters/index.html#queen-flower-of-veylathar', icon: '🌸' },
           { label: 'Sertraline', href: './source-docs/the-dark-arcs/characters/character_sheet_sertraline.html', icon: '🕯️' }
         ]
       }

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "character-queen-flower",
+    "name": "Queen Flower of Veylathar",
+    "visibility": "player",
+    "sourceAnchor": "queen-flower-of-veylathar",
+    "path": "data/characters/queen-flower-of-veylathar.json",
+    "sheetRoute": "characters/index.html#queen-flower-of-veylathar"
+  }
+]

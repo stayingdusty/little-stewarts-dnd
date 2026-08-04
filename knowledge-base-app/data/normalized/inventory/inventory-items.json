@@ -1,5 +1,45 @@
 [
   {
+    "id": "inventory-item-queen-flower-of-veylathar-10-snap-matches",
+    "domain": "inventory-item",
+    "name": "10 Snap Matches",
+    "summary": "Inventory entry for Queen Flower of Veylathar.",
+    "details": "Tracked in Queen Flower of Veylathar's inventory.",
+    "aliases": [
+      "Queen Flower of Veylathar"
+    ],
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "relatedIds": [
+      "character-queen-flower"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "upload/IMG_53E7534D-F69A-4073-8203-285B9B7145CD.jpeg"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "upload/IMG_29EFE516-C22A-4205-929C-25763E4238FB.jpeg"
+      }
+    ],
+    "source": {
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "queen-flower-of-veylathar"
+    },
+    "ownerName": "Queen Flower of Veylathar"
+  },
+  {
     "id": "inventory-item-golo-10-snap-matches",
     "domain": "inventory-item",
     "name": "10 Snap Matches",
@@ -27,35 +67,6 @@
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
     },
     "ownerName": "GOLO"
-  },
-  {
-    "id": "inventory-item-queen-flower-of-veylathar-10-snap-matches",
-    "domain": "inventory-item",
-    "name": "10 Snap Matches",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
-    "details": "Tracked in QUEEN FLOWER OF VEYLATHAR's inventory.",
-    "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
-    ],
-    "tags": [
-      "inventory-item",
-      "arc-1",
-      "inventory"
-    ],
-    "relatedIds": [],
-    "visibility": "player",
-    "canonStatus": "confirmed",
-    "evidence": [
-      {
-        "type": "character-sheet",
-        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
-      }
-    ],
-    "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
-    },
-    "ownerName": "QUEEN FLOWER OF VEYLATHAR"
   },
   {
     "id": "inventory-item-sertraline-10-snap-matches",
@@ -90,30 +101,41 @@
     "id": "inventory-item-queen-flower-of-veylathar-ancestral-pendant-of-veylathar",
     "domain": "inventory-item",
     "name": "Ancestral Pendant of Veylathar",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
-    "details": "Tracked in QUEEN FLOWER OF VEYLATHAR's inventory.",
+    "summary": "Inventory entry for Queen Flower of Veylathar.",
+    "details": "Tracked in Queen Flower of Veylathar's inventory.",
     "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
+      "Queen Flower of Veylathar"
     ],
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
-    "relatedIds": [],
+    "relatedIds": [
+      "character-queen-flower"
+    ],
     "visibility": "player",
     "canonStatus": "confirmed",
     "evidence": [
       {
-        "type": "character-sheet",
+        "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "upload/IMG_53E7534D-F69A-4073-8203-285B9B7145CD.jpeg"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "upload/IMG_29EFE516-C22A-4205-929C-25763E4238FB.jpeg"
       }
     ],
     "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "queen-flower-of-veylathar"
     },
-    "ownerName": "QUEEN FLOWER OF VEYLATHAR"
+    "ownerName": "Queen Flower of Veylathar"
   },
   {
     "id": "inventory-item-golo-bow-and-arrows",
@@ -351,30 +373,41 @@
     "id": "inventory-item-queen-flower-of-veylathar-map",
     "domain": "inventory-item",
     "name": "Map",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
-    "details": "Tracked in QUEEN FLOWER OF VEYLATHAR's inventory.",
+    "summary": "Inventory entry for Queen Flower of Veylathar.",
+    "details": "Tracked in Queen Flower of Veylathar's inventory.",
     "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
+      "Queen Flower of Veylathar"
     ],
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
-    "relatedIds": [],
+    "relatedIds": [
+      "character-queen-flower"
+    ],
     "visibility": "player",
     "canonStatus": "confirmed",
     "evidence": [
       {
-        "type": "character-sheet",
+        "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "upload/IMG_53E7534D-F69A-4073-8203-285B9B7145CD.jpeg"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "upload/IMG_29EFE516-C22A-4205-929C-25763E4238FB.jpeg"
       }
     ],
     "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "queen-flower-of-veylathar"
     },
-    "ownerName": "QUEEN FLOWER OF VEYLATHAR"
+    "ownerName": "Queen Flower of Veylathar"
   },
   {
     "id": "inventory-item-fiona-radiant-sword-of-aureth",
@@ -404,6 +437,46 @@
       "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_fiona.html"
     },
     "ownerName": "FIONA"
+  },
+  {
+    "id": "inventory-item-queen-flower-of-veylathar-rocky-talkie",
+    "domain": "inventory-item",
+    "name": "Rocky Talkie",
+    "summary": "Inventory entry for Queen Flower of Veylathar.",
+    "details": "Tracked in Queen Flower of Veylathar's inventory.",
+    "aliases": [
+      "Queen Flower of Veylathar"
+    ],
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "relatedIds": [
+      "character-queen-flower"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "upload/IMG_53E7534D-F69A-4073-8203-285B9B7145CD.jpeg"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "upload/IMG_29EFE516-C22A-4205-929C-25763E4238FB.jpeg"
+      }
+    ],
+    "source": {
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "queen-flower-of-veylathar"
+    },
+    "ownerName": "Queen Flower of Veylathar"
   },
   {
     "id": "inventory-item-fiona-rocky-talkie",
@@ -464,35 +537,6 @@
     "ownerName": "GOLO"
   },
   {
-    "id": "inventory-item-queen-flower-of-veylathar-rocky-talkie",
-    "domain": "inventory-item",
-    "name": "Rocky Talkie",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
-    "details": "Tracked in QUEEN FLOWER OF VEYLATHAR's inventory.",
-    "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
-    ],
-    "tags": [
-      "inventory-item",
-      "arc-1",
-      "inventory"
-    ],
-    "relatedIds": [],
-    "visibility": "player",
-    "canonStatus": "confirmed",
-    "evidence": [
-      {
-        "type": "character-sheet",
-        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
-      }
-    ],
-    "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
-    },
-    "ownerName": "QUEEN FLOWER OF VEYLATHAR"
-  },
-  {
     "id": "inventory-item-sertraline-rocky-talkie",
     "domain": "inventory-item",
     "name": "Rocky Talkie",
@@ -525,30 +569,41 @@
     "id": "inventory-item-queen-flower-of-veylathar-royal-regalia",
     "domain": "inventory-item",
     "name": "Royal Regalia",
-    "summary": "Inventory entry for QUEEN FLOWER OF VEYLATHAR.",
-    "details": "Tracked in QUEEN FLOWER OF VEYLATHAR's inventory.",
+    "summary": "Inventory entry for Queen Flower of Veylathar.",
+    "details": "Tracked in Queen Flower of Veylathar's inventory.",
     "aliases": [
-      "QUEEN FLOWER OF VEYLATHAR"
+      "Queen Flower of Veylathar"
     ],
     "tags": [
       "inventory-item",
       "arc-1",
       "inventory"
     ],
-    "relatedIds": [],
+    "relatedIds": [
+      "character-queen-flower"
+    ],
     "visibility": "player",
     "canonStatus": "confirmed",
     "evidence": [
       {
-        "type": "character-sheet",
+        "type": "source-document",
         "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "upload/IMG_53E7534D-F69A-4073-8203-285B9B7145CD.jpeg"
+      },
+      {
+        "type": "uploaded-photo",
+        "path": "upload/IMG_29EFE516-C22A-4205-929C-25763E4238FB.jpeg"
       }
     ],
     "source": {
-      "type": "character_sheet",
-      "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_queen_flower.html"
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "queen-flower-of-veylathar"
     },
-    "ownerName": "QUEEN FLOWER OF VEYLATHAR"
+    "ownerName": "Queen Flower of Veylathar"
   },
   {
     "id": "inventory-item-golo-saddle",
