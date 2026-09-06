@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/character-update.schema.json",
+  "sessionId": "2026-09-06-calvin-nameloc-layout-update",
+  "status": "applied",
+  "visibility": "player",
+  "updates": [
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "powers",
+      "previousValue": "Seven power cards, including Titan Leap and Howl of the Great Hound, repeated actions listed on page 2.",
+      "proposedValue": "Five condensed power cards. Remove Titan Leap and Howl of the Great Hound from page 1 because Titan Leap Slam and both Howl actions remain in the page 2 attack table.",
+      "evidence": [
+        "user-provided print-preview screenshots and layout direction, 2026-09-06"
+      ],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "inventory[extending-pole-hammer].charges",
+      "previousValue": "Equipped by Calvin; freely extends or contracts to any length from a 5-foot walking stick to a 10-foot war hammer on a pole; unlimited transformations",
+      "proposedValue": "Equipped; adjusts freely to any length from a 5-foot walking stick to a 10-foot pole hammer; unlimited changes",
+      "evidence": [
+        "user-provided print-preview screenshot and request to condense the description, 2026-09-06"
+      ],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    }
+  ]
+}

@@ -69,43 +69,31 @@
     "powers": [
       {
         "name": "Keen Nose",
-        "description": "Tracks creatures, people, animals, magical disturbances, and unusual spiritual scents.",
+        "description": "Tracks creatures, magic, disturbances, and unusual spiritual scents.",
         "rollCheck": "",
         "usesRange": ""
       },
       {
         "name": "Guardian Instinct",
-        "description": "Can react instantly to protect an ally in danger. The original guardian rule grants one automatic success per encounter.",
+        "description": "React instantly to protect an ally in danger.",
         "rollCheck": "",
         "usesRange": "One automatic success per encounter"
       },
       {
         "name": "Unleash the Great Hound",
-        "description": "Once per session, Calvin transforms into Nameloc or summons Nameloc beside him as a separate 10–15-foot glowing guardian presence.",
+        "description": "Transform into Nameloc or summon the 10–15-foot glowing guardian.",
         "rollCheck": "",
         "usesRange": "Once per session"
       },
       {
-        "name": "Titan Leap",
-        "description": "Leap great distances, cross gaps, save allies, break obstacles, or slam into enemies and terrain.",
-        "rollCheck": "",
-        "usesRange": ""
-      },
-      {
         "name": "Pack Protector",
-        "description": "Shields allies with spirit energy. Enemies may roll with disadvantage against protected allies.",
+        "description": "Shield allies with spirit energy; enemies may roll with disadvantage against them.",
         "rollCheck": "",
         "usesRange": ""
       },
       {
         "name": "Spirit Sight",
-        "description": "Sees invisible enemies, hidden magic, spiritual disturbances, and threats concealed from normal vision.",
-        "rollCheck": "",
-        "usesRange": ""
-      },
-      {
-        "name": "Howl of the Great Hound",
-        "description": "Choose to frighten enemies or empower allies with advantage on their next action.",
+        "description": "See invisible enemies, hidden magic, spiritual disturbances, and concealed threats.",
         "rollCheck": "",
         "usesRange": ""
       }
@@ -144,7 +132,7 @@
       {
         "name": "Extending pole hammer",
         "quantity": "1",
-        "charges": "Equipped by Calvin; freely extends or contracts to any length from a 5-foot walking stick to a 10-foot war hammer on a pole; unlimited transformations"
+        "charges": "Equipped; adjusts freely to any length from a 5-foot walking stick to a 10-foot pole hammer; unlimited changes"
       }
     ],
     "currency": {
