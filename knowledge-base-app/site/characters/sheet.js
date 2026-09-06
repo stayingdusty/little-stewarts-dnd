@@ -18,7 +18,7 @@ const miniValue = (label, value) =>
   `<div><b>${escapeHtml(label)}:</b><div class="mini">${escapeHtml(value)}</div></div>`;
 
 const ability = (power) => `
-  <div class="ability">
+  <div class="ability" data-power-card>
     <h3>${escapeHtml(power.name)}</h3>
     <p>${escapeHtml(power.description)}</p>
     <div class="ability-lines">${miniValue('Roll / Check', power.rollCheck)}${miniValue('Uses / Range', power.usesRange)}</div>
@@ -28,6 +28,40 @@ const paddedRows = (items, length, blank) => {
   const rows = [...(items || [])];
   while (rows.length < length) rows.push(blank);
   return rows;
+};
+
+const balancePowers = () => {
+  const page = sheet.querySelector('.page:first-child');
+  const primary = page?.querySelector('[data-powers-primary]');
+  const overflow = page?.querySelector('[data-powers-overflow]');
+  const continuation = page?.querySelector('[data-powers-continuation]');
+  const leftColumn = page?.querySelector('[data-page-one-left]');
+  const rightColumn = page?.querySelector('[data-page-one-right]');
+
+  if (!primary || !overflow || !continuation || !leftColumn || !rightColumn) return;
+
+  primary.append(...overflow.querySelectorAll('[data-power-card]'));
+  continuation.hidden = true;
+
+  if (window.matchMedia('(max-width: 720px)').matches) return;
+
+  let bestHeight = Math.max(leftColumn.scrollHeight, rightColumn.scrollHeight);
+  const powerCards = [...primary.querySelectorAll('[data-power-card]')];
+
+  for (let index = powerCards.length - 1; index > 0; index -= 1) {
+    overflow.prepend(powerCards[index]);
+    continuation.hidden = false;
+    const candidateHeight = Math.max(leftColumn.scrollHeight, rightColumn.scrollHeight);
+
+    if (candidateHeight >= bestHeight) {
+      primary.append(powerCards[index]);
+      break;
+    }
+
+    bestHeight = candidateHeight;
+  }
+
+  continuation.hidden = overflow.childElementCount === 0;
 };
 
 const attackRows = (attacks) => paddedRows(attacks, 5, { name: '', toHit: '', range: '', effect: '' }).map((attack) => `
@@ -50,15 +84,15 @@ const renderSheet = (character) => `
   <header><h1 id="${escapeHtml(character.source?.anchor || character.id)}">${escapeHtml(character.name)}</h1><div class="subtitle">${escapeHtml(character.subtitle)}</div></header>
   <section class="identity">${field('Player', character.player, true)}${field('Character', character.name, true)}${field('Title / Role', character.title, true)}</section>
   <section class="identity second">${field('Species / Ancestry', character.species)}${field(character.spiritFormMovement ? 'Calvin Movement' : 'Movement', character.movement)}${field('Initiative', character.initiative)}${field('Level / Rank', character.levelRank)}</section>
-  <div class="grid">
-    <section>
+  <div class="grid page-one-grid">
+    <section data-page-one-left>
       <div class="card soft"><h2>Character Overview</h2><p>${escapeHtml(character.summary)}</p></div>
       <div class="card"><h2>Ability Scores &amp; Modifiers <span class="score-total">${escapeHtml(character.abilityPointTotal)}</span></h2><div class="stat-list">
         ${stat('Strength', character.abilityScores?.strength, character.abilityModifiers?.strength)}${stat('Dexterity', character.abilityScores?.dexterity, character.abilityModifiers?.dexterity)}${stat('Constitution', character.abilityScores?.constitution, character.abilityModifiers?.constitution)}${stat('Intelligence', character.abilityScores?.intelligence, character.abilityModifiers?.intelligence)}${stat('Wisdom', character.abilityScores?.wisdom, character.abilityModifiers?.wisdom)}${stat('Charisma', character.abilityScores?.charisma, character.abilityModifiers?.charisma)}
       </div></div>
-      <div class="card"><h2>Powers &amp; Abilities</h2>${(character.powers || []).map(ability).join('')}</div>
+      <div class="card"><h2>Powers &amp; Abilities</h2><div data-powers-primary>${(character.powers || []).map(ability).join('')}</div></div>
     </section>
-    <aside>
+    <aside data-page-one-right>
       <div class="card"><h2>Combat</h2><div class="combat-grid">
         <div class="combat-box"><div class="label">Current HP</div><div class="value">${escapeHtml(character.combat?.currentHp)}</div></div>
         <div class="combat-box"><div class="label">Maximum HP</div><div class="value">${escapeHtml(character.combat?.maximumHp)}</div></div>
@@ -68,6 +102,7 @@ const renderSheet = (character) => `
       <div class="card"><h2>Modifier Boosts</h2><div class="choice-box large">${escapeHtml(character.modifierBoosts)}</div></div>
       <div class="card"><h2>External Bonds &amp; Relationships</h2><div class="choice-box medium">${escapeHtml(character.relationships)}</div></div>
       <div class="card"><h2>Special Rules &amp; Notes</h2><div class="choice-box large">${escapeHtml(character.specialRules)}</div></div>
+      <div class="card powers-continuation" data-powers-continuation hidden><h2>Powers &amp; Abilities <span class="continued-label">continued</span></h2><div data-powers-overflow></div></div>
     </aside>
   </div>
   <div class="footer">Page 1 - Identity, statistics, combat values, modifiers, powers, and relationships</div>
@@ -110,9 +145,13 @@ const loadCharacter = async () => {
   const character = await characterResponse.json();
   document.title = `Character Sheet - ${character.name}`;
   sheet.innerHTML = renderSheet(character);
+  balancePowers();
 };
 
 window.addEventListener('hashchange', loadCharacter);
+window.addEventListener('beforeprint', balancePowers);
+window.addEventListener('afterprint', balancePowers);
+window.addEventListener('resize', balancePowers);
 loadCharacter().catch((error) => {
   sheet.innerHTML = `<section class="page"><h1>Unable to load character sheet</h1><p>${escapeHtml(error.message)}</p></section>`;
 });
