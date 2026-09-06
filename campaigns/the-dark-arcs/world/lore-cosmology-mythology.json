@@ -17,6 +17,10 @@
     {
       "type": "legacy-source-document",
       "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+    },
+    {
+      "type": "dm-direction",
+      "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
     }
   ],
   "intro": [
@@ -434,10 +438,11 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Nameloc may be Calvin's true dream-self, awakened when he first crossed the boundary between realms.",
-            "The Great Spirit Hound may belong to an ancient line of guardians that protected sleepers and hunted creatures that entered dreams without permission.",
-            "Aureth may have awakened the power because hounds can follow paths without needing to know where those paths will end.",
-            "The power may also predate Aureth's known worship, making Nameloc part of an older natural response to the First Doubt."
+            "Nameloc's magic comes from the Fey.",
+            "The glowing blue hue in Great Hound form is a sign that Fey creatures can recognize as connected to Calvin, his magic, or its source.",
+            "Calvin's strange dreams and Nameloc's blue glow share the same eventual revelation.",
+            "The precise connection is to Twilight fairies or Twilight elves; which people is responsible remains unresolved.",
+            "A future encounter with those Twilight beings will help Calvin discover dreamwalking under conditions connected to moonlight."
           ]
         },
         {
@@ -506,6 +511,28 @@
             "An agent of Fate attempts to create a city where everyone dreams the same approved dream every night.",
             "Aureth first speaks clearly to the party in the Dream Plane because ordinary language cannot contain all of the possible meanings she is trying to express.",
             "At the Convergence, Nameloc may be the only one able to find a path home after the possible futures begin collapsing into a single imposed destiny."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calvins-fey-source-and-twilight-revelation",
+      "title": "Calvin's Fey Source and Twilight Revelation",
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "dm",
+          "text": "DM-only plot direction: Nameloc's magic comes from the Fey. The identity of the specific Twilight people remains unresolved between Twilight fairies and Twilight elves."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Fey creatures recognize Nameloc's glowing blue hue as familiar magic, or recognize Calvin or the source expressed through that magic.",
+            "The strange dreams and the blue glow are two clues leading to the same revelation.",
+            "During an encounter with the unresolved Twilight people, Calvin discovers a connection to them and gains the ability to dreamwalk.",
+            "Dreamwalking works only under conditions related to moonlight; the exact conditions remain unresolved.",
+            "The clues should remain mysteries until the encounter reveals their shared source."
           ]
         }
       ]

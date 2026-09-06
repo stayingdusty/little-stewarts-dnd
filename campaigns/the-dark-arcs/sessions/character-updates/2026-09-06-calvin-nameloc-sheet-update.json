@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/character-update.schema.json",
+  "sessionId": "2026-09-06-calvin-nameloc-sheet-update",
+  "status": "applied",
+  "visibility": "dm-only",
+  "updates": [
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "player",
+      "previousValue": "Coleman",
+      "proposedValue": "Coleman Price",
+      "evidence": ["user-provided character sheet update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "movement and spiritFormMovement",
+      "previousValue": "60",
+      "proposedValue": {"calvin": "Normal human movement", "nameloc": "60 ft"},
+      "evidence": ["user-provided character sheet update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "abilityScores",
+      "previousValue": {"strength": "10", "dexterity": "2", "constitution": "3", "intelligence": "2", "wisdom": "5", "charisma": "8"},
+      "proposedValue": {"strength": "10", "dexterity": "2", "constitution": "3", "intelligence": "2", "wisdom": "5", "charisma": "8"},
+      "evidence": ["user-provided character sheet update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "combat.currentHp and combat.armorClass",
+      "previousValue": {"currentHp": "10", "armorClass": "10"},
+      "proposedValue": {"currentHp": "10", "armorClass": "10"},
+      "evidence": ["user-provided character sheet update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "attacks",
+      "previousValue": "Spirit Bite was complete; Titan Leap Slam and both Howl actions had missing range or to-hit details.",
+      "proposedValue": "Spirit Bite: Enemy AC, melee, 2d4. Titan Leap Slam: Enemy AC, 1 movement, 1d8. Howl — Fear: Enemy AC, 1 movement, non-damage effect causing enemies to flee. Howl — Empower: 12, 1 movement, grants advantage to allies in range.",
+      "evidence": ["user-provided character sheet update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "inventory[extending-pole-hammer]",
+      "previousValue": "Equipped; extends from a 5-foot walking stick to a 10-foot war hammer on a pole",
+      "proposedValue": "Equipped by Calvin; freely extends or contracts to any length from 5 to 10 feet, with no limit on transformations.",
+      "evidence": ["user-provided character sheet update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "sessionNotes.plotMysteries",
+      "previousValue": "Strange dreams and blue glow recorded separately.",
+      "proposedValue": "The strange dreams and the Fey creatures' recognition of Nameloc's blue glow are connected mysteries.",
+      "evidence": ["user-provided character sheet update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "dmPlotSecret",
+      "previousValue": "Existing proposed lore tied Moon-Walking to the Dream Plane and suggested several possible origins for Nameloc.",
+      "proposedValue": "Nameloc's magic comes from the Fey. A moonlight-related encounter with Twilight fairies or Twilight elves will reveal Calvin's connection to them and awaken controlled dreamwalking; the exact Twilight people and activation conditions remain unresolved.",
+      "evidence": ["user-provided secret plot direction, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    }
+  ]
+}

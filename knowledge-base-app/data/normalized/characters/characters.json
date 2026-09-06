@@ -6,10 +6,12 @@
     "name": "Calvin / Nameloc",
     "title": "Guardian / Protector",
     "subtitle": "Spiritbound Guardian of the Great Hound",
-    "player": "Coleman",
+    "player": "Coleman Price",
     "species": "Human / Spiritbound",
     "levelRank": "2",
-    "movement": "60",
+    "movement": "Normal human movement",
+    "spiritFormName": "Nameloc",
+    "spiritFormMovement": "60 ft",
     "initiative": "",
     "visibility": "player",
     "canonStatus": "confirmed",
@@ -120,20 +122,20 @@
       {
         "name": "Titan Leap Slam",
         "toHit": "Enemy AC",
-        "range": "",
+        "range": "1 movement",
         "effect": "1d8"
       },
       {
         "name": "Howl — Fear",
-        "toHit": "",
-        "range": "",
-        "effect": "Non-damage effect"
+        "toHit": "Enemy AC",
+        "range": "1 movement",
+        "effect": "Non-damage effect; enemies flee"
       },
       {
         "name": "Howl — Empower",
         "toHit": "12",
-        "range": "",
-        "effect": "Advantage effect"
+        "range": "1 movement",
+        "effect": "Allies within range gain advantage"
       }
     ],
     "attackRules": "",
@@ -142,7 +144,7 @@
       {
         "name": "Extending pole hammer",
         "quantity": "1",
-        "charges": "Equipped; extends from a 5-foot walking stick to a 10-foot war hammer on a pole"
+        "charges": "Equipped by Calvin; freely extends or contracts to any length from a 5-foot walking stick to a 10-foot war hammer on a pole; unlimited transformations"
       }
     ],
     "currency": {
@@ -152,7 +154,7 @@
       "other": ""
     },
     "specialResources": "",
-    "sessionNotes": "Great Hound appearance / glow: Blue glow. Plot mystery: What's up with these strange dreams I have been having? Great Hound personality, favorite move, and awakening catchphrase remain unrecorded."
+    "sessionNotes": "Great Hound appearance / glow: Blue glow. Plot mysteries: What is causing Calvin's strange dreams? Why do Fey creatures recognize Nameloc's glowing blue hue as though they recognize him, his magic, or its source? Great Hound personality, favorite move, and awakening catchphrase remain unrecorded."
   },
   {
     "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
