@@ -50,7 +50,7 @@
     "id": "character-golo",
     "kind": "character",
     "name": "Golo",
-    "summary": "A powerful centaur archer and hunter whose dwarven alliances grant him rune magic, the magically lightweight Hammer of Earthshatter, and responsibility for a major artifact.",
+    "summary": "A powerful centaur master archer and hunter who channels ice and fire runes through a d12-shaped artifact and bears the Hammer of Earthshatter.",
     "tags": [
       "character",
       "arc-1",
@@ -65,7 +65,7 @@
     "sourcePath": "characters/index.html",
     "sourceAnchor": "golo",
     "timelineValue": 0,
-    "searchableText": "golo a powerful centaur archer and hunter whose dwarven alliances grant him rune magic, the magically lightweight hammer of earthshatter, and responsibility for a major artifact. half-giant / half-centaur archer, hunter, and artifact bearer. [object object] [object object] [object object] [object object] [object object] [object object] [object object] character arc-1 character-sheet archer hunter artifact-bearer"
+    "searchableText": "golo a powerful centaur master archer and hunter who channels ice and fire runes through a d12-shaped artifact and bears the hammer of earthshatter. half-giant / half-centaur archer, hunter, and artifact bearer. [object object] [object object] [object object] [object object] [object object] [object object] [object object] character arc-1 character-sheet archer hunter artifact-bearer"
   },
   {
     "id": "character-queen-flower",
@@ -1176,6 +1176,26 @@
     "searchableText": "cavalry inventory entry for fiona blossom flare. qty: 10 fiona blossom flare inventory-item arc-1 inventory"
   },
   {
+    "id": "inventory-item-golo-d12-shaped-rune-object",
+    "kind": "inventory-item",
+    "name": "D12-Shaped Rune Object",
+    "summary": "Inventory entry for Golo.",
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "aliases": [
+      "Golo"
+    ],
+    "visibility": "player",
+    "sourceType": "generated_character_sheet",
+    "sourcePath": "characters/index.html",
+    "sourceAnchor": "golo",
+    "timelineValue": 0,
+    "searchableText": "d12-shaped rune object inventory entry for golo. charges: activated golden, ice, and fire runes; carried in saddlebag golo inventory-item arc-1 inventory"
+  },
+  {
     "id": "inventory-item-sertraline-dwarven-bracers-of-mage-hands",
     "kind": "inventory-item",
     "name": "Dwarven Bracers of Mage Hands",
@@ -1193,7 +1213,7 @@
     "sourcePath": "characters/index.html",
     "sourceAnchor": "sertraline",
     "timelineValue": 0,
-    "searchableText": "dwarven bracers of mage hands inventory entry for sertraline. tracked in sertraline's inventory. sertraline inventory-item arc-1 inventory"
+    "searchableText": "dwarven bracers of mage hands inventory entry for sertraline. qty: 2 | charges: 1 mage hand per bracer; worn on front legs sertraline inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-golo-dwarven-hammer-of-earthshatter",
@@ -1514,26 +1534,6 @@
     "sourceAnchor": "fiona",
     "timelineValue": 0,
     "searchableText": "swordsmen inventory entry for fiona blossom flare. qty: 10 fiona blossom flare inventory-item arc-1 inventory"
-  },
-  {
-    "id": "inventory-item-golo-the-artifact",
-    "kind": "inventory-item",
-    "name": "The Artifact",
-    "summary": "Inventory entry for Golo.",
-    "tags": [
-      "inventory-item",
-      "arc-1",
-      "inventory"
-    ],
-    "aliases": [
-      "Golo"
-    ],
-    "visibility": "player",
-    "sourceType": "generated_character_sheet",
-    "sourcePath": "characters/index.html",
-    "sourceAnchor": "golo",
-    "timelineValue": 0,
-    "searchableText": "the artifact inventory entry for golo. tracked in golo's inventory. golo inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-sertraline-wisp-cloak",

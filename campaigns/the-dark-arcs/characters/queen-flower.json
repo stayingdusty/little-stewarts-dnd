@@ -96,7 +96,7 @@
       "name": "Astral Influence - Felt",
       "toHit": "Roll exceeds enemy AC",
       "range": "",
-      "effect": "1d4 physical effect"
+      "effect": "1d4 damage"
     },
     {
       "name": "Royal Command",

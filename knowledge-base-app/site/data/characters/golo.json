@@ -12,7 +12,7 @@
   "initiative": "",
   "visibility": "player",
   "canonStatus": "confirmed",
-  "summary": "A powerful centaur archer and hunter whose dwarven alliances grant him rune magic, the magically lightweight Hammer of Earthshatter, and responsibility for a major artifact.",
+  "summary": "A powerful centaur master archer and hunter who channels ice and fire runes through a d12-shaped artifact and bears the Hammer of Earthshatter.",
   "details": "Half-Giant / Half-Centaur archer, hunter, and artifact bearer.",
   "aliases": [],
   "tags": [
@@ -26,7 +26,7 @@
   "relatedIds": [
     "inventory-item-golo-bow-and-arrows",
     "inventory-item-golo-dwarven-hammer-of-earthshatter",
-    "inventory-item-golo-the-artifact",
+    "inventory-item-golo-d12-shaped-rune-object",
     "inventory-item-golo-saddle",
     "inventory-item-golo-flight-shoes",
     "inventory-item-golo-rocky-talkie",
@@ -60,38 +60,26 @@
   },
   "powers": [
     {
-      "name": "Master Archer",
-      "description": "Uses strength, range, and practiced accuracy to strike targets with bows and magical arrows.",
+      "name": "Ice & Fire Runes",
+      "description": "Channels activated ice and fire runes connected to the d12-shaped object in his saddlebag. Each rune has its own daily uses.",
       "rollCheck": "",
-      "usesRange": ""
+      "usesRange": "Ice: 3/day; Fire: 3/day"
     },
     {
-      "name": "Ice Arrows",
-      "description": "Fires magically empowered ice arrows that can damage, freeze, slow, or counter heat and fire.",
+      "name": "Master Archer & Rune-Charged Arrows",
+      "description": "Uses practiced mastery to strike with his bow. He may spend a daily ice or fire rune use to charge an arrow with that power.",
       "rollCheck": "",
-      "usesRange": ""
-    },
-    {
-      "name": "Licensed Fire Rune",
-      "description": "Uses dwarven-licensed fire rune power under the terms of his employment contract.",
-      "rollCheck": "",
-      "usesRange": ""
+      "usesRange": "Rune-charged arrows spend the chosen rune use"
     },
     {
       "name": "Hammer of Earthshatter",
       "description": "Instantly explodes or powders a 10-foot radius of non-living stone, including non-living spirit-conjured rock.",
       "rollCheck": "",
       "usesRange": "10-foot radius"
-    },
-    {
-      "name": "Magically Lightweight Hammer",
-      "description": "The hammer is easy to wield regardless of normal weight and can be lent to other characters for use.",
-      "rollCheck": "",
-      "usesRange": ""
     }
   ],
   "relationships": "Trusted by the dwarves as artifact bearer and rune licensee. Butcher's Guild bond established through the Iceman connection.",
-  "specialRules": "Earthshatter affects non-living stone and rock conjurations, but does not directly destroy living creatures. The hammer is magically lightweight and may be wielded by anyone Golo lends it to.",
+  "specialRules": "Earthshatter affects non-living stone and rock conjurations, but does not directly destroy living creatures.",
   "attacks": [
     {
       "name": "Bow Shot",
@@ -138,9 +126,9 @@
       "charges": ""
     },
     {
-      "name": "The Artifact",
+      "name": "D12-Shaped Rune Object",
       "quantity": "",
-      "charges": ""
+      "charges": "Activated golden, ice, and fire runes; carried in saddlebag"
     },
     {
       "name": "Saddle",
@@ -170,6 +158,6 @@
     "other": ""
   },
   "specialResources": "",
-  "sessionNotes": "",
+  "sessionNotes": "The Hammer of Earthshatter has a pulse in its core that Golo can sense as he works with it and strikes with it. The hammer seems drawn toward the mountains.",
   "sheetRoute": "characters/index.html#golo"
 }

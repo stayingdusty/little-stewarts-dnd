@@ -292,11 +292,43 @@
     "ownerName": "Fiona Blossom Flare"
   },
   {
+    "id": "inventory-item-golo-d12-shaped-rune-object",
+    "domain": "inventory-item",
+    "name": "D12-Shaped Rune Object",
+    "summary": "Inventory entry for Golo.",
+    "details": "Charges: Activated golden, ice, and fire runes; carried in saddlebag",
+    "aliases": [
+      "Golo"
+    ],
+    "tags": [
+      "inventory-item",
+      "arc-1",
+      "inventory"
+    ],
+    "relatedIds": [
+      "character-golo"
+    ],
+    "visibility": "player",
+    "canonStatus": "confirmed",
+    "evidence": [
+      {
+        "type": "source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
+      }
+    ],
+    "source": {
+      "type": "generated_character_sheet",
+      "path": "characters/index.html",
+      "anchor": "golo"
+    },
+    "ownerName": "Golo"
+  },
+  {
     "id": "inventory-item-sertraline-dwarven-bracers-of-mage-hands",
     "domain": "inventory-item",
     "name": "Dwarven Bracers of Mage Hands",
     "summary": "Inventory entry for Sertraline.",
-    "details": "Tracked in Sertraline's inventory.",
+    "details": "Qty: 2 | Charges: 1 Mage Hand per bracer; worn on front legs",
     "aliases": [
       "Sertraline"
     ],
@@ -914,38 +946,6 @@
       "anchor": "fiona"
     },
     "ownerName": "Fiona Blossom Flare"
-  },
-  {
-    "id": "inventory-item-golo-the-artifact",
-    "domain": "inventory-item",
-    "name": "The Artifact",
-    "summary": "Inventory entry for Golo.",
-    "details": "Tracked in Golo's inventory.",
-    "aliases": [
-      "Golo"
-    ],
-    "tags": [
-      "inventory-item",
-      "arc-1",
-      "inventory"
-    ],
-    "relatedIds": [
-      "character-golo"
-    ],
-    "visibility": "player",
-    "canonStatus": "confirmed",
-    "evidence": [
-      {
-        "type": "source-document",
-        "path": "DND-Source-Docs/the-dark-arcs/characters/character_sheet_golo.html"
-      }
-    ],
-    "source": {
-      "type": "generated_character_sheet",
-      "path": "characters/index.html",
-      "anchor": "golo"
-    },
-    "ownerName": "Golo"
   },
   {
     "id": "inventory-item-sertraline-wisp-cloak",

@@ -82,43 +82,37 @@
       "description": "Uses the wings to glide from high places or ride strong updrafts; cannot take off from level ground, hover, or maintain powered flight.",
       "rollCheck": "",
       "usesRange": "As terrain allows"
+    },
+    {
+      "name": "Golden Rune Healing",
+      "description": "Channels healing through the illuminated golden rune now active on the d12-shaped object carried in Golo's saddlebag.",
+      "rollCheck": "",
+      "usesRange": "3 heals per day"
     }
   ],
   "relationships": "Bonded in holy service to Aureth, Goddess of Magic. Recognized by the dwarves through the Feast of Ancestors honor and carries a ceremonial ticket granting entry or favor.",
   "specialRules": "Golden Paladin Armor provides holy protection. Fiona’s sword can ward off undead; exact mechanical bonuses are TBD.",
   "attacks": [
     {
-      "name": "Radiant Sword Strike",
-      "toHit": "",
-      "range": "Melee",
-      "effect": "TBD radiant + holy"
+      "name": "Holy Radiant Ward",
+      "toHit": "Enemy AC",
+      "range": "10-foot radius",
+      "effect": "1d8 radiant holy damage; wards the area"
     },
     {
       "name": "Demon-Banishing Strike",
-      "toHit": "",
+      "toHit": "Enemy AC",
       "range": "Melee",
-      "effect": "TBD + banishment effect"
-    },
-    {
-      "name": "Undead-Warding Sweep",
-      "toHit": "",
-      "range": "Melee / nearby",
-      "effect": "TBD radiant; ward effect"
+      "effect": "Roll above 10: full banishment; 10 or below: half the roll as damage"
     },
     {
       "name": "Wing Shield Interpose",
       "toHit": "",
       "range": "Self or 2 allies",
       "effect": "No damage; protection TBD"
-    },
-    {
-      "name": "Unarmed / Backup Attack",
-      "toHit": "",
-      "range": "Melee",
-      "effect": ""
     }
   ],
-  "attackRules": "Demon Banishment can return demons to the Nine Hells, but the required hit, saving throw, damage threshold, and usage limit are TBD. Undead Warding radius, duration, and save are TBD.",
+  "attackRules": "Holy Radiant Ward creates a warding area within a 10-foot radius and deals 1d8 radiant holy damage against enemy AC. Demon-Banishing Strike must first succeed against enemy AC; then roll for banishment. A result above 10 fully banishes the demon, while a result of 10 or less deals half that rolled amount as damage.",
   "futureUpgrades": "",
   "inventory": [
     {

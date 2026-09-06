@@ -89,12 +89,6 @@
       "description": "Shield allies with spirit energy; enemies may roll with disadvantage against them.",
       "rollCheck": "",
       "usesRange": ""
-    },
-    {
-      "name": "Spirit Sight",
-      "description": "See invisible enemies, hidden magic, spiritual disturbances, and concealed threats.",
-      "rollCheck": "",
-      "usesRange": ""
     }
   ],
   "relationships": "",

@@ -79,9 +79,15 @@
     },
     {
       "name": "Active Druidic Control",
-      "description": "Consciously commands vines and vegetation from half a movement away with deliberate, practiced control.",
+      "description": "Consciously commands vines, foliage, trees, and the ground from half a movement away with deliberate, practiced control. Her training uses nature itself to assist her movement and fighting.",
       "rollCheck": "passive",
       "usesRange": "30 ft / 3 per (unit unspecified)"
+    },
+    {
+      "name": "Paired Bracers of Mage Hands",
+      "description": "Each magic bracer worn on a front leg enables one Mage Hand. Practice with both hands gives her greater dexterity for fighting, movement, opening doors, picking locks, handling cutlery, and other tasks panther paws cannot normally perform.",
+      "rollCheck": "Dexterity modifier +4 from bracers and training",
+      "usesRange": "2 Mage Hands (1 per bracer)"
     },
     {
       "name": "Stealth & Jungle Mastery",
@@ -134,8 +140,8 @@
     },
     {
       "name": "Dwarven Bracers of Mage Hands",
-      "quantity": "",
-      "charges": ""
+      "quantity": "2",
+      "charges": "1 Mage Hand per bracer; worn on front legs"
     },
     {
       "name": "Rocky Talkie",
@@ -160,5 +166,14 @@
     "other": ""
   },
   "specialResources": "",
-  "sessionNotes": "Character sheet updated from August 2026 handwritten photos. The recharge or time unit after the uses counts for Telepathic Communication, Psychic Interruption, and Active Druidic Control was not written on the sheet and remains unresolved."
+  "sessionNotes": "Character sheet updated from August 2026 handwritten photos. The recharge or time unit after the uses counts for Telepathic Communication, Psychic Interruption, and Active Druidic Control was not written on the sheet and remains unresolved. Sertraline has practiced combining her two bracer-created Mage Hands with her druidic powers, becoming more adept at fighting, moving, manipulating objects, and warping nearby nature to assist her.",
+  "abilityModifiers": {
+    "strength": "",
+    "dexterity": "+4",
+    "constitution": "",
+    "intelligence": "",
+    "wisdom": "",
+    "charisma": ""
+  },
+  "modifierBoosts": "Dexterity +4 from her paired magic bracers and practiced use of Mage Hands and druidic nature-warping."
 }
