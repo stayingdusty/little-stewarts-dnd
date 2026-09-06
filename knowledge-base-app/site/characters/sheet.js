@@ -11,8 +11,8 @@ const escapeHtml = (value) =>
 const field = (label, value, strong = false) =>
   `<div class="field"><div class="label">${escapeHtml(label)}</div><div>${strong ? `<strong>${escapeHtml(value)}</strong>` : escapeHtml(value)}</div></div>`;
 
-const stat = (label, value) =>
-  `<div class="stat"><div class="label">${escapeHtml(label)}</div><div class="score">${escapeHtml(value)}</div><div class="modifier">Modifier: <span></span></div></div>`;
+const stat = (label, value, modifier) =>
+  `<div class="stat"><div class="label">${escapeHtml(label)}</div><div class="score">${escapeHtml(value)}</div><div class="modifier">Modifier: <span>${escapeHtml(modifier)}</span></div></div>`;
 
 const miniValue = (label, value) =>
   `<div><b>${escapeHtml(label)}:</b><div class="mini">${escapeHtml(value)}</div></div>`;
@@ -54,7 +54,7 @@ const renderSheet = (character) => `
     <section>
       <div class="card soft"><h2>Character Overview</h2><p>${escapeHtml(character.summary)}</p></div>
       <div class="card"><h2>Ability Scores &amp; Modifiers <span class="score-total">${escapeHtml(character.abilityPointTotal)}</span></h2><div class="stat-list">
-        ${stat('Strength', character.abilityScores?.strength)}${stat('Dexterity', character.abilityScores?.dexterity)}${stat('Constitution', character.abilityScores?.constitution)}${stat('Intelligence', character.abilityScores?.intelligence)}${stat('Wisdom', character.abilityScores?.wisdom)}${stat('Charisma', character.abilityScores?.charisma)}
+        ${stat('Strength', character.abilityScores?.strength, character.abilityModifiers?.strength)}${stat('Dexterity', character.abilityScores?.dexterity, character.abilityModifiers?.dexterity)}${stat('Constitution', character.abilityScores?.constitution, character.abilityModifiers?.constitution)}${stat('Intelligence', character.abilityScores?.intelligence, character.abilityModifiers?.intelligence)}${stat('Wisdom', character.abilityScores?.wisdom, character.abilityModifiers?.wisdom)}${stat('Charisma', character.abilityScores?.charisma, character.abilityModifiers?.charisma)}
       </div></div>
       <div class="card"><h2>Powers &amp; Abilities</h2>${(character.powers || []).map(ability).join('')}</div>
     </section>
@@ -65,7 +65,7 @@ const renderSheet = (character) => `
         <div class="combat-box"><div class="label">Temporary HP</div><div class="value">${escapeHtml(character.combat?.temporaryHp)}</div></div>
         <div class="combat-box"><div class="label">Armor Class</div><div class="value">${escapeHtml(character.combat?.armorClass)}</div></div>
       </div></div>
-      <div class="card"><h2>Modifier Boosts</h2><div class="choice-box large"></div></div>
+      <div class="card"><h2>Modifier Boosts</h2><div class="choice-box large">${escapeHtml(character.modifierBoosts)}</div></div>
       <div class="card"><h2>External Bonds &amp; Relationships</h2><div class="choice-box medium">${escapeHtml(character.relationships)}</div></div>
       <div class="card"><h2>Special Rules &amp; Notes</h2><div class="choice-box large">${escapeHtml(character.specialRules)}</div></div>
     </aside>

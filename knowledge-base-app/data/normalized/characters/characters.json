@@ -90,12 +90,6 @@
         "description": "Shield allies with spirit energy; enemies may roll with disadvantage against them.",
         "rollCheck": "",
         "usesRange": ""
-      },
-      {
-        "name": "Spirit Sight",
-        "description": "See invisible enemies, hidden magic, spiritual disturbances, and concealed threats.",
-        "rollCheck": "",
-        "usesRange": ""
       }
     ],
     "relationships": "",
@@ -228,43 +222,37 @@
         "description": "Uses the wings to glide from high places or ride strong updrafts; cannot take off from level ground, hover, or maintain powered flight.",
         "rollCheck": "",
         "usesRange": "As terrain allows"
+      },
+      {
+        "name": "Golden Rune Healing",
+        "description": "Channels healing through the illuminated golden rune now active on the d12-shaped object carried in Golo's saddlebag.",
+        "rollCheck": "",
+        "usesRange": "3 heals per day"
       }
     ],
     "relationships": "Bonded in holy service to Aureth, Goddess of Magic. Recognized by the dwarves through the Feast of Ancestors honor and carries a ceremonial ticket granting entry or favor.",
     "specialRules": "Golden Paladin Armor provides holy protection. Fiona’s sword can ward off undead; exact mechanical bonuses are TBD.",
     "attacks": [
       {
-        "name": "Radiant Sword Strike",
-        "toHit": "",
-        "range": "Melee",
-        "effect": "TBD radiant + holy"
+        "name": "Holy Radiant Ward",
+        "toHit": "Enemy AC",
+        "range": "10-foot radius",
+        "effect": "1d8 radiant holy damage; wards the area"
       },
       {
         "name": "Demon-Banishing Strike",
-        "toHit": "",
+        "toHit": "Enemy AC",
         "range": "Melee",
-        "effect": "TBD + banishment effect"
-      },
-      {
-        "name": "Undead-Warding Sweep",
-        "toHit": "",
-        "range": "Melee / nearby",
-        "effect": "TBD radiant; ward effect"
+        "effect": "Roll above 10: full banishment; 10 or below: half the roll as damage"
       },
       {
         "name": "Wing Shield Interpose",
         "toHit": "",
         "range": "Self or 2 allies",
         "effect": "No damage; protection TBD"
-      },
-      {
-        "name": "Unarmed / Backup Attack",
-        "toHit": "",
-        "range": "Melee",
-        "effect": ""
       }
     ],
-    "attackRules": "Demon Banishment can return demons to the Nine Hells, but the required hit, saving throw, damage threshold, and usage limit are TBD. Undead Warding radius, duration, and save are TBD.",
+    "attackRules": "Holy Radiant Ward creates a warding area within a 10-foot radius and deals 1d8 radiant holy damage against enemy AC. Demon-Banishing Strike must first succeed against enemy AC; then roll for banishment. A result above 10 fully banishes the demon, while a result of 10 or less deals half that rolled amount as damage.",
     "futureUpgrades": "",
     "inventory": [
       {
@@ -336,7 +324,7 @@
     "initiative": "",
     "visibility": "player",
     "canonStatus": "confirmed",
-    "summary": "A powerful centaur archer and hunter whose dwarven alliances grant him rune magic, the magically lightweight Hammer of Earthshatter, and responsibility for a major artifact.",
+    "summary": "A powerful centaur master archer and hunter who channels ice and fire runes through a d12-shaped artifact and bears the Hammer of Earthshatter.",
     "details": "Half-Giant / Half-Centaur archer, hunter, and artifact bearer.",
     "aliases": [],
     "tags": [
@@ -350,7 +338,7 @@
     "relatedIds": [
       "inventory-item-golo-bow-and-arrows",
       "inventory-item-golo-dwarven-hammer-of-earthshatter",
-      "inventory-item-golo-the-artifact",
+      "inventory-item-golo-d12-shaped-rune-object",
       "inventory-item-golo-saddle",
       "inventory-item-golo-flight-shoes",
       "inventory-item-golo-rocky-talkie",
@@ -384,38 +372,26 @@
     },
     "powers": [
       {
-        "name": "Master Archer",
-        "description": "Uses strength, range, and practiced accuracy to strike targets with bows and magical arrows.",
+        "name": "Ice & Fire Runes",
+        "description": "Channels activated ice and fire runes connected to the d12-shaped object in his saddlebag. Each rune has its own daily uses.",
         "rollCheck": "",
-        "usesRange": ""
+        "usesRange": "Ice: 3/day; Fire: 3/day"
       },
       {
-        "name": "Ice Arrows",
-        "description": "Fires magically empowered ice arrows that can damage, freeze, slow, or counter heat and fire.",
+        "name": "Master Archer & Rune-Charged Arrows",
+        "description": "Uses practiced mastery to strike with his bow. He may spend a daily ice or fire rune use to charge an arrow with that power.",
         "rollCheck": "",
-        "usesRange": ""
-      },
-      {
-        "name": "Licensed Fire Rune",
-        "description": "Uses dwarven-licensed fire rune power under the terms of his employment contract.",
-        "rollCheck": "",
-        "usesRange": ""
+        "usesRange": "Rune-charged arrows spend the chosen rune use"
       },
       {
         "name": "Hammer of Earthshatter",
         "description": "Instantly explodes or powders a 10-foot radius of non-living stone, including non-living spirit-conjured rock.",
         "rollCheck": "",
         "usesRange": "10-foot radius"
-      },
-      {
-        "name": "Magically Lightweight Hammer",
-        "description": "The hammer is easy to wield regardless of normal weight and can be lent to other characters for use.",
-        "rollCheck": "",
-        "usesRange": ""
       }
     ],
     "relationships": "Trusted by the dwarves as artifact bearer and rune licensee. Butcher's Guild bond established through the Iceman connection.",
-    "specialRules": "Earthshatter affects non-living stone and rock conjurations, but does not directly destroy living creatures. The hammer is magically lightweight and may be wielded by anyone Golo lends it to.",
+    "specialRules": "Earthshatter affects non-living stone and rock conjurations, but does not directly destroy living creatures.",
     "attacks": [
       {
         "name": "Bow Shot",
@@ -462,9 +438,9 @@
         "charges": ""
       },
       {
-        "name": "The Artifact",
+        "name": "D12-Shaped Rune Object",
         "quantity": "",
-        "charges": ""
+        "charges": "Activated golden, ice, and fire runes; carried in saddlebag"
       },
       {
         "name": "Saddle",
@@ -494,7 +470,7 @@
       "other": ""
     },
     "specialResources": "",
-    "sessionNotes": ""
+    "sessionNotes": "The Hammer of Earthshatter has a pulse in its core that Golo can sense as he works with it and strikes with it. The hammer seems drawn toward the mountains."
   },
   {
     "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
@@ -604,7 +580,7 @@
         "name": "Astral Influence - Felt",
         "toHit": "Roll exceeds enemy AC",
         "range": "",
-        "effect": "1d4 physical effect"
+        "effect": "1d4 damage"
       },
       {
         "name": "Royal Command",
@@ -732,9 +708,15 @@
       },
       {
         "name": "Active Druidic Control",
-        "description": "Consciously commands vines and vegetation from half a movement away with deliberate, practiced control.",
+        "description": "Consciously commands vines, foliage, trees, and the ground from half a movement away with deliberate, practiced control. Her training uses nature itself to assist her movement and fighting.",
         "rollCheck": "passive",
         "usesRange": "30 ft / 3 per (unit unspecified)"
+      },
+      {
+        "name": "Paired Bracers of Mage Hands",
+        "description": "Each magic bracer worn on a front leg enables one Mage Hand. Practice with both hands gives her greater dexterity for fighting, movement, opening doors, picking locks, handling cutlery, and other tasks panther paws cannot normally perform.",
+        "rollCheck": "Dexterity modifier +4 from bracers and training",
+        "usesRange": "2 Mage Hands (1 per bracer)"
       },
       {
         "name": "Stealth & Jungle Mastery",
@@ -787,8 +769,8 @@
       },
       {
         "name": "Dwarven Bracers of Mage Hands",
-        "quantity": "",
-        "charges": ""
+        "quantity": "2",
+        "charges": "1 Mage Hand per bracer; worn on front legs"
       },
       {
         "name": "Rocky Talkie",
@@ -813,6 +795,15 @@
       "other": ""
     },
     "specialResources": "",
-    "sessionNotes": "Character sheet updated from August 2026 handwritten photos. The recharge or time unit after the uses counts for Telepathic Communication, Psychic Interruption, and Active Druidic Control was not written on the sheet and remains unresolved."
+    "sessionNotes": "Character sheet updated from August 2026 handwritten photos. The recharge or time unit after the uses counts for Telepathic Communication, Psychic Interruption, and Active Druidic Control was not written on the sheet and remains unresolved. Sertraline has practiced combining her two bracer-created Mage Hands with her druidic powers, becoming more adept at fighting, moving, manipulating objects, and warping nearby nature to assist her.",
+    "abilityModifiers": {
+      "strength": "",
+      "dexterity": "+4",
+      "constitution": "",
+      "intelligence": "",
+      "wisdom": "",
+      "charisma": ""
+    },
+    "modifierBoosts": "Dexterity +4 from her paired magic bracers and practiced use of Mage Hands and druidic nature-warping."
   }
 ]

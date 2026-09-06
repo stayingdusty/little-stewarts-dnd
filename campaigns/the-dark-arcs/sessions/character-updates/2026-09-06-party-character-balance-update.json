@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../../knowledge-base-app/config/schema/character-update.schema.json",
+  "sessionId": "2026-09-06-party-character-balance-update",
+  "status": "applied",
+  "visibility": "dm-only",
+  "updates": [
+    {
+      "characterId": "character-calvin-nameloc",
+      "field": "powers[Spirit Sight]",
+      "previousValue": "Passive sight of invisible enemies, hidden magic, spiritual disturbances, and concealed threats.",
+      "proposedValue": "Removed for party balance because another character already has a similar passive magic-detection ability.",
+      "evidence": ["user-provided character balance update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-fiona",
+      "field": "attacks and attackRules",
+      "previousValue": "Radiant Sword Strike, Demon-Banishing Strike, Undead-Warding Sweep, Wing Shield Interpose, and Unarmed / Backup Attack, with several mechanics TBD.",
+      "proposedValue": "Replace Radiant Sword Strike with Holy Radiant Ward (enemy AC, 10-foot radius, 1d8 radiant holy damage and warding); set Demon-Banishing Strike to enemy AC followed by a banishment roll above 10, otherwise half the roll as damage; remove Undead-Warding Sweep and Unarmed / Backup Attack; retain Wing Shield Interpose.",
+      "evidence": ["user-provided character mechanics update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-fiona",
+      "field": "powers[Golden Rune Healing]",
+      "previousValue": "Not recorded.",
+      "proposedValue": "The illuminated golden rune activated on the d12-shaped object in Golo's saddlebag gives Fiona three heals per day.",
+      "evidence": ["user-provided character mechanics update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-golo",
+      "field": "powers, specialRules, inventory[D12-Shaped Rune Object], and sessionNotes",
+      "previousValue": "Master Archer, Ice Arrows, Licensed Fire Rune, Hammer of Earthshatter, and Magically Lightweight Hammer were separate powers; the hammer was described as magically lightweight; the artifact and hammer plot details were not specified.",
+      "proposedValue": "Lead with combined Ice & Fire Runes (three uses per rune per day) connected to the activated d12-shaped saddlebag object; describe Master Archer and optional rune-charged ice/fire arrows together; retain Earthshatter's 10-foot non-living-stone effect; remove all magically lightweight claims; record the hammer's sensed core pulse and pull toward the mountains.",
+      "evidence": ["user-provided character mechanics and plot update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-queen-flower",
+      "field": "attacks[Astral Influence - Felt].effect and inventory[Snap Matches]",
+      "previousValue": "Astral Influence - Felt listed a 1d4 physical effect; the structured inventory already read 10 Snap Matches.",
+      "proposedValue": "Clarify the attack as 1d4 damage and preserve the correct 10 Snap Matches inventory spelling in regenerated output.",
+      "evidence": ["user-provided character sheet correction, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    },
+    {
+      "characterId": "character-sertraline",
+      "field": "abilityScores.dexterity, abilityModifiers.dexterity, modifierBoosts, powers, inventory[bracers], and sessionNotes",
+      "previousValue": "Dexterity score was 0 with no displayed modifier; two-bracer Mage Hand mechanics and the training source of the bonus were not detailed.",
+      "proposedValue": "Keep Dexterity at 0 and display a +4 modifier from training with paired magic bracers and druidic nature-warping; each front-leg bracer enables one Mage Hand, used for combat, movement, doors, locks, cutlery, and other fine manipulation; record her practiced coordination with vines, foliage, trees, and ground.",
+      "evidence": ["user-provided character mechanics and plot update, 2026-09-06"],
+      "confidence": "high",
+      "reviewState": "confirmed"
+    }
+  ]
+}
