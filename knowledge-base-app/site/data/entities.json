@@ -6,10 +6,12 @@
     "name": "Calvin / Nameloc",
     "title": "Guardian / Protector",
     "subtitle": "Spiritbound Guardian of the Great Hound",
-    "player": "Coleman",
+    "player": "Coleman Price",
     "species": "Human / Spiritbound",
     "levelRank": "2",
-    "movement": "60",
+    "movement": "Normal human movement",
+    "spiritFormName": "Nameloc",
+    "spiritFormMovement": "60 ft",
     "initiative": "",
     "visibility": "player",
     "canonStatus": "confirmed",
@@ -120,20 +122,20 @@
       {
         "name": "Titan Leap Slam",
         "toHit": "Enemy AC",
-        "range": "",
+        "range": "1 movement",
         "effect": "1d8"
       },
       {
         "name": "Howl — Fear",
-        "toHit": "",
-        "range": "",
-        "effect": "Non-damage effect"
+        "toHit": "Enemy AC",
+        "range": "1 movement",
+        "effect": "Non-damage effect; enemies flee"
       },
       {
         "name": "Howl — Empower",
         "toHit": "12",
-        "range": "",
-        "effect": "Advantage effect"
+        "range": "1 movement",
+        "effect": "Allies within range gain advantage"
       }
     ],
     "attackRules": "",
@@ -142,7 +144,7 @@
       {
         "name": "Extending pole hammer",
         "quantity": "1",
-        "charges": "Equipped; extends from a 5-foot walking stick to a 10-foot war hammer on a pole"
+        "charges": "Equipped by Calvin; freely extends or contracts to any length from a 5-foot walking stick to a 10-foot war hammer on a pole; unlimited transformations"
       }
     ],
     "currency": {
@@ -152,7 +154,7 @@
       "other": ""
     },
     "specialResources": "",
-    "sessionNotes": "Great Hound appearance / glow: Blue glow. Plot mystery: What's up with these strange dreams I have been having? Great Hound personality, favorite move, and awakening catchphrase remain unrecorded."
+    "sessionNotes": "Great Hound appearance / glow: Blue glow. Plot mysteries: What is causing Calvin's strange dreams? Why do Fey creatures recognize Nameloc's glowing blue hue as though they recognize him, his magic, or its source? Great Hound personality, favorite move, and awakening catchphrase remain unrecorded."
   },
   {
     "$schema": "../../../knowledge-base-app/config/schema/entity.schema.json",
@@ -1592,6 +1594,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1621,6 +1627,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1634,7 +1644,7 @@
     "domain": "lore",
     "name": "Calvin and Nameloc — The Great Spirit Hound",
     "summary": "Calvin is the boy who joins the party in later chapters. Nameloc is his enormous blue Great Spirit Hound form. The transformation can be connected directly to dreaming without reducing either form to an illusion: Calvin and Nameloc are two ",
-    "details": "Calvin is the boy who joins the party in later chapters. Nameloc is his enormous blue Great Spirit Hound form. The transformation can be connected directly to dreaming without reducing either form to an illusion: Calvin and Nameloc are two real expressions of the same person. Working Mythological Role Calvin represents imagination, instinct, and the courage to enter the unknown without controlling it. Nameloc is the form best suited to the Dream Plane, where identity follows meaning more readily than physical shape. His spirit-hound senses allow him to track the emotional and magical trails left by dreams, Dark Arcs, Ethereal travelers, and boundary-bending artifacts. He can become a bridge between the younger, personal scale of the party's adventures and the larger cosmological struggle. His power gives the party a way to discover the mythology through playable dream journeys rather than long explanations from NPCs. Possible Origin — Keep Flexible Until Revealed Nameloc may be Calvin's true dream-self, awakened when he first crossed the boundary between realms. The Great Spirit Hound may belong to an ancient line of guardians that protected sleepers and hunted creatures that entered dreams without permission. Aureth may have awakened the power because hounds can follow paths without needing to know where those paths will end. The power may also predate Aureth's known worship, making Nameloc part of an older natural response to the First Doubt. Recommended interpretation: Calvin should not be revealed as secretly more important than every other hero. His special role is practical and thematic: he can take the group into a realm none of them could safely navigate alone, while the other heroes remain essential to surviving and understanding what they find there. Moon-Walking Growth Path Stage Ability Campaign Use Dream Scent Calvin remembers vivid fragments and Nameloc can identify the emotional “scent” of a recurring dream. Introduces dream clues and warnings without immediately allowing planar travel. First Moon-Walk Calvin consciously becomes Nameloc inside his own dream and explores a limited dream location. Personal character chapter and discovery of the Dream Plane. Shared Moon-Walk One willing companion can enter the dream with him. Allows character-pair stories and rescue missions inside a dream. Pack Walk Nameloc guides the full party through a shared dream. Turns the Dream Plane into a recurring adventure location. Arc Tracking Nameloc follows the nightmare-shadow of a permanent Dark Arc. Reveals hidden arc locations, trapped memories, or Jerry Mander's route. Moon Road The party uses a stable dream path to approach the Convergence or cross between distant arc sites. Provides a major late-campaign travel and endgame tool. Potential Dream-Plane Plot Points Calvin repeatedly dreams of a moon with a dark crack running through it; the crack is the Dream Plane's reflection of a permanent Dark Arc. Nameloc discovers that certain nightmares do not belong to the dreamers experiencing them—they have been planted by an outside intelligence. The party enters the dream of someone whose memories have been altered and recovers the emotional truth even when the waking facts are missing. Jerry Mander learns to leave false dream trails, forcing Nameloc to distinguish genuine scent from manufactured possibility. An agent of Fate attempts to create a city where everyone dreams the same approved dream every night. Aureth first speaks clearly to the party in the Dream Plane because ordinary language cannot contain all of the possible meanings she is trying to express. At the Convergence, Nameloc may be the only one able to find a path home after the possible futures begin collapsing into a single imposed destiny.",
+    "details": "Calvin is the boy who joins the party in later chapters. Nameloc is his enormous blue Great Spirit Hound form. The transformation can be connected directly to dreaming without reducing either form to an illusion: Calvin and Nameloc are two real expressions of the same person. Working Mythological Role Calvin represents imagination, instinct, and the courage to enter the unknown without controlling it. Nameloc is the form best suited to the Dream Plane, where identity follows meaning more readily than physical shape. His spirit-hound senses allow him to track the emotional and magical trails left by dreams, Dark Arcs, Ethereal travelers, and boundary-bending artifacts. He can become a bridge between the younger, personal scale of the party's adventures and the larger cosmological struggle. His power gives the party a way to discover the mythology through playable dream journeys rather than long explanations from NPCs. Possible Origin — Keep Flexible Until Revealed Nameloc's magic comes from the Fey. The glowing blue hue in Great Hound form is a sign that Fey creatures can recognize as connected to Calvin, his magic, or its source. Calvin's strange dreams and Nameloc's blue glow share the same eventual revelation. The precise connection is to Twilight fairies or Twilight elves; which people is responsible remains unresolved. A future encounter with those Twilight beings will help Calvin discover dreamwalking under conditions connected to moonlight. Recommended interpretation: Calvin should not be revealed as secretly more important than every other hero. His special role is practical and thematic: he can take the group into a realm none of them could safely navigate alone, while the other heroes remain essential to surviving and understanding what they find there. Moon-Walking Growth Path Stage Ability Campaign Use Dream Scent Calvin remembers vivid fragments and Nameloc can identify the emotional “scent” of a recurring dream. Introduces dream clues and warnings without immediately allowing planar travel. First Moon-Walk Calvin consciously becomes Nameloc inside his own dream and explores a limited dream location. Personal character chapter and discovery of the Dream Plane. Shared Moon-Walk One willing companion can enter the dream with him. Allows character-pair stories and rescue missions inside a dream. Pack Walk Nameloc guides the full party through a shared dream. Turns the Dream Plane into a recurring adventure location. Arc Tracking Nameloc follows the nightmare-shadow of a permanent Dark Arc. Reveals hidden arc locations, trapped memories, or Jerry Mander's route. Moon Road The party uses a stable dream path to approach the Convergence or cross between distant arc sites. Provides a major late-campaign travel and endgame tool. Potential Dream-Plane Plot Points Calvin repeatedly dreams of a moon with a dark crack running through it; the crack is the Dream Plane's reflection of a permanent Dark Arc. Nameloc discovers that certain nightmares do not belong to the dreamers experiencing them—they have been planted by an outside intelligence. The party enters the dream of someone whose memories have been altered and recovers the emotional truth even when the waking facts are missing. Jerry Mander learns to leave false dream trails, forcing Nameloc to distinguish genuine scent from manufactured possibility. An agent of Fate attempts to create a city where everyone dreams the same approved dream every night. Aureth first speaks clearly to the party in the Dream Plane because ordinary language cannot contain all of the possible meanings she is trying to express. At the Convergence, Nameloc may be the only one able to find a path home after the possible futures begin collapsing into a single imposed destiny.",
     "aliases": [],
     "tags": [
       "lore",
@@ -1650,12 +1660,49 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
       "type": "generated_world_document",
       "path": "world/index.html?document=lore#calvin-and-nameloc-the-great-spirit-hound",
       "anchor": "calvin-and-nameloc-the-great-spirit-hound"
+    }
+  },
+  {
+    "id": "lore-calvins-fey-source-and-twilight-revelation",
+    "domain": "lore",
+    "name": "Calvin's Fey Source and Twilight Revelation",
+    "summary": "DM-only plot direction: Nameloc's magic comes from the Fey. The identity of the specific Twilight people remains unresolved between Twilight fairies and Twilight elves. Fey creatures recognize Nameloc's glowing blue hue as familiar magic, o",
+    "details": "DM-only plot direction: Nameloc's magic comes from the Fey. The identity of the specific Twilight people remains unresolved between Twilight fairies and Twilight elves. Fey creatures recognize Nameloc's glowing blue hue as familiar magic, or recognize Calvin or the source expressed through that magic. The strange dreams and the blue glow are two clues leading to the same revelation. During an encounter with the unresolved Twilight people, Calvin discovers a connection to them and gains the ability to dreamwalk. Dreamwalking works only under conditions related to moonlight; the exact conditions remain unresolved. The clues should remain mysteries until the encounter reveals their shared source.",
+    "aliases": [],
+    "tags": [
+      "lore",
+      "cosmology",
+      "mythology",
+      "arc-1",
+      "calvins-fey-source-and-twilight-revelation"
+    ],
+    "relatedIds": [],
+    "visibility": "dm-only",
+    "canonStatus": "proposed",
+    "evidence": [
+      {
+        "type": "legacy-source-document",
+        "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
+      }
+    ],
+    "source": {
+      "type": "generated_world_document",
+      "path": "world/index.html?document=lore#calvins-fey-source-and-twilight-revelation",
+      "anchor": "calvins-fey-source-and-twilight-revelation"
     }
   },
   {
@@ -1679,6 +1726,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1708,6 +1759,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1737,6 +1792,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1766,6 +1825,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1795,6 +1858,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1824,6 +1891,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1853,6 +1924,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1882,6 +1957,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1911,6 +1990,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1940,6 +2023,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1969,6 +2056,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -1998,6 +2089,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -2027,6 +2122,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -2056,6 +2155,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -2085,6 +2188,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -2114,6 +2221,10 @@
       {
         "type": "legacy-source-document",
         "path": "DND-Source-Docs/the-dark-arcs/world/lore-cosmology-mythology.html"
+      },
+      {
+        "type": "dm-direction",
+        "path": "campaigns/the-dark-arcs/sessions/character-updates/2026-09-06-calvin-nameloc-sheet-update.json"
       }
     ],
     "source": {
@@ -2491,7 +2602,7 @@
     "domain": "inventory-item",
     "name": "Extending pole hammer",
     "summary": "Inventory entry for Calvin / Nameloc.",
-    "details": "Qty: 1 | Charges: Equipped; extends from a 5-foot walking stick to a 10-foot war hammer on a pole",
+    "details": "Qty: 1 | Charges: Equipped by Calvin; freely extends or contracts to any length from a 5-foot walking stick to a 10-foot war hammer on a pole; unlimited transformations",
     "aliases": [
       "Calvin / Nameloc"
     ],

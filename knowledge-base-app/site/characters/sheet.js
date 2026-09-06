@@ -49,7 +49,7 @@ const renderSheet = (character) => `
 <section class="page">
   <header><h1 id="${escapeHtml(character.source?.anchor || character.id)}">${escapeHtml(character.name)}</h1><div class="subtitle">${escapeHtml(character.subtitle)}</div></header>
   <section class="identity">${field('Player', character.player, true)}${field('Character', character.name, true)}${field('Title / Role', character.title, true)}</section>
-  <section class="identity second">${field('Species / Ancestry', character.species)}${field('Movement', character.movement)}${field('Initiative', character.initiative)}${field('Level / Rank', character.levelRank)}</section>
+  <section class="identity second">${field('Species / Ancestry', character.species)}${field(character.spiritFormMovement ? 'Calvin Movement' : 'Movement', character.movement)}${field('Initiative', character.initiative)}${field('Level / Rank', character.levelRank)}</section>
   <div class="grid">
     <section>
       <div class="card soft"><h2>Character Overview</h2><p>${escapeHtml(character.summary)}</p></div>
@@ -74,6 +74,7 @@ const renderSheet = (character) => `
 </section>
 <section class="page">
   <header><h1>${escapeHtml(character.name)}</h1><div class="subtitle">Attacks, Equipment, Inventory &amp; Session Notes</div></header>
+  ${character.spiritFormMovement ? `<section class="form-details">${field('Spirit Form', character.spiritFormName, true)}${field(`${character.spiritFormName || 'Spirit Form'} Movement`, character.spiritFormMovement, true)}</section>` : ''}
   <div class="grid">
     <section>
       <div class="card"><h2>Attacks &amp; Damage / Healing Dice</h2><div class="attack-table"><div class="attack-header"><div>Attack / Action</div><div>To Hit</div><div>Range</div><div>Damage / HP Dice Combination</div></div>${attackRows(character.attacks)}</div><div class="damage-note">Write the complete combination, such as 2d8 + modifier, and note the damage, healing, or effect type.</div></div>
