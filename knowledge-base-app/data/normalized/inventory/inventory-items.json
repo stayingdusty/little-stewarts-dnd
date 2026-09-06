@@ -368,7 +368,7 @@
     "domain": "inventory-item",
     "name": "Extending pole hammer",
     "summary": "Inventory entry for Calvin / Nameloc.",
-    "details": "Qty: 1 | Charges: Equipped by Calvin; freely extends or contracts to any length from a 5-foot walking stick to a 10-foot war hammer on a pole; unlimited transformations",
+    "details": "Qty: 1 | Charges: Equipped; adjusts freely to any length from a 5-foot walking stick to a 10-foot pole hammer; unlimited changes",
     "aliases": [
       "Calvin / Nameloc"
     ],

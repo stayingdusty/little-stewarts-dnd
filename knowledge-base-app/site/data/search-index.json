@@ -1233,7 +1233,7 @@
     "sourcePath": "characters/index.html",
     "sourceAnchor": "calvin-nameloc",
     "timelineValue": 0,
-    "searchableText": "extending pole hammer inventory entry for calvin / nameloc. qty: 1 | charges: equipped by calvin; freely extends or contracts to any length from a 5-foot walking stick to a 10-foot war hammer on a pole; unlimited transformations calvin / nameloc inventory-item arc-1 inventory"
+    "searchableText": "extending pole hammer inventory entry for calvin / nameloc. qty: 1 | charges: equipped; adjusts freely to any length from a 5-foot walking stick to a 10-foot pole hammer; unlimited changes calvin / nameloc inventory-item arc-1 inventory"
   },
   {
     "id": "inventory-item-fiona-feast-of-ancestors-ticket",
